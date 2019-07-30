@@ -1,0 +1,21 @@
+{
+  "name": "fe-foundation",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "seognil",
+  "repository": "seognil/fe-foundation",
+  "publishConfig": {
+    "registry": "https://prevent.push.to.registry/"
+  },
+  "keywords": [],
+  "bugs": "https://github.com/seognil/fe-foundation/issues",
+  "homepage": "https://github.com/seognil/fe-foundation",
+  "scripts": {
+    "build": "vuepress build .",
+    "dev": "vuepress dev ."
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.3"
+  }
+}
