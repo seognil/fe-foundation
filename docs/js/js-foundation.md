@@ -14,44 +14,43 @@ JS 基础纲要速写笔记
 - 动态类型（一个变量可以转换类型）
 - 多范式（FP、OO）
 - 基于原型的继承
+  - 函数也是 Object
+- 函数是一等公民
+  - 高阶函数的概念
 - 单线程
 - 垃圾回收
 - 非阻塞（EventLoop 队列）
 - JIT（Just-In-Time）
 
-* 函数是一等公民
-  - 高阶函数的概念
-* 原型链
-  - 函数也是 Object
-* this
+广义的 JavaScript 包含 `ECMAScript、DOM、BOM` 三个部分（浏览器环境）
+狭义的 JavaScript 可以只包含 `ECMAScript` 语言标准（Node 或嵌入式等环境都有的公共部分）
 
 ### 版本/方言/历史
 
-* 缩写
-  - ES：ECMAScript
-  - TS：TypeScript
-  - DSL：Domain-specific language
-  - API：Application programming interface
-
 - 相关词汇
-  - ECMA-262：ECMAScript 标准的代号
-  - ECMA TC39：TC for Technical Committee，ECMAScript 标准化组织的代号
+  - **ES**：ECMAScript
+  - **TS**：TypeScript
+  - **DSL**：Domain-specific language，领域特定语言，专门为了解决某一问题而不是通用的编程语言
+  - **API**：Application programming interface，应用程序接口，将复杂逻辑封装抽象成函数调用
+  - **ECMA-262**：ECMAScript 标准 的代号
+  - **ECMA TC39**：TC for Technical Committee，ECMAScript 标准化组织 的代号
+  - aka：as known as
 
-* ECMAScript 官方规范（from _Ecma TC39_）
-  - ES1~3：1995 起，上古版本
-  - ES5：2009 起的版本（aka ES3.1）
-  - ES6：2015 年大更新的版本，带动了 JS 预编译生态，后续逐年小幅度更新
-* TypeScript：带类型检查的扩展集（from _Microsoft_）
-* Flow：比 TS 功能少一点的类型检查扩展集，现已式微（from _Facebook_）
-* 框架语言（基于 ES、TS 的 DSL）
-  - JSX：React 的 JS + HTML 混合语法
-  - Vue：Vue 自己的（文件）格式
-* 方言
-  - ActionScript：（ES4）衍生而来（用于 _Adobe_ Flash）
-  - CoffeeScript：方言之一，简化了 JS 语法，现已式微
-  - LiveScript：CoffeeScript 兄弟，现已式微（JS 早期曾用名也是这个，但是不同的东西）
+* **ECMAScript** 官方规范（from _Ecma TC39_）
+  - **ES1~3**：1995 起，上古版本
+  - **ES5**：（aka `ES3.1`）2009 起的版本
+  - **ES6**：（aka `ES2015`）2015 年大更新的版本，带动了 JS 预编译生态，后续逐年小幅度更新
+* **TypeScript**：带类型检查的扩展集（from _Microsoft_）
+* **Flow**：比 TS 功能少一点的类型检查扩展集，现已式微（from _Facebook_）
+* 框架语言（基于 ES、TS 并含有扩展语法的 DSL/语法糖）
+  - **JSX**：React 的 JS + HTML 混合语法
+  - **Vue**：Vue 自己的（文件和 template）格式
+* 方言（现已式微）
+  - **ActionScript**：以 ES4 衍生发展成的旁支（用于 _Adobe_ Flash）
+  - **CoffeeScript**：方言之一，简化了 JS 语法
+  - **LiveScript**：CoffeeScript 的兄弟版本（JS 早期曾用名也是这个，但是不同的东西）
 
-目前，ES6 （及后续）、Typescript 是主流使用的基本语言
+目前，ES6+、Typescript 是流行的基础语言
 
 ES6 相比 ES5
 
@@ -66,13 +65,13 @@ ES6 相比 ES5
 ### 模块化
 
 - 目前常用
-  - cjs：CommonJS（from _node_）
-  - esm：ES Module（from _ES6_）
-- 现已式微
-  - amd：Asynchronous Module Definition（from _RequireJS_）
-  - cmd：（from _Sea.js_）
-  - 'window'：暴露到全局变量
-  - umd：Universal Module Definition（混合封装方案，amd/cjs/window）
+  - **esm**：ES Module（from _ES6_）
+  - **cjs**：CommonJS（from _node_）
+- 其他标准（现已式微）
+  - **amd**：Asynchronous Module Definition（from _RequireJS_）
+  - **cmd**：（from _Sea.js_）
+  - **global**：暴露到全局变量（window）上
+  - **umd**：Universal Module Definition（混合封装方案，自动判断 amd/cjs/window）
 - 生态系统
   - [npm - Node Package Manager](https://www.npmjs.com/)
   - [package.json fields explained](https://github.com/stereobooster/package.json)
@@ -107,8 +106,9 @@ function、var、let、const、class
 
 Statement
 
+- 普通语句
 - 控制流
-  - Block（代码块）、if、break、try cache 等
+  - Block（花括号代码块）、if、break、try catch 等
 - 迭代
   - for、while 等
 
@@ -187,7 +187,7 @@ Expressions and operators
   - === 不进行类型转换
   - object 只有同一指针才相等
 - String、Number
-  - Too Many
+  - _Too Many_
 
 ### 垃圾回收
 
@@ -225,37 +225,37 @@ Expressions and operators
 
 ### 相关词汇
 
-- EC：Execution Context，执行上下文
-- ECS：Execution Context Stack，执行环境栈
-- Hoisting：（声明）提升
-- Scope：作用域（概念）（可能是 Global、Closure、Block 等）
-- Scope Chain：作用域链，存在于 EC 中，在浏览器内或表现为 `[[Scopes]]：Array`
-- Closure：闭包
+- **EC**：Execution Context，执行上下文
+- **ECS**：Execution Context Stack，执行环境栈
+- **Hoisting**：（声明）提升
+- **Scope**：作用域（概念）（可能是 Global、Closure、Block 等）
+- **Scope** Chain：作用域链，存在于 EC 中，在浏览器内或表现为 `[[Scopes]]：Array`
+- **Closure**：闭包
 
-* VO：Variable Object，变量对象，每个 EC 的一部分，存放变量的地方
-* AO：Activation Object，活动对象，可视为函数作用域中的 VO （多了 arguments）
+* **VO**：Variable Object，变量对象，每个 EC 的一部分，存放变量的地方
+* **AO**：Activation Object，活动对象，可视为函数作用域中的 VO （多了 arguments）
 
-- stack frame：栈帧，单个 EC
-- StackOverflow：执行栈溢出
-- segfault：Segmentation Fault，段错误（访问非法内存地址）
-- TCO：Tail Call Optimization，尾调用优化
-- TDZ：Temporal Dead Zone，暂时性死区（let、const 的特性）
-- JIT：Just in time，及时化
-- AOT：Ahead of Time，预处理
+- **stack frame**：栈帧，单个 EC
+- **stack overflow**：执行栈溢出
+- **segfault**：Segmentation Fault，段错误（访问非法内存地址）
+- **TCO**：Tail Call Optimization，尾调用优化
+- **TDZ**：Temporal Dead Zone，暂时性死区（let、const 的特性）
+- **JIT**：Just in time，及时化
+- **AOT**：Ahead of Time，预处理
 
-- IIFE：Immediately Invoked Function Expression，立即执行函数表达式
+* **IIFE**：Immediately Invoked Function Expression，立即执行函数表达式
 
 ### 作用域
 
-- static scope：静态作用域（根据代码结构就可以分析，不会动态改变）
-- lexical scope：词法作用域（aka 静态作用域）
-- dynamic scope：动态作用域（ECMAScript 中不存在）
+- **static scope**：静态作用域（根据代码结构就可以分析，不会动态改变）
+- **lexical scope**：词法作用域（aka 静态作用域）
+- **dynamic scope**：动态作用域（ECMAScript 中不存在）
 
 * 作用域
-  - Global Scope：全局作用域
-  - Function Scope：函数作用域
-  - Block Scope：块级作用域
-    - with（严格模式禁止使用；有变量指向歧义，避免使用，可以用解构代替）
+  - **Global Scope**：全局作用域
+  - **Function Scope**：函数作用域
+  - **Block Scope**：块级作用域
+    - with（严格模式禁止；有变量指向歧义，避免使用，可以用解构代替）
     - try/catch
     - let
     - const
@@ -289,70 +289,72 @@ Global 的 VO 是引擎提供的 global/window 对象，
 - 开始 Global EC 流程（Global Code）
 
 * code 类型
-  - Global Code：产生 ECS 的第一个 EC，唯一顶层全局 EC
-  - Function Code：将创建并入栈一个新 EC
-  - Eval Code：根据浏览器不同（另有性能和安全问题，避免使用）
+  - **Global Code**：产生 ECS 的第一个 EC，唯一顶层全局 EC
+  - **Function Code**：将创建并入栈一个新 EC
+  - **Eval Code**：根据浏览器不同（另有性能和安全问题，避免使用）
     - new Function()
 
 #### HTML 中 script 标签的情况
 
 无论是 src 引用，还是直接位于标签内部的 js 代码，  
-每个 script 的顶层代码都位于 Global 层（ECS 栈底）。
+每个 script 的顶层代码都**位于** Global 层（ECS 栈底）。
 
 因为在页面打开时，显然 window（Global VO）总是存在，  
-所以每组代码都共用同一个 VO（window）。
+所以每组代码都共用同一个 VO（window），`this == window`。
 
 但不同的 script 相当于不同的 Program 任务，  
 所以其中一个 script 报错中断不会影响后续 script 执行。
 
 #### Node 的情况
 
-- 通过 `node` 命令直接启动环境后，直接位于 Global 层。
+- 通过 `node` 命令直接启动环境后，直接**位于** Global 层，`this == global`。
 - 通过 `node filename.js` 命令执行代码，以模块化的形式读取和执行文件，
-  - node 通过一个内部实现的包装函数，建立一个闭包环境，并不处于 Global 层
-  - 提供 module.exports 并作为 this
+  - node 通过一个内部实现的包装函数，建立一个闭包环境，文件代码**并不位于** Global 层
+  - `this == module.exports`
 
 ### EC 生命周期
 
 - **Creation**（准备环境，创建并入栈一个新 EC）
 
-  - 创建当前 EC 的 VO/AO，并在其中：
+  - 创建当前 EC 的 **VO/AO**，并在其中：
     - 或创建 arguments 对象
-    - Hoisting（提升）
+    - **Hoisting**（提升、声明解析）
       - 映射 arguments 的形参，可以视为 var 声明，在提升阶段时一同加入分析
         - 如果有函数体代码有同名 function，则 function 优先，丢弃了传入的实参
-      - function 优先提升 （_FunctionDeclaration_）
+      - function 优先提升 （`FunctionDeclaration`）
         - 同名 function 保留的是最后一个 function
-        - （function 实际上是 Object，函数名就是 Identifier（类似 var），但也提升函数体）
-      - 变量声明 var let const （_VariableDeclaration_）
+        - （function 实际上是 Object，函数名就是 `Identifier`（类似 var），但也提升函数体）
+        - 函数表达式（`var fn = ()=>{}`）不是声明，不会提升（`FunctionExpression`）
+      - 变量声明 var、let、const （`VariableDeclaration`）
         - 同名变量，var 会忽略（比如已经有了 function 或 var，此时有另一个 var）
-        - 但 ES6 新语法会报错（比如 let）（SyntaxError Identifier has already been defined）
-          - ES6 在声明之前调用会有死区问题（虽然有提升但状态是未初始化）（ReferenceError: Cannot access before initialization）
+        - 但 ES6 新语法会报错（比如 let）（`SyntaxError: Identifier has already been defined`）
+          - ES6 在声明之前调用会有死区问题（虽然有提升但状态是未初始化）（`ReferenceError: Cannot access before initialization`）
       - 幅度
         - function 块级 + 函数级
         - var 函数级
-        - let const class 块级
+        - let、const、class 块级
       - 不加 var 会成为隐式全局变量（global/window）
-        - 严格模式报错 ReferenceError
+        - 严格模式报错 `ReferenceError`
       - 顶层声明的变量
-        - var function 会成为全局属性（global/window）（是 EC.VO 的特性，不区分严格模式）
+        - var、function 会成为全局属性（global/window）（是 EC.VO 的特性，不区分严格模式）
         - 但 ES6 新语法不会成为全局属性
-  - 创建当前 EC 的作用域链
+  - 创建当前 EC 的**作用域链**
     - `当前的作用域链 == [父级的 VO/AO, ...父级的作用域链]`
-  - 创建当前 EC 的 `this: ObjectThis || global || window || undefined`
+  - 创建当前 EC 的 **this**: `ObjectThis || global || window || undefined`
 
 - **Execution**（执行代码）
 
-  - 所有代码大致都可以视为拆分成三个部分：左侧 运算符 右侧
-    - 左右两个部分都或可继续进行拆分（递归，也就形成了树）
-    - 每句代码执行时（如 赋值 或 函数调用）先对左侧进行标识查找
-      - 左侧部分可能是 Identifier 或 MemberExpression
-      - 查找失败则 ReferenceError 或 TypeError
-    - 然后解析右侧（如 赋值 或 函数参数）
-    - 然后执行运算符的操作（如 执行赋值操作 或 进入函数调用流程）
+  - 所有代码大致都可理解为**三个部分**：左侧、操作、右侧
+    - 左右两个部分都或可继续进行拆分（**递归**，也就形成了 AST 中的 Tree 的结构）
+    - 每句代码执行时（如 赋值的变量名 或 函数名）先对**左侧**进行标识查找
+      - 左侧部分可能是 `Identifier` 或 `MemberExpression` 等
+      - 查找失败则 `ReferenceError` 或 `TypeError` 等
+    - 然后以相似的过程解析**右侧**（如 赋值的值 或 函数参数）
+    - 然后基于解析完的左右侧，执行相应的**操作**（如 执行赋值操作 或 进入函数调用流程）
+  - 查找变量先查找 VO/AO，如果找不到则依次向上寻找 作用域链/闭包，依然找不到则报错。
 
 - **Finished**（执行结束，出栈 EC）
-  - 显式 ReturnStatement 或没有 （视为 `return undefined`）
+  - 显式 `ReturnStatement` 或没有 （视为 `return undefined`）
   - 卸载当前上下文
   - 卸载时可能会产生闭包
 
@@ -362,34 +364,34 @@ Global 的 VO 是引擎提供的 global/window 对象，
   - 默认参数只对 undefined 实参有效
 - **块级作用域`**：块级作用域的函数提升过程，只提升到块级作用域（严格模式），同时也提升到函数作用域（非严格模式）
 - **length**：
-  - someArray.length：`数组长度`，修改直接影响数组表现
-  - arguments.length：`实参个数`，修改后影响类数组操作时的表现
-  - someFn.length：`形参个数`，修改无效果
-  - window.length：`iframe个数`，修改后不再表示 iframe 计数
-  - global.length：`undefined`，未定义变量
+  - **someArray.length**：`数组长度`，修改直接影响数组表现
+  - **arguments.length**：`实参个数`，修改后影响类数组操作时的表现
+  - **someFn.length**：`必须形参个数（不包含默认和剩余参数）`，修改无效果
+  - **window.length**：`iframe 个数`，修改后不再表示 iframe 计数
+  - **global.length**：`undefined`，未定义变量
 - **箭头函数**：没有自己的 `this` 和 `arguments`
   - 所谓的 this 是词法作用域中的 this（相当于创建时 bind 父级环境的值）
   - 所以也不能进行 bind 和 call
   - 因为也是函数，所以也支持闭包的特性
 - **this**
-  - function 或 Eval 会创建新的 this（新的 EC），裸块不会
+  - **Global Code** 直接读取：`this == window`（浏览器）
+    - **node module**的情况：`this == module.exports`（初始是 `{}`，且不会像 arguments 一样进行跟踪）
+  - **function 或 Eval** 会创建新的 this（新的 EC），裸块（只有花括号）不会
     - **方法调用**：`this == 宿主 Object`
     - **函数调用**：`this == global/window`
       - **严格模式**：`this == undefined`
     - **箭头函数**：没有自己的 this，`this == 绑定词法作用域的父级的 this`
-  - **Global Code 直接读取**：`this == window`（浏览器）
-    - **node module 下**：`this == module.exports`（初始是 `{}`，且不会像 arguments 一样进行跟踪）
 - **严格模式**
-  - Too Many
+  - _Too Many_
 
 ### 闭包
 
-闭包可以理解为函数所需的 _作用域链_ 的 _快照_。
+闭包可以理解为函数所需的 _作用域链_ 的 **快照**。
 
 当函数执行完毕，若 EC 出栈销毁后，变量就会无法访问。
 
 但可能该函数依然需要访问该 EC 中的变量，  
-所以引擎将当前 _作用域链_ 转为闭包，标记到函数上，  
+所以引擎将当前 _作用域链_ 转为**闭包**，标记到函数上，  
 以便函数能够正常工作。  
 （或按需保留变量以节省内存）  
 （排除 this、arguments，因为他们是可变的）
@@ -399,7 +401,7 @@ JS 的闭包特性是引擎的内部实现，无法通过 JS 代码显式操控�
 根据模块化和 webpack 打包的原理，显然每个 module 中的函数基本都有自己的闭包。  
 说明闭包基本上无处不在。
 
-闭包是一个正常的 JS 特性，但需要注意正确使用以避免内存泄露  
+闭包是一个正常的 JS 特性，但需要**注意**正确使用以避免内存泄露  
 （以及毕竟 JS 没有显式垃圾回收，以及闭包无法直接操控）
 
 #### 概念结构
@@ -427,7 +429,8 @@ fn {
   - 增加变量查找时间
     显然，闭包需要多一层或者几层变量查找动作  
     但根据不同浏览器的优化，一般情况下，这个耗时或可忽略不计
-- **空间**：占用内存空间（直到所涉及的函数本体被回收）
+- **空间**
+  - 占用内存空间（直到所涉及的函数本体被回收）
 
 显然可以利用闭包进行空间换时间
 
@@ -442,26 +445,26 @@ fn {
 
 ### 相关词汇
 
-- Lexer：词法分析器，分析代码结构
-- Tokenizer：分词器，把代码打碎成单词组
-- Parser：解析器，包含 Lexer、Tokenizer，最终输出 AST
+- **Lexer**：词法分析器，分析代码结构
+- **Tokenizer**：分词器，把代码打碎成单词组
+- **Parser**：解析器，包含 Lexer、Tokenizer，最终输出 AST
   - acorn
   - babylon
   - typescript-eslint-parser
-- Compiler：编译器，包含 Parser，最终输出新代码
+- **Compiler**：编译器，包含 Parser，最终输出新代码
   - Babel
   - TypeScript
-- Interpreter：解释器，包含 Parser，解释型语言可以不需要完整的编译动作，读一段翻译一段执行一段
+- **Interpreter**：解释器，包含 Parser，解释型语言可以不需要完整的编译动作，读一段翻译一段执行一段
 
-* Runtime：运行时，包含 Compiler/Interpreter、一些运行库、一些管理代码
+* **Runtime**：运行时，包含 Compiler/Interpreter、一些运行库、一些管理代码
   - node
   - babel-node
   - ts-node
   - deno
 
-- BuildTime：编译时
+- **BuildTime**：编译时
 
-* Bundler：打包工具，可以视为高阶 Compiler（封装多种 Compiler）
+* **Bundler**：打包工具，可以视为高阶 Compiler（封装多种 Compiler）
   - Webpack
   - Rollup
 
