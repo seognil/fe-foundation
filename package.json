@@ -13,7 +13,8 @@
   "homepage": "https://github.com/seognil/fe-foundation",
   "scripts": {
     "build": "vuepress build .",
-    "dev": "vuepress dev ."
+    "dev": "vuepress dev .",
+    "preview": "npm run build && http-server -o -c-1 ./dist"
   },
   "devDependencies": {
     "vuepress": "^1.0.3"
