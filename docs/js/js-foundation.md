@@ -1,6 +1,7 @@
 # JS Foundation
 
-JS 基础纲要速写笔记
+JS 基础纲要速写笔记  
+若有偏差敬请斧正
 
 ## JS 语言特性
 
@@ -142,8 +143,8 @@ Expressions and operators
   - EventLoop
   - 闭包、垃圾回收
   - （查找相关）
-    - 作用域链（声明查找）
-    - 原型链（属性查找）
+    - 作用域链（裸变量查找）
+    - 原型链（对象属性查找）
 - EventLoop
   - synchronous code：同步代码
   - micro task：微任务
@@ -351,7 +352,7 @@ Global 的 VO 是引擎提供的 global/window 对象，
       - 查找失败则 `ReferenceError` 或 `TypeError` 等
     - 然后以相似的过程解析**右侧**（如 赋值的值 或 函数参数）
     - 然后基于解析完的左右侧，执行相应的**操作**（如 执行赋值操作 或 进入函数调用流程）
-  - 查找变量先查找 VO/AO，如果找不到则依次向上寻找 作用域链/闭包，依然找不到则报错。
+  - 查找变量先直接查找 VO/AO，如果找不到则基于当前作用域链依次向上查找，依然找不到则失败报错。
 
 - **Finished**（执行结束，出栈 EC）
   - 显式 `ReturnStatement` 或没有 （视为 `return undefined`）
@@ -396,6 +397,8 @@ Global 的 VO 是引擎提供的 global/window 对象，
 （或按需保留变量以节省内存）  
 （排除 this、arguments，因为他们是可变的）
 
+当函数调用时，使用闭包作为当前的作用域链。
+
 JS 的闭包特性是引擎的内部实现，无法通过 JS 代码显式操控。
 
 根据模块化和 webpack 打包的原理，显然每个 module 中的函数基本都有自己的闭包。  
@@ -433,6 +436,46 @@ fn {
   - 占用内存空间（直到所涉及的函数本体被回收）
 
 显然可以利用闭包进行空间换时间
+
+### 例子
+
+JS 并不支持动态作用域  
+生成闭包时需要解析（所有）变量
+
+调试以下代码或许可以加深理解：  
+词法作用域、AO、作用域链、闭包、this 之间的关系。
+
+以 chrome 进行试验，  
+变量 `b1、b2` 并不会携带进闭包中（因为词法解析时不存在）。
+
+从任意处调用，观察到调用时的作用域依然是相同的（闭包）结构，  
+打开注释行将会得到 `ReferenceError`。
+
+```javascript
+var AA = ((a1) => {
+  var a2 = 2;
+  return function(a4) {
+    var a3 = 3;
+    console.warn([a1, a2, a3, a4]);
+    // console.warn([b1, b2]); // * nest scope search test
+    console.warn(this);
+  };
+})(1);
+
+AA('direct call');
+
+var obj = { AA };
+obj.AA('obj call');
+
+(() => {
+  var b1 = 'q';
+  (() => {
+    var b2 = 'w';
+    console.warn([b1, b2]);
+    AA('nested scope call');
+  })();
+})();
+```
 
 ## 编译
 
