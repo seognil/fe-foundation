@@ -21,8 +21,13 @@ const articleSidebar = Object.entries(cateArrange)
 // * -------------------------------- config
 
 const config = {
-  title: 'FE 笔记',
-  description: '前端开发相关资料',
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'FE 笔记',
+      description: '前端开发技术笔记',
+    },
+  },
   dest: './dist',
   head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square.png' }]],
   themeConfig: {
