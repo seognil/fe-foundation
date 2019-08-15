@@ -10,6 +10,8 @@ JS 基础纲要速写笔记
 [The JavaScript Survival Guide](https://www.youtube.com/watch?v=9emXNzqCKyg)  
 [JavaScript Pro Tips - Code This, NOT That](https://www.youtube.com/watch?v=Mus_vwhTCq0)
 
+[JavaScript: Understanding the Weird Parts - The First 3.5 Hours](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts)
+
 - 高级语言
 - 弱类型（不用手动声明类型）
 - 动态类型（一个变量可以转换类型）
@@ -23,8 +25,8 @@ JS 基础纲要速写笔记
 - 非阻塞（EventLoop 队列）
 - JIT（Just-In-Time）
 
-广义的 JavaScript 包含 `ECMAScript、DOM、BOM` 三个部分（浏览器环境）
-狭义的 JavaScript 可以只包含 `ECMAScript` 语言标准（Node 或嵌入式等环境都有的公共部分）
+广义的 JavaScript 包含 `ECMAScript、DOM、BOM` 三个部分（浏览器环境）  
+狭义的 JavaScript 可以只包含 `ECMAScript` 语言标准（理解为 Node 或嵌入式等环境都有的 JS）
 
 ### 版本/方言/历史
 
@@ -33,14 +35,18 @@ JS 基础纲要速写笔记
   - **TS**：TypeScript
   - **DSL**：Domain-specific language，领域特定语言，专门为了解决某一问题而不是通用的编程语言
   - **API**：Application programming interface，应用程序接口，将复杂逻辑封装抽象成函数调用
+  - **Built-in**：内建的，比如数组的 `slice` 方法是浏览器引擎中以 C 编写的 API，而不是 JS 之后挂载的
+  - **Polyfill**：能检测并（自动）模拟新标准 API 的 JS 代码，能让旧浏览器和新浏览器的行为一致
   - **ECMA-262**：ECMAScript 标准 的代号
-  - **ECMA TC39**：TC for Technical Committee，ECMAScript 标准化组织 的代号
-  - aka：as known as
+  - **ECMA TC39**：ECMAScript 标准化组织 的代号，TC 是 Technical Committee 缩写
+  - **AKA**：As Known As
+  - **Meta**：MetaDate，元信息，指关于信息的信息，比如：代码是信息，代码的版本是元信息
 
 * **ECMAScript** 官方规范（from _Ecma TC39_）
   - **ES1~3**：1995 起，上古版本
   - **ES5**：（aka `ES3.1`）2009 起的版本
   - **ES6**：（aka `ES2015`）2015 年大更新的版本，带动了 JS 预编译生态，后续逐年小幅度更新
+* **JSON**： JavaScript Object Notation，JS 对象表示法，基于 JS 语法子集的数据格式
 * **TypeScript**：带类型检查的扩展集（from _Microsoft_）
 * **Flow**：比 TS 功能少一点的类型检查扩展集，现已式微（from _Facebook_）
 * 框架语言（基于 ES、TS 并含有扩展语法的 DSL/语法糖）
@@ -56,24 +62,34 @@ JS 基础纲要速写笔记
 ES6 相比 ES5
 
 - 多了一些语法
-  - 或需要被编译器转义成 ES5 以增加旧环境兼容性
+  - 或需要被预编译成 ES5 以增加旧环境兼容性
 - 多了一些 API
   - 或需要 Polyfill
 - 多了一些数据结构和类型
-  - 或可以被编译器转义
+  - 或可以被预转译
   - 部分特性无法被完美模拟（如 Proxy）
 
 ### 模块化
 
-- 目前常用
+模块化能够以引用的方式拆分代码，  
+使大型项目开发变得容易。
+
+模块化是主流编程语言的标配。
+
+- 相关词汇
+  - **module**：模块，通常指一个业务功能，或指单个文件
+  - **package**：包，通常指经过发布的可安装的 module，由一组代码文件构成
+  - **package.json**：一个声明文件，记录包的依赖、元信息（标题、版本、作者等）等
+
+* 目前常用
   - **esm**：ES Module（from _ES6_）
   - **cjs**：CommonJS（from _node_）
-- 其他标准（现已式微）
+* 其他标准（现已式微）
   - **amd**：Asynchronous Module Definition（from _RequireJS_）
   - **cmd**：（from _Sea.js_）
   - **global**：暴露到全局变量（window）上
   - **umd**：Universal Module Definition（混合封装方案，自动判断 amd/cjs/window）
-- 生态系统
+* 生态系统
   - [npm - Node Package Manager](https://www.npmjs.com/)
   - [package.json fields explained](https://github.com/stereobooster/package.json)
 
@@ -107,10 +123,11 @@ function、var、let、const、class
 
 Statement
 
-- 普通语句
+- 普通顺序语句
+  - 声明、赋值、运算、调用 等
 - 控制流
   - Block（花括号代码块）、if、break、try catch 等
-- 迭代
+- 迭代（循环）
   - for、while 等
 
 ### 表达式 和 运算符
@@ -118,7 +135,7 @@ Statement
 Expressions and operators
 
 - Primary expressions（主要表达式、保留字、字面量）
-- LHS（Left hand side，等号左边的部分）
+- LHS（Left hand side，指等号左边部分的代码）
 - 运算符
   - 一元操作符
   - 数学运算
@@ -139,7 +156,7 @@ Expressions and operators
 - 执行相关知识
   - AST
   - 执行流程：执行栈、hoisting、作用域、闭包
-  - 不同的作用域的概念：全局、函数级、块级、词法、静态、动态
+  - 不同作用域的概念：全局、函数级、块级、词法、静态、动态
   - EventLoop
   - 闭包、垃圾回收
   - （查找相关）
@@ -188,20 +205,28 @@ Expressions and operators
   - === 不进行类型转换
   - object 只有同一指针才相等
 - String、Number
-  - _Too Many_
+  - _Too Many_，总之动态类型的特性根据场景可以说方便，也可以说不方便
 
 ### 垃圾回收
 
 [内存管理](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management)  
 [JavaScript 内存泄漏教程](http://www.ruanyifeng.com/blog/2017/04/memory-leak.html)
 
+该特性的目的在于自动清除未使用的变量以释放内存，  
+使开发者不需要以代码形式显式命令。
+
+在前期能够提高开发效率，  
+但要注意内存泄露（无法自动回收）会造成问题。
+
+有两种方式能够实现垃圾回收：
+
 - 引用计数
 - 标记清除
 
-该特性的目的在于自动清除未使用的变量，不需要代码显式释放。
+`引用计数法`是以前的算法，但是无法释放循环引用  
+`标记清除法`解决了这个问题
 
-以图或树形结构的搜索来理解：  
-就能很好理解为什么`标记清除法`能够解决`引用计数法`存在的问题了
+（以图或树形结构的搜索来理解，就能很好理解为什么。）
 
 ## JS 执行过程
 
@@ -221,47 +246,47 @@ Expressions and operators
 [Tail call optimization in ECMAScript 6](https://2ality.com/2015/06/tail-call-optimization.html)  
 [What is "this"?](https://howtonode.org/what-is-this)
 
-[ECMAScript® 2018Language Specification](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf)  
+[ECMAScript Language Specification](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf)  
 [ECMAScript compatibility table](https://kangax.github.io/compat-table/es6/)
 
 ### 相关词汇
 
 - **EC**：Execution Context，执行上下文
 - **ECS**：Execution Context Stack，执行环境栈
-- **Hoisting**：（声明）提升
+- **Hoisting**：（声明）提升（为了预分配内存空间）
 - **Scope**：作用域（概念）（可能是 Global、Closure、Block 等）
-- **Scope** Chain：作用域链，存在于 EC 中，在浏览器内或表现为 `[[Scopes]]：Array`
-- **Closure**：闭包
+- **Scope Chain**：作用域链，存在于 EC 中，在浏览器内或表现为 `[[Scopes]]：Array`
+- **Closure**：闭包，视为持久化的作用域
 
 * **VO**：Variable Object，变量对象，每个 EC 的一部分，存放变量的地方
-* **AO**：Activation Object，活动对象，可视为函数作用域中的 VO （多了 arguments）
+* **AO**：Activation Object，活动对象，可视为函数级作用域中的 VO （多了 arguments）
+* **GO**：Global Object，特指 Global 层的 VO
 
-- **stack frame**：栈帧，单个 EC
-- **stack overflow**：执行栈溢出
+- **stack frame**：栈帧，指单个 EC
+- **stack overflow**：执行栈溢出（函数嵌套调用深度过大达到引擎设定的上限）
 - **segfault**：Segmentation Fault，段错误（访问非法内存地址）
-- **TCO**：Tail Call Optimization，尾调用优化
-- **TDZ**：Temporal Dead Zone，暂时性死区（let、const 的特性）
-- **JIT**：Just in time，及时化
-- **AOT**：Ahead of Time，预处理
+- **TCO**：Tail Call Optimization，尾调用优化（如果函数最后一句是另一个调用，则直接替换而不是入栈）
+- **TDZ**：Temporal Dead Zone，暂时性死区（let、const 某特性的民间称呼）
+- **JIT**：Just in time，及时化（运行时逐句编译）
+- **AOT**：Ahead of Time，预处理（全部编译完再运行）
 
-* **IIFE**：Immediately Invoked Function Expression，立即执行函数表达式
+* **IIFE**：Immediately Invoked Function Expression，立即执行函数表达式，如 `(()=>{})()`
 
 ### 作用域
 
-- **static scope**：静态作用域（根据代码结构就可以分析，不会动态改变）
-- **lexical scope**：词法作用域（aka 静态作用域）
-- **dynamic scope**：动态作用域（ECMAScript 中不存在）
+- **lexical scope**：词法作用域（根据代码结构就可以分析，不会动态改变）
+- **static scope**：静态作用域（aka 词法作用域）
+- **dynamic scope**：动态作用域（ECMAScript 包括大多数编程语言中都不采用）
 
 * 作用域
   - **Global Scope**：全局作用域
   - **Function Scope**：函数作用域
   - **Block Scope**：块级作用域
     - with（严格模式禁止；有变量指向歧义，避免使用，可以用解构代替）
-    - try/catch
-    - let
-    - const
+    - try catch
+    - let、const
 
-由于函数有一层自己的作用域，可以利用 IIFE 来对代码过程进行包装，防止变量污染。
+由于函数有一层自己的作用域，可以利用 IIFE 来对代码过程进行局部封装，以便更好地管理变量。
 
 ### EC 概念结构
 
@@ -280,10 +305,6 @@ Expressions and operators
 }
 ```
 
-Global 的 VO 是引擎提供的 global/window 对象，  
-这也就是为什么当位于**顶层**时（`this == global/window` 时），  
-变量会挂载到 Global 对象上（ES6 新特性除外）。
-
 ### Program 生命周期
 
 - 创建 ECS
@@ -295,24 +316,6 @@ Global 的 VO 是引擎提供的 global/window 对象，
   - **Eval Code**：根据浏览器不同（另有性能和安全问题，避免使用）
     - new Function()
 
-#### HTML 中 script 标签的情况
-
-无论是 src 引用，还是直接位于标签内部的 js 代码，  
-每个 script 的顶层代码都**位于** Global 层（ECS 栈底）。
-
-因为在页面打开时，显然 window（Global VO）总是存在，  
-所以每组代码都共用同一个 VO（window），`this == window`。
-
-但不同的 script 相当于不同的 Program 任务，  
-所以其中一个 script 报错中断不会影响后续 script 执行。
-
-#### Node 的情况
-
-- 通过 `node` 命令直接启动环境后，直接**位于** Global 层，`this == global`。
-- 通过 `node filename.js` 命令执行代码，以模块化的形式读取和执行文件，
-  - node 通过一个内部实现的包装函数，建立一个闭包环境，文件代码**并不位于** Global 层
-  - `this == module.exports`
-
 ### EC 生命周期
 
 - **Creation**（准备环境，创建并入栈一个新 EC）
@@ -321,26 +324,38 @@ Global 的 VO 是引擎提供的 global/window 对象，
     - 或创建 arguments 对象
     - **Hoisting**（提升、声明解析）
       - 映射 arguments 的形参，可以视为 var 声明，在提升阶段时一同加入分析
-        - 如果有函数体代码有同名 function，则 function 优先，丢弃了传入的实参
-      - function 优先提升 （`FunctionDeclaration`）
-        - 同名 function 保留的是最后一个 function
-        - （function 实际上是 Object，函数名就是 `Identifier`（类似 var），但也提升函数体）
-        - 函数表达式（`var fn = ()=>{}`）不是声明，不会提升（`FunctionExpression`）
-      - 变量声明 var、let、const （`VariableDeclaration`）
-        - 同名变量，var 会忽略（比如已经有了 function 或 var，此时有另一个 var）
-        - 但 ES6 新语法会报错（比如 let）（`SyntaxError: Identifier has already been defined`）
-          - ES6 在声明之前调用会有死区问题（虽然有提升但状态是未初始化）（`ReferenceError: Cannot access before initialization`）
+        - 如果有函数体代码有同名 function，则 function 总是优先，丢弃了传入的实参
+      - 不同类型的声明（根据代码分类）
+        - function 声明 （`FunctionDeclaration`）
+        - 变量声明 var、let、const （`VariableDeclaration`）
+        - class 声明 （`ClassDeclaration`）
+      - 细节（根据特性分类）
+        - function 总是优先提升
+          - 函数表达式 （`FunctionExpression`）  
+            如 `var fn = function () {}`）中的函数是一个表达式语句，不是声明，  
+            例子中只会提升变量 `fn` 的声明，不会提升函数
+          - function 实际上是对象，函数名就是 `Identifier`（类似 var），但也提升函数体
+        - var 只提升声明，不提升赋值，初始化为 `undefined`
+        - let、const、class 只提升声明，不提升赋值，内部标记初始化为 "未初始化"
+          - 在执行到声明代码所在行之前就调用，就会产生报错（因为未初始化）  
+            （`ReferenceError: Cannot access before initialization`）  
+            这个现象称之为“暂时性死区”
+        - 同名声明（`Identifier`）
+          - function、var （视为）总是能覆盖
+            - function 以最后一个为准（带函数体）
+            - var 由于只提升声明，所以覆盖不覆盖无所谓（视为忽略）
+          - 但同名问题一旦涉及 ES6 新语法（let、const、class），则会报错  
+            （`SyntaxError: Identifier has already been defined`）
       - 幅度
         - function 块级 + 函数级
+          - 严格模式只提升到块级作用域
+          - 非严格模式，除了块级提升，也会同时提升到函数作用域（旧标准特性）
         - var 函数级
         - let、const、class 块级
-      - 不加 var 会成为隐式全局变量（global/window）
+      - 不加 var 的且上下文没有该变量赋值操作会（隐式地）声明成全局变量（global/window）
         - 严格模式报错 `ReferenceError`
-      - 顶层声明的变量
-        - var、function 会成为全局属性（global/window）（是 EC.VO 的特性，不区分严格模式）
-        - 但 ES6 新语法不会成为全局属性
   - 创建当前 EC 的**作用域链**
-    - `当前的作用域链 == [父级的 VO/AO, ...父级的作用域链]`
+    - 作用域链根据词法作用域解析得到，和 callback stack 是两回事
   - 创建当前 EC 的 **this**: `ObjectThis || global || window || undefined`
 
 - **Execution**（执行代码）
@@ -352,52 +367,62 @@ Global 的 VO 是引擎提供的 global/window 对象，
       - 查找失败则 `ReferenceError` 或 `TypeError` 等
     - 然后以相似的过程解析**右侧**（如 赋值的值 或 函数参数）
     - 然后基于解析完的左右侧，执行相应的**操作**（如 执行赋值操作 或 进入函数调用流程）
-  - 查找变量先直接查找 VO/AO，如果找不到则基于当前作用域链依次向上查找，依然找不到则失败报错。
+  - 查找变量先直接查找当前 VO/AO，如果找不到则基于当前作用域链依次向上查找，依然找不到则失败报错。
 
 - **Finished**（执行结束，出栈 EC）
-  - 显式 `ReturnStatement` 或没有 （视为 `return undefined`）
+  - 显式的 `ReturnStatement` 或隐式的（视为 `return undefined`）
+    - return 值将用于上一层相应位置（调用处）
   - 卸载当前上下文
-  - 卸载时可能会产生闭包
+    - 卸载时可能会产生闭包
+  - 继续执行上一层后续代码
 
 ### 一些细节
 
-- **arguments**：没有高级特性（严格、默认值、剩余运算符），且有非空实参时，会跟踪形参数值（双向同步），否则不会
-  - 默认参数只对 undefined 实参有效
-- **块级作用域`**：块级作用域的函数提升过程，只提升到块级作用域（严格模式），同时也提升到函数作用域（非严格模式）
+- **arguments**：
+  - 不使用高级特性（严格、默认值、剩余运算符），且有非空实参时，会跟踪形参数值（双向同步），否则不会
+  - 默认参数只对 undefined 实参有效，其他 falsy 值不会判断。
+  - 箭头函数的 arguments 是绑定词法作用域的父级的 arguments
 - **length**：
   - **someArray.length**：`数组长度`，修改直接影响数组表现
   - **arguments.length**：`实参个数`，修改后影响类数组操作时的表现
-  - **someFn.length**：`必须形参个数（不包含默认和剩余参数）`，修改无效果
+  - **someFn.length**：`必要形参个数（不包含默认和剩余参数）`，修改无效果
   - **window.length**：`iframe 个数`，修改后不再表示 iframe 计数
   - **global.length**：`undefined`，未定义变量
-- **箭头函数**：没有自己的 `this` 和 `arguments`
-  - 所谓的 this 是词法作用域中的 this（相当于创建时 bind 父级环境的值）
-  - 所以也不能进行 bind 和 call
-  - 因为也是函数，所以也支持闭包的特性
-- **this**
+- **箭头函数**：
+  - 没有自己的 `this` 和 `arguments`
+    - 所谓的 this 是词法作用域中的 this（相当于创建时自动 bind 好父级环境中的 this）
+    - arguments 同理
+    - 所以也不能进行 bind 和 call
+  - 但因为依然还是函数，所以支持闭包的特性
+- **this**：
   - **Global Code** 直接读取：`this == window`（浏览器）
-    - **node module**的情况：`this == module.exports`（初始是 `{}`，且不会像 arguments 一样进行跟踪）
+    - **module**的情况：`this == module.exports`（初始是 `{}`，且不会像 arguments 一样进行跟踪）
   - **function 或 Eval** 会创建新的 this（新的 EC），裸块（只有花括号）不会
     - **方法调用**：`this == 宿主 Object`
     - **函数调用**：`this == global/window`
-      - **严格模式**：`this == undefined`
+      - **严格模式**：`this == undefined`，因为严格来讲没有宿主
     - **箭头函数**：没有自己的 this，`this == 绑定词法作用域的父级的 this`
 - **严格模式**
-  - _Too Many_
+  - 作用域（`"use strict";` 的影响范围）是函数级的
+  - _Too Many_，总是严格模式的目的大致就是对语句执行效果的"严格"
 
 ### 闭包
 
 闭包可以理解为函数所需的 _作用域链_ 的 **快照**。
 
-当函数执行完毕，若 EC 出栈销毁后，变量就会无法访问。
+（由于 JS 中的函数可以作为变量传递）  
+当函数注册后，若所在位置发生改变，  
+ECS 就会发生改变，函数的执行效果就会变得不可控。
+（这将违反静态作用域的特性）
 
-但可能该函数依然需要访问该 EC 中的变量，  
-所以引擎将当前 _作用域链_ 转为**闭包**，标记到函数上，  
-以便函数能够正常工作。  
-（或按需保留变量以节省内存）  
-（排除 this、arguments，因为他们是可变的）
+为了解决这个问题，引擎会对函数体中的变量进行词法解析，  
+将当前 _作用域链_ （保留所需的变量）转为**闭包**，（隐式地）标记到函数上，  
+以便函数能够正常工作。
 
-当函数调用时，使用闭包作为当前的作用域链。
+传统 function 将排除 this、arguments，因为根据执行流程，这些值在每次函数调用时都重新生成。  
+而箭头函数将会绑定这两个值（根据箭头函数的的特性，它们本来就是绑定的）
+
+当函数调用时，使用闭包作为当前的作用域链（用于变量查找）。
 
 JS 的闭包特性是引擎的内部实现，无法通过 JS 代码显式操控。
 
@@ -426,7 +451,7 @@ fn {
 #### 对于性能的影响
 
 - **时间**
-  - 减少执行时间（变量代码解析）
+  - 减少执行时间（变量值的解析）
     闭包中的变量由于已经被解析完成，驻于内存（直到函数销毁垃圾回收）  
     所以相同逻辑下能够提高执行速度
   - 增加变量查找时间
@@ -435,18 +460,18 @@ fn {
 - **空间**
   - 占用内存空间（直到所涉及的函数本体被回收）
 
-显然可以利用闭包进行空间换时间
+显然可以利用闭包进行空间换时间的操作
 
-### 例子
+### 综合例子
 
 JS 并不支持动态作用域  
-生成闭包时需要解析（所有）变量
+生成闭包时需要解析和固定当前所有（所需）变量
 
 调试以下代码或许可以加深理解：  
 词法作用域、AO、作用域链、闭包、this 之间的关系。
 
 以 chrome 进行试验，  
-变量 `b1、b2` 并不会携带进闭包中（因为词法解析时不存在）。
+变量 `b1、b2` 并不会携带进闭包中（因为在那时的 ECS 中本来也不存在）。
 
 从任意处调用，观察到调用时的作用域依然是相同的（闭包）结构，  
 打开注释行将会得到 `ReferenceError`。
@@ -477,6 +502,53 @@ obj.AA('obj call');
 })();
 ```
 
+## 代码文件的上下文
+
+了解了一些 JS 标准的原理和特性，  
+但实际代码文件，在不同运行环境下，会拥有略有不同的执行环境。
+
+### HTML 中 script 标签的情况
+
+无论是 src 引用，还是直接位于标签内部的 js 代码，  
+每个 script 的顶层代码都**位于** Global 层（ECS 栈底）。
+
+在页面打开后，显然 window（GO）总是存在（直到页面关闭），  
+所以每组代码都共用同一个 window，`this == window`。
+
+但不同的 script 相当于不同的 Program 任务，  
+都会创建一套独立的完整的 Program 生命周期（当然其中的 GO 还是同一个），  
+所以其中一个 script 报错中断也不会影响后续 script 执行。
+
+### Node 的情况
+
+- 通过 `node` 命令直接启动环境后，直接**位于** Global 层，`this == global`。
+
+* 通过 `node filename.js` 命令执行代码，以模块化的形式读取和执行文件，
+  - node 将使用内建的包装函数加载文件代码，这时文件中的顶层代码**并不位于** Global 层
+  - `this == module.exports`
+
+### Webpack 打包的情况
+
+虽然一般用途也是在浏览器运行，  
+但是类似 node 中的模块化，webpack 也有一个（JS 实现的）加载器来加载代码。
+
+每个 module 的顶层代码**并不位于** Global 层。
+同样的 `this == module.exports`
+
+但是打包会默认会加上 `"use strict";`，
+所以默认 `this == undefined`
+
+### 顶层声明挂载到 Global
+
+Global 的 VO 是引擎提供的 global/window 对象，  
+当位于**顶层**时，  
+ES5 旧标准的 var、function 声明**会**成为 Global 对象的属性。
+
+而 ES6 新标准中，对新加入的关键字 let、const、class 进行了调整，  
+如果是这些声明在**顶层**，会创建一层新的 EC 层来存放变量，  
+避免直接挂载到 Global 上。  
+（Chrome 中可以直接观察到该 EC 类名为 `Script` ）
+
 ## 编译
 
 - 编译原理：
@@ -499,7 +571,7 @@ obj.AA('obj call');
   - TypeScript
 - **Interpreter**：解释器，包含 Parser，解释型语言可以不需要完整的编译动作，读一段翻译一段执行一段
 
-* **Runtime**：运行时，包含 Compiler/Interpreter、一些运行库、一些管理代码
+* **Runtime**：运行时，指一个程序，包含 Compiler/Interpreter、一些运行库、一些管理代码
   - node
   - babel-node
   - ts-node
@@ -538,6 +610,7 @@ AST：Abstract Syntax Tree 抽象语法树
 | ------------------- | -------- |
 | VariableDeclaration | 变量声明 |
 | FunctionDeclaration | 函数声明 |
+| ClassDeclaration    | 类声明   |
 
 | 函数调用       |            |
 | -------------- | ---------- |
@@ -652,15 +725,20 @@ CallExpression, NewExpression {
   arguments: [ ANY ]
 }
 
-ClassBody {
-  body: [
-    MethodDefinition {
-      key: Identifier {}
-      kind: 'constructor' || 'method' || 'get' || 'set'
-      value: FunctionExpression {}
-    }
-  ]
+ClassDeclaration {
+  superClass: Identifier {} || null,
+  body: ClassBody {
+    body: [
+      MethodDefinition {
+        key: Identifier {}
+        kind: 'constructor' || 'method' || 'get' || 'set'
+        value: FunctionExpression {}
+      }
+    ]
+  }
 }
+
+
 
 SequenceExpression {
   expressions: [ ANY ]
