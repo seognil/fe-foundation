@@ -1,15 +1,25 @@
-<center>
+<p align="center">
 
-![the-banner](./docs/.vuepress/public/geneva-switzerland-narrow.jpg)
+  ![the-banner](./docs/.vuepress/public/geneva-switzerland-narrow.jpg)
 
-# 前端开发技术笔记
+</p>
 
-[在线地址](https://fe.rualc.com/)
+<h1 align="center">
+  前端开发技术笔记
+</h1>
 
-记录一些我在前端开发过程中梳理的知识
+<p align="center">
+  <a href="https://fe.rualc.com/">在线地址</a>
+</p>
 
-若有偏差 [敬请斧正](https://github.com/seognil/fe-foundation/issues/new)
+<p align="center">
+  记录一些我在前端开发过程中梳理的知识
+</p>
 
-[MIT](LICENSE) - 2019 - Seognil LC
+<p align="center">
+  若有偏差 <a href="https://github.com/seognil/fe-foundation/issues/new">敬请斧正</a>
+</p>
 
-</center>
+<p align="center">
+  <a href="LICENSE">MIT</a> - 2019 - Seognil LC
+</p>
