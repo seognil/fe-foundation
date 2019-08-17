@@ -1,6 +1,6 @@
-# 开发环境
+# 我的开发环境
 
-我的开发环境（主要是 Mac + 前端）
+（粗糙地拉取一些列表，主要是 Mac + 前端的开发环境）
 
 [基本环境自动配置脚本（unfinished）](https://github.com/seognil/dotfiles)
 

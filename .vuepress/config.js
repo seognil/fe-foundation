@@ -31,10 +31,11 @@ const config = {
   dest: './dist',
   head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square.png' }]],
   themeConfig: {
+    lastUpdated: '上次更新',
     repo: 'seognil/fe-foundation',
     // editLinks: true,
     nav: [
-      { text: '目录', link: '/docs/js/js-foundation.md' },
+      { text: '目录', link: '/docs/intro/fedev-the-guild.md' },
       { text: '资料', link: '/docs/refs/note.md' },
       { text: 'Poly', link: 'https://github.com/seognil/learn-by-making-your-own-polyfill' },
     ],

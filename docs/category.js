@@ -1,12 +1,13 @@
 module.exports = {
+  '起步': [
+    //
+    './intro/fedev-the-guild.md',
+    './intro/workstation.md',
+  ],
   'JS 概览': [
     //
     './js/js-foundation.md',
     './js/js-execution.md',
-  ],
-  '工具/环境': [
-    //
-    './tools/workstation.md',
   ],
   'package 系统': [
     //
