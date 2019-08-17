@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const cateArrange = require('../docs/category');
+const cateArrange = require('../category');
 
 // * ---------------------------------------------------------------- conifg
 
@@ -35,14 +35,14 @@ const config = {
     repo: 'seognil/fe-foundation',
     // editLinks: true,
     nav: [
-      { text: '目录', link: '/docs/intro/fedev-the-guild.md' },
-      { text: '资料', link: '/docs/refs/note.md' },
+      { text: '目录', link: '/intro/fedev-the-guild.md' },
+      { text: '资料', link: '/refs/note.md' },
       { text: 'Poly', link: 'https://github.com/seognil/learn-by-making-your-own-polyfill' },
     ],
     sidebarDepth: 3,
     sidebar: {
-      '/docs/refs': false,
-      '/docs/': articleSidebar,
+      '/refs': false,
+      '/': articleSidebar,
     },
   },
 };
