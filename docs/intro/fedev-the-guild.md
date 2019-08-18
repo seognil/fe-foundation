@@ -7,19 +7,19 @@
 近年来，前端已从最早的玩具发展为成体系的系统性的工程开发，  
 逐步赶上了传统软件开发和编程领域的步伐。
 
-现在做前端，在真正开始写第一行业务代码之前，需要很多前置的技术储备。
+现在做前端开发，在真正开始写第一行业务代码之前，需要很多前置的技术储备。
 
 前端本身的技术教程千千万，  
 ~~（比如之前在掘金 EventLoop 每个月看到八百遍）~~  
 但是很少有文章专门介绍：  
-一个现代化的前端工程应该从哪里开始起步和入门，  
+一个现代化的前端工程应该从哪里开始入门和起步，  
 在前端体系之外、之前，应该要做，或最好要做什么事情。  
 在前端体系之后，还可以做哪些事情，向何处发展。
 
 本文的目标是在有限的篇幅中，对前端开发的职业规划做一个向导，  
-一个拿到一台全新的 Mac 的新手，如何从零开始前端开发的工作。
+一个只有一台全新的 Mac 的新手，如何从零学习并从事前端开发的工作。
 
-所基于的开发环境是 MacOS  
+所基于的开发环境是 MacOS。  
 （Windows 和 Linux 有部分是相同的，另一部分是有替代方案的）
 
 当然，有很多更全面的资料，  
@@ -32,11 +32,15 @@
 
 ## 前置知识 和 外部知识
 
+::: tip
+这一章用于了解一些相关概念（不用过于深入）
+:::
+
 最好要逐渐熟悉 Unix-like 系统中的命令行的概念和常用命令，  
 它是现代化前端开发流程中的一个重要部分，也是编程领域中的通用技能。
 
 熟悉 `brew、node、git` 等工具的安装和使用。  
-熟悉 `Markdown` 标记语言，html 的语法糖语言，用来写笔记的。
+熟悉 `Markdown` 标记语言，html 的语法糖语言，可以用来做笔记。
 
 可选的还有：  
 `vim` 的简单操作，  
@@ -45,7 +49,7 @@
 持续练习英语 —— 编程世界的通用语言。
 
 以上这些内容可能需要花费好多天入门（以及更多的时间精通），  
-但，工欲善其事必先利其器，这是值得的。
+但是，工欲善其事必先利其器，这是值得的。
 
 ### 名词解释
 
@@ -82,6 +86,8 @@
 - **DNS**：Domain Name System，域名系统，将域名查找成 IP
 - **port**：端口，网络通讯中所需的标识，`127.0.0.1:80` 中的 `80`，
 - **proxy**：代理，通过代理访问网络地址代替直接访问
+- **ping**：命令行中检查地址可访问性的工具，`ping baidu.com`
+- **curl**：Client URL 缩写，命令行中的地址访问工具，`curl baidu.com`
 
 ### 关于 Mac
 
@@ -89,7 +95,7 @@
 （当然，Windows 上的 Termianl、WSL 也在逐步发展，但目前还不够成熟）
 
 同时相比 Linux，Mac 相对得不那么需要折腾，软件和社区生态对新手比较友好。  
-以及在 Mac 上装虚拟机或 Docker 即可方便地拥有 Linux 环境，而反过来比较麻烦。
+以及在 Mac 上装虚拟机或 Docker 即可方便地拥有 Linux 环境，反之麻烦很多。
 
 Mac 本身的特色和交互上的差异，诸如：
 
@@ -135,8 +141,8 @@ Mac 本身的特色和交互上的差异，诸如：
 都需要写到 shell 的启动配置文件中（`~/.bashrc`、`~/.zshrc` 等）
 
 最好能够掌握一些基本的 shell script 语法。  
-（Windows 上的 powershell 就算了，别学了…）  
-需要注意，不同的 shell 语法有一些细微的差别。
+（Windows 上的 powershell 就算了，别学…）  
+需要注意，不同的 shell 实现，语法有一些细微的差别。
 
 ### 命令行中退出
 
@@ -148,9 +154,9 @@ VI 或 VIM 是一个 Linux 上普及的命令行编辑器（区别于图形界�
 
 它的退出命令是通过键入 `:q`
 
-顺便一提，其他工具的中断退出可能是：  
+顺便一提，其他工具的中断退出方式可能是：  
 `ctrl + c`、`ctrl + d`、  
-`exit`、`quit`、`exit()`
+`q`、`exit`、`quit`、`exit()`
 
 ### 从命令行安装软件
 
@@ -162,15 +168,15 @@ Mac 生态有中有一个名为 `brew` 的命令行软件（需要安装）
 它们都是通过命令行管理（安装卸载等）各自生态中的软件、工具、包的工具，  
 不需要再通过浏览器手动点击下载了。
 
-（brew 的介绍参考后面单独一节）
+（brew 的介绍参考后面单独一小节）
 
-#### 但值得注意的是
+#### 需要注意的一点
 
 这些工具提供的下载安装过程，实际上是从各自维护的软件仓库中检索相应的包，  
 如果仓库中没有某软件，就无法安装了。
 
 这时候就需要注册其他仓库地址，进行下载安装。  
-或直接通过包自己提供的几句命令（一般会借助系统自带的 `curl` 程序）
+或直接通过包自己提供的几行命令完成（一般会借助系统自带的 `curl` 程序）
 
 如 ubuntu 中安装 node，apt 源并没有最新的 node 版本，  
 需要先执行一句调整仓库的命令，如安装 _node version 10_：  
@@ -180,7 +186,7 @@ Mac 生态有中有一个名为 `brew` 的命令行软件（需要安装）
 
 （这个步骤在 Node 官网上有说明）
 
-#### 需要注意的另一点是
+#### 需要注意的另一点
 
 某些工具安装完成之后，还需要手动进行一些额外的步骤，  
 （因为安装器不一定完全知道你的环境是怎样的，或不知道你想如何配置，所以需要手动完成）
@@ -204,7 +210,11 @@ export PATH="$PATH:/usr/local/opt/node@10/bin"
 alias gnpm="npm -g list --depth 0"
 ```
 
-## 开始配置
+## 系统环境准备
+
+::: tip
+这一章是准备工作的准备工作，需要对工具的使用加以练习
+:::
 
 优先做这些事，可以使后续做别的事时更高效。
 
@@ -221,7 +231,8 @@ alias gnpm="npm -g list --depth 0"
 给 工具 配置 proxy
 
 不同工具的配置方式不同，可能有图形界面面板，  
-`.bashrc`、`.zshrc` 配置例如：
+配置命令例如：  
+（可以固化到 `.bashrc`、`.zshrc` 中）
 
 ```shell
 export http_proxy='http://127.0.0.1:1080'
@@ -293,9 +304,16 @@ brew cask upgrade
 - `~/.zshrc`
   - 装好自带的，前文提到的配置文件
 
-## 体系
+## 开发环境体系
+
+::: tip
+这一章是开发环境的准备工作，需要对工具的使用加以练习
+:::
 
 ### Node
+
+[Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)  
+[npm-package.json | npm Documentation](https://docs.npmjs.com/files/package.json)
 
 简单开发只需安装某一个版本的 `node`  
 多项目开发环境可以利用 `nvm` 进行切换
@@ -423,9 +441,9 @@ git push <origin> <master>
 GitHub 是一个免费的 git 远端仓库，  
 有很多著名的项目和工具都是托管在 GitHub 上的。
 
-类似的远端仓库还有 gitlab、bitbucket、coding 等
+类似的远端仓库还有 gitlab、bitbucket、coding 等…
 
-但 GitHub 也是一个开源项目社区
+但 GitHub 也是一个社区，除 git 基本功能外还提供很多服务。
 
 ### 有关命令行的其他工具
 
@@ -438,6 +456,9 @@ GitHub 是一个免费的 git 远端仓库，
 - cloc
   - 代码行数统计
   - `npm i -g cloc`
+- http-server
+  - 用本地文件夹快速启动一个本地服务器
+  - `npm i -g http-server`
 - go2shell
   - 给 finder 的工具栏加一个打开到终端按钮
   - `brew cask install go2shell`
@@ -447,7 +468,7 @@ GitHub 是一个免费的 git 远端仓库，
 
 ### 软件（GUI）
 
-我喜欢装一些资源监控软件，能让我更好的了解我的电脑和程序运作情况。
+我喜欢装一些资源监控软件，能让我更好地了解电脑和程序的运作情况。
 
 - Parallels Desktop，虚拟机软件
 - BetterTouchTool，改系统快捷键的软件
@@ -478,10 +499,12 @@ Chrome，对于前端来说调试代码非常方便的浏览器
 
 ### 编辑器
 
-VSCode，微软家的开源的代码编辑器  
+[Visual Studio Code Intro & Setup](https://www.youtube.com/watch?v=fnPhJHN0jTE)
+
+VSCode，微软家的开源代码编辑器  
 `brew cask install visual-studio-code`
 
-（其他主流编辑器还有 WebStorm、Sublime Text 等）
+（其他主流的 GUI 编辑器还有 WebStorm、Sublime Text 等）
 
 - 了解和熟悉这些功能
   - 插件市场
@@ -489,6 +512,7 @@ VSCode，微软家的开源的代码编辑器
   - console
   - snippets
   - settings
+  - 代码格式化
   - 快捷键系统
     - `cmd + p`，`cmd + shift + p`
     - `cmd + f`，`cmd + shift + f`
@@ -497,7 +521,7 @@ VSCode，微软家的开源的代码编辑器
 
 ### 系统设置
 
-- 解决有的时候 VSCode 无效高占用的问题  
+- 解决有时候 VSCode 持续高占用的问题  
   `alias kk="kill $(ps aux | grep -e Code\ Helper | awk '{if($3>60)print\$2}')"`
 - timemachine 提高速度（重启后失效）  
   `sudo sysctl debug.lowpri_throttle_enabled=0`
@@ -511,23 +535,24 @@ VSCode，微软家的开源的代码编辑器
 
 ## 学习计划
 
+::: tip
+这一章包含我个人总结的结构性资料，以供参考，作为前端开发的正式入门
+:::
+
 ### 路线图
 
-[JavaScript: Understanding the Weird Parts - The First 3.5 Hours](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts)  
-[JS Foundation]('../js/js-foundation')  
 [2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)  
 [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)
 
-严格来讲，并不能说是路线图，只是学习和工作的步骤和概念的大致分类，  
-根据学习曲线的合理性，有一定先后顺序，  
-或也可以穿插进行。
+严格来讲，下表并不能称之为路线图，只是对学习和工作内容的大致分类，  
+根据学习曲线的合理性，有一定先后顺序，或也可以穿插进行。
 
 - 准备工作
-  - 上文中的准备工作
+  - 上文中所有的准备工作
 - JS 技术栈
   - Step 1 （入门）
     - JavaScript 语法
-    - 框架 + 脚手架实现简单业务（如 vue-cli）
+    - 利用框架/脚手架（如 [vue-cli](https://cli.vuejs.org/zh/)）实现完整的简单业务（如 [TodoMVC](http://todomvc.com/)）
   - Step 2 （初中级）
     - 浏览器和 Node 中的 JS
     - 试用各种库、了解生态
@@ -571,23 +596,31 @@ VSCode，微软家的开源的代码编辑器
   - 物联网
   - 计算机视觉
 
-### 资源
+### 资源/教材
 
 - 站点
   - GitHub
   - Google
   - YouTube
-  - Medium
+    - [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
+    - [The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw)
+    - [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+    - [DesignCourse](https://www.youtube.com/user/DesignCourse)
+  - [Programming - Medium](https://medium.com/topic/programming)
   - [Stack Overflow](https://stackoverflow.com/)
   - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
   - [廖雪峰的官方网站](https://www.liaoxuefeng.com/)
   - [掘金](https://juejin.im/)
 - JS 技术栈
   - 入门
-    - [这篇文章](http://fe.rualc.com)
+    - [前端开发入行指南（本文）](https://fe.rualc.com/intro/fedev-the-guild.html)
+    - [JavaScript: Understanding the Weird Parts - The First 3.5 Hours](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts)
+    - [新手向：Vue 2.0 的建议学习顺序](https://zhuanlan.zhihu.com/p/23134551)
+    - [Vue JS Crash Course - 2019](https://www.youtube.com/watch?v=Wy9q22isx3U)
+    - [TodoMVC](http://todomvc.com/)
     - [ECMAScript 6 入门](https://es6.ruanyifeng.com/)
     - [Vue.js 官方文档](https://cn.vuejs.org/index.html)
-    - [新手向：Vue 2.0 的建议学习顺序](https://zhuanlan.zhihu.com/p/23134551)
+    - [JS foundation](https://fe.rualc.com/js/js-foundation.html)
   - 概论
     - [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)
     - [Evan You on Vue.js: Seeking the Balance in Framework Design | JSConf.Asia 2019](https://www.youtube.com/watch?v=ANtSWq-zI0s)
@@ -649,12 +682,16 @@ VSCode，微软家的开源的代码编辑器
 
 ## 方法论
 
-该章节仅仅代表一些我个人认可的方法论，  
+::: tip
+这一章包含我个人总结的一些方法论，以供参考
+:::
+
 当然，每个人也可以或应该有适合自己的理解和职业目标。
 
 ### 持续前进
 
-[【C 菌】全是干货！GPA4.0 研究生 UP 主教你学习诀窍！](https://www.bilibili.com/video/av63716273/)
+[【C 菌】全是干货！GPA4.0 研究生 UP 主教你学习诀窍！](https://www.bilibili.com/video/av63716273/)  
+[永远投资你的教育](https://wanqu.co/a/4092/%E6%B0%B8%E8%BF%9C%E6%8A%95%E8%B5%84%E4%BD%A0%E7%9A%84%E6%95%99%E8%82%B2/)
 
 > 学而时习之 温故而知新 -- 孔子
 
@@ -665,35 +702,44 @@ VSCode，微软家的开源的代码编辑器
 行业中有一些部分，可能并不是极难的研发性质的工作，  
 仅仅只是学习前人的经验，并仿照着实现而已。
 
-根据自己当前的水平调整适合的节奏。  
+根据自己当前的水平适当调整节奏。  
 不要经历“习得性无助” —— “我总是不行，太难了，做不了。”  
 反之，不断给自己创造微小的成就感，持之以恒就能点亮整片技能树。
 
 （曾经我周末花了一整天，仅仅在反复琢磨 node 和 npm 的版本和安装卸载，并在之后快乐了一个星期）
 
+### 练习英语
+
+- 系统语言调到英语
+- 不断练习给变量有意义地起名
+- 通过英文关键字使用搜索引擎
+- 看英文教材和视频
+- 学会看报错信息和 Stack Overflow
+- 试着看工具源码，了解行业前沿动态
+
 ### 工程师思维
 
-养成解决问题的思维，而不是仅仅解决问题。  
+养成解决问题的思维，而不仅仅是解决问题。  
 学会发现问题，而不是人云亦云。  
 （这也是工作和上学最大的区别之一）
 
-随着工作经历的增加，一定会碰到无数之前没有见过的问题、知识、技能需要解决和学习。  
+随着工作经历的增加，一定会碰到无数之前没有见过的问题、知识、技能需要学习。  
 这其中有的新技能是通用的，掌握之后是可以长期受用的，  
 也有一些问题，仅仅是暂时的，以后永远不会再碰到的。  
 （当然，能够提前区分这两种类型也需要靠不断的经验积累）
 
-通过预先学习来覆盖所有情况是不现实的。
+那么通过预先学习来覆盖所有情况是不现实的。
 
 要学会发现新的问题，并运用一定的技巧去尝试解决，  
 比如基于本文，就能产生很多问题：
 
-- “很多资料链接都是英文的，以我的英语水平会很吃力，有没有可能已经有翻译版了呢”
+- “很多资料链接都是英文的，以我目前的英语水平会很吃力，有没有可能已经有翻译版了呢”
 - “这个概念我不懂，文中的解释也不够充分，我从哪里可以查阅呢”
 - “我从不同的地方看到了相反的答案，如何判断哪个是正确的呢”
 - “这是别人的心得，我如何定制适合自己的计划呢”
-- “这个东西我用着不爽，有什么方式能改进呢”
+- “这个东西我用着很别扭，有什么方式能改进呢”
 
-互联网上有无数开源的和付费的资料。
+互联网上有无数开源和付费的资料。
 
 ### 理解编程
 
@@ -704,21 +750,25 @@ VSCode，微软家的开源的代码编辑器
 [如何掌握所有的程序语言 - 王垠](http://www.yinwang.org/blog-cn/2017/07/06/master-pl)
 
 了解框架原理，而不是背诵框架 API。  
-练习编程思想，而不是深究实现细节。  
-（比如在起步阶段就深究隐式类型转换）
+学习编程思想，而不是深究实现细节。  
+（比如在起步阶段就深究 JS 里的隐式类型转换）
 
 你是工具的主人，不是工具的奴隶，  
-语言、框架、软件、电脑是你的工具，  
-同时，了解工具的性质才能更好地使用它们。
+语言、框架、软件、电脑是你的工具。
+
+了解工具的性质才能更好地使用它们。
 
 ### 调整心态
 
 前期避免过分追求变现，  
-先追求习得技术和创造价值，  
-有技能水平才有议价能力。
+先追求掌握技能和创造价值，  
+有技术水平才能有议价能力。
 
-（说人话就是不要太关心能拿多高的 offer）  
-（但是另一方面，要考虑工作是否能和学习生活平衡）
+（说人话就是不要太关心能拿多高的工资）  
+（但是另一方面，要考虑工作是否可以和学习生活平衡）
+
+面向解决技术问题开发，而不是面向解决具体业务开发。  
+（如果有机会的话…）
 
 ~~尤其是在互联网资本寒冬的现在（真的吗？）~~  
 夯实基础，稳步前进。
@@ -727,13 +777,17 @@ VSCode，微软家的开源的代码编辑器
 
 我理解的一句话版本：
 
-> 如果你能将一个概念完整地教会别人，那么说明你就掌握了它。
+> 如果你能将一个概念完整地教会别人，那么说明你掌握了它。
 
 对于任何一个知识/技术体系来说，  
 你第一次发现它的时候，它还不属于你，  
-而当你不断地在脑海中构建和修正出你自己的体系，  
-你能够基于自己的体系，在脑海中快速检索到它的每一个细节，  
+你只能通过查阅来弄懂。
+
+而当你不断地在脑海中构建和修正出自己的结构化体系，  
+你能够基于自己的体系，在脑海中直接快速地检索到它的每一个细节，  
 那么你就掌握了它。
+
+可以利用 VSCode、Markdown、GitHub、Dropbox 等工具来做笔记。
 
 ### 小黄鸭调试法
 
@@ -743,23 +797,22 @@ VSCode，微软家的开源的代码编辑器
 
 > 就在解释的过程中，程序员可能就发觉了问题的解决方案。
 
-程序的运作，代码的运行都是有据可循的。  
-运行结果不符合预期，一定是某一个步骤或者某几个步骤出了问题。  
-通过逐步拆分步骤并分析，就能定位到问题所在，才能试图解决它。
+程序的运作，代码的运行都是有据可循的：  
+运行结果不符合预期，肯定是某一步或者某几步出了问题。  
+通过不断拆分步骤并逐步分析，就能定位到问题所在，才能试图解决它。
 
 ### 训练
 
-> If you're willing to restrict the flexibility of your approach, you can almost always do something better. -- John Carmack  
-> 限制方法的灵活性几乎总能使你把事情做得更好。 -- DOOM 之父 约翰卡马克
+> 限制方法的灵活性几乎总能使你把事情做得更好。 -- DOOM 之父 约翰卡马克  
+> 学而不思则罔，思而不学则殆 —— 孔子  
+> 最高级的想象力是不自由的 —— 同人于野
 
 一定要向古老的智慧学习，理解久经考验的技术思路的精髓。
 
 算法、设计模式、范式、特性、规范、协议等等，各式各样的名词…  
-不严谨的来讲，我认为指的都是同一件事 —— 别人总结的成熟可靠的经验。
+不严谨地来讲，我认为指的都是同一件事 —— 别人总结的成熟可靠的经验。
 
-> 纸上得来终觉浅，绝知此事要躬行 —— 陆游  
-> 学而不思则罔，思而不学则殆 —— 孔子  
-> 最高级的想象力是不自由的 —— 同人于野
+> 纸上得来终觉浅，绝知此事要躬行 —— 陆游
 
 同时，写代码的事情，一定只能通过反复的实际编写运行和推敲才能掌握，  
 （就像学会开车）  
@@ -770,10 +823,10 @@ VSCode，微软家的开源的代码编辑器
 > fail fast, fail cheap, move on  
 > 工欲善其事必先利其器 —— 孔子
 
-就像软件工程中的敏捷开发，学习也要敏捷，  
+软件工程中有敏捷开发的概念，学习也可以。  
 想办法优先提高效率。  
 （即使这个过程很耗时）  
-（举个例子：在仿写新代码的时候如何快速验证代码正确性）
+（举个例子：在仿写新代码的时候如何快速验证代码的正确性）
 
 ### environment body mind
 
