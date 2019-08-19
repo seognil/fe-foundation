@@ -17,6 +17,7 @@
     "preview": "npm run build && http-server -o -c-1 ./dist"
   },
   "devDependencies": {
+    "moment": "^2.24.0",
     "vuepress": "^1.0.3"
   }
 }

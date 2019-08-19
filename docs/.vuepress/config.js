@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const moment = require('moment');
 
 const cateArrange = require('../category');
 
@@ -45,6 +46,17 @@ const config = {
       '/': articleSidebar,
     },
   },
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          moment.locale(lang);
+          return moment(timestamp).format('lll');
+        },
+      },
+    ],
+  ],
 };
 
 // * ---------------------------------------------------------------- output
