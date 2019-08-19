@@ -17,7 +17,7 @@ const hasFile = (e) => fs.existsSync(path.resolve(articleFolder, e));
 const articleSidebar = Object.entries(cateArrange)
   .map(([groupName, list]) => [groupName, list.map((e) => e.replace(/^.\//, '')).filter(hasFile)])
   .filter(([, list]) => list.length > 0)
-  .map(([title, children]) => ({ title, children, collapsable: false }));
+  .map(([title, children]) => ({ title, children, collapsable: true }));
 
 // * -------------------------------- config
 
