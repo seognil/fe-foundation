@@ -193,7 +193,7 @@ Mac 生态有中有一个名为 `brew` 的命令行软件（需要安装）
 
 比如 `brew install node` 之后，会有提示需要将 `node` 加入 `PATH`：
 
-```shell
+```bash
 If you need to have node@10 first in your PATH run:
   echo 'export PATH="/usr/local/opt/node@10/bin:$PATH"' >> ~/.zshrc
 
@@ -205,7 +205,7 @@ For compilers to find node@10 you may need to set:
 我目前是在 `.zshrc` 中手动管理这些，  
 比如我的 `.zshrc` 的一部分：
 
-```shell
+```bash
 export PATH="$PATH:/usr/local/opt/node@10/bin"
 alias gnpm="npm -g list --depth 0"
 ```
@@ -234,7 +234,7 @@ alias gnpm="npm -g list --depth 0"
 配置命令例如：  
 （可以固化到 `.bashrc`、`.zshrc` 中）
 
-```shell
+```bash
 export http_proxy='http://127.0.0.1:1080'
 export https_proxy='https://127.0.0.1:1080'
 ```
@@ -254,7 +254,7 @@ proxy 可以为狭义的 proxy，
 
 基本用法：
 
-```shell
+```bash
 brew search iterm2
 
 brew install zsh
@@ -271,7 +271,7 @@ brew cask upgrade
 ### 系统设置
 
 - 将光标移动速度调到极快（需重启）
-  ```shell
+  ```bash
   defaults write -g InitialKeyRepeat -int 15
   defaults write -g KeyRepeat -int 1
   ```
@@ -280,7 +280,7 @@ brew cask upgrade
 
 - 字体推荐使用等宽的中英文编程字体 [更纱黑体](https://github.com/be5invis/Sarasa-Gothic)  
   基于 Iosevka 和 Source Han Sans
-  ```shell
+  ```bash
   brew tap homebrew/cask-fonts
   brew cask install font-sarasa-gothic
   ```
@@ -339,7 +339,7 @@ brew cask upgrade
 
 #### 基本用法
 
-```shell
+```bash
 # 查看版本
 node -v
 npm -v
@@ -410,7 +410,7 @@ svn 是另一种版本管理工具。
 
 #### 基本用法
 
-```shell
+```bash
 # tldr git
 
 # tig --all
@@ -528,7 +528,7 @@ VSCode，微软家的开源代码编辑器
 - 控制面板的"允许任何软件运行"  
   `sudo spctl --master-disable`
 - Finder 显示隐藏文件
-  ```shell
+  ```bash
   defaults write com.apple.finder AppleShowAllFiles TRUE
   killall Finder
   ```
