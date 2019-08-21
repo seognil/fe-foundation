@@ -3,6 +3,12 @@
 JS 基础纲要速写笔记  
 若有偏差敬请斧正
 
+::: warning
+TODO 2019/08/21  
+目前关于闭包和垃圾回收的部分可能有严重的理解错误  
+EventLoop 部分有待完善
+:::
+
 ## JS 语言特性
 
 [The Weird History of JavaScript](https://www.youtube.com/watch?v=Sh6lK57Cuk4)  
@@ -36,7 +42,7 @@ JS 基础纲要速写笔记
   - **DSL**：Domain-specific language，领域特定语言，专门为了解决某一问题而不是通用的编程语言
   - **API**：Application programming interface，应用程序接口，将复杂逻辑封装抽象成函数调用
   - **Built-in**：内建的，比如数组的 `slice` 方法是浏览器引擎中以 C 编写的 API，而不是 JS 之后挂载的
-  - **Polyfill**：能检测并（自动）模拟新标准 API 的 JS 代码，能让旧浏览器和新浏览器的行为一致
+  - **Polyfill**：能检测并（自动）模拟新标准 API 的 JS 代码，让旧浏览器和新浏览器的行为一致
   - **ECMA-262**：ECMAScript 标准 的代号
   - **ECMA TC39**：ECMAScript 标准化组织 的代号，TC 是 Technical Committee 缩写
   - **AKA**：As Known As
@@ -46,6 +52,7 @@ JS 基础纲要速写笔记
   - **ES1~3**：1995 起，上古版本
   - **ES5**：（aka `ES3.1`）2009 起的版本
   - **ES6**：（aka `ES2015`）2015 年大更新的版本，带动了 JS 预编译生态，后续逐年小幅度更新
+  - **Vanilla JavaScript**：民间称呼，指的就是标准/原生/不使用库的 JS，Vanilla 表示 Plain 或者 Pure
 * **JSON**： JavaScript Object Notation，JS 对象表示法，基于 JS 语法子集的数据格式
 * **TypeScript**：带类型检查的扩展集（from _Microsoft_）
 * **Flow**：比 TS 功能少一点的类型检查扩展集，现已式微（from _Facebook_）
@@ -70,6 +77,8 @@ ES6 相比 ES5
   - 部分特性无法被完美模拟（如 Proxy）
 
 ### 模块化
+
+[前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
 
 模块化能够以引用的方式拆分代码，  
 使大型项目开发变得容易。
@@ -98,15 +107,16 @@ ES6 相比 ES5
 [JavaScript 标准内置对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)  
 [语句和声明](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements)  
 [表达式和运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators)  
-[前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
+[运算符优先级](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)  
+[函数](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions)
 
 ### 基本类型 内置对象
 
-- 原始值
-  - string、number、boolean
+- Primitive Types 原始值
+  - string、number（浮点数）、boolean
   - null、undefined
-  - Symbol
-- 对象，基本对象，数据结构
+  - Symbol（符号，表示唯一标识，ES6 新类型）
+- 对象，标准内置对象，数据结构
   - Object
     - Function
     - Array、RegExp、Date、Error、Promise 等
@@ -130,9 +140,20 @@ Statement
 - 迭代（循环）
   - for、while 等
 
+### 函数调用
+
+`fn(...args)`
+
 ### 表达式 和 运算符
 
 Expressions and operators
+
+运算符具有结合律和优先级的特性：  
+一句语句可以包含多个运算符，  
+这些不同运算符会根据一个优先级规则依次执行。
+（因为 JS 是单线程的）
+
+运算符可以理解为一种"内建函数调用语法"
 
 - Primary expressions（主要表达式、保留字、字面量）
 - LHS（Left hand side，指等号左边部分的代码）
@@ -165,11 +186,7 @@ Expressions and operators
 - EventLoop
   - synchronous code：同步代码
   - micro task：微任务
-    - Promise
-    - async （Promise 的语法糖）
   - macro task：宏任务
-    - setTimeout
-    - DOM API
 
 ### 相关词汇
 
@@ -228,7 +245,7 @@ Expressions and operators
 
 （以图或树形结构的搜索来理解，就能很好理解为什么。）
 
-## JS 执行过程
+## JS 执行过程（同步）
 
 [The Ultimate Guide to Execution Contexts, Hoisting, Scopes, and Closures in JavaScript](https://www.youtube.com/watch?v=Nt-qa_LlUH0)  
 [JavaScript Visualizer](https://javascriptvisualizer.com/)  
@@ -251,10 +268,10 @@ Expressions and operators
 
 ### 相关词汇
 
-- **EC**：Execution Context，执行上下文
-- **ECS**：Execution Context Stack，执行环境栈
+- **EC**：Execution Context，执行上下文，包含当前词法环境中的变量等信息
+- **ECS**：Execution Context Stack，执行上下文栈，包括调用时产生的父级环境的一组 EC
 - **Hoisting**：（声明）提升（为了预分配内存空间）
-- **Scope**：作用域（概念）（可能是 Global、Closure、Block 等）
+- **Scope**：作用域（可能是 Global、Closure、Block 等）
 - **Scope Chain**：作用域链，存在于 EC 中，在浏览器内或表现为 `[[Scopes]]：Array`
 - **Closure**：闭包，视为持久化的作用域
 
@@ -267,14 +284,14 @@ Expressions and operators
 - **segfault**：Segmentation Fault，段错误（访问非法内存地址）
 - **TCO**：Tail Call Optimization，尾调用优化（如果函数最后一句是另一个调用，则直接替换而不是入栈）
 - **TDZ**：Temporal Dead Zone，暂时性死区（let、const 某特性的民间称呼）
-- **JIT**：Just in time，及时化（运行时逐句编译）
+- **JIT**：Just in time，及时化（运行时逐字解析编译）
 - **AOT**：Ahead of Time，预处理（全部编译完再运行）
 
 * **IIFE**：Immediately Invoked Function Expression，立即执行函数表达式，如 `(()=>{})()`
 
 ### 作用域
 
-- **lexical scope**：词法作用域（根据代码结构就可以分析，不会动态改变）
+- **lexical scope**：词法作用域（以代码字面结构为依据的解析，不会根据调用位置而动态改变）
 - **static scope**：静态作用域（aka 词法作用域）
 - **dynamic scope**：动态作用域（ECMAScript 包括大多数编程语言中都不采用）
 
@@ -304,6 +321,21 @@ Expressions and operators
   this: {} || undefined,
 }
 ```
+
+### 容易混淆的概念
+
+有一些容易混淆的概念，它们看上去都是栈或数组的形式，  
+随着代码运行和函数调用，都会产生入栈出栈动作，但是不同的东西。
+
+- Callback Stack
+  - 调用栈（概念），函数调用时产生的进度信息，当子过程结束时需要继续执行父过程
+- Execution Context Stack
+  - 执行上下文栈，包含一组 EC，是 Callback Stack 背后的实际数据结构，用于过程管理
+- Scope Chain
+  - 作用域链，是每个 EC 的一部分，包含一组词法作用域父级，用于外部变量查找
+- Closure
+  - 闭包，视为作用域链的持久化的快照
+    引用外层变量
 
 ### Program 生命周期
 
@@ -360,7 +392,7 @@ Expressions and operators
 
 - **Execution**（执行代码）
 
-  - 所有代码大致都可理解为**三个部分**：左侧、操作、右侧
+  - JS 所有代码大致都可理解为**三个部分**：左侧、操作、右侧
     - 左右两个部分都或可继续进行拆分（**递归**，也就形成了 AST 中的 Tree 的结构）
     - 每句代码执行时（如 赋值的变量名 或 函数名）先对**左侧**进行标识查找
       - 左侧部分可能是 `Identifier` 或 `MemberExpression` 等
@@ -368,6 +400,11 @@ Expressions and operators
     - 然后以相似的过程解析**右侧**（如 赋值的值 或 函数参数）
     - 然后基于解析完的左右侧，执行相应的**操作**（如 执行赋值操作 或 进入函数调用流程）
   - 查找变量先直接查找当前 VO/AO，如果找不到则基于当前作用域链依次向上查找，依然找不到则失败报错。
+
+提示：  
+很多编程语言都是类似 JS 的中缀的语法顺序，  
+但有些语言可能有不同的顺序，如 Lisp 的顺序是前缀的：操作符 左侧 右侧  
+JS `3 > 2 === true`，Lisp `EQUAL (> 3 2) T`
 
 - **Finished**（执行结束，出栈 EC）
   - 显式的 `ReturnStatement` 或隐式的（视为 `return undefined`）
@@ -406,9 +443,9 @@ Expressions and operators
   - 作用域（`"use strict";` 的影响范围）是函数级的
   - _Too Many_，总是严格模式的目的大致就是对语句执行效果的"严格"
 
-### 闭包
+## 闭包
 
-闭包可以理解为函数所需的 _作用域链_ 的 **快照**。
+闭包可以理解为函数所需的 _作用域链_ 的**持久化**的**快照**。
 
 （由于 JS 中的函数可以作为变量传递）  
 当函数注册后，若所在位置发生改变，  
@@ -432,7 +469,7 @@ JS 的闭包特性是引擎的内部实现，无法通过 JS 代码显式操控�
 闭包是一个正常的 JS 特性，但需要**注意**正确使用以避免内存泄露  
 （以及毕竟 JS 没有显式垃圾回收，以及闭包无法直接操控）
 
-#### 概念结构
+### 概念结构
 
 ```javascript
 fn {
@@ -448,7 +485,7 @@ fn {
 }
 ```
 
-#### 对于性能的影响
+### 对于性能的影响
 
 - **时间**
   - 减少执行时间（变量值的解析）
@@ -463,6 +500,8 @@ fn {
 显然可以利用闭包进行空间换时间的操作
 
 ### 综合例子
+
+#### 例子 1
 
 JS 并不支持动态作用域  
 生成闭包时需要解析和固定当前所有（所需）变量
@@ -507,6 +546,8 @@ obj.AA('obj call');
 了解了一些 JS 标准的原理和特性，  
 但实际代码文件，在不同运行环境下，会拥有略有不同的执行环境。
 
+下文中的**顶层**是层级的层，指代码文件中的顶层书写层级（不在函数体或块中的）。
+
 ### HTML 中 script 标签的情况
 
 无论是 src 引用，还是直接位于标签内部的 js 代码，  
@@ -549,6 +590,63 @@ ES5 旧标准的 var、function 声明**会**成为 Global 对象的属性。
 避免直接挂载到 Global 上。  
 （Chrome 中可以直接观察到该 EC 类名为 `Script` ）
 
+## JS 执行过程（异步）
+
+[并发模型与事件循环](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop)
+
+如果碰到诸如 点击事件、Http 请求 等相对耗时的任务时，  
+JS 引擎将这些任务标记并挂起（加入事件队列中），
+以便继续执行能够较快完成的同步任务。
+
+当同步任务完全结束之后，系统处于空闲状态，  
+此时再执行这些相对（空载）耗时较多的任务，  
+以便不会阻塞整体项目运行，提高运行效率和用户体验。
+
+这就是为什么，虽然 JS 本身是同步的（单线程），但也能够实现"异步"。
+
+JS 中使用 `EventLoop` 机制完成异步过程。
+
+这个机制是引擎的内部实现，JS 无法直接操控。
+
+### 相关词汇
+
+- **EventLoop**：事件循环（机制）
+- **FIFO**：First-In First-Out，先进先出
+- **LIFO**：Last-In First-Out，后进先出
+- **Stack**：栈，后进先出结构
+- **Queue**：队列，先进先出结构
+
+### EventLoop 层级
+
+EventLoop 有三个层级：
+
+- synchronous code：同步代码
+  - process.nextTick （位于 同步 和）
+- micro task：微任务
+  - Promise、async （Promise 的语法糖）等
+- macro task：宏任务
+  - setTimeout、DOM API 等
+
+### EventLoop 执行流程
+
+所有 script 一开始都只可能是同步代码
+
+- 执行**同步**代码
+  - 如果遇到到**异步任务**，**入队**到相应的队列中，不直接执行
+  - **继续**执行后续同步代码**直到全部执行完毕**
+- 检查**微任务**队列
+  - 如果队列**不为空**，**出队**一个微任务准备执行，进入**同步任务**流程
+  - 如果队列**为空**，进入**宏任务**流程
+- 检查**宏任务**队列
+  - 如果队列**不为空**，**出队**一个宏任务准备执行，进入**同步任务**流程
+  - 如果队列**为空**，结束并**等待**新的任务
+
+事件的概念：  
+代码中的 `on('click', fn)`、`setInterval(fn, time)` 等等语句，实际上就是对异步任务的声明。  
+在适当的时机，运行环境会自行将事件加入任务队列中。
+
+（至于如何实现？再深入就涉及到硬件、CPU 调度等等知识了，这里不进行展开。）
+
 ## 编译
 
 - 编译原理：
@@ -589,6 +687,8 @@ ES5 旧标准的 var、function 声明**会**成为 Global 对象的属性。
 
 AST：Abstract Syntax Tree 抽象语法树
 
+大致了解 AST 和编译原理的概念，能够更好地理解代码执行过程。
+
 ### AST 类型 （by acorn）
 
 #### 基本构成
@@ -599,12 +699,12 @@ AST：Abstract Syntax Tree 抽象语法树
 | start    | number | 代码起始位置 |
 | end      | number | 代码结束位置 |
 
-| 核心类型         |                |
-| ---------------- | -------------- |
-| Program          | 程序           |
-| Identifier       | 标识符         |
-| MemberExpression | 对象成员表达式 |
-| Literal          | 字面量         |
+| 核心类型         |                    |
+| ---------------- | ------------------ |
+| Program          | 程序主体           |
+| Identifier       | 标识符（裸变量名） |
+| MemberExpression | 对象成员表达式     |
+| Literal          | 字面量             |
 
 | 声明                |          |
 | ------------------- | -------- |
@@ -644,15 +744,15 @@ AST：Abstract Syntax Tree 抽象语法树
 | AssignmentPattern | 函数默认参数 |
 | RestElement       | 剩余参数     |
 
-| 其他               |                        |
-| ------------------ | ---------------------- |
-| VariableDeclarator | 变量声明的 LHS 部分    |
-| FunctionExpression | 函数表达式（不是声明） |
-| ThisExpression     | this                   |
-| SequenceExpression | 逗号运算符             |
-| ArrayExpression    | 数组字面量             |
-| ObjectExpression   | 对象字面量             |
-| BinaryExpression   | 位运算                 |
+| 其他               |                         |
+| ------------------ | ----------------------- |
+| VariableDeclarator | （变量声明的 LHS 部分） |
+| FunctionExpression | 函数表达式（不是声明）  |
+| ThisExpression     | this                    |
+| SequenceExpression | 逗号运算                |
+| ArrayExpression    | 数组字面量              |
+| ObjectExpression   | 对象字面量              |
+| BinaryExpression   | 二元运算                |
 
 ### AST 结构笔记（一部分）
 
