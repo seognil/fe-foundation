@@ -7,7 +7,14 @@ module.exports = {
   'JS 概览': [
     //
     './js/js-foundation.md',
-    './js/js-execution.md',
+  ],
+  'JS 框架/库/工具': [
+    //
+    './js-tools/rxjs.md',
+  ],
+  'CS 系统': [
+    //
+    './cs/software-engineering.md',
   ],
   'package 系统': [
     //
