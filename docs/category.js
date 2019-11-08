@@ -13,6 +13,10 @@ module.exports = {
     //
     './js-tools/rxjs.md',
   ],
+  '其他工具': [
+    //
+    './tools/git.md',
+  ],
   'CS 系统': [
     //
     './cs/software-engineering.md',
