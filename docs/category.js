@@ -7,6 +7,7 @@ module.exports = {
   'JS 概览': [
     //
     './js/js-foundation.md',
+    './js-core/typescript.md',
   ],
   'JS 框架/库/工具': [
     //
@@ -26,5 +27,9 @@ module.exports = {
   'JS 以外的知识': [
     //
     './others/git-crash-course.md',
+  ],
+  '其他': [
+    //
+    './others/clean-keyboard.md',
   ],
 };
