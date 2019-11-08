@@ -1,6 +1,8 @@
 # RxJS 学习指南
 
-## 什么是 ReactiveX
+## 关于 Rxjs
+
+### 什么是 ReactiveX
 
 ReactiveX 是一套采用响应式流的异步编程模式，  
 具体实现包括 RxJS、RxJava、RxSwift 等，  
@@ -12,19 +14,19 @@ ReactiveX 是一套采用响应式流的异步编程模式，
 将事件/数据作为流传播，  
 流可以（通过操作符）进行各种变换（映射、采样、合并等）
 
-## 什么是 RxJS
+### 什么是 RxJS
 
 ReactiveX 的 JS 实现
 
 > 它相当于事件版的 Lodash
 
-## 为什么要用 RxJS
+### 为什么要用 RxJS
 
 能用更少和清晰的代码完成异步业务
 
-## 关于 RxJS
+### RxJS 相关
 
-### RxJS 源码
+#### RxJS 源码
 
 RxJS 源码是 TypeScript 写的，对 TS 支援度很不错
 
@@ -41,7 +43,7 @@ pipe(publish()) as ConnectableObservable<any>;
 - [Pipe operator cannot infer return type as ConnectableObservable #2972](https://github.com/ReactiveX/rxjs/issues/2972)
 - [Property 'connect' does not exist on type 'Observable\<any\>' | RXJS multicast](https://stackoverflow.com/questions/54265143/property-connect-does-not-exist-on-type-observableany-rxjs-multicast)
 
-### RxJS 版本
+#### RxJS 版本
 
 截稿时 RxJS 最新的版本是 `v6`  
 （`v7` 处于 alpha 中）  
@@ -56,7 +58,7 @@ pipe(publish()) as ConnectableObservable<any>;
 - [RxJS v5.x to v6 Update Guide](https://rxjs-dev.firebaseapp.com/guide/v6/migration)
 - [rxjs CHANGELOG](https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md)
 
-### 习惯
+#### 命名习惯
 
 ```javascript
 const myStream$ = interval(500);
@@ -82,9 +84,9 @@ const myStream$ = interval(500);
 
 ### 概览
 
-- 周期：从入门到熟悉需要大约 20 小时（个人经验）
+- 耗时：从入门到熟悉需要大约 15~30 小时（个人经验）
 - 难点：理解概念，熟悉所有 API，运用
-- 环境：本地，npm，webpack/parcel/cli
+- 准备：本地，npm，webpack/parcel/cli
 
 ### 学习路线
 
@@ -132,8 +134,8 @@ const myStream$ = interval(500);
 ### 文档/自学教材
 
 - [Learn RxJS](https://www.learnrxjs.io/) ：（v6）学习 RxJS，非常详细的站，有（几乎）所有 API 代码用法和实战 Demo
-- ["Launchpad for RxJS"](https://reactive.how/rxjs/) ：（v6）动画演示（一部分），API 按类型整理划分
-- ["RxJS - API List"](https://rxjs.dev/api) ：RxJS 官方文档
+- [Launchpad for RxJS](https://reactive.how/rxjs/) ：（v6）动画演示（一部分），API 按类型整理划分
+- [RxJS - API List](https://rxjs.dev/api) ：RxJS 官方文档
 - [RxJS example + marble diagram](https://thinkrx.io/rxjs/interval/) ：（v6）通过代码生成的弹珠台
 - [RxJS Marbles](https://rxmarbles.com/) ：弹珠台，可直接拖动，只有动画
 
