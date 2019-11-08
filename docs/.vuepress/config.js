@@ -36,9 +36,16 @@ const config = {
     repo: 'seognil/fe-foundation',
     // editLinks: true,
     nav: [
-      { text: '目录', link: '/intro/fedev-the-guild.md' },
-      { text: '资料', link: '/refs/note.md' },
-      { text: 'Poly', link: 'https://github.com/seognil/learn-by-making-your-own-polyfill' },
+      {
+        text: '目录',
+        items: [
+          { text: '前端工程师入行指南', link: '/intro/fedev-the-guild.md' },
+          { text: 'Git 学习指南', link: '/tools/git.md' },
+          { text: '如何清洁机械键盘', link: '/others/clean-keyboard.md' },
+        ],
+      },
+      { text: '关于', link: '/about/note.md' },
+      { text: 'Learning-By-Doing', link: 'https://github.com/seognil-study/learning-by-doing' },
     ],
     sidebarDepth: 3,
     sidebar: {
