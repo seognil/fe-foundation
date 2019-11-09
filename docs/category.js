@@ -13,8 +13,10 @@ module.exports = {
     //
     './js-tools/rxjs.md',
   ],
-  '其他工具': [
+  '系统工具': [
     //
+    './tools/terminal-about.md',
+    './tools/terminal-config.md',
     './tools/git.md',
   ],
   'CS 系统': [
