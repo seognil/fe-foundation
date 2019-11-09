@@ -20,7 +20,7 @@ export https_proxy='https://127.0.0.1:1080'
 
 有一个工具叫 [ProxyChains](https://github.com/haad/proxychains)，能够管理不同程序的 proxy。
 
-## brew
+## Homebrew
 
 > 从命令行中安装工具和软件
 
