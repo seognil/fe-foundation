@@ -15,7 +15,7 @@ module.exports = {
   ],
   '系统工具': [
     //
-    './tools/terminal-about.md',
+    './tools/terminal-intro.md',
     './tools/terminal-config.md',
     './tools/git.md',
   ],

@@ -1,4 +1,4 @@
-# 配置命令行
+# 终端客制化
 
 ## proxy
 
@@ -111,7 +111,7 @@ For compilers to find node@10 you may need to set:
 export PATH="$PATH:/usr/local/opt/node@10/bin"
 ```
 
-## 配置终端
+## 打造趁手的终端
 
 个人使用的命令行基本作业环境是：`iTerm2 + zsh + oh-my-zsh`  
 （代替 MacOS 自带的 `Terminal.app + bash`）
