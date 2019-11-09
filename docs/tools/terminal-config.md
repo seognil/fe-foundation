@@ -24,35 +24,35 @@ export https_proxy='https://127.0.0.1:1080'
 
 > 从命令行中安装工具和软件
 
-MacOS 生态有中有一个名为 [brew](https://brew.sh/) 的命令行工具（需要自行安装）
+MacOS 生态有中有一个名为 [Homebrew](https://brew.sh/) 的命令行工具（需要安装）
 
-它类似 Linux 中的 `apt` 或 `yum`，Windows 中的 `chocolatey`。  
-或类似 Node.js 的 `npm`，Python 的 `pip`，PHP 的 `composer` …
+它类似 Linux 中的 `apt` 或 `yum`，Windows 中的 [Chocolatey](https://chocolatey.org/)。  
+或类似 Node.js 的 `npm`、Python 的 `pip`、PHP 的 `composer` …
 
 虽然是不同生态的不同工具，  
-但它们的共同点都是：可以通过命令行管理程序（安装升级卸载等）。
+但它们有一个共同点：可以通过命令行安装其他程序。
 
 不需要再通过浏览器手动点击下载，  
 软件配置过程能够更方便和自动化。
 
 所以优先安装这些管理工具，能够更高效地下载别的工具。
 
-### 安装 brew
+### 安装 Homebrew
 
-可以先调整好 shell 的 proxy，这样 brew 下载包的速度可能会更快。
+（可以先调整好 shell 的 proxy，这样 brew 下载包的速度可能会更快。）
 
-安装 brew：
+安装 Homebrew：
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-安装完成后：
+安装完成后可用的命令：
 
 - `brew`
   - 装 CLI 软件的
 - `brew cask`
   - `brew` 自带的自命令，装 GUI 软件的
 
-### brew 基本用法
+### Homebrew 基本用法
 
 ```bash
 brew install node
@@ -125,6 +125,5 @@ export PATH="$PATH:/usr/local/opt/node@10/bin"
   - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)：一个 `fish` 风格的 zsh 高亮插件
   - `brew install zsh-syntax-highlighting`
-
 
 ![iterm2-showcase](./iterm2-showcase.png)
