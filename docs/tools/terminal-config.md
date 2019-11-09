@@ -116,6 +116,8 @@ export PATH="$PATH:/usr/local/opt/node@10/bin"
 个人使用的命令行基本作业环境是：`iTerm2 + zsh + oh-my-zsh`  
 （代替 MacOS 自带的 `Terminal.app + bash`）
 
+（另一个流行的配置集：[Spaceship ZSH](https://github.com/denysdovhan/spaceship-prompt)）
+
 - [iTerm2](https://iterm2.com/)：一个 terminal
   - `brew cask install iterm2`
 - [zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)：一个 shell

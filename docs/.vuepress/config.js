@@ -29,7 +29,7 @@ const config = {
       description: '前端开发技术笔记',
     },
   },
-  dest: './dist',
+  dest: './public',
   head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square.png' }]],
   themeConfig: {
     lastUpdated: '上次更新',

@@ -58,7 +58,7 @@
 - [Introduction to if - Bash](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html)
 - [Conditionals (If, Else, Switch) - Fish](https://fishshell.com/docs/current/tutorial.html#tut_conditionals)
 
-```shell
+```bash
 # bash
 function comp {
   local value=$1
