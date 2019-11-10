@@ -25,6 +25,7 @@ module.exports = {
   ],
   'package 系统': [
     //
+    './note/js-modular.md',
     './package/state-of-npm.md',
     './package/js-module.md',
     './package/npm-verdaccio.md',
