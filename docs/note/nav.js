@@ -1,7 +1,12 @@
 module.exports = {
+  'TLDR': [
+    //
+    './tldr.md',
+    './fe-development-cookbook.md',
+    './js-foundation.md',
+  ],
   '起步': [
     //
-    './fe-development-cookbook.md',
     './my-workstation.md',
   ],
   '系统工具': [
@@ -12,8 +17,10 @@ module.exports = {
   ],
   'JavaScript': [
     //
-    './js-foundation.md',
     './js-modular.md',
+    './npm-overview.md',
+    './npm-speedup.md',
+    './npm-verdaccio.md',
     // './js-core/typescript.md',
   ],
   'JS 工具': [
