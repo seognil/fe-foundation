@@ -20,6 +20,10 @@ module.exports = {
     //
     './rxjs.md',
   ],
+  '服务器': [
+    //
+    './linux-basic-security.md',
+  ],
   '开发生活': [
     //
     './clean-keyboard.md',
