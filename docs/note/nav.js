@@ -1,7 +1,7 @@
 module.exports = {
   '起步': [
     //
-    './fedev-the-guild.md',
+    './fe-development-cookbook.md',
     './my-workstation.md',
   ],
   '系统工具': [
