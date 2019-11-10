@@ -9,18 +9,13 @@
 </template>
 
 <script>
-const msgs = [
-  `There's nothing here.`,
-  `How did we get here?`,
-  `That's a Four-Oh-Four.`,
-  `Looks like we've got some broken links.`
-]
+const msgs = [`本站还在开发中，如果结构调整导致链接失效…非常抱歉 >_<`];
 
 export default {
   methods: {
-    getMsg () {
-      return msgs[Math.floor(Math.random() * msgs.length)]
+    getMsg() {
+      return msgs[Math.floor(Math.random() * msgs.length)];
     }
   }
-}
+};
 </script>
