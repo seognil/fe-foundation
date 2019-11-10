@@ -2,7 +2,7 @@
 home: true
 heroImage: /geneva-switzerland.jpeg
 actionText: 开始浏览 →
-actionLink: /intro/fedev-the-guild.md
+actionLink: /note/js-modular.html
 features:
 
   - title: Ecosystem
