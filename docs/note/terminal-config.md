@@ -128,4 +128,4 @@ export PATH="$PATH:/usr/local/opt/node@10/bin"
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)：一个 `fish` 风格的 zsh 高亮插件
   - `brew install zsh-syntax-highlighting`
 
-![iterm2-showcase](./iterm2-showcase.png)
+![iterm2-showcase](./img/iterm2-showcase.png)

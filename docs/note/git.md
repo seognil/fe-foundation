@@ -121,4 +121,4 @@ git pull <origin> <master>
 git push <origin> <master>
 ```
 
-![git-cheatsheet-cn](./git-cheatsheet-cn.jpeg)
+![git-cheatsheet-cn](./img/git-cheatsheet-cn.jpeg)

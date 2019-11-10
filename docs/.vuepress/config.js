@@ -2,57 +2,67 @@ const fs = require('fs');
 const path = require('path');
 const moment = require('moment');
 
-const cateArrange = require('../category');
+const navStructure = require('../note/nav');
 
-// * ---------------------------------------------------------------- conifg
+// * ---------------------------------------------------------------- sidebar
 
-// * -------------------------------- sidebar generator
+const docFolder = path.resolve(process.cwd(), './docs');
+const noteFolder = path.resolve(docFolder, './note');
+const hasFile = (e) => fs.existsSync(path.resolve(noteFolder, e));
+const toNavUrl = (url) => path.resolve('/note', url);
 
-const articleFolder = path.resolve(process.cwd(), './docs');
+// * --------------------------------
 
-const hasFile = (e) => fs.existsSync(path.resolve(articleFolder, e));
+// => { [groupName: string]: string[] }
 
-// * ----------------
-
-const articleSidebar = Object.entries(cateArrange)
-  .map(([groupName, list]) => [groupName, list.map((e) => e.replace(/^.\//, '')).filter(hasFile)])
+const articleSidebar = Object.entries(navStructure)
+  .map(([groupName, list]) => [groupName, list.filter(hasFile)])
   .filter(([, list]) => list.length > 0)
+  .map(([g, list]) => [g, list.map(toNavUrl)])
   .map(([title, children]) => ({ title, children, collapsable: true }));
 
-// * -------------------------------- config
+// => [{ title, children: string[], collapsable }]
+
+const navCateOfFirst = articleSidebar.map(({ title: text, children: [link] }) => ({ text, link }));
+
+// => [{ text, link }]
+
+// * ---------------------------------------------------------------- config
 
 const config = {
-  locales: {
-    '/': {
-      lang: 'zh-CN',
-      title: 'FE 笔记',
-      description: '前端开发技术笔记',
-    },
-  },
-  dest: './public',
+  // locales: {
+  //   '/': {
+  //     lang: 'zh-CN',
+  //     title: 'FE 笔记',
+  //     description: '前端开发技术笔记',
+  //   },
+  // },
+
+  title: 'FE 笔记',
+  description: '前端开发技术笔记',
   head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square.png' }]],
+
+  dest: './public',
+
   themeConfig: {
     lastUpdated: '上次更新',
-    repo: 'seognil/fe-foundation',
     // editLinks: true,
+
     nav: [
-      {
-        text: '目录',
-        items: [
-          { text: '前端工程师入行指南', link: '/intro/fedev-the-guild.md' },
-          { text: 'Git 学习指南', link: '/tools/git.md' },
-          { text: '如何清洁机械键盘', link: '/others/clean-keyboard.md' },
-        ],
-      },
-      { text: '关于', link: '/about/note.md' },
+      { text: '目录', items: navCateOfFirst },
+      { text: '关于', link: '/about/ref.md' },
+
       { text: 'Learning-By-Doing', link: 'https://github.com/seognil-study/learning-by-doing' },
     ],
+    repo: 'seognil/fe-foundation',
+
     sidebarDepth: 3,
     sidebar: {
-      '/refs': false,
-      '/': articleSidebar,
+      '/note': articleSidebar,
+      '/about': false,
     },
   },
+
   plugins: [
     [
       '@vuepress/last-updated',
