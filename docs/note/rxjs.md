@@ -1,6 +1,6 @@
 # RxJS 学习指南
 
-## 关于 Rxjs
+## Rxjs 简介
 
 ### 什么是 ReactiveX
 
@@ -16,56 +16,13 @@ ReactiveX 是一套采用响应式流的异步编程模式，
 
 ### 什么是 RxJS
 
-ReactiveX 的 JS 实现
+ReactiveX 的 JS 具体实现
 
 > 它相当于事件版的 Lodash
 
 ### 为什么要用 RxJS
 
 能用更少和清晰的代码完成异步业务
-
-### RxJS 相关
-
-#### RxJS 源码
-
-RxJS 源码是 TypeScript 写的，对 TS 支援度很不错
-
-但也有些 bug：
-
-```typescript
-// * 没有正确识别
-pipe(publish()); // => Observable<any>
-
-// * 需要手动指定 type
-pipe(publish()) as ConnectableObservable<any>;
-```
-
-- [Pipe operator cannot infer return type as ConnectableObservable #2972](https://github.com/ReactiveX/rxjs/issues/2972)
-- [Property 'connect' does not exist on type 'Observable\<any\>' | RXJS multicast](https://stackoverflow.com/questions/54265143/property-connect-does-not-exist-on-type-observableany-rxjs-multicast)
-
-#### RxJS 版本
-
-截稿时 RxJS 最新的版本是 `v6`  
-（`v7` 处于 alpha 中）  
-`v6` 和 `v5` 的主要差别在于 API 名和语法
-
-比如为了实现函数式调用风格，  
-操作符 `do` 重命名成了 `tap` （因为 `do` 是 JS 保留字）
-
-新项目直接用 `v6` 即可  
-老项目也可以用兼容包升级
-
-- [RxJS v5.x to v6 Update Guide](https://rxjs-dev.firebaseapp.com/guide/v6/migration)
-- [rxjs CHANGELOG](https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md)
-
-#### 命名习惯
-
-```javascript
-const myStream$ = interval(500);
-```
-
-流相关的命名一般用 `$` 做后缀，是民间习惯，但也没有硬性规定。  
-（就像用 `jQuery` 会使用 `$` 前缀，不用也可以）
 
 ## RxJS 主要概念
 
@@ -84,9 +41,9 @@ const myStream$ = interval(500);
 
 ### 概览
 
-- 耗时：从入门到熟悉需要大约 15~30 小时（个人经验）
-- 难点：理解概念，熟悉所有 API，运用
-- 准备：本地，npm，webpack/parcel/cli
+- 耗时：从入门到熟悉需要大约 15~30 小时（个人估计）
+- 难点：理解 Stream 范式，熟悉所有 API，API 搭配运用
+- 准备：本地，rxjs@6，npm，webpack/parcel/cli
 
 ### 学习路线
 
@@ -96,21 +53,21 @@ const myStream$ = interval(500);
   - stream programming
   - 迭代器模式（事件流遍历机制）
   - 观察者模式（绑定机制）
-- 掌握 RxJS 核心概念
-  - Observable 及上下游
-  - 多播
-  - Scheduler
-- 尝试 RxJS 所有 API
-  - 同类 API 之间的效果差异
-  - 相同效果的流可以有多种实现方式
+- 学习 Rxjs
+  - 掌握 RxJS 核心概念
+    - Observable 及上下游
+    - 多播
+    - Scheduler
+  - 尝试 RxJS 所有 API
+    - 同类 API 之间的效果差异
+    - 相同效果的流可以有多种实现方式
 - 题目/实战
   - 练习实现具体功能，加深理解
   - 结合 react/vue
 - 进阶
   - 实现一个自己的 Observable
   - 阅读 RxJS 源码实现
-  - 具有多个流和功能的大型业务
-- Quesition
+- 迷思
   - cold vs hot Observable
   - 如何手动结束/关闭一个 Observable
 
@@ -118,14 +75,14 @@ const myStream$ = interval(500);
 
 ### 我的笔记
 
-- [Learning by doing](https://github.com/seognil-study/learning-by-doing/tree/master/rxjs)
-- [学习 RxJS](https://fe.rualc.com/js-tools/rxjs.html)
+- [RxJs - Learning By Doing](https://github.com/seognil-study/learning-by-doing/tree/master/rxjs)
+- [RxJS 学习指南](https://fe.rualc.com/note/rxjs.html)
 
-### 入门教程/笔记
+### 入门教程/他人笔记
 
 - [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming)
 - [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
-- 《深入浅出 RxJS》 - 程墨 （v5）
+- 《深入浅出 RxJS》 - 程墨 （rxjs v5）
 - [RxJS 入门指引和初步应用](https://zhuanlan.zhihu.com/p/25383159)
 - [RxJS-响应式流编程](http://blueskyawen.com/2017/12/24/rxjs/)
 - [流动的数据——使用 RxJS 构造复杂单页应用的数据逻辑](https://github.com/xufei/blog/issues/38)
@@ -139,16 +96,16 @@ const myStream$ = interval(500);
 - [RxJS example + marble diagram](https://thinkrx.io/rxjs/interval/) ：（v6）通过代码生成的弹珠台
 - [RxJS Marbles](https://rxmarbles.com/) ：弹珠台，可直接拖动，只有动画
 
-### Quiz/Demo/Example
+### 实践
 
 - [Recipes - Learn RxJS](https://www.learnrxjs.io/recipes/)
 - [我所了解的 RxJS](https://juejin.im/post/5ca56f42f265da30982748e6#heading-13)
   <!-- https://www.sitepoint.com/rxjs-functions-with-examples/ -->
   <!-- https://angularfirebase.com/lessons/rxjs-quickstart-with-20-examples/ -->
 
-## RxJS 关键代码
+## RxJS 典型代码
 
-**伪代码**
+### 伪代码
 
 ```javascript
 // * 注册 事件流
@@ -169,7 +126,7 @@ Subscription = Ob.subscribe( Observer{
 Subscription.unsubscribe()
 ```
 
-**具体代码 v5**
+### 具体代码 v5
 
 ```javascript
 import { Observable } from 'rxjs';
@@ -181,7 +138,7 @@ const sub$ = ob$.subscribe((e) => console.warn(e));
 setTimeout(() => sub$.unsubscribe(), 3000);
 ```
 
-**具体代码 v6**
+### 具体代码 v6
 
 ```javascript
 import { interval } from 'rxjs';
@@ -193,3 +150,46 @@ const sub$ = ob$.subscribe((e) => console.warn(e));
 
 setTimeout(() => sub$.unsubscribe(), 3000);
 ```
+
+## RxJS 相关
+
+### RxJS 和 TypeScript
+
+RxJS 源码是 TypeScript 写的，对 TS 支援度很不错
+
+但也有些 bug：
+
+```typescript
+// * 没有正确识别
+pipe(publish()); // => Observable<any>
+
+// * 需要手动指定 type
+pipe(publish()) as ConnectableObservable<any>;
+```
+
+- [Pipe operator cannot infer return type as ConnectableObservable #2972](https://github.com/ReactiveX/rxjs/issues/2972)
+- [Property 'connect' does not exist on type 'Observable\<any\>' | RXJS multicast](https://stackoverflow.com/questions/54265143/property-connect-does-not-exist-on-type-observableany-rxjs-multicast)
+
+### RxJS 版本
+
+截稿时 RxJS 最新的版本是 `v6`  
+（`v7` 处于 alpha 中）  
+`v6` 和 `v5` 的主要差别在于 API 名和语法
+
+比如为了实现函数式调用风格，  
+操作符 `do` 重命名成了 `tap` （因为 `do` 是 JS 保留字）
+
+新项目直接用 `v6` 即可  
+老项目也可以用兼容包升级
+
+- [RxJS v5.x to v6 Update Guide](https://rxjs-dev.firebaseapp.com/guide/v6/migration)
+- [rxjs CHANGELOG](https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md)
+
+### 命名习惯
+
+```javascript
+const myStream$ = interval(500);
+```
+
+流相关的命名一般用 `$` 做后缀，是业界习惯，但也没有硬性规定。  
+（就像用 `jQuery` 会使用 `$` 前缀，不用也不影响代码效果）

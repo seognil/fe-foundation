@@ -92,16 +92,16 @@ sudo apt-get install -y nodejs
 因为安装脚本是通用的，不能完全知道你的系统是怎样的、或有些可选配置，  
 所以需要手动完成。
 
-比如 `brew install node@10` 之后，会有提示需要将 `node` 加入 `PATH`：  
+比如 `brew install node@12` 之后，会有提示需要将 `node` 加入 `PATH`：  
 （类似的还有 `openssl`、`mysql`、`ruby` 等）
 
 ```bash
-If you need to have node@10 first in your PATH run:
-  echo 'export PATH="/usr/local/opt/node@10/bin:$PATH"' >> ~/.zshrc
+If you need to have node@12 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/node@12/bin:$PATH"' >> ~/.zshrc
 
 For compilers to find node@10 you may need to set:
-  export LDFLAGS="-L/usr/local/opt/node@10/lib"
-  export CPPFLAGS="-I/usr/local/opt/node@10/include"
+  export LDFLAGS="-L/usr/local/opt/node@12/lib"
+  export CPPFLAGS="-I/usr/local/opt/node@12/include"
 ```
 
 我不需要 C++ 编译，所以只在 `.zshrc` 中加入了一行：

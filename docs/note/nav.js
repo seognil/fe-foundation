@@ -26,6 +26,7 @@ module.exports = {
   'JS 工具': [
     //
     './rxjs.md',
+    './react-hooks.md',
   ],
   '服务器': [
     //
