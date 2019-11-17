@@ -1,21 +1,24 @@
 <template>
   <div class="theme-container">
     <div class="theme-default-content">
-      <h1>404</h1>
+      <h1>链接挂了呢…</h1>
       <blockquote>{{ getMsg() }}</blockquote>
-      <router-link to="/">Take me home.</router-link>
+      <router-link to="/">回到主页</router-link>
     </div>
   </div>
 </template>
 
 <script>
-const msgs = [`本站还在开发中，如果结构调整导致链接失效…非常抱歉 >_<`];
+const msg = [
+  //
+  `本站处于迭代期，如果结构调整导致链接失效…非常抱歉 >_<`,
+].join('\n');
 
 export default {
   methods: {
     getMsg() {
-      return msgs[Math.floor(Math.random() * msgs.length)];
-    }
-  }
+      return msg;
+    },
+  },
 };
 </script>

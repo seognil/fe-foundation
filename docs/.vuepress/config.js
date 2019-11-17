@@ -19,7 +19,7 @@ const articleSidebar = Object.entries(navStructure)
   .map(([groupName, list]) => [groupName, list.filter(hasFile)])
   .filter(([, list]) => list.length > 0)
   .map(([g, list]) => [g, list.map(toNavUrl)])
-  .map(([title, children]) => ({ title, children, collapsable: true }));
+  .map(([title, children]) => ({ title, children, collapsable: false }));
 
 // => [{ title, children: string[], collapsable }]
 
@@ -49,7 +49,7 @@ const config = {
     // editLinks: true,
 
     nav: [
-      { text: '目录', items: navCateOfFirst },
+      { text: '分类', items: navCateOfFirst },
       { text: '关于', link: '/about/ref.md' },
 
       { text: 'Learning-By-Doing', link: 'https://github.com/seognil-study/learning-by-doing' },

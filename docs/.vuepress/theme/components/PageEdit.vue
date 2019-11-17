@@ -4,7 +4,7 @@
       <a :href="editLink" target="_blank" rel="noopener noreferrer">{{ editLinkText }}</a>
       <OutboundLink />
     </div>
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">许可协议 CC BY-NC-SA 4.0</a>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享协议 CC BY-NC-SA 4.0</a>
     <div class="last-updated" v-if="lastUpdated">
       <span class="prefix">{{ lastUpdatedText }}:</span>
       <span class="time">{{ lastUpdated }}</span>
