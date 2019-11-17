@@ -40,7 +40,7 @@ const config = {
 
   title: 'FE 笔记',
   description: '前端开发技术笔记',
-  head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square.png' }]],
+  head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square-blue.png' }]],
 
   dest: './public',
 
