@@ -76,7 +76,7 @@ Hooks 主要是 `useXXX` 系列 API，
 
 ### 我的笔记
 
-- [Hooks - Learning By Doing](https://github.com/seognil-study/learning-by-doing/tree/master/react)
+- [React - Learning By Doing](https://github.com/seognil-study/learning-by-doing/tree/master/react)
 - [React Hooks 学习指南](https://fe.rualc.com/note/react-hooks.html)
 
 ### 自学教材/基本 API
