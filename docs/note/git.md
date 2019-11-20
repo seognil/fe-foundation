@@ -90,7 +90,7 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 - 语义化版本（[Semantic Versioning](https://semver.org/lang/zh-CN/)）
   - [conventional-changelog/standard-version](https://github.com/conventional-changelog/standard-version)
   - `npm i -g standard-version`
-- 约定式提交（[Conventional Commits](https://www.conventionalcommits.org/zh/v1.0.0-beta.4/)）
+- 约定式提交（[Conventional Commits](https://www.conventionalcommits.org/zh-hans/)）
   - [commitizen/cz-cli](https://github.com/commitizen/cz-cli)
   - `npm i -g commitizen`
 - changelog（[conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)）
