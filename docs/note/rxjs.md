@@ -1,6 +1,6 @@
 # RxJS 学习指南
 
-## Rxjs 简介
+## RxJS 简介
 
 ### 什么是 ReactiveX
 
@@ -24,26 +24,15 @@ ReactiveX 的 JS 具体实现
 
 能用更少和清晰的代码完成异步业务
 
-## RxJS 主要概念
-
-- [Ob 相关]
-  - Observable: 可被观测的/数据流序列（很多创建方式，如 timer、fromEvent 等）
-  - operator: 操作符（对事件流进行形变，比如 map、merge 等）
-- [Sub 相关]
-  - subscribe: 订阅方法（Observable 提供的）
-    - Observer: 观察者/消费者方法集合（业务方法，传给 subscribe() 的）
-  - Subscription: 订阅关系（subscribe 返回的）
-    - unsubscribe: 结束订阅方法（Subscription 提供的）
-- Subject: 多播的 Observable（可以作为 Observable 和 Subscription 的中间层）
-- Scheduler：调度器
-
 ## 学习 RxJS
 
 ### 概览
 
 - 耗时：从入门到熟悉需要大约 15~30 小时（个人估计）
 - 难点：理解 Stream 范式，熟悉所有 API，API 搭配运用
-- 准备：本地，rxjs@6，npm，webpack/parcel/cli
+- 工具：
+  - [rxjs@6+](https://www.npmjs.com/package/rxjs)
+  - `webpack/parcel/cli`
 
 ### 学习路线
 
@@ -71,14 +60,26 @@ ReactiveX 的 JS 具体实现
   - cold vs hot Observable
   - 如何手动结束/关闭一个 Observable
 
+### RxJS 主要概念
+
+- [Ob 相关]
+  - Observable: 可被观测的/数据流序列（很多创建方式，如 timer、fromEvent 等）
+  - operator: 操作符（对事件流进行形变，比如 map、merge 等）
+- [Sub 相关]
+  - subscribe: 订阅方法（Observable 提供的）
+    - Observer: 观察者/消费者方法集合（业务方法，传给 subscribe() 的）
+  - Subscription: 订阅关系（subscribe 返回的）
+    - unsubscribe: 结束订阅方法（Subscription 提供的）
+- Subject: 多播的 Observable（可以作为 Observable 和 Subscription 的中间层）
+- Scheduler：调度器
+
 ## 资料
 
-### 我的笔记
+### 我的学习代码
 
 - [RxJs - Learning By Doing](https://github.com/seognil-study/learning-by-doing/tree/master/rxjs)
-- [RxJS 学习指南](https://fe.rualc.com/note/rxjs.html)
 
-### 入门教程/他人笔记
+### 自学教材
 
 - [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming)
 - [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)

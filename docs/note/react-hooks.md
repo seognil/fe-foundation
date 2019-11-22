@@ -20,36 +20,15 @@ Hooks 隐藏了 Class 写法中生命周期的概念，
 而 Hooks 突破了函数组件的局限性，  
 实现了一些 Class 组件才有的功能。
 
-## Hooks 主要概念
-
-Hooks 主要是 `useXXX` 系列 API，  
-以及实现 Hooks 机制的 React 内部代码（resolveDispatcher 等）。
-
-在[源码](https://github.com/facebook/react/blob/master/packages/react/src/ReactHooks.js)中有以下方法：
-
-- useContext
-- useState
-- useReducer
-- useRef
-- useEffect
-- useLayoutEffect
-- useCallback
-- useMemo
-- useImperativeHandle
-- useDebugValue
-- useResponder
-- useTransition
-- useDeferredValue
-
-另外社区中还衍生出了更多 API：[react-use](https://github.com/streamich/react-use)
-
 ## 学习 Hooks
 
 ### 概览
 
 - 耗时：从入门到熟悉需要大约 10~20 小时（个人估计）
 - 难点：理解 FP 范式，理解 JS 执行原理，探索最佳实践
-- 准备：本地，react@16.8+，npm，webpack/parcel/cli
+- 工具：
+  - [react@16.8+](https://www.npmjs.com/package/react)
+  - `webpack/parcel/cli`
 
 ### 学习路线
 
@@ -72,14 +51,30 @@ Hooks 主要是 `useXXX` 系列 API，
   - useEffect 的作用和运用
   - 探索最佳实践
 
+### Hooks 主要概念
+
+Hooks 主要是 `useXXX` 系列 API，  
+以及实现 Hooks 机制的 React 内部代码（resolveDispatcher 等）。
+
+- 常用 API
+  - useContext
+  - useState
+  - useReducer
+  - useRef
+  - useEffect
+  - useLayoutEffect
+  - useCallback
+  - useMemo
+
+另外社区中还衍生出了更多 API：[react-use](https://github.com/streamich/react-use)
+
 ## 资料
 
-### 我的笔记
+### 我的学习代码
 
 - [React - Learning By Doing](https://github.com/seognil-study/learning-by-doing/tree/master/react)
-- [React Hooks 学习指南](https://fe.rualc.com/note/react-hooks.html)
 
-### 自学教材/基本 API
+### 自学教材
 
 - [Hooks API 索引](https://zh-hans.reactjs.org/docs/hooks-reference.html)
 - [How to useContext in React? - RWieruch](https://www.robinwieruch.de/react-usecontext-hook)

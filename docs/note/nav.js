@@ -1,21 +1,20 @@
 module.exports = {
-  'TLDR': [
+  TLDR: [
     //
     './tldr.md',
     './fe-development-cookbook.md',
     './js-foundation.md',
   ],
-  '起步': [
+  起步: [
     //
     './my-workstation.md',
   ],
-  '系统工具': [
+  系统工具: [
     //
     './terminal-intro.md',
     './terminal-config.md',
-    './git.md',
   ],
-  'JavaScript': [
+  JavaScript: [
     //
     './js-modular.md',
     './npm-overview.md',
@@ -23,16 +22,18 @@ module.exports = {
     './npm-verdaccio.md',
     // './js-core/typescript.md',
   ],
-  'JS 工具': [
+  学习指南: [
     //
+    './git.md',
+    './typescript.md',
     './rxjs.md',
     './react-hooks.md',
   ],
-  '服务器': [
+  服务器: [
     //
     './linux-basic-security.md',
   ],
-  '开发生活': [
+  开发生活: [
     //
     './clean-keyboard.md',
   ],
