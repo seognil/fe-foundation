@@ -43,11 +43,36 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 ### 学习路线
 
 - 练习 Git 基本用法
-- 练习使用 Git flow 开发模型
+  - 完整的提交合并等操作
+- 练习使用 Git Flow 开发模型
 - 练习 Git 其他常用命令
 - 理解操作规范
   - branch 和 commit 的合理运用方式
   - 约定式提交
+
+### Git 主要概念
+
+- Git
+  - 基本操作
+    - init
+    - add/reset
+    - commit
+    - checkout
+    - merge
+    - pull/push/fetch
+    - remote
+  - 其他常用操作
+    - stash
+    - revert
+    - rebase
+    - diff
+    - cherry-pick
+- Git Flow 分支模型
+  - master
+  - release
+  - develop
+  - feature
+  - fix
 
 ### Git 工具
 
