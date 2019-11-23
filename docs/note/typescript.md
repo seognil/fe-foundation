@@ -41,7 +41,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - Object Oriented Programming
 - 学习 TypeScript
   - （学习 JavaScript）
-  - 学习和使用 TypeScript 常用概念
+  - 学习和使用 TypeScript 常用特性
   - 尝试将以前写的 JS 代码转换成 TS 版本
   - 了解 @types （DefinitelyTyped）
 - 实践

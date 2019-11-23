@@ -2,7 +2,7 @@
 home: true
 heroImage: /geneva-switzerland.jpeg
 actionText: 开始浏览 →
-actionLink: /note/js-modular.html
+actionLink: /note/about-the-guild.md
 features:
 
   - title: Ecosystem

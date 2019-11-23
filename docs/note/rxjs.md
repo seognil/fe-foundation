@@ -47,7 +47,7 @@ ReactiveX 的 JS 具体实现
     - Observable 及上下游
     - 多播
     - Scheduler
-  - 尝试 RxJS 所有 API
+  - 尝试 RxJS 所有（类型）的 API
     - 同类 API 之间的效果差异
     - 相同效果的流可以有多种实现方式
 - 题目/实战
@@ -79,23 +79,23 @@ ReactiveX 的 JS 具体实现
 
 - [RxJs - Learning By Doing](https://github.com/seognil-study/learning-by-doing/tree/master/rxjs)
 
-### 自学教材
+### 关于 响应式编程
 
 - [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming)
 - [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
-- 《深入浅出 RxJS》 - 程墨 （rxjs v5）
 - [RxJS 入门指引和初步应用](https://zhuanlan.zhihu.com/p/25383159)
 - [RxJS-响应式流编程](http://blueskyawen.com/2017/12/24/rxjs/)
 - [流动的数据——使用 RxJS 构造复杂单页应用的数据逻辑](https://github.com/xufei/blog/issues/38)
   <!-- https://blog.angularindepth.com/rxjs-in-practice-86cc133b7d42 -->
 
-### 文档/自学教材
+### RxJS 自学教材
 
 - [Learn RxJS](https://www.learnrxjs.io/) ：（v6）学习 RxJS，非常详细的站，有（几乎）所有 API 代码用法和实战 Demo
 - [Launchpad for RxJS](https://reactive.how/rxjs/) ：（v6）动画演示（一部分），API 按类型整理划分
 - [RxJS - API List](https://rxjs.dev/api) ：RxJS 官方文档
 - [RxJS example + marble diagram](https://thinkrx.io/rxjs/interval/) ：（v6）通过代码生成的弹珠台
 - [RxJS Marbles](https://rxmarbles.com/) ：弹珠台，可直接拖动，只有动画
+- 《深入浅出 RxJS》 - 程墨 （rxjs v5）
 
 ### 实践
 

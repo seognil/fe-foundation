@@ -24,6 +24,9 @@ module.exports = {
   ],
   学习指南: [
     //
+    './about-the-guild.md',
+    './study-methodology.md',
+    './study-guild-abstraction.md',
     './git.md',
     './typescript.md',
     './rxjs.md',
