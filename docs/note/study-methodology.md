@@ -61,7 +61,7 @@
 <!-- 分析瘫痪循环 -->
 <!-- 心流 -->
 
-### Crash Course Study Skills 总结
+## Crash Course Study Skills 总结
 
 - 学习系统
   - 信息采集
