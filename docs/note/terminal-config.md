@@ -13,12 +13,16 @@
 （可以自行配置到 `.bashrc`、`.zshrc` 中）
 
 ```bash
-# http://127.0.0.1:1080 是一个内网 IP
-export http_proxy='http://127.0.0.1:1080'
-export https_proxy='https://127.0.0.1:1080'
-```
+function proxyon() {
+  # http://127.0.0.1:1080 是一个内网 IP
+  export http_proxy='http://127.0.0.1:1080'
+  export https_proxy='https://127.0.0.1:1080'
+}
 
-有一个工具叫 [ProxyChains](https://github.com/haad/proxychains)，能够管理不同程序的 proxy。
+function proxyoff() {
+  unset http_proxy https_proxy
+}
+```
 
 ## Homebrew
 
