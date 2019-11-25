@@ -22,11 +22,14 @@ module.exports = {
     './npm-verdaccio.md',
     // './js-core/typescript.md',
   ],
-  学习指南: [
+  关于学习: [
     //
     './about-the-guild.md',
     './study-methodology.md',
     './study-guild-abstraction.md',
+  ],
+  学习指南: [
+    //
     './git.md',
     './typescript.md',
     './rxjs.md',

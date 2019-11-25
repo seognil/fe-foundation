@@ -25,7 +25,10 @@ TS 和 JS 在这些 API 方面的差别在变小，
 ### 概览
 
 - 耗时：从入门到熟悉需要大约 15~40 小时（个人估计）
-- 难点：理解 JS 之外的特性，运用，高级用法
+- 难点：
+  - 学习朴素 JS 中没有的特性
+  - 在业务中综合运用
+  - 使用一些高级用法
 - 工具：
   - [TypeScript](https://www.npmjs.com/package/typescript)
   - [ts-node](https://github.com/TypeStrong/ts-node)
@@ -53,6 +56,33 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - 迷思
   - 如何将 Object.keys 转换成 enum
   - 如何把数组转换成字面量类型
+
+## 资料
+
+### 自学教材
+
+- [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
+- [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)
+- [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
+- [TypeScript Basics 1 - Course plan and prerequisites](https://www.youtube.com/watch?v=YPShu0H3RbM&list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU&index=1)
+- [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)
+
+### 概念
+
+- [编译工具 - 2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh#section-compiler)
+- [编程语言的类型系统为何如此重要？](https://www.zhihu.com/question/23434097)
+- [弱类型、强类型、动态类型、静态类型语言的区别是什么？](https://www.zhihu.com/question/19918532)
+
+### 进阶
+
+- [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)
+- [如何看懂 typescript 核心源码，并可以参照 typescript 写一个类似的项目？](https://www.zhihu.com/question/318505680)
+- [Deno: A secure runtime for JavaScript and TypeScript.](https://github.com/denoland/deno)
+
+* [How to bundle a npm package with TypeScript and Rollup](https://medium.com/@paleo.said/how-to-bundle-an-npm-package-with-typescript-and-rollup-f80e0f196189)
+* [Building and publishing a module with TypeScript and Rollup.js](https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396)
+
+## TypeScript 知识体系
 
 ### TypeScript 主要概念
 
@@ -82,31 +112,6 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - [.d.ts 声明文件](https://www.tslang.cn/docs/handbook/declaration-files/publishing.html)
   - [DefinitelyTyped](http://definitelytyped.org/)
   - [tsconfig.json](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
-
-## 资料
-
-### 自学教材
-
-- [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
-- [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)
-- [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
-- [TypeScript Basics 1 - Course plan and prerequisites](https://www.youtube.com/watch?v=YPShu0H3RbM&list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU&index=1)
-- [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)
-
-### 概念
-
-- [编译工具 - 2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh#section-compiler)
-- [编程语言的类型系统为何如此重要？](https://www.zhihu.com/question/23434097)
-- [弱类型、强类型、动态类型、静态类型语言的区别是什么？](https://www.zhihu.com/question/19918532)
-
-### 进阶
-
-- [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)
-- [如何看懂 typescript 核心源码，并可以参照 typescript 写一个类似的项目？](https://www.zhihu.com/question/318505680)
-- [Deno: A secure runtime for JavaScript and TypeScript.](https://github.com/denoland/deno)
-
-* [How to bundle a npm package with TypeScript and Rollup](https://medium.com/@paleo.said/how-to-bundle-an-npm-package-with-typescript-and-rollup-f80e0f196189)
-* [Building and publishing a module with TypeScript and Rollup.js](https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396)
 
 ## TypeScript 典型代码
 

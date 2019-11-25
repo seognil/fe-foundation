@@ -4,8 +4,7 @@
 
 ### 什么是 Git
 
-Git 是一个流行的文件版本管理工具，  
-（SVN 是另一种版本管理工具）
+Git 是一个流行的文件版本管理工具。
 
 （版本管理不仅可以用于项目代码，也可以用来管理 '.psd'、游戏存档…等）
 
@@ -34,8 +33,10 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 
 ### 概览
 
-- 耗时：从入门到理解和掌握基本命令需要大约 2~10 小时 （个人经验）
-- 难点：操作规范性/开发工作流程，了解不常用的命令
+- 耗时：从入门到掌握基本命令到理解理念需要大约 1~10 小时 （个人估计）
+- 难点：
+  - 操作规范性/开发工作流程
+  - 了解一些不常用的命令的用途
 - 工具：
   - [git](https://formulae.brew.sh/formula/git)
   - [GitHub 账号](https://github.com/)
@@ -50,7 +51,31 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
   - branch 和 commit 的合理运用方式
   - 约定式提交
 
-### Git 主要概念
+## 资料
+
+如果可以，开两个 Github 账号，以便自己尝试 `pull request` 等功能
+
+### 自学教材
+
+- [Introduction to Git Use](https://developpaper.com/introduction-to-git-use/)
+- [Git and GitHub for Poets - Daniel Shiffman](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+- [Git 教程 - 廖雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
+
+### Git Flow
+
+- [Git 工作流程 - 阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+- [Git flow 入门教程](https://www.jianshu.com/p/b446c43577f9)
+- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+
+### 进阶
+
+- [Git Merge - Atlassian Tutorials](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
+- [What is the difference between `git merge` and `git merge --no-ff`?](https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
+- [Git 协同与提交规范](https://www.yuque.com/fe9/basic/nruxq8)
+
+## Git 知识体系
+
+### Git & Git Flow
 
 - Git
   - 基本操作
@@ -107,28 +132,6 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 - changelog（[conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)）
 - Submodules/lerna，管理多仓库项目的方式
 - badge（[shields.io](https://shields.io/)），为项目提供元信息图标
-
-## 资料
-
-如果可以，开两个 Github 账号，以便自己尝试 `pull request` 等功能
-
-### 自学教材
-
-- [Introduction to Git Use](https://developpaper.com/introduction-to-git-use/)
-- [Git and GitHub for Poets - Daniel Shiffman](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
-- [Git 教程 - 廖雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
-
-### Git Flow
-
-- [Git 工作流程 - 阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
-- [Git flow 入门教程](https://www.jianshu.com/p/b446c43577f9)
-- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
-
-### 进阶
-
-- [Git Merge - Atlassian Tutorials](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
-- [What is the difference between `git merge` and `git merge --no-ff`?](https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
-- [Git 协同与提交规范](https://www.yuque.com/fe9/basic/nruxq8)
 
 ## Git 基本命令
 

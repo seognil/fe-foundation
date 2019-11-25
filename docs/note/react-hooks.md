@@ -25,7 +25,10 @@ Hooks 隐藏了 Class 写法中生命周期的概念，
 ### 概览
 
 - 耗时：从入门到熟悉需要大约 10~20 小时（个人估计）
-- 难点：理解 FP 范式，理解 JS 执行原理，探索最佳实践
+- 难点：
+  - 理解 FP 范式（并知道 Hooks 并不是纯 FP）
+  - 理解 JS 执行原理
+  - 探索最佳实践
 - 工具：
   - [react@16.8+](https://www.npmjs.com/package/react)
   - `webpack/parcel/cli`
@@ -50,23 +53,6 @@ Hooks 隐藏了 Class 写法中生命周期的概念，
 - 迷思
   - useEffect 的作用和运用
   - 探索最佳实践
-
-### Hooks 主要概念
-
-Hooks 主要是 `useXXX` 系列 API，  
-以及实现 Hooks 机制的 React 内部代码（resolveDispatcher 等）。
-
-- 常用 API
-  - useContext
-  - useState
-  - useReducer
-  - useRef
-  - useEffect
-  - useLayoutEffect
-  - useCallback
-  - useMemo
-
-另外社区中还衍生出了更多 API：[react-use](https://github.com/streamich/react-use)
 
 ## 资料
 
@@ -97,6 +83,25 @@ Hooks 主要是 `useXXX` 系列 API，
 ### 扩展阅读
 
 - [V8 将为 React hooks 改进数组解构的性能](https://zhuanlan.zhihu.com/p/49077183)
+
+## Hooks 知识体系
+
+### Hooks 主要概念
+
+Hooks 主要是 `useXXX` 系列 API，  
+以及实现 Hooks 机制的 React 内部代码（resolveDispatcher 等）。
+
+- 常用 API
+  - useContext
+  - useState
+  - useReducer
+  - useRef
+  - useEffect
+  - useLayoutEffect
+  - useCallback
+  - useMemo
+
+另外社区中还衍生出了更多 API：[react-use](https://github.com/streamich/react-use)
 
 ## Hooks 典型代码
 

@@ -29,7 +29,9 @@ ReactiveX 的 JS 具体实现
 ### 概览
 
 - 耗时：从入门到熟悉需要大约 15~30 小时（个人估计）
-- 难点：理解 Stream 范式，熟悉所有 API，API 搭配运用
+- 难点：
+  - 理解 Stream 范式
+  - 熟悉 API 全貌并综合运用
 - 工具：
   - [rxjs@6+](https://www.npmjs.com/package/rxjs)
   - `webpack/parcel/cli`
@@ -59,19 +61,6 @@ ReactiveX 的 JS 具体实现
 - 迷思
   - cold vs hot Observable
   - 如何手动结束/关闭一个 Observable
-
-### RxJS 主要概念
-
-- [Ob 相关]
-  - Observable: 可被观测的/数据流序列（很多创建方式，如 timer、fromEvent 等）
-  - operator: 操作符（对事件流进行形变，比如 map、merge 等）
-- [Sub 相关]
-  - subscribe: 订阅方法（Observable 提供的）
-    - Observer: 观察者/消费者方法集合（业务方法，传给 subscribe() 的）
-  - Subscription: 订阅关系（subscribe 返回的）
-    - unsubscribe: 结束订阅方法（Subscription 提供的）
-- Subject: 多播的 Observable（可以作为 Observable 和 Subscription 的中间层）
-- Scheduler：调度器
 
 ## 资料
 
@@ -103,6 +92,21 @@ ReactiveX 的 JS 具体实现
 - [我所了解的 RxJS](https://juejin.im/post/5ca56f42f265da30982748e6#heading-13)
   <!-- https://www.sitepoint.com/rxjs-functions-with-examples/ -->
   <!-- https://angularfirebase.com/lessons/rxjs-quickstart-with-20-examples/ -->
+
+## RxJS 知识体系
+
+### RxJS 主要概念
+
+- [Ob 相关]
+  - Observable: 可被观测的/数据流序列（很多创建方式，如 timer、fromEvent 等）
+  - operator: 操作符（对事件流进行形变，比如 map、merge 等）
+- [Sub 相关]
+  - subscribe: 订阅方法（Observable 提供的）
+    - Observer: 观察者/消费者方法集合（业务方法，传给 subscribe() 的）
+  - Subscription: 订阅关系（subscribe 返回的）
+    - unsubscribe: 结束订阅方法（Subscription 提供的）
+- Subject: 多播的 Observable（可以作为 Observable 和 Subscription 的中间层）
+- Scheduler：调度器
 
 ## RxJS 典型代码
 
