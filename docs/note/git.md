@@ -6,17 +6,28 @@
 
 Git 是一个流行的文件版本管理工具。
 
-（版本管理不仅可以用于项目代码，也可以用来管理 '.psd'、游戏存档…等）
-
 基于 Git 本体衍生了出很多相关工具，  
 如 图形化的 Git 管理界面、各种 Git Diff 编辑器、Git 规范提交工具 等  
 这些工具围绕 Git 配合着一同工作。
 
+### 学习 Git 需要先学一门编程语言吗
+
+不需要。
+
+Git 的作用是管理**文件内容**的版本，而不是**代码内容**的，  
+不需要先学习一门编程语言。
+
+甚至如果你不是开发人员，也可以利用 Git，  
+用于管理 '.psd'、游戏存档…、诗集、文稿等等…
+
+比如 [本站](http://fe.rualc.com/) 一开始就是仅由两篇文章组成。
+
 ### 为什么要用 Git
 
-- 因为很多团队都在用
-- 可以方便地管理功能代码的多个版本，轻松回退切换
-- 使多人开发更好地并行化
+- 可以方便地管理文件的多个版本，轻松回退切换
+- 在产业界广泛被使用
+- 使多人协作更好进行
+  - 使开发工作更好地并行化
 
 ### GitHub 社区
 
@@ -57,6 +68,8 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 
 ### 自学教材
 
+- [学习 Git 分支](https://learngitbranching.js.org/)
+- [Git 菜单](https://github.com/geeeeeeeeek/git-recipes/blob/master/README.md)
 - [Introduction to Git Use](https://developpaper.com/introduction-to-git-use/)
 - [Git and GitHub for Poets - Daniel Shiffman](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 - [Git 教程 - 廖雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
@@ -72,6 +85,7 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 - [Git Merge - Atlassian Tutorials](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 - [What is the difference between `git merge` and `git merge --no-ff`?](https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
 - [Git 协同与提交规范](https://www.yuque.com/fe9/basic/nruxq8)
+- [Pro Git](https://git-scm.com/book/zh/v2)
 
 ## Git 知识体系
 
