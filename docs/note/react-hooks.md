@@ -70,7 +70,7 @@ Hooks 隐藏了 Class 写法中生命周期的概念，
 - [【译】什么时候使用 useMemo 和 useCallback](https://jancat.github.io/post/2019/translation-usememo-and-usecallback/)
 - [如何錯誤地使用 React hooks useCallback 來保存相同的 function instance](https://medium.com/@as790726/%E5%A6%82%E4%BD%95%E9%8C%AF%E8%AA%A4%E5%9C%B0%E4%BD%BF%E7%94%A8-react-hooks-usecallback-%E4%BE%86%E4%BF%9D%E5%AD%98%E7%9B%B8%E5%90%8C%E7%9A%84-function-instance-7744984bb0a6)
 
-### 实践
+### 实战
 
 - [示例 - React](https://zh-hans.reactjs.org/community/examples.html)
 - [react-use](https://github.com/streamich/react-use)

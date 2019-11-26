@@ -88,7 +88,7 @@ ReactiveX 的 JS 具体实现
 - [RxJS Marbles](https://rxmarbles.com/) ：弹珠台，可直接拖动，只有动画
 - 《深入浅出 RxJS》 - 程墨 （rxjs v5）
 
-### 实践
+### 实战
 
 - [Recipes - Learn RxJS](https://www.learnrxjs.io/recipes/)
 - [我所了解的 RxJS](https://juejin.im/post/5ca56f42f265da30982748e6#heading-13)
