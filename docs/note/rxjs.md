@@ -38,12 +38,14 @@ ReactiveX 的 JS 具体实现
 
 ### 学习路线
 
-- 理解 RxJS 编程理念
-  - functional programming
-  - reactive programming
-  - stream programming
-  - 迭代器模式（事件流遍历机制）
-  - 观察者模式（绑定机制）
+- 前置基础
+  - 理解 RxJS 编程理念
+    - functional programming
+    - reactive programming
+    - stream programming
+    - 迭代器模式（事件流遍历机制）
+    - 观察者模式（绑定机制）
+  - (TypeScript)
 - 学习 Rxjs
   - 掌握 RxJS 核心概念
     - Observable 及上下游
@@ -134,6 +136,8 @@ Subscription.unsubscribe()
 ### 具体代码 v5
 
 ```javascript
+// Node.js
+
 import { Observable } from 'rxjs';
 
 const ob$ = Observable.interval(500).map((e) => e * 2);
@@ -146,6 +150,8 @@ setTimeout(() => sub$.unsubscribe(), 3000);
 ### 具体代码 v6
 
 ```javascript
+// Node.js
+
 import { interval } from 'rxjs';
 import { map } from 'rxjs/operators';
 

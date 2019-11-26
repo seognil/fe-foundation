@@ -39,7 +39,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 ### 学习路线
 
-- 理解编程理念
+- 前置基础（理解编程理念）
   - 静态类型
   - Object Oriented Programming
 - 学习 TypeScript
@@ -118,6 +118,8 @@ TS 和 JS 在这些 API 方面的差别在变小，
 Check [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
 
 ```typescript
+// ts-node
+
 let isDone: boolean = false;
 let lines: number = 42;
 let lastName: string = 'Anders';

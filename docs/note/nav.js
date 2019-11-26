@@ -33,6 +33,7 @@ module.exports = {
     './git.md',
     './typescript.md',
     './rxjs.md',
+    './redux.md',
     './react-hooks.md',
   ],
   服务器: [

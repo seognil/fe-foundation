@@ -35,10 +35,13 @@ Hooks 隐藏了 Class 写法中生命周期的概念，
 
 ### 学习路线
 
-- 理解概念
-  - functional programming
+- 前置基础
+  - 理解 functional programming
     - side effect
-  - JS 执行原理
+  - 理解 JS 执行原理
+- 了解 React 基本概念
+  - 理解 展示组件、容器组件 的区别
+  - 学习 Context 的特性
 - 学习 Hooks
   - 练习所有 React 自带的基本 Hooks API
   - 结合 TypeScript
