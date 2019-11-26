@@ -1,25 +1,21 @@
 <p align="center">
 
-  ![the-banner](./docs/.vuepress/public/geneva-switzerland-narrow.jpg)
+![the-banner](./docs/.vuepress/public/geneva-switzerland-narrow.jpg)
 
 </p>
 
-<h1 align="center">
-  前端开发技术笔记
-</h1>
+<h1 align="center">FE 笔记</h1>
 
-<p align="center">
-  <a href="https://fe.rualc.com/">在线地址</a>
-</p>
+> Front-end Note  
+> （原名为：前端开发技术目录）
 
-<p align="center">
-  记录一些我在前端开发过程中梳理的知识
-</p>
+在线阅读：[https://fe.rualc.com/](https://fe.rualc.com/)
 
-<p align="center">
-  若有偏差 <a href="https://github.com/seognil/fe-foundation/issues/new">敬请斧正</a>
-</p>
+记录一些前端开发工作中所需的知识  
+以及我的杂谈
 
-<p align="center">
-  <a href="LICENSE">MIT</a> - 2019 - Seognil LC
-</p>
+若有偏差 [敬请斧正](https://github.com/seognil/fe-foundation/issues/new)
+
+[MIT](LICENSE) - 2019  
+[知识共享协议 CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)  
+Made with ❤️ by Seognil LC
