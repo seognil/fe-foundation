@@ -35,6 +35,7 @@ module.exports = {
     './rxjs.md',
     './redux.md',
     './react-hooks.md',
+    './redux-observable.md',
   ],
   服务器: [
     //

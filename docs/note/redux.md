@@ -36,8 +36,8 @@ Redux 可以和 React 搭配使用。
   - 设计出合理的数据结构和数据流
   - 探索不同业务下的设计，全局状态和局部状态如何管理和划分
 - 工具：
-  - `redux`
-  - `react-redux`
+  - [redux](https://www.npmjs.com/package/redux)
+  - [react-redux](https://www.npmjs.com/package/react-redux)
   - `webpack/parcel/cli`
 
 ### 学习路线
