@@ -1,6 +1,6 @@
 # redux-observable 学习指南
 
-## 关于 redux-observable
+## redux-observable 简介
 
 ### 什么是 redux-observable
 
