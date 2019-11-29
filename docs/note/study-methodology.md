@@ -2,7 +2,7 @@
 
 ## 简介
 
-### 什么是 学习的方法论
+### 什么是 学习方法论
 
 我的学习计划系列文章标题一般是《XXX 学习指南》
 
@@ -23,7 +23,14 @@
 - 难点：
   - 养成总结**知识体系**的习惯
   - 更好的**时间管理**计划
-- 工具：文本编辑器（我用 VSCode）、存储（我用 Dropbox）
+- 工具：
+  - 文本编辑器（我用 [VSCode](https://code.visualstudio.com/)）
+  - 云存储（我用过的，目前主力 Dropbox）
+    - [Dropbox](https://www.dropbox.com/)
+    - [OneDrive](https://onedrive.live.com/)
+    - [Google Drive](https://www.google.com/drive/download/backup-and-sync/)
+    - [MEGA](https://mega.nz/)
+    - [坚果云](https://www.jianguoyun.com/)
 
 ### 学习路线
 
@@ -44,22 +51,26 @@
 
 - [Crash Course Study Skills](https://www.youtube.com/watch?v=IhuwS5ZLwKY&list=PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W)
 
-### 扩展阅读
-
-- [每月高效工作 200 小时 / Environment Body Mind](https://wanqu.co/a/5765/%E6%AF%8F%E6%9C%88%E9%AB%98%E6%95%88%E5%B7%A5%E4%BD%9C-200-%E5%B0%8F%E6%97%B6/)
-- [X-Y PROBLEM](https://coolshell.cn/articles/10804.html)
-- [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
-- [任务换人有害无益 - Joel 说软件](https://www.kancloud.cn/wizardforcel/joel-on-software/99190)
-
-### 概念
+### 扩展阅读 方法论
 
 - [费曼学习法](https://wiki.mbalib.com/wiki/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95)
+- [刻意训练](https://www.zhihu.com/question/65785362)
 - [小黄鸭调试法](https://zh.wikipedia.org/zh-hans/%E5%B0%8F%E9%BB%84%E9%B8%AD%E8%B0%83%E8%AF%95%E6%B3%95)
+- [每月高效工作 200 小时 / Environment Body Mind](https://wanqu.co/a/5765/%E6%AF%8F%E6%9C%88%E9%AB%98%E6%95%88%E5%B7%A5%E4%BD%9C-200-%E5%B0%8F%E6%97%B6/)
+- [任务换人有害无益 - Joel 说软件](https://www.kancloud.cn/wizardforcel/joel-on-software/99190)
+- [X-Y PROBLEM](https://coolshell.cn/articles/10804.html)
+- [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
+
+### 扩展阅读 心理学
+
+- [游戏化](https://zhuanlan.zhihu.com/p/45980716)
+- [心流](<https://en.wikipedia.org/wiki/Flow_(psychology)>)
+- [斯金纳箱](https://www.gcores.com/radios/97874)
 - [达克效应](https://zh.wikipedia.org/wiki/%E8%BE%BE%E5%85%8B%E6%95%88%E5%BA%94)
 - [冒名顶替症候群](https://zh.wikipedia.org/wiki/%E5%86%92%E5%90%8D%E9%A0%82%E6%9B%BF%E7%97%87%E5%80%99%E7%BE%A4)
-
-<!-- 分析瘫痪循环 -->
-<!-- 心流 -->
+- [习得性无助](https://www.zhihu.com/question/26518056)
+- [分析瘫痪](https://blog.devopszen.com/analysis-paralysis)
+- [死锁](https://zh.wikipedia.org/wiki/%E6%AD%BB%E9%94%81)
 
 ## Crash Course Study Skills 总结
 
@@ -141,6 +152,7 @@
       - 提高经验水平
         - 训练
         - 预演
+          - Memory is context based（记忆是基于场景（上下文）的）
       - 寻求专业帮助（心理医生）
 
 * 考试和论文相关

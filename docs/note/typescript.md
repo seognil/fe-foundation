@@ -87,27 +87,32 @@ TS 和 JS 在这些 API 方面的差别在变小，
 ### TypeScript 主要概念
 
 - 基本概念
-  - type 类型
-  - interface 接口
-  - class
-    - private/public
-    - static
-    - implements
+  - `type` 类型
+  - `interface` 接口
+  - `class`
+    - `private/public`
+    - `static`
+    - `implements`
 - 其他常用概念
-  - Enums 枚举
-  - Literal Types 字面量类型
-  - Generics 泛型
-  - Intersection/Union 类型组合
-  - Overloads 重载
-  - Decorators 装饰器
+  - `Enums` 枚举
+  - `Literal Types` 字面量类型
+  - `Generics` 泛型
+  - `Intersection/Union` 类型组合
+  - `Overloads` 重载
+  - `Decorators` 装饰器
 - 修饰/操作符
-  - ? 可选
-  - as 断言
-  - in
-  - keyof
-  - typeof
-  - instanceof
-  - readonly
+  - `!`
+  - `?` 可选
+  - `-?` 
+  - `as` 断言
+  - `in`
+  - `keyof`
+  - `typeof`
+  - `instanceof`
+  - `readonly`
+  - `is`
+  - `extends`
+  - `infer`
 - 开发相关
   - [.d.ts 声明文件](https://www.tslang.cn/docs/handbook/declaration-files/publishing.html)
   - [DefinitelyTyped](http://definitelytyped.org/)
