@@ -57,6 +57,7 @@
 ### 扩展阅读 方法论
 
 - [费曼学习法](https://wiki.mbalib.com/wiki/%E8%B4%B9%E6%9B%BC%E5%AD%A6%E4%B9%A0%E6%B3%95)
+- [艾宾浩斯记忆法](https://wiki.mbalib.com/wiki/%E8%89%BE%E5%AE%BE%E6%B5%A9%E6%96%AF%E8%AE%B0%E5%BF%86%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF)
 - [刻意训练](https://www.zhihu.com/question/65785362)
 - [小黄鸭调试法](https://zh.wikipedia.org/zh-hans/%E5%B0%8F%E9%BB%84%E9%B8%AD%E8%B0%83%E8%AF%95%E6%B3%95)
 - [每月高效工作 200 小时 / Environment Body Mind](https://wanqu.co/a/5765/%E6%AF%8F%E6%9C%88%E9%AB%98%E6%95%88%E5%B7%A5%E4%BD%9C-200-%E5%B0%8F%E6%97%B6/)
@@ -66,14 +67,18 @@
 
 ### 扩展阅读 心理学
 
-- [游戏化](https://zhuanlan.zhihu.com/p/45980716)
-- [心流](<https://en.wikipedia.org/wiki/Flow_(psychology)>)
-- [斯金纳箱](https://www.gcores.com/radios/97874)
-- [达克效应](https://zh.wikipedia.org/wiki/%E8%BE%BE%E5%85%8B%E6%95%88%E5%BA%94)
-- [冒名顶替症候群](https://zh.wikipedia.org/wiki/%E5%86%92%E5%90%8D%E9%A0%82%E6%9B%BF%E7%97%87%E5%80%99%E7%BE%A4)
-- [习得性无助](https://www.zhihu.com/question/26518056)
-- [分析瘫痪](https://blog.devopszen.com/analysis-paralysis)
-- [死锁](https://zh.wikipedia.org/wiki/%E6%AD%BB%E9%94%81)
+- 正面
+  - [路径依赖](https://wiki.mbalib.com/wiki/%E8%B7%AF%E5%BE%84%E4%BE%9D%E8%B5%96)
+  - [多看效应](https://wiki.mbalib.com/wiki/%E5%A4%9A%E7%9C%8B%E6%95%88%E5%BA%94)
+  - [游戏化](https://zhuanlan.zhihu.com/p/45980716)
+  - [心流](<https://en.wikipedia.org/wiki/Flow_(psychology)>)
+  - [斯金纳箱](https://www.gcores.com/radios/97874)
+- 负面
+  - [达克效应](https://zh.wikipedia.org/wiki/%E8%BE%BE%E5%85%8B%E6%95%88%E5%BA%94)
+  - [冒名顶替症候群](https://zh.wikipedia.org/wiki/%E5%86%92%E5%90%8D%E9%A0%82%E6%9B%BF%E7%97%87%E5%80%99%E7%BE%A4)
+  - [习得性无助](https://www.zhihu.com/question/26518056)
+  - [分析瘫痪](https://blog.devopszen.com/analysis+paralysis)
+  - [死锁](https://zh.wikipedia.org/wiki/%E6%AD%BB%E9%94%81)
 
 ## Crash Course Study Skills 总结
 
