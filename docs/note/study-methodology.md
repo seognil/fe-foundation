@@ -52,6 +52,7 @@
 ### 自学教程
 
 - [Crash Course Study Skills](https://www.youtube.com/watch?v=IhuwS5ZLwKY&list=PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W)
+- [学习技能](https://www.bilibili.com/video/av16785517)
 
 ### 扩展阅读 方法论
 

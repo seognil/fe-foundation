@@ -30,6 +30,7 @@ module.exports = {
   ],
   学习指南: [
     //
+    './computer-science.md',
     './git.md',
     './typescript.md',
     './rxjs.md',

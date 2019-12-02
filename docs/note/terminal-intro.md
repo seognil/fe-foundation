@@ -20,6 +20,8 @@
 
 ### 术语解释
 
+- **CLI**：Command-line interface，命令行界面
+- **GUI**：Graphical user interface，图形用户界面
 - **Unix-like**：泛指所有具有类似 Unix 表现和行为的系统。
 - **Terminal**：终端，曾经指一类计算机硬件，现在泛指 Terminal emulator，也就是虚拟终端（一类软件）
 - **shell**：壳层，前接 Terminal、后接 Kernel 的一层接口
