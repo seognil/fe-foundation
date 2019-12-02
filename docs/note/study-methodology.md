@@ -27,7 +27,7 @@
   - 更好的**时间管理**计划
 - 工具：
   - 文本编辑器（我用 [VSCode](https://code.visualstudio.com/)）
-  - 云存储（我用过的，目前主力 Dropbox）
+  - 云存储（我用过的，~~目前主力 Dropbox~~）
     - [Dropbox](https://www.dropbox.com/)
     - [OneDrive](https://onedrive.live.com/)
     - [Google Drive](https://www.google.com/drive/download/backup-and-sync/)
@@ -140,7 +140,7 @@
       - 抑制机制（嘈杂环境、太难或简单、身体状态、连续工作等）
     - 正面措施
       - 放慢速度（减少工作记忆负荷）
-      - 减少被动信息摄入（少刷抖音，屏蔽噪音）
+      - 减少被动信息摄入（少刷抖音微博朋友圈，屏蔽环境噪音）
       - **停止多任务**（短时休息时也不要切换工作）
         - 认知切换惩罚
         - 注意力残留
