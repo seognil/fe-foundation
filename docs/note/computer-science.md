@@ -99,9 +99,9 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 * [浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles)
 * [中国科学技术大学课程资源](https://github.com/USTC-Resource/USTC-Course)
 
-## CS 相关
+## CS 知识体系
 
-### CCCS 课程笔记
+### CCCS 视频小结
 
 - 核心概念
   - 抽象、封装、分治
