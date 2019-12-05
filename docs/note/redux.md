@@ -110,7 +110,7 @@ Redux 可以和 React 搭配使用。
     - `<Provider store={store}> <App /> </Provider>`
   - **connect** (mapStateToProps?, mapDispatchToProps?)
     - mapStateToProps: `(state, ownProps?) => Object`
-    - mapDispatchToProps: `Object | (dispatch, ownProps?) => Object`
+    - mapDispatchToProps: `actionCreators | (dispatch, ownProps?) => Object`
 
 ## Redux 典型代码
 
