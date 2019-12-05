@@ -99,12 +99,15 @@ Redux 可以和 React 搭配使用。
     - **combineReducers** `(ReducersMapObject<State, Action>) => Reducer<State, Action>`
     - **applyMiddleware** `(...[middlewares]?) => createStore()`
       - middleware: `store => next => action => next(action)`
+  - **compose** === Ramda.compose
+  - **bindActionCreators** `(actionCreators, Dispatch) => dispatchers`
   - Store
     - **getState**: `() => State`
     - **dispatch** `(action) => void`
     - **subscribe** `(listener) => unsubscriber`
 - react-redux
-  - `<Provider store={store}> <App /> </Provider>`
+  - **Provider**
+    - `<Provider store={store}> <App /> </Provider>`
   - **connect** (mapStateToProps?, mapDispatchToProps?)
     - mapStateToProps: `(state, ownProps?) => Object`
     - mapDispatchToProps: `Object | (dispatch, ownProps?) => Object`
