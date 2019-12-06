@@ -61,7 +61,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 ### 自学教材
 
-- [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
+- [TypeScript 入门教程](https://ts.xcatliu.com/)
 - [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)
 - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
 - [TypeScript Basics 1 - Course plan and prerequisites](https://www.youtube.com/watch?v=YPShu0H3RbM&list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU&index=1)
@@ -75,6 +75,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 ### 进阶
 
+- [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
 - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)
 - [如何看懂 typescript 核心源码，并可以参照 typescript 写一个类似的项目？](https://www.zhihu.com/question/318505680)
 - [Deno: A secure runtime for JavaScript and TypeScript.](https://github.com/denoland/deno)
