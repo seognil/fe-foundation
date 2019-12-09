@@ -49,7 +49,7 @@
 ### redux-observable 核心概念
 
 - interface
-  - **Epic**: `(action$: Observable<Action>, state$: StateObservable<State>): Observable<Action>`
+  - **Epic**: `(action$: Observable<Action>, state: StateObservable<State>): Observable<Action>`
   - **EpicMiddleware**: `{ run: (Epic) => void }`
   - **StateObservable** <State>
 - API
@@ -123,8 +123,8 @@ setTimeout(() => store.dispatch(pongAction), 2000);
 
 ### Epic 等价
 
-Epic 的第二参数可以用于取值 `state$.value`  
-等价于 `withLatestFrom(state$) => [action, state]`
+Epic 的第二参数可以用于取值 `state.value`  
+逻辑等价于 `withLatestFrom(state) => [action, state]`
 
 ### ofType 等价
 
@@ -145,5 +145,5 @@ const rootEpic = combineEpics(aEpic, bEpic);
 
 ```javascript
 import { merge } from 'rxjs';
-const rootEpic = (action$, state$) => merge(aEpic(action$, state$), bEpic(action$, state$));
+const rootEpic = (action$, state) => merge(aEpic(action$, state), bEpic(action$, state));
 ```
