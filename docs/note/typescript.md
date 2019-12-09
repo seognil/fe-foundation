@@ -46,7 +46,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - （学习 JavaScript）
   - 学习和使用 TypeScript 常用特性
   - 尝试将以前写的 JS 代码转换成 TS 版本
-  - 了解 @types （DefinitelyTyped）
+  - 了解 @types （[DefinitelyTyped](http://definitelytyped.org/)）
 - 实践
   - 写业务时全面使用 TS （包括业务代码和 npm 包）
   - package 开发打包和声明文件
@@ -66,6 +66,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
 - [TypeScript Basics 1 - Course plan and prerequisites](https://www.youtube.com/watch?v=YPShu0H3RbM&list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU&index=1)
 - [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)
+- [DefinitelyTyped](http://definitelytyped.org/)
 
 ### 概念
 
