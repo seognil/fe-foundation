@@ -66,6 +66,10 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
 - [TypeScript Basics 1 - Course plan and prerequisites](https://www.youtube.com/watch?v=YPShu0H3RbM&list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU&index=1)
 - [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)
+
+### 实践
+
+- [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide/tree/zh-pre)
 - [DefinitelyTyped](http://definitelytyped.org/)
 
 ### 概念
@@ -105,7 +109,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - 修饰/操作符
   - `!`
   - `?` 可选
-  - `-?` 
+  - `-?`
   - `as` 断言
   - `in`
   - `keyof`
