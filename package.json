@@ -14,6 +14,7 @@
   "scripts": {
     "build": "vuepress build ./docs",
     "dev": "vuepress dev ./docs",
+    "start": "npm run dev",
     "preview": "npm run build && http-server -o -c-1 ./dist"
   },
   "devDependencies": {

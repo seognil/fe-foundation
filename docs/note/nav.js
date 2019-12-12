@@ -4,32 +4,20 @@ module.exports = {
     './tldr.md',
     './fe-development-cookbook.md',
     './js-foundation.md',
-  ],
-  起步: [
-    //
     './my-workstation.md',
   ],
-  系统工具: [
+  杂项: [
     //
     './terminal-intro.md',
     './terminal-config.md',
-  ],
-  JavaScript: [
-    //
     './js-modular.md',
     './npm-overview.md',
     './npm-speedup.md',
     './npm-verdaccio.md',
-    // './js-core/typescript.md',
-  ],
-  关于学习: [
-    //
-    './about-the-guild.md',
-    './study-methodology.md',
-    './study-guild-abstraction.md',
   ],
   学习指南: [
     //
+    './study-methodology.md',
     './computer-science.md',
     './git.md',
     './typescript.md',
@@ -38,23 +26,14 @@ module.exports = {
     './react-hooks.md',
     './redux-observable.md',
   ],
-  服务器: [
+  关于学习指南系列: [
     //
-    './linux-basic-security.md',
+    './about-the-guild.md',
+    './study-guild-abstraction.md',
   ],
   开发生活: [
     //
+    './linux-basic-security.md',
     './clean-keyboard.md',
   ],
-  // 'CS 系统': [
-  //   //
-  //   './cs/software-engineering.md',
-  // ],
-  // 'package 系统': [
-
-  //   './package/state-of-npm.md',
-  //   './package/js-module.md',
-  //   './package/npm-verdaccio.md',
-  //   './package/package-development.md',
-  // ],
 };

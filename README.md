@@ -37,9 +37,10 @@
 - [ ] fix zeit vuepress missiong last updated
 - [ ] fix zeit 404 page config
 - [ ] update article layout (add cc 4.0 section)
+- [ ] update better nav-bar and toc-bar
 - [ ] add comment section
 - [ ] add archive page
-- [ ] add vuepress custom 404 page
+- [ ] add custom 404 page design
 - [ ] add dynamic list homepage
 - [ ] update zeit 301 config
 
