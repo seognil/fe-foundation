@@ -179,15 +179,16 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 
 ### 前端中的 CS
 
-CS 在前端开发中的重要性，  
-前端工作中的各个部分都或多或少涉及 CS 的子领域，  
+早期前端野蛮生长，现代前端需要 CS。  
+在**生产力提高**和**行业需求升级**的相互作用下，  
+前端工作中的各部分都多少涉及 CS 的各个子领域，  
 举例说明：
 
-- 编译原理：Babel、TypeScript、JSX
-- 软件工程：Webpack、CI/DI、单元测试
-- 设计模式：框架源码、网站架构设计
+- 编译原理：Babel、TypeScript、JSX、Sass/LESS
+- 软件工程：Webpack、CI/CD、单元测试
+- 设计模式：框架（MVVM、依赖注入）、网站架构设计、KOA（AOP 编程）
 - 图形学：WebGL、three.js
 - 安全：HTTPS、权限、XSS、CSRF、输入验证
-- 编程范式：MVVM、Ramda（函数式）、RxJS（响应式）
-- 算法和数据结构：Immutable.js、merge、diff
+- 编程范式：Ramda（函数式）、RxJS（响应式）
+- 算法和数据结构：Immutable、React fiber、diff、Lodash
 - 计算机网络：HTTP、状态码
