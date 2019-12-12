@@ -15,7 +15,7 @@ module.exports = {
     './npm-speedup.md',
     './npm-verdaccio.md',
   ],
-  学习指南: [
+  学习指南系列: [
     //
     './study-methodology.md',
     './computer-science.md',
@@ -25,9 +25,6 @@ module.exports = {
     './redux.md',
     './react-hooks.md',
     './redux-observable.md',
-  ],
-  关于学习指南系列: [
-    //
     './about-the-guild.md',
     './study-guild-abstraction.md',
   ],

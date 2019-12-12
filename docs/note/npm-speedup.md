@@ -1,4 +1,4 @@
-# 提高 npm 安装速度
+# 进一步提高 npm 安装速度（Proxy）
 
 `nrm use taobao` 已经够快。
 

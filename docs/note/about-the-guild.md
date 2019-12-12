@@ -66,8 +66,8 @@
 
 ## 资料
 
-- [学习方法论](https://fe.rualc.com/note/study-methodology.html)
-- [学习指南模板](https://fe.rualc.com/note/study-guild-abstraction.md)
+- [学习方法论](./study-methodology.md)
+- [学习指南模板](./study-guild-abstraction.md)
 
 * [When and why to clean up your code: now, later, never](https://codewithoutrules.com/2018/11/02/when-clean-up-your-code/)
 * [我如何零基础转行成为一个自信的前端](https://www.yuque.com/fe9/basic/mchxkr)
