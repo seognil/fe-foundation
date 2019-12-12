@@ -1,6 +1,17 @@
 # 关于学习指南系列
 
-## 背景
+## TLDR
+
+Q：和网上其他的学习教程有什么**区别**？
+
+A：这**不是教程**或文档，不包括详尽的知识细节和工具使用方法，  
+这**只是指南**，记录了我的学习路径，以及关键知识体系笔记。  
+其中**包括**了一些其他更详细**教程的链接**（我觉得有用的那些）  
+具体内容结构参考 [学习指南模板](./study-guild-abstraction.md)
+
+## 关于学习指南系列
+
+### 背景
 
 现在互联网资讯很发达，网络上系统的教程很多，  
 我没必要重复造轮子。（我也没这个本事呀 >\_<）
@@ -28,7 +39,7 @@
 我希望能够提高自己的成长速度，来面对这一状况。  
 我想，应该有一个合适的方法论来解答这个问题。
 
-## 方法
+### 方法
 
 基于上述种种，我逐渐学习和整理出了一个[方法论](./study-methodology.md)：  
 对于学习任意工具，都能以某种[通用的套路](./study-guild-abstraction.md)完成，  
@@ -42,7 +53,7 @@
 当大致能够独立完成开发链路的大部分环节，  
 这时候，才是专攻和精进某些细分方向的好时机了。
 
-## 目标
+### 目的
 
 作为该方法论中的一部分，  
 我应该将一些内容整理成可查询和迭代的文档体系，  
@@ -58,19 +69,31 @@
 * 顺便的，将经验分享给我的朋友和同事们
 * 再顺便的，可能有机会帮助到曾经和我一样迷茫的初学者们。
 
-如果你已经学会了某些工具，心想："我的~~画风~~技术在你之上"  
-那么我的这些经验对你来说或许就意义不大了~（毕竟定位不同）  
-（一般进阶部分我会贴一些其他大佬的分享，这些我觉得还是值得一看的…）
+如果你已经学会了某些技术，心想："我的~~画风~~技术在你之上"  
+那么我的这些经验对你来说或许就意义不大了~（毕竟定位差异）  
+（一般进阶部分我会贴一些其他大佬的分享，这些我觉得也还是值得一看的…）
 
 做了一点微小的工作，谢谢：）
 
 ## 资料
 
+### 我的其他文章
+
 - [学习方法论](./study-methodology.md)
 - [学习指南模板](./study-guild-abstraction.md)
+- [计算机科学入门指南](./computer-science.md)
 
-* [When and why to clean up your code: now, later, never](https://codewithoutrules.com/2018/11/02/when-clean-up-your-code/)
-* [我如何零基础转行成为一个自信的前端](https://www.yuque.com/fe9/basic/mchxkr)
-* [聊聊 2018 年我所不了解的技术](https://overreacted.io/zh-hans/things-i-dont-know-as-of-2018/)
-* [Why I'm so good at coding.](https://www.youtube.com/watch?v=xqgH9j3x2OE)
-* [My Story of Being a Self Taught Programmer (Plus Tips and Advice!)](https://www.youtube.com/watch?v=62tsiY5j4_0)
+### 关于学习
+
+- [他们是肉造的 - 泰利·比森](https://www.zhihu.com/question/321878154)
+- [乡村教师 - 刘慈欣](https://zhuanlan.zhihu.com/p/57035271)
+- [五个比 Bitcoin 更好的投资](https://wanqu.co/a/6067/%E4%BA%94%E4%B8%AA%E6%AF%94-bitcoin-%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%8A%95%E8%B5%84/)
+- [巴菲特公式](https://wanqu.co/a/4065/2016-10-12-the-buffett-formula/)
+
+### 学习编程的合理方式
+
+- [When and why to clean up your code: now, later, never](https://codewithoutrules.com/2018/11/02/when-clean-up-your-code/)
+- [我如何零基础转行成为一个自信的前端](https://www.yuque.com/fe9/basic/mchxkr)
+- [聊聊 2018 年我所不了解的技术](https://overreacted.io/zh-hans/things-i-dont-know-as-of-2018/)
+- [Why I'm so good at coding.](https://www.youtube.com/watch?v=xqgH9j3x2OE)
+- [My Story of Being a Self Taught Programmer (Plus Tips and Advice!)](https://www.youtube.com/watch?v=62tsiY5j4_0)

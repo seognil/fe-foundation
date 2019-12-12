@@ -55,7 +55,7 @@
 - interface
   - **Epic**: `(action$: Observable<Action>, state$: StateObservable<State>): Observable<Action>`
   - **EpicMiddleware**: `{ run: (Epic) => void }`
-  - **StateObservable** <State>
+  - **StateObservable** `<State>`
 - API
   - **ofType** `('myActionType')`  
     等价于 `filter(action => action.type === 'myActionType')`

@@ -1,12 +1,12 @@
 module.exports = {
-  TLDR: [
+  'TLDR': [
     //
     './tldr.md',
     './fe-development-cookbook.md',
     './js-foundation.md',
     './my-workstation.md',
   ],
-  杂项: [
+  '杂记（未分类）': [
     //
     './terminal-intro.md',
     './terminal-config.md',
@@ -15,7 +15,7 @@ module.exports = {
     './npm-speedup.md',
     './npm-verdaccio.md',
   ],
-  学习指南系列: [
+  '学习指南系列': [
     //
     './study-methodology.md',
     './computer-science.md',
@@ -28,7 +28,7 @@ module.exports = {
     './about-the-guild.md',
     './study-guild-abstraction.md',
   ],
-  开发生活: [
+  '开发生活': [
     //
     './linux-basic-security.md',
     './clean-keyboard.md',

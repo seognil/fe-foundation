@@ -71,7 +71,7 @@
 ### 我的学习代码
 
 - 我的 Learning By Doing 系列训练代码仓库  
-  https://github.com/seognil-study/learning-by-doing
+  [https://github.com/seognil-study/learning-by-doing](https://github.com/seognil-study/learning-by-doing)
 
 ### 自学教材
 
@@ -103,7 +103,7 @@
 
 ### 衍生的知识体系?
 
-- （比如 XXX-saga、XXX-dva）
+- （比如 XXX-saga、XXX-next）
 
 ## XXX 典型代码
 
