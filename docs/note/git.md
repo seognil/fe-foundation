@@ -68,7 +68,7 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 
 ### 自学教材
 
-- [学习 Git 分支](https://learngitbranching.js.org/)
+- [学习 Git 分支（有中文）](https://learngitbranching.js.org/)
 - [Git 菜单](https://github.com/geeeeeeeeek/git-recipes/blob/master/README.md)
 - [Introduction to Git Use](https://developpaper.com/introduction-to-git-use/)
 - [Git and GitHub for Poets - Daniel Shiffman](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
