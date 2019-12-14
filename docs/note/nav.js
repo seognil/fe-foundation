@@ -2,12 +2,15 @@ module.exports = {
   'TLDR': [
     //
     './tldr.md',
-    './fe-development-cookbook.md',
+    './fe-development-cookbook-old.md',
     './js-foundation.md',
     './my-workstation.md',
   ],
   '杂记（未分类）': [
     //
+    './fe-hardcore-parts.md',
+    './english-using.md',
+    './video-hotkey.md',
     './terminal-intro.md',
     './terminal-config.md',
     './js-modular.md',
