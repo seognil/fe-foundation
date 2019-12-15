@@ -49,7 +49,7 @@
     - [用快捷键控制视频播放](./video-hotkey.md)
   - [VS Code](./vscode.md)
 - 概览
-  - 前端开发路线图（TODO）
+  - [前端开发路线图（TODO）](./fe-development-cookbook-old.md#%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92)
   - [Node 概览（先行版）](./npm-overview.md)
     - [进一步提高 npm 安装速度（Proxy）](./npm-speedup.md)
   - [Git 学习指南](./git.md)

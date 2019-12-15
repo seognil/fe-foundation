@@ -12,7 +12,7 @@ module.exports = {
   '入行系列': [
     //
     './fe-development-cookbook.md',
-    // './fe-development-cookbook-old.md',
+    './fe-development-cookbook-old.md',
     './fe-hardcore-overview.md',
 
     './my-workstation.md',
