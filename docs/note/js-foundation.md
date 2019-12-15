@@ -1,4 +1,4 @@
-# JS Foundation
+# JS Foundation（先行版）
 
 JS 基础纲要速写笔记  
 若有偏差敬请斧正
