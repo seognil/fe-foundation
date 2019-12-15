@@ -14,7 +14,7 @@
 
 ## 知识
 
-### 基本调试技巧
+### 浏览器基本调试技巧
 
 - [在 Chrome DevTools 中调试 JavaScript 入门](https://developers.google.com/web/tools/chrome-devtools/javascript/?hl=zh-cn)
 - [Performance Analysis Reference](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference?hl=zh-cn)
@@ -37,10 +37,18 @@
 ### 浏览器设置
 
 - 确认搜索引擎设置为 Google （或 bing、DuckDuckGo，反正不要用百度）
+- 开启账号同步
 
 ### 插件
 
 我用的一些重要插件：
+
+#### 私人
+
+- [Google Keep](https://keep.google.com/)
+- [LastPass](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
+
+#### 干活
 
 - 杂项
   - [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)

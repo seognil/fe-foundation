@@ -84,6 +84,7 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 
 ### 编程漫谈
 
+- [为什么滑铁卢大学让大一学生从不实用的 racket 语言学起而不是直接上手 C 语言？](https://www.zhihu.com/question/348189701)
 - [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl)
 - [如何评价王垠新博文《如何掌握所有的程序语言》？](https://www.zhihu.com/question/62097662)
 - [编程究竟难在哪？](https://www.zhihu.com/question/311432227)
