@@ -2,22 +2,32 @@ module.exports = {
   'TLDR': [
     //
     './tldr.md',
-    './fe-development-cookbook.md',
     './js-foundation.md',
-    './my-workstation.md',
   ],
   '杂记（未分类）': [
     //
+    './js-modular.md',
+    './npm-verdaccio.md',
+  ],
+  '入行系列': [
+    //
+    './fe-development-cookbook.md',
+    './fe-development-cookbook-old.md',
+    './fe-hardcore-overview.md',
+
+    './my-workstation.md',
     './terminal-intro.md',
     './terminal-config.md',
-    './js-modular.md',
+    './chrome.md',
+    './vscode.md',
+    './video-hotkey.md',
     './npm-overview.md',
     './npm-speedup.md',
-    './npm-verdaccio.md',
   ],
   '学习指南系列': [
     //
     './study-methodology.md',
+    './english-using.md',
     './computer-science.md',
     './git.md',
     './typescript.md',

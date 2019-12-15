@@ -2,7 +2,7 @@
 home: true
 heroImage: /geneva-switzerland.jpeg
 actionText: 开始浏览 →
-actionLink: /note/about-the-guild.md
+actionLink: /note/fe-development-cookbook.md
 features:
 
   - title: Ecosystem

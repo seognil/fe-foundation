@@ -6,9 +6,13 @@
 
 Git 是一个流行的文件版本管理工具。
 
-基于 Git 本体衍生了出很多相关工具，  
-如 图形化的 Git 管理界面、各种 Git Diff 编辑器、Git 规范提交工具 等  
-这些工具围绕 Git 配合着一同工作。
+基于 Git 本体还衍生了出很多相关工具，如：
+
+- 图形化的 Git 管理界面
+- 各种 Git Diff 编辑器
+- Git 规范提交工具
+
+等…这些工具围绕 Git 配合着一同工作。
 
 ### 学习 Git 需要先学一门编程语言吗
 
@@ -35,7 +39,7 @@ GitHub 是一个免费的 Git 远端仓库，
 有很多著名的项目和工具都托管在 GitHub 上，  
 如 [VSCode](https://github.com/microsoft/vscode)、 [React](https://github.com/facebook/react) 等
 
-（类似的远端仓库还有 GitLab、Bitbucket、Coding.net 等）
+（类似的远端仓库还有 [GitLab](https://about.gitlab.com/)、[Bitbucket](https://bitbucket.org/product/)、[CODING](https://coding.net/) 等）
 
 GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他功能，  
 如 issues 系统，page 服务 等
@@ -49,7 +53,7 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
   - 操作规范性/开发工作流程
   - 了解一些不常用的命令的用途
 - 工具：
-  - [git](https://formulae.brew.sh/formula/git)
+  - [git](https://git-scm.com/)
   - [GitHub 账号](https://github.com/)
 
 ### 学习路线
@@ -136,7 +140,7 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 ### Git 周边生态
 
 - Git Flow 工作流模型
-- `--no-ff` (no fast forward merge) 参数，merge 的时候总是建立新分支，保持各分支含义清晰。
+- `--no-ff` (no fast forward merge) 参数，使 merge 的时候总是建立新提交，保持各分支含义清晰。
 - 语义化版本（[Semantic Versioning](https://semver.org/lang/zh-CN/)）
   - [conventional-changelog/standard-version](https://github.com/conventional-changelog/standard-version)
   - `npm i -g standard-version`
@@ -144,7 +148,7 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
   - [commitizen/cz-cli](https://github.com/commitizen/cz-cli)
   - `npm i -g commitizen`
 - changelog（[conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)）
-- Submodules/lerna，管理多仓库项目的方式
+- [submodule](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)/[lerna](https://github.com/lerna/lerna)，管理多仓库项目的方式
 - badge（[shields.io](https://shields.io/)），为项目提供元信息图标
 
 ## Git 基本命令
