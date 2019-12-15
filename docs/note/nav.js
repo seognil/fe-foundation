@@ -13,17 +13,17 @@ module.exports = {
     //
     './fe-development-cookbook.md',
     // './fe-development-cookbook-old.md',
+    './fe-hardcore-overview.md',
+
     './my-workstation.md',
     './terminal-intro.md',
     './terminal-config.md',
     './chrome.md',
     './vscode.md',
     './video-hotkey.md',
-    './fe-hardcore-overview.md',
     './npm-overview.md',
     './npm-speedup.md',
   ],
-
   '学习指南系列': [
     //
     './study-methodology.md',
