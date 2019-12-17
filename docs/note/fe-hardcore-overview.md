@@ -34,6 +34,8 @@
 > 在你学会一项前端技术的时候，另外三项新技术已经发布了。不仅如此，你刚学会的那个也已经被弃用了。  
 > —— [[译] 为何前端开发如此不稳定](https://juejin.im/post/5b1f2f1ae51d4506894983ae)
 
+[为什么很多技术都觉得前端很简单？](https://www.zhihu.com/question/353545736/answer/935917542)
+
 [未来的前端工程师](https://juejin.im/post/5a474c8ff265da430a50ea57)
 
 [「2019 JSConf.Asia - 尤雨溪」在框架设计中寻求平衡](https://zhuanlan.zhihu.com/p/76622839)

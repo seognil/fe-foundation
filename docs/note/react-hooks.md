@@ -81,7 +81,7 @@ Hooks 隐藏了 Class 写法中生命周期的概念，
 - [useEffect 完整指南](https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/)
 - [useEffect vs. useLayoutEffect in plain, approachable language](https://blog.logrocket.com/useeffect-vs-uselayouteffect/)
 - [精读《React Hooks 最佳实践》](https://zhuanlan.zhihu.com/p/81752821)
-- [精读《怎么用 React Hooks 造轮子](https://github.com/dt-fe/weekly/blob/v2/080.%E7%B2%BE%E8%AF%BB%E3%80%8A%E6%80%8E%E4%B9%88%E7%94%A8%20React%20Hooks%20%E9%80%A0%E8%BD%AE%E5%AD%90%E3%80%8B.md)
+- [精读《怎么用 React Hooks 造轮子》](https://github.com/dt-fe/weekly/blob/v2/080.%E7%B2%BE%E8%AF%BB%E3%80%8A%E6%80%8E%E4%B9%88%E7%94%A8%20React%20Hooks%20%E9%80%A0%E8%BD%AE%E5%AD%90%E3%80%8B.md)
 
 ### 扩展阅读
 
