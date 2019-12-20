@@ -73,7 +73,7 @@ warn --- http address - http://localhost:4873/ - verdaccio/3.11.5
 
 说明已经启动成功，可以看到仓库的默认地址是 `http://localhost:4873/`  
 配置文件在 `~/.config/verdaccio/config.yaml`  
-并且在浏览器中访问 [http://localhost:4873/](http://localhost:4873/) ，可以看到一个图形化管理界面。  
+并且在浏览器中访问 <http://localhost:4873/> ，可以看到一个图形化管理界面。  
 verdaccio 可以设置多个源，我们加入淘宝源。  
 （也可以直接删掉 npmjs 相应的行，只使用淘宝源，以提高响应速度。）
 
