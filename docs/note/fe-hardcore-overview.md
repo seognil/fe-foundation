@@ -46,6 +46,9 @@
 
 [《蚂蚁前端研发最佳实践》文字稿](https://github.com/sorrycc/blog/issues/90)
 
+![stateofjs2019](./img/stateofjs2019tshirt-illustration.png)  
+<https://2019.stateofjs.com/tshirt/>
+
 ### 所以，前端工程师是什么？
 
 > 前端工程师首先是个程序员，其次也是个软件工程师。
