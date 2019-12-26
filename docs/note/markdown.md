@@ -228,6 +228,6 @@ var a = 2;
 所以你看到的 Markdown 没有被转义
 
 可以到这里看看本文的 Markdown 源码是怎么写的：
-https://github.com/seognil/fe-foundation/blob/master/docs/note/markdown.md
+https://raw.githubusercontent.com/seognil/fe-foundation/master/docs/note/markdown.md
 ````
 `````
