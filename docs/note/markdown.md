@@ -63,9 +63,15 @@ Table Of Contents 的缩写，表示目录。
 对于 Markdown 写作，我自己主要是：
 
 - [VS Code](https://code.visualstudio.com/)
-  - Markdown 功能：[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+  - Markdown 插件：[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
   - 语法高亮：[Dracula](https://draculatheme.com/)
   - 格式化：[Prettier](https://prettier.io/)
+  - 编译发布：[VuePress](https://vuepress.vuejs.org/zh/)
+
+Markdown 的某些特性可能有多种写法，  
+使用格式化工具可以保持编码风格统一。
+
+而现成的编译器可能会集成代码块语法高亮等功能。
 
 ### 写作软件（在线）
 
@@ -95,14 +101,17 @@ Table Of Contents 的缩写，表示目录。
 
 <!-- 样式 -->
 
-**粗体**
-_斜体_
-~~删除线~~
+**粗体 strong**
+_斜体 em_
+~~删除线 s~~
+
+注意：以上标记如果边界处有空格，根据工具不同可能会造成解析失败
+例如： _ 可能无效 _
 
 <!-- code 标签 -->
 
 像这样用反引号包起来 → `exit vim`
-在一句话中使用 `code` 标签
+使用场景：JavaScript 中有 `var` 关键字。
 
 <!-- HTML -->
 
@@ -111,21 +120,25 @@ _斜体_
 ```
 
 ```markdown
-<!-- 引用 -->
+<!-- 引用（blockquote） -->
 
-> Markdown 是一种轻量级标记语言。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者 HTML）文档”。
-> —— 维基百科
+> 以右尖括号开头的段落表示引用  
+> 支持很多其他 **Markdown 语法**  
+> <br/> 包括换行
+> > 也可以嵌套
+> > 本质上是转义成 blockquote 标签
 
-<!-- 换行 -->
+<!-- 换行（br） -->
 
 一行的最后接两个空格（选中看看） →  
-再写另一行
+再写另一行，则会形成换行。
 
-GitHub 好像不加空格也可以自动视为换行
+GitHub 好像不加空格也可以自动视为换行  
+Vuepress 使用的编译器则不行，必须加上空格
 
 或者显式地 <br/>
 
-<!-- 水平线 -->
+<!-- 水平线（hr） -->
 
 ---
 ***
@@ -137,17 +150,20 @@ GitHub 好像不加空格也可以自动视为换行
 ```
 
 ```markdown
-<!-- 链接 -->
+<!-- 链接（a 标签） -->
 
 [链接文字](https://fe.rualc.com/)
 
 编译成：
 <a href="https://fe.rualc.com/">链接文字</a>
 
-同名链接 ↓
+同名链接的写法 ↓
 <https://fe.rualc.com/>
 等价于：
 [https://fe.rualc.com/](https://fe.rualc.com/)
+
+VuePress 不支持裸链接直接编译，可以使用同名链接的写法
+GitHub 则是直接支持编译
 
 ---
 
@@ -155,7 +171,7 @@ GitHub 好像不加空格也可以自动视为换行
 
 [home]: https://fe.rualc.com/ '这里可以写注释'
 
-<!-- 图片 -->
+<!-- 图片（img） -->
 
 ![图片描述](https://fe.rualc.com/js-nation-square-blue.png)
 
@@ -164,7 +180,7 @@ GitHub 好像不加空格也可以自动视为换行
 ```
 
 ```markdown
-<!-- 列表 -->
+<!-- 列表（ul/li） -->
 
 - 列表项
   - 子项
@@ -177,39 +193,40 @@ GitHub 好像不加空格也可以自动视为换行
 * 不同的一级标记则视为另一个列表
   - 子项
 
-<!-- 有序列表 -->
+<!-- 有序列表（ol/li） -->
 
 1. 有序列表
 2. 有些工具会自动补齐下一行的数字
-1. 但其实数字值其实无所谓（解析工具自动判断）
+3. 但其实数字值其实无所谓（解析工具自动判断）
 
-1. 另起一行不会视为另一个列表（因为自动解析规则）
-2. 请插入 <br/> 来实现
+4. 另起一行不会视为另一个列表（因为自动解析规则）
+5. 请插入 <br/> 来实现
 
 <br/>
 
 1. 像这样才是另一个列表
 
-<!-- TODO 列表 -->
+<!-- 待办事项列表 -->
 
 - [ ] 未完成 `[ ]` 表示未完成
-- [ ] 另一个未完成
+- [ ] 未完成 实际上会编译成 <input type="checkbox">
 - [x] 已完成 `[x]` 表示已完成
-  - [ ] 子项
-  - [x] 子项
+  - [ ] 默认可能无法直接编辑（通过 `disabled` 属性实现）
+  - [x] GitHub 的 issue 页支持直接编辑（并保存）
 
-<!-- 表格 -->
+<!-- 表格（table） -->
 
 | 表格     | 第二栏   |   第三栏 |        |
 | -------- | :------- | -------: | :----: |
 | 表格内容 | 左对齐 ↑ | 右对齐 ↑ | 居中 ↑ |
 |          | 文字     |     文字 |  文字  |
 
-（建议使用等宽字体）
+建议编写时使用等宽字体
+Prettier 格式化可以自动对齐每一栏
 ```
 
 `````markdown
-<!-- pre 标签（代码块） -->
+<!-- 代码块（pre 标签） -->
 
 ```javascript
 var a = 2;
@@ -222,10 +239,11 @@ var a = 2;
 三个 ` 表示代码块 后面可以指定语言（也可以不）
 ```
 
-代码块可以像这样嵌套 ↑，只要像 # 一样多写几个。
+代码块可以像这样嵌套 ↑，
+写法上类似 #，只要多写几个反引号，则内部不会转义
 
 其实这个版块整个都被包裹在代码块里  
-所以你看到的 Markdown 没有被转义
+所以你看到的 Markdown 代码都没有被转义
 
 可以到这里看看本文的 Markdown 源码是怎么写的：
 https://raw.githubusercontent.com/seognil/fe-foundation/master/docs/note/markdown.md
