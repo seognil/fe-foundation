@@ -1,5 +1,7 @@
 # 进一步提高 npm 安装速度（Proxy）
 
+在 [上一篇](./npm-overview.md) 中我们提到：  
+可以使用换源的方式提高 npm 的安装速度，  
 `nrm use taobao` 已经够快。
 
 但有的时候 npm 的安装还是会表现出假死的状态。  
@@ -9,7 +11,7 @@
 例如：
 
 ```bash
-npm i puppeteer # 安装 puppeteer（或者 node-sass 也有类似情况）
+npm i puppeteer # 安装 puppeteer（或者 node-sass、cypress 等也有类似情况）
 > puppeteer@1.12.2 install /Users/lc/0Work/test-npm/node_modules/puppeteer
 > node install.js
 ```
