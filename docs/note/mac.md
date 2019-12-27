@@ -49,11 +49,11 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
     - [node](./npm-overview.md)（我的《[Node.js/npm 概览](./npm-overview.md)》）
     - [nvm](https://github.com/nvm-sh/nvm)
   - 工具
-    - [mas](https://github.com/mas-cli/mas)：命令行安装 AppStore 应用
-    - [tldr](https://github.com/tldr-pages/tldr)：常用命令查询工具
-    - [screenfetch](https://github.com/KittyKatt/screenFetch)：系统信息
+    - [mas](https://github.com/mas-cli/mas)：从命令行安装 AppStore 应用的工具
+    - [tldr](https://github.com/tldr-pages/tldr)：命令文档查询工具
+    - [screenfetch](https://github.com/KittyKatt/screenFetch)：显示当前系统信息
   - 增强
-    - [tig](https://github.com/jonas/tig)：git history
+    - [tig](https://github.com/jonas/tig)：更好的 git history
     - [trash](https://github.com/sindresorhus/trash)：扔到垃圾桶（代替 `rm -rf`）
     - [tree](https://sourabhbajaj.com/mac-setup/iTerm/tree.html)：文件夹树型显示
     - [htop](https://hisham.hm/htop/)：命令行系统监控
