@@ -46,7 +46,7 @@
 
 [《蚂蚁前端研发最佳实践》文字稿](https://github.com/sorrycc/blog/issues/90)
 
-![stateofjs2019](./img/stateofjs2019tshirt-illustration.png)  
+![stateofjs2019](./img/stateofjs2019-dark-fs8.png)  
 <https://2019.stateofjs.com/tshirt/>
 
 ### 所以，前端工程师是什么？
