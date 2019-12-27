@@ -1,22 +1,48 @@
-# 装了啥 2019 版（我的）
+# 我的 2019 装了啥
 
 > 参考自：[装了啥 - 云谦](https://github.com/sorrycc/awesome-tools)
 
-## 魔法丝袜
+## 魔法丝袜之影
 
-- （不告诉你）
+- 略
 
 ## Mac 和软件
 
-- [Mac 和软件](./mac.md)
+- 《[Mac 和软件](./mac.md)》
+- 《[关于 Chrome](./chrome.md)》
+- 《[关于 VS Code](./vscode.md)》
 
-## Chrome
+## 在线服务
 
-- [Chrome](./chrome.md)
+- 免费
+  - 干活
+    - [A SOFT MURMUR](https://asoftmurmur.com/)：白噪声（干活时听）
+    - [StackBlitz](http://stackblitz.com/)：在线代码编辑和分享
+    - [Netlify](https://www.netlify.com/)：静态托管服务
+    - [Zeit now](https://zeit.co/)：静态托管服务
+  - 私人
+    - [YouTube](https://www.youtube.com/)：看视频
+    - [SoundCloud](https://soundcloud.com/)：听音乐
+    - [Mega cloud](https://mega.nz/)：网盘
+    - [Dropbox](https://www.dropbox.com/)：网盘
 
-## VS Code
+* 付费
+  - [FrontendMasters](https://frontendmasters.com/)：前端学习教程
+  - [百度云](https://pan.baidu.com/)
+  - 阿里云域名
+  - 阿里 88 会员
 
-- [VS Code](./vscode.md)
+## 每天都用
+
+- 魔法丝袜
+- Chrome
+- VS Code
+- Google Keep
+- GitHub
+- 支付宝
+- 微信
+- QQ
+- 知乎
 
 ## 硬件（干活）
 
@@ -66,32 +92,3 @@
   - 移动 8 元保号套餐
   - 联通 O 粉卡
   - 电信宽带送的 10G 流量卡
-
-## 每天都用
-
-- 魔法丝袜
-- Chrome
-- VS Code
-- Google Keep
-- GitHub
-- 支付宝
-- 微信
-- QQ
-- 知乎
-
-## 在线服务
-
-- 免费
-  - [StackBlitz](http://stackblitz.com/)
-  - [YouTube](https://www.youtube.com/)
-  - [SoundCloud](https://soundcloud.com/)
-  - [Netlify](https://www.netlify.com/)
-  - [Zeit now](https://zeit.co/)
-  - [Mega cloud](https://mega.nz/)
-  - [Dropbox](https://www.dropbox.com/)
-
-* 付费
-  - [FrontendMasters](https://frontendmasters.com/)
-  - [百度云](https://pan.baidu.com/)
-  - 阿里云域名
-  - 阿里 88 会员

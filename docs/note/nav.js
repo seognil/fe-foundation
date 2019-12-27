@@ -12,12 +12,12 @@ module.exports = {
   '入行系列': [
     //
     './fe-development-cookbook.md',
-    './fe-development-cookbook-old.md',
     './fe-hardcore-overview.md',
 
     './my-workstation.md',
     './terminal-intro.md',
     './terminal-config.md',
+    './mac.md',
     './chrome.md',
     './vscode.md',
     './video-hotkey.md',
@@ -30,8 +30,8 @@ module.exports = {
     './english-using.md',
     './computer-science.md',
     './markdown.md',
-    './regexp.md',
     './git.md',
+    './regexp.md',
     './typescript.md',
     './rxjs.md',
     './redux.md',

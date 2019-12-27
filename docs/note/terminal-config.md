@@ -2,7 +2,7 @@
 
 ## proxy
 
-前文提到 proxy 有诸多好处，正确配置或能直接提高生产效率。
+在上一篇文章《[命令行简介](./terminal-intro.md)》中，我们提到 proxy 有诸多好处，正确配置或能直接提高生产效率。
 
 - 给 浏览器 和 软件 配置 proxy
 - 给 Terminal 配置 proxy
@@ -45,11 +45,11 @@ MacOS 生态有中有一个名为 [Homebrew](https://brew.sh/) 的命令行工�
 
 （可以先调整好 shell 的 proxy，这样 brew 下载包的速度可能会更快。）
 
-安装 Homebrew：
+[安装 Homebrew](https://brew.sh/)：
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-安装完成后可用的命令：
+安装完成后在命令行中键入命令：
 
 - `brew`
   - 装 CLI 软件的
@@ -59,6 +59,8 @@ MacOS 生态有中有一个名为 [Homebrew](https://brew.sh/) 的命令行工�
 ### Homebrew 基本用法
 
 ```bash
+# shell
+
 brew install node
 brew uninstall node
 brew info node
@@ -71,7 +73,7 @@ brew search iterm2
 brew cask install iterm2
 ```
 
-### 软件仓库
+#### 调整软件仓库
 
 这些工具提供的下载安装过程，实际上是从各自维护的软件仓库中检索相应的包，  
 如果仓库中没有某软件，就无法安装了。
@@ -90,7 +92,7 @@ sudo apt-get install -y nodejs
 
 [Installation instructions - NodeSource](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 
-### 环境变量
+#### 手动配置环境变量
 
 某些工具安装完成之后，还需要手动进行一些额外的步骤，  
 因为安装脚本是通用的，不能完全知道你的系统是怎样的、或有些可选配置，  
@@ -118,7 +120,7 @@ export PATH="$PATH:/usr/local/opt/node@10/bin"
 ## 打造趁手的终端
 
 个人使用的命令行基本作业环境是：`iTerm2 + zsh + oh-my-zsh`  
-（代替 MacOS 自带的 `Terminal.app + bash`）
+（代替 MacOS 自带的 `Terminal.app + bash` 方案）
 
 （另一个流行的配置集：[Spaceship ZSH](https://github.com/denysdovhan/spaceship-prompt)）
 
@@ -131,5 +133,7 @@ export PATH="$PATH:/usr/local/opt/node@10/bin"
   - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)：一个 `fish` 风格的 zsh 高亮插件
   - `brew install zsh-syntax-highlighting`
+
+接着可以参考我的另一篇文章《[Mac 和软件](./mac.md)》，安装一些其他的工具。
 
 ![iterm2-showcase](./img/iterm2-showcase.png)

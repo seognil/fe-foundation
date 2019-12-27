@@ -5,23 +5,25 @@
 
 ## 我的快捷键
 
-我在用的一组快捷键，  
+我在用的一组桌面快捷键，  
 通过覆盖键盘左侧，实现方便的（左手）单手控制。
 
+（注意到 [FrontendMasters](https://frontendmasters.com/) 的 <kbd>Q</kbd> 键是切换视频质量，有冲突）
+
 - 通用
-  - Q：快退 3 秒
-  - E：快进 3 秒
-  - Z：播放速度 -0.25
-  - X：播放速度 +0.25
-  - V：在（当前播放速度，1）之间切换
+  - <kbd>Q</kbd>：快退 3 秒
+  - <kbd>E</kbd>：快进 3 秒
+  - <kbd>Z</kbd>：播放速度 -0.25
+  - <kbd>X</kbd>：播放速度 +0.25
+  - <kbd>V</kbd>：在（当前播放速度，1）之间切换
 - 网页 Only（YouTube 自带）
-  - T：切换网页全屏
-  - C：切换字幕/弹幕
+  - <kbd>T</kbd>：切换网页全屏
+  - <kbd>C</kbd>：切换字幕/弹幕
 - 本地 Only
-  - PageUp：上一文件
-  - PageDown：下一文件
-  - Shift + 左：快进 30 秒
-  - Shift + 右：快退 30 秒
+  - <kbd>PageUp</kbd>：上一文件
+  - <kbd>PageDown</kbd>：下一文件
+  - <kbd>Shift</kbd>+<kbd>←</kbd>：快进 30 秒
+  - <kbd>Shift</kbd>+<kbd>→</kbd>：快退 30 秒
 
 ## 工具
 
@@ -56,4 +58,7 @@ Chrome 插件：[User JavaScript and CSS](https://chrome.google.com/webstore/det
 
 ### IINA/PotPlayer
 
-macOS 和 Windows 上的播放器
+都支持快捷键改键
+
+- [IINA](https://iina.io/)：macOS 上的播放器
+- [PotPlayer](https://potplayer.daum.net/)：Windows 上的播放器

@@ -14,6 +14,24 @@ Git 是一个流行的文件版本管理工具。
 
 等…这些工具围绕 Git 配合着一同工作。
 
+### 安装和打开 Git
+
+基础的 Git 工具需要基于命令行，  
+（参考我的另一篇文章《[命令行简介](./terminal-intro.md)》）
+
+用 Brew 安装 Git：`brew install git`
+
+然后在命令行中输入以下命令，查看 git 的情况：
+
+```bash
+# shell
+
+tldr git # tldr
+
+git version # 查看版本
+git help # 查看帮助
+```
+
 ### 学习 Git 需要先学一门编程语言吗
 
 不需要。

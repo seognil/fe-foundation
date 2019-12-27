@@ -1,27 +1,26 @@
-# VS Code
+# 关于 VS Code
 
-## VS Code
+## VS Code 简介
 
-`brew cask install visual-studio-code`
+[VS Code](https://code.visualstudio.com/) 是一个跨平台代码编辑器，由微软开发并开源，  
+VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）的主流编辑器。  
+（另一些编辑器/IDE，例如：WebStorm、Sublime Text 等）
 
-[VS Code](https://code.visualstudio.com/)，微软家的开源代码编辑器  
-其他主流的 GUI 编辑器还有 WebStorm、Sublime Text 等，  
-但 VS Code 绝对是主流之一。
+用 Brew 安装 VS Code：`brew cask install visual-studio-code`
 
 ### VS Code 基本功能
 
-- 插件市场
-- 内建 git 管理功能
-- snippets
-- settings
-- 代码格式化
-- 快捷键系统
-  - `cmd + p`、`cmd + shift + p`
-  - `cmd + f`、`cmd + shift + f`
-  - `cmd + d`、`cmd + shift + L`
-  - `opt + shift + o`：organize imports
-- terminal
-- diff 功能
+- [插件市场](https://marketplace.visualstudio.com/vscode)
+- [内建 git 功能](https://code.visualstudio.com/Docs/editor/versioncontrol#_git-support)
+- [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+- [settings](https://code.visualstudio.com/docs/getstarted/settings)
+- [代码格式化](https://code.visualstudio.com/docs/editor/codebasics#_formatting)
+- [快捷键系统](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference)
+  - <kbd>cmd</kbd>+<kbd>p</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>p</kbd>
+  - <kbd>cmd</kbd>+<kbd>f</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>f</kbd>
+  - <kbd>cmd</kbd>+<kbd>d</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>L</kbd>
+  - <kbd>opt</kbd>+<kbd>shift</kbd>+<kbd>o</kbd>：organize imports
+- [terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 
 ### VS Code 源码
 
@@ -41,40 +40,40 @@
 我用的一些重要插件：
 
 - 功能增强
-  - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
-  - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-  - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
-  - [Diff Tool](https://marketplace.visualstudio.com/items?itemName=jinsihou.diff-tool)
-  - [Code Outline](https://marketplace.visualstudio.com/items?itemName=patrys.vscode-code-outline)
-  - [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
-  - [LeetCode](https://marketplace.visualstudio.com/items?itemName=shengchen.vscode-leetcode)
-  - [open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser)
+  - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)：同步所有配置到 Git Gist
+  - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)：Git 增强
+  - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)：快捷键直接运行代码文件
+  - [Diff Tool](https://marketplace.visualstudio.com/items?itemName=jinsihou.diff-tool)：Diff 两个文件
+  - [Code Outline](https://marketplace.visualstudio.com/items?itemName=patrys.vscode-code-outline)：显示代码大致结构
+  - [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)：直接显示代码运行结果
+  - [LeetCode](https://marketplace.visualstudio.com/items?itemName=shengchen.vscode-leetcode)：在本地刷 LeetCode
+  - [open in browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser)：用浏览器打开文件
 - 界面增强
-  - [Dracula](https://draculatheme.com/)
-  - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-  - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-  - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-  - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
-  - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
-  - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-  - [filesize](https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize)
+  - [Dracula](https://draculatheme.com/)：高亮主题
+  - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)：图标主题
+  - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)：不同颜色标记不同类型的注释
+  - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)：高亮显示 TODO
+  - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)：用不同颜色配对不同层级的括号
+  - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)：彩虹色缩进
+  - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)：显示包的 import 大小
+  - [filesize](https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize)：显示文件大小
 - 自动化
-  - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-  - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
-  - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-  - [Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
-  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+  - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)：路径自动补全
+  - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)：包名自动补全
+  - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)：代码自动补全（AI-based）
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)：格式化
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)：静态检查
+  - [Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)：多行字典排序
+  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)：Markdown 增强（我的《[Markdown 学习指南](./markdown.md)》）
 - HTML/JSX
-  - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-  - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+  - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)：自动闭合标签
+  - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)：自动重命名标签（同步开头结尾）
 - CSS
   - 无
 - JS
   - 无
 - React
-  - [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+  - [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)：React 开发插件集
 - Vue
-  - [Vue.js Extension Pack](https://marketplace.visualstudio.com/items?itemName=mubaidr.vuejs-extension-pack)
-  - [Vue 2 Snippets](https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets)
+  - [Vue.js Extension Pack](https://marketplace.visualstudio.com/items?itemName=mubaidr.vuejs-extension-pack)：Vue 开发插件集
+  - [Vue 2 Snippets](https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets)：Vue 代码片段
