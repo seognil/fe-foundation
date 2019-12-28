@@ -9,6 +9,13 @@ module.exports = {
     './js-modular.md',
     './npm-verdaccio.md',
   ],
+  '学习杂谈':[
+    // 
+    './study-the-only-way.md',
+    './study-the-costly-way.md',
+    './about-the-guild.md',
+    './study-guild-abstraction.md',
+  ],
   '入行系列': [
     //
     './fe-development-cookbook.md',
@@ -37,8 +44,6 @@ module.exports = {
     './redux.md',
     './react-hooks.md',
     './redux-observable.md',
-    './about-the-guild.md',
-    './study-guild-abstraction.md',
   ],
   '开发生活': [
     //
