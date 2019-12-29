@@ -1,81 +1,130 @@
 # 前端开发入行指南
 
-> 新版：拆解整理和扩充，旧的版本在[这里](./fe-development-cookbook-old.md)
-
 > 从野路子入门到系统性~~精通~~略懂
 
 ## 路线图
 
-- 铺垫
-  - [硬核前端（劝退篇）](./fe-hardcore-overview.md)
-  - [学习方法论](./study-methodology.md)
-  - [英语 训练指南（编程篇）](./english-using.md)
-  - [计算机科学 入门指南](./computer-science.md)
-- 环境配置
-  - 魔法丝袜之影
-  - [我的 2019 装了啥](./my-workstation.md)
-  - [命令行 简介](./terminal-intro.md)
-  - [打造趁手的终端](./terminal-config.md)
-  - [Mac 和软件](./mac.md)
-  - [关于 Chrome](./chrome.md)
-  - [关于 VS Code](./vscode.md)
-  - [用快捷键控制视频播放](./video-hotkey.md)
-- 学习前端开发
-  - 前置学习
-    - [Markdown 学习指南](./markdown.md)
-    - [Git 学习指南](./git.md)
-    - [Node 概览（先行版）](./npm-overview.md)
-    - [进一步提高 npm 安装速度（Proxy）](./npm-speedup.md)
-  - HTML5
-    - 基本 HTML 元素和属性
-  - CSS
-    - 基本 CSS 模型和属性
-    - 响应式布局
-    - Less/Sass
-  - JS 学习线图（还没整理完 [这旧版的](./fe-development-cookbook-old.md#%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92)）
-    - JS Foundation
-      - JS 的历史、当前和发展趋势
-      - 基本
-        - 基本语言特性
-        - JS 基本内置对象和 API 用法
-        - DOM API 基本操作
-        - JSON
-        - ES6 ~ ES10
-      - 进阶
-        - JS 代码执行原理
-        - Event Loop 原理
-        - 闭包
-        - 垃圾回收
-    - TypeScript
-    - 框架
-      - Vue/React
-        - 组件
-        - 状态管理方案
-        - Router
-        - 衍生框架
-      - Svelte
-    - 工程
-      - npm 和打包
-      - 静态检查工具
-      - 自动化测试
-      - 持续集成
-      - （静态）部署
-      - 性能优化
-    - 套路
-      - 小把戏
-        - 节流防抖等
-      - 范式
-        - 面向对象编程
-        - 函数式编程
-        - 响应式编程
-        - 流式编程
-        - 面向切面编程
-      - 设计模式（几十种）
-        - 观察者模式
-        - 依赖注入
-      - 算法和数据结构
-    - 未来
-      - 如果你能到这，那么在学习的过程中你一定自己积累了很多技术和资源储备，那你一定能发现自己的道路：）
+### 编程入门
+
+- （可以看看我关于学习的一些杂谈（鸡汤））
+  - [为什么要学习](./study-the-only-way.md)
+  - [关于学习的鸡汤](./study-fortune.md)
+  - [培训机构的局限性](./study-the-costly-way.md)
+  - [关于学习指南系列](./about-the-guild.md)
+  - [学习指南模板](./study-guild-abstraction.md)
+
+* 铺垫学习
+  - [硬核前端（劝退篇）](./fe-hardcore-overview.md)：了解现代前端开发的概况
+  - [学习方法论](./study-methodology.md)：打造自己的知识管理体系
+  - [英语 训练指南（编程篇）](./english-using.md)：打造英语使用环境
+  - [计算机科学 入门指南](./computer-science.md)：了解编程思想
+
+- 配置一套开发环境，准备学习前端开发
+  - 魔法丝袜之影（略）：保障稳定的网络
+  - [我的 2019 装了啥](./my-workstation.md)：以供参考
+  - [命令行 简介](./terminal-intro.md)：了解命令行（前端开发的重要组成部分）
+  - [打造趁手的终端](./terminal-config.md)：配置命令行
+  - [Mac、设置和软件](./mac.md)：调一下系统，装一些工具
+  - [关于 Chrome](./chrome.md)：装个浏览器和插件
+  - [关于 VS Code](./vscode.md)：装个代码编辑器和扩展
+  - [用快捷键控制视频播放](./video-hotkey.md)：增强学习体验
+
+### 前端开发入门
+
+（学习前端开发除 JS 以外的部分，JS 单独成节，因为内容实在太多了…）
+
+- 别人的路线图
+  - [2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)
+  - [Web Development In 2020 - A Practical Guide](https://www.youtube.com/watch?v=0pThnRneDjw)
+  - [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)
+
+* 铺垫
+  - [Markdown 学习指南](./markdown.md)：学习写文档用的标记语言
+  - [Git 学习指南](./git.md)：学习版本管理和周边概念
+  - [Node 概览（先行版）](./npm-overview.md)：了解 Node.js（前端开发的重要组成部分）
+  - [进一步提高 npm 安装速度（Proxy）](./npm-speedup.md)：npm 配置调优
+  - [关于 Chrome](./chrome.md)：学习浏览器调试
+  - [关于 VS Code](./vscode.md)：学习使用代码编辑器
+* HTML5
+  - 基本 HTML 元素和属性
+* CSS
+  - 基本 CSS 模型和属性
+  - 响应式布局
+  - Less/Sass 预处理
+* [JavaScript ↓](#javascript-%e8%b7%af%e7%ba%bf%e5%9b%be)
+
+## JavaScript 路线图
+
+-  别人的路线图
+  - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)
+  - [Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)
+- JS 概论
+  - [为什么认为 Backbone 是现代前端框架的基石](https://zhuanlan.zhihu.com/p/30982369)
+  - [[译文] 现代 js 框架存在的根本原因](https://juejin.im/post/5b111436e51d4506d06205fd)
+
+* [JavaScript 入门指南](./js-basic.md)
+  - [正则表达式](./regexp.md)
+  - [前端模块化](./js-modular.md)
+* [TypeScript](./typescript.md)
+* 框架类库
+  - Vue/React
+    - 组件渲染（[React Hooks 学习指南](./react-hooks.md)）
+    - 状态管理方案（[Redux 学习指南](./redux.md)）
+    - Router
+    - 衍生框架
+  - Svelte
+  - GraphQL
+* 工程
+  - 打包（[webpack-starter](https://github.com/seognil-lab/webpack-starter)）
+  - npm 组件开发（[lib-starter](https://github.com/seognil-lab/lib-starter)）
+  - 静态检查/编码规范
+  - 自动化测试
+  - 持续集成
+  - （静态）部署
+  - 性能优化
+* 套路
+  - 算法和数据结构
+  - 小把戏
+    - 节流防抖去重等
+  - 范式
+    - 面向对象编程
+    - 函数式编程
+    - 响应式编程
+    - 流式编程（[RxJS 学习指南](./rxjs.md)）
+    - 面向切面编程
+  - 设计模式
+    - 设计模式（特指 GoF 的 23 种）
+    - MVC、MVP、MVVM
+    - 依赖注入
+  - 软件工程（思想）
+* 特化
+  - BFF（Backends For Frontends）
+  - SSR（Server-Side Rendering）
+  - PWA（Progressive Web App）
+  - 微前端（Micro Frontend Architecture）
+  - WebGL
+  - WebAssembly
+
+- 框架技术
+  - [TodoMVC](http://todomvc.com/)
+  - [Vue.js 技术揭秘](https://ustbhuangyi.github.io/vue-analysis/)
+  - [vue-cli 源码分析](https://kuangpf.com/vue-cli-analysis/)
+  - [Evan You on Vue.js: Seeking the Balance in Framework Design | JSConf.Asia 2019](https://www.youtube.com/watch?v=ANtSWq-zI0s)
+  - [React 模式](https://github.com/SangKa/react-in-patterns-cn)
+  - [React 源码解析](https://github.com/KieSun/react-interpretation)
+  - [深入浅出 Webpack](https://webpack.wuhaolin.cn/)
+  - [[webpack]源码解读：命令行输入 webpack 的时候都发生了什么？](https://github.com/DDFE/DDFE-blog/issues/12)
+
+---
+
+以上这么多内容仅仅只涉及了前端开发的技术储备部分。
+
+对于实际的业务和代码产出，还有无数细节和额外的套路，  
+例如：兼容性、骨架屏、小程序、动画、表单、i18n、同构…
+
+不过当你的技能体系能覆盖以上至少一半内容时，  
+那么你已经是一个不错的工程师了，  
+你可以自己发现的未来道路：）
 
 ## 小记
 
@@ -85,8 +134,8 @@
 现在做前端开发，在真正开始写第一行业务代码之前，  
 需要很多前置的技术储备，并学习很多工具。
 
-前端本身的技术教程千千万，  
-~~（比如之前在掘金 EventLoop 每个月看到八百遍）~~  
+前端内的技术教程千千万，  
+~~（比如之前在掘金，关于 EventLoop 的文章每个月看到八百遍）~~  
 但是我 _很少_ 看到国内有文章系统地介绍：  
 一个现代化的前端工程应该从哪里开始入门和起步，  
 在前端体系之外、之前，应该要做，或最好要做什么事情。  
@@ -106,4 +155,4 @@
 
 根据自己的实际情况，**学以致用，循序渐进**，这是坠吼的。
 
-> —— 此文写给我的朋友 东神、阿辉
+> —— 此系列写给我的朋友 东神、阿辉

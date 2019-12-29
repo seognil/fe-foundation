@@ -1,6 +1,6 @@
 # 进一步提高 npm 安装速度（Proxy）
 
-在 [上一篇](./npm-overview.md) 中我们提到：  
+在前一篇 [Node 概览](./npm-overview.md) 中我们提到：  
 可以使用换源的方式提高 npm 的安装速度，  
 `nrm use taobao` 已经够快。
 
