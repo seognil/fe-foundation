@@ -39,6 +39,7 @@ module.exports = {
     './computer-science.md',
     './markdown.md',
     './git.md',
+    './js-basic.md',
     './regexp.md',
     './typescript.md',
     './rxjs.md',

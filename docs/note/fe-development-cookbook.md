@@ -58,26 +58,13 @@
 -  别人的路线图
   - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)
   - [Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)
-  - [JavaScript 30 - Wes Bos](https://javascript30.com/)
 - JS 概论
   - [为什么认为 Backbone 是现代前端框架的基石](https://zhuanlan.zhihu.com/p/30982369)
   - [[译文] 现代 js 框架存在的根本原因](https://juejin.im/post/5b111436e51d4506d06205fd)
 
-* JS Foundation
-  - JS 的历史、当前和发展趋势
-  - 基本
-    - 基本语言特性
-    - JS 基本内置对象和 API 用法
-    - ES6 ~ ES10
-    - DOM API 基本操作
-    - [前端模块化](./js-modular.md)
-    - [正则表达式](./regexp.md)
-    - JSON
-  - 进阶
-    - JS 代码执行原理
-    - Event Loop 原理
-    - 闭包
-    - 垃圾回收
+* [JavaScript 入门指南](./js-basic.md)
+  - [正则表达式](./regexp.md)
+  - [前端模块化](./js-modular.md)
 * [TypeScript](./typescript.md)
 * 框架类库
   - Vue/React
