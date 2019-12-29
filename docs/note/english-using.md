@@ -132,3 +132,4 @@
 - 扩展阅读
   - [English-level-up-tips-for-Chinese](https://github.com/byoungd/english-level-up-tips-for-Chinese)
   - [人人都能用英语](https://github.com/xiaolai/everyone-can-use-english)
+  - [词汇量 2 万? 纯正英式? 中国人的英语误区 (亚洲适用)](https://www.youtube.com/watch?v=xmIB-kyFeg8)

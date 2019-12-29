@@ -8,6 +8,7 @@
 
 - （可以看看我关于学习的一些杂谈（鸡汤））
   - [为什么要学习](./study-the-only-way.md)
+  - [关于学习的鸡汤](./study-fortune.md)
   - [培训机构的局限性](./study-the-costly-way.md)
   - [关于学习指南系列](./about-the-guild.md)
   - [学习指南模板](./study-guild-abstraction.md)

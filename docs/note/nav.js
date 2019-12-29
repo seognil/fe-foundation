@@ -9,9 +9,10 @@ module.exports = {
     './js-modular.md',
     './npm-verdaccio.md',
   ],
-  '学习杂谈':[
-    // 
+  '学习杂谈': [
+    //
     './study-the-only-way.md',
+    './study-fortune.md',
     './study-the-costly-way.md',
     './about-the-guild.md',
     './study-guild-abstraction.md',

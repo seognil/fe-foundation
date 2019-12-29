@@ -43,13 +43,13 @@
 这些大师（按字典排序）有些牌面的就包括：
 
 - **André Staltz**：Cycle.js 的作者
-- **Bob Martin**：Clean Code 的作者
 - **Dan Abramov**：Redux 的作者
 - **Dmitry Soshnikov**：JavaScript: The Core 的作者
 - **Douglas Crockford**：JavaScript: The Good Parts 的作者
 - **Eric Elliott**：Composing Software 的作者
 - **Erich Gamma**：Design Patterns 的作者之一
 - **Evan You**：Vue.js 的作者
+- **Robert C. Martin**：Clean Code 的作者
 
 敢问目前哪个国内的培训机构有这种教学阵容？  
 Learn From The Best 岂不美哉？
