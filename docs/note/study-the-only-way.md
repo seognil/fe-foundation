@@ -39,7 +39,7 @@
 
 拥有终身学习的心态是一个竞争优势。
 
-## 资料
+## 扩展阅读
 
 - [他们是肉造的 - 泰利·比森](https://www.zhihu.com/question/321878154)
 - [乡村教师 - 刘慈欣](http://www.00txt.com/xiangcunjiaoshi/2033.html)

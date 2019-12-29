@@ -8,6 +8,9 @@ VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）
 
 用 Brew 安装 VS Code：`brew cask install visual-studio-code`
 
+安装完成后，可以 [注册 `code` 命令](https://code.visualstudio.com/docs/setup/mac)，  
+使得在命令行中执行 `code ./project1` 即可用 VS Code 打开项目或文件。
+
 ### VS Code 基本功能
 
 - [插件市场](https://marketplace.visualstudio.com/vscode)
@@ -64,7 +67,7 @@ VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)：格式化
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)：静态检查
   - [Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)：多行字典排序
-  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)：Markdown 增强（我的《[Markdown 学习指南](./markdown.md)》）
+  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)：Markdown 增强（参考 [Markdown 学习指南](./markdown.md)）
 - HTML/JSX
   - [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)：自动闭合标签
   - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)：自动重命名标签（同步开头结尾）

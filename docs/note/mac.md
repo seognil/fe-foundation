@@ -1,4 +1,4 @@
-# Mac 和软件
+# Mac、设置和软件
 
 ## Mac 的键盘
 
@@ -29,24 +29,44 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
 
 [我的环境自动配置脚本（未完成）](https://github.com/seognil/dotfiles)
 
-## 安装软件/工具
-
-我用的一些重要工具
+## 基本设置
 
 - 优先 [打造趁手的终端](./terminal-config.md)
+
   - [Homebrew](https://brew.sh/)
   - [iTerm2](https://iterm2.com/)
   - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)
 
-然后在命令行中使用 `brew`、`brew cask`、`mas`、`npm` 等命令，安装其他工具，  
-省去频繁打开网页点击下载和下一步的繁琐过程。
+  然后就可以在命令行中使用 `brew`、`brew cask`、`mas`等命令安装其他工具，  
+  省去频繁打开网页点击下载和下一步的繁琐过程。
+
+- [更纱黑体](https://github.com/be5invis/Sarasa-Gothic) ：等宽的中英文编程字体  
+  基于 Iosevka 和 Source Han Sans
+
+  ```bash
+  brew tap homebrew/cask-fonts
+  brew cask install font-sarasa-gothic
+  ```
+
+  后续配置以 VSCode 为例：`"editor.fontFamily": "sarasa term sc"`
+
+- 系统设置，将光标移动速度调到极快  
+  在命令行执行以下代码并重启
+  ```bash
+  defaults write -g InitialKeyRepeat -int 15
+  defaults write -g KeyRepeat -int 1
+  ```
+
+## 软件/工具
+
+我用的一些重要工具：
 
 - - Parallels Desktop
 - `brew install`
   - 保持更新
-    - [git](./git.md)：版本管理工具（我的《[Git 学习指南](./git.md)》）
+    - [git](./git.md)：版本管理工具（参考 [Git 学习指南](./git.md)）
     - [nginx](https://www.nginx.com/)
-    - [node](./npm-overview.md)（我的《[Node.js/npm 概览](./npm-overview.md)》）
+    - [node](./npm-overview.md)（参考 [Node.js/npm 概览](./npm-overview.md)）
     - [nvm](https://github.com/nvm-sh/nvm)
   - 工具
     - [mas](https://github.com/mas-cli/mas)：从命令行安装 AppStore 应用的工具
@@ -59,9 +79,9 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
     - [htop](https://hisham.hm/htop/)：命令行系统监控
 - `brew cask install`
   - 软件（开发）
-    - [google-chrome](https://www.google.com/chrome/)：浏览器（我的《[关于 Chrome](./chrome.md)》）
+    - [google-chrome](https://www.google.com/chrome/)：浏览器（参考 [关于 Chrome](./chrome.md)）
     - [firefox](https://www.mozilla.org/en-US/firefox/)：浏览器
-    - [visual-studio-code](https://code.visualstudio.com/)：轻量级代码编辑器（我的《[关于 VS Code](./vscode.md)》）
+    - [visual-studio-code](https://code.visualstudio.com/)：轻量级代码编辑器（参考 [关于 VS Code](./vscode.md)）
     - [docker](https://www.docker.com/)：轻量级虚拟机
     - [postman](https://www.getpostman.com/)：网络请求监听
     - [sourcetree](https://www.sourcetreeapp.com/)：图形界面 Git 管理器
