@@ -74,6 +74,28 @@ VI 或 VIM 是一个 Linux 上流行的命令行编辑器，
 
 * [explainshell](https://explainshell.com/)：一个在线解释网站，能够解释你输入的命令和参数
 
+### 管道
+
+Unix 中有管道的概念，用于拼接不同命令，  
+将上一个命令的输出当做下一个命令的输入，  
+实现命令的组合运用。
+
+命令的拼接有两种主要方式：
+
+[管道 (Unix)](<https://zh.wikipedia.org/wiki/%E7%AE%A1%E9%81%93_(Unix)>)  
+下面 `ls` 和 `tail` 是两个独立的命令，`|` 是管道
+
+```bash
+ls -l | tail -n 2
+```
+
+[xargs](https://zh.wikipedia.org/wiki/Xargs)  
+下面 `where` 和 `ls` 是两个命令，`xargs` 用于传递参数
+
+```bash
+where bash | xargs ls -la
+```
+
 ### 环境变量
 
 使用 terminal 时，每个新窗口都将基于系统环境变量和启动配置建立一个独立的会话，  
