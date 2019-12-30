@@ -7,42 +7,19 @@
 ### 概览
 
 - 耗时：
-  - 了解难点 JS，最好控制在 20~40 小时之内
+  - 深入 JS 特性，耗时大约 40 小时
 - 难点：
-  - 培养自动化处理的思维
-  - 熟练运用常用 API
-- 工具：
-  - [Chrome](./chrome.md)
-  - [VS Code](./vscode.md)
-  - [Node.js](./npm-overview.md)
+  - 掌握 JS 语言特性的细节
+- 工具：略
 
 ### 学习路线
 
 - 前置学习
   - [JavaScript 入门指南](./js-basic.md)
-- 学习 JavaScript 入门
-  - 基本
-    - 学习 ES5 主要概念
-      - 语法和特性
-      - 基本内置对象
-      - DOM 操作
-    - 学习 ES6+ 基本概念
-    - JSON
-  - Node.js、npm、模块化
-  - 进阶
-    - Event Loop
-    - 闭包
-    - 垃圾回收
-    - JS 代码执行原理
+- 学习 JavaScript 特性
 - 实战
-  - 抄几个 Example，做点小东西
 - 进阶
-  - Node.js 开发
-  - V8 和 libuv
 - 迷思
-  - 什么是元编程
-  - 什么是反射
-  - 什么是运算符重载，JS 里能不能实现
 
 ## 资料
 
