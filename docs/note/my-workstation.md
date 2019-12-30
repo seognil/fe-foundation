@@ -2,7 +2,7 @@
 
 > 参考自：[装了啥 - 云谦](https://github.com/sorrycc/awesome-tools)
 
-查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+> 查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
 
 ## 魔法丝袜之影
 

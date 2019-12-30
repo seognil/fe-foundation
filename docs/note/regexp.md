@@ -1,6 +1,6 @@
 # 正则表达式 学习指南
 
-查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
+> 查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
 
 ## 正则表达式 简介
 

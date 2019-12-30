@@ -1,6 +1,6 @@
 # 硬核前端（劝退篇）
 
-查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+> 查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
 
 ## 当个前端工程师
 

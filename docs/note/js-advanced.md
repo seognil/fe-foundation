@@ -1,6 +1,6 @@
 # JavaScript 进阶指南（先行版）
 
-查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
+> 查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
 
 ## 学习 JavaScript 进阶知识
 

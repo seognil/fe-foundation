@@ -1,6 +1,6 @@
 # 计算机科学 入门指南
 
-查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+> 查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
 
 ## 计算机科学 简介
 

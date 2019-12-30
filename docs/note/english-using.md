@@ -1,6 +1,6 @@
 # 英语 训练指南（编程篇）
 
-查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+> 查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
 
 ## 英语 简介
 
