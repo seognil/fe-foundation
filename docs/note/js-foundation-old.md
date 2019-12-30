@@ -1,5 +1,7 @@
 # JS Foundation（旧）
 
+> 查看新版 [JavaScript 学习指南](./js-foundation.md)
+
 JS 基础纲要速写笔记  
 若有偏差敬请斧正
 
