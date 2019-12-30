@@ -1,5 +1,7 @@
 # 命令行 简介
 
+查看 [前端开发入行指南](./fe-development-cookbook.md) 完整系列
+
 ## 什么是 命令行
 
 > 命令行界面（英语：Command-Line Interface，缩写：CLI）是在图形用户界面得到普及之前使用最为广泛的用户界面，它通常不支持鼠标，用户通过键盘输入指令，计算机接收到指令后，予以执行。也有人称之为字符用户界面（character user interface, CUI）。

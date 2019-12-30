@@ -1,5 +1,7 @@
 # 关于 Chrome
 
+查看 [前端开发入行指南](./fe-development-cookbook.md) 完整系列
+
 ## Chrome 简介
 
 [Chrome](https://www.google.com/chrome/) 是一个免费的跨平台浏览器，由 Google 开发，  

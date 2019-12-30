@@ -1,5 +1,7 @@
 # Mac、设置和软件
 
+查看 [前端开发入行指南](./fe-development-cookbook.md) 完整系列
+
 ## Mac 的键盘
 
 | 符号 |  名称   | 缩写 |

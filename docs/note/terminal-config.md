@@ -1,5 +1,7 @@
 # 打造趁手的终端
 
+查看 [前端开发入行指南](./fe-development-cookbook.md) 完整系列
+
 ## proxy
 
 在上一篇文章《[命令行简介](./terminal-intro.md)》中，我们提到 proxy 有诸多好处，正确配置或能直接提高生产效率。
