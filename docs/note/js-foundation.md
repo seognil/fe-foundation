@@ -16,12 +16,14 @@
 
 - 前置学习
   - [前端开发入门指南](./fe-development-cookbook.md)
-- JavaScript 语言
+- _JavaScript 语言_
   - [JavaScript 简介](./js-intro.md)
   - [JavaScript 入门指南](./js-basic.md)
     - [前端模块化](./js-modular.md)
-    - JavaScript 基本对象
+    - _JavaScript 基本对象_
       - [正则表达式](./regexp.md)
-      - Promise
+      - Promise（TODO）
+  - JavaScript DOM 编程指南（TODO）
+  - JavaScript Node.js 编程指南（TODO）
   - [JavaScript 进阶指南](./js-advanced.md)
-  - JavaScript 硬核指南
+  - JavaScript 硬核指南（TODO）

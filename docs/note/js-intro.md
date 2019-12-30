@@ -10,13 +10,15 @@ JavaScript（通常缩写为 JS）是一种解释型高级语言。
 
 广义的 JavaScript 包含三个部分：
 
-- `ES`：ECMAScript，脚本语言标准
+- `ES`：ECMAScript，核心标准
 - `DOM`：Document Object Model，文档对象模型
 - `BOM`： Browser Object Model，浏览器对象模型
 
 狭义的 JavaScript 可以只指 `ECMAScript`，  
 可以简单理解为浏览器、Node 嵌入式等所有环境都必须支持的 JS 功能子集。  
 （去掉了 `document`、`window` 等概念）
+
+[JavaScript 是图灵完备的](https://www.freecodecamp.org/news/javascript-is-turing-complete-explained-41a34287d263/)
 
 ## 什么是 ES6
 
@@ -35,11 +37,25 @@ ES6+ 是前端开发的基本语言。
     - 或可以被预转译
     - 部分特性无法被完美模拟（如 Proxy）
 
+* 兼容性
+  - [ECMAScript 6 compatibility table - kangax](https://kangax.github.io/compat-table/)
+  - [Can I use <u>Arrow functions</u> ?](https://caniuse.com/#search=Arrow%20functions)
+
 ## 为什么要学习 JavaScript
 
 - 如果你想编程入门
 - 如果你想魔改某些页面
 - 如果你想从事前端开发工作
+
+## JS 概况/漫谈
+
+- [硬核前端（劝退篇）](./fe-hardcore-overview.md)
+
+<!-- * [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh) -->
+<!-- * state of js -->
+
+- [为什么认为 Backbone 是现代前端框架的基石](https://zhuanlan.zhihu.com/p/30982369)
+- [[译文] 现代 js 框架存在的根本原因](https://juejin.im/post/5b111436e51d4506d06205fd)
 
 ## JavaScript 版本/方言/历史
 
