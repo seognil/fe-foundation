@@ -4,7 +4,7 @@
 
 ## 路线图
 
-### 编程入门
+### 编程入门和开发环境准备
 
 - （可以看看我关于学习的一些杂谈（鸡汤））
   - [为什么要学习](./study-the-only-way.md)
@@ -38,7 +38,7 @@
   - [Web Development In 2020 - A Practical Guide](https://www.youtube.com/watch?v=0pThnRneDjw)
   - [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)
 
-* 铺垫
+* 铺垫学习
   - [Markdown 学习指南](./markdown.md)：学习写文档用的标记语言
   - [Git 学习指南](./git.md)：学习版本管理和周边概念
   - [Node 概览（先行版）](./npm-overview.md)：了解 Node.js（前端开发的重要组成部分）
@@ -53,7 +53,7 @@
   - Less/Sass 预处理
 * [JavaScript ↓](#javascript-%e8%b7%af%e7%ba%bf%e5%9b%be)
 
-## JavaScript 路线图
+### JavaScript 生态路线图
 
 -  别人的路线图
   - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)
@@ -62,7 +62,7 @@
   - [为什么认为 Backbone 是现代前端框架的基石](https://zhuanlan.zhihu.com/p/30982369)
   - [[译文] 现代 js 框架存在的根本原因](https://juejin.im/post/5b111436e51d4506d06205fd)
 
-* [JavaScript 语言学习指南](./js-overview.md)
+* [JavaScript 学习指南](./js-overview.md)（系列）
 * [TypeScript 学习指南](./typescript.md)
 * 框架类库
   - Vue/React

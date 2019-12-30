@@ -1,13 +1,8 @@
 module.exports = {
-  'TLDR': [
+  '目录': [
     //
-    './tldr.md',
-    './js-foundation.md',
-  ],
-  '杂记（未分类）': [
-    //
-    './js-modular.md',
-    './npm-verdaccio.md',
+    './fe-development-cookbook.md',
+    './js-overview.md',
   ],
   '学习杂谈': [
     //
@@ -17,9 +12,8 @@ module.exports = {
     './about-the-guild.md',
     './study-guild-abstraction.md',
   ],
-  '入行系列': [
+  '前端入行系列': [
     //
-    './fe-development-cookbook.md',
     './fe-hardcore-overview.md',
 
     './my-workstation.md',
@@ -32,6 +26,15 @@ module.exports = {
     './npm-overview.md',
     './npm-speedup.md',
   ],
+  'JavaScript 学习系列': [
+    //
+    './js-intro.md',
+    './js-basic.md',
+    './js-advanced.md',
+    // './js-hardcore.md',
+    './js-modular.md',
+    './regexp.md',
+  ],
   '学习指南系列': [
     //
     './study-methodology.md',
@@ -39,8 +42,6 @@ module.exports = {
     './computer-science.md',
     './markdown.md',
     './git.md',
-    './js-basic.md',
-    './regexp.md',
     './typescript.md',
     './rxjs.md',
     './redux.md',
@@ -51,5 +52,14 @@ module.exports = {
     //
     './linux-basic-security.md',
     './clean-keyboard.md',
+  ],
+  '杂记（未分类）': [
+    //
+    './npm-verdaccio.md',
+  ],
+  'TLDR': [
+    //
+    './tldr.md',
+    './js-foundation.md',
   ],
 };
