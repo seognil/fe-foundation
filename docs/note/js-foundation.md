@@ -1,5 +1,7 @@
 # JavaScript 学习指南
 
+> 查看旧版 [JS Foundation（旧）](./js-foundation-old.md)
+
 我自己目前在 JS 本身上的学习可能已经累计超过 200~500 小时。  
 （甚至还没进入核心层面，只能算略懂，甚至有一些理解偏差）
 

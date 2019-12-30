@@ -1,6 +1,6 @@
 # 前端模块化
 
-查看 [JavaScript 学习指南](./js-overview.md) 完整系列
+查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
 
 ## 关于模块化设计
 

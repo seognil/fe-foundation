@@ -1,6 +1,6 @@
 # JavaScript 入门指南
 
-查看 [JavaScript 学习指南](./js-overview.md) 完整系列
+查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
 
 ## 学习 JavaScript 初级知识
 

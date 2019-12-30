@@ -22,7 +22,7 @@ const sidebarStructure = {
   ],
   'JavaScript 语言系列': [
     //
-    './js-overview.md',
+    './js-foundation.md',
     './js-intro.md',
     './js-basic.md',
     './js-advanced.md',
