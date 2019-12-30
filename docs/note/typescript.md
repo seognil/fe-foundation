@@ -39,9 +39,11 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 ### 学习路线
 
-- 前置基础（理解编程理念）
-  - 静态类型
-  - Object Oriented Programming
+- 前置学习
+  - [JavaScript 语言学习指南](./js-overview.md)
+  - 理解编程理念
+    - 静态类型
+    - Object Oriented Programming
 - 学习 TypeScript
   - （学习 JavaScript）
   - 学习和使用 TypeScript 常用特性

@@ -38,14 +38,16 @@ ReactiveX 的 JS 具体实现
 
 ### 学习路线
 
-- 前置基础
+- 前置学习
   - 理解 RxJS 编程理念
-    - functional programming
-    - reactive programming
-    - stream programming
-    - 迭代器模式（事件流遍历机制）
-    - 观察者模式（绑定机制）
-  - (TypeScript)
+    - 编程范式
+      - functional programming
+      - reactive programming
+      - stream programming
+    - 设计模式
+      - 迭代器模式（事件流遍历机制）
+      - 观察者模式（绑定机制）
+  - ([TypeScript 学习指南](./typescript.md))
 - 学习 Rxjs
   - 掌握 RxJS 核心概念
     - Observable 及上下游
