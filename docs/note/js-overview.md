@@ -13,7 +13,7 @@
 ## 路线图
 
 - 前置学习
-  - [前端开发入行指南](./fe-development-cookbook.md)
+  - [前端开发入门指南](./fe-development-cookbook.md)
 - JavaScript 语言
   - [JavaScript 简介](./js-intro.md)
   - [JavaScript 入门指南](./js-basic.md)
