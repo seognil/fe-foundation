@@ -1,19 +1,13 @@
-module.exports = {
-  '目录': [
+const sidebarStructure = {
+  '简介': [
     //
-    './fe-development-cookbook.md',
-    './js-overview.md',
-  ],
-  '学习杂谈': [
-    //
-    './study-the-only-way.md',
-    './study-fortune.md',
-    './study-the-costly-way.md',
+    './',
     './about-the-guild.md',
     './study-guild-abstraction.md',
   ],
   '前端入行系列': [
     //
+    './fe-development-cookbook.md',
     './fe-hardcore-overview.md',
 
     './my-workstation.md',
@@ -26,8 +20,9 @@ module.exports = {
     './npm-overview.md',
     './npm-speedup.md',
   ],
-  'JavaScript 学习系列': [
+  'JavaScript 语言系列': [
     //
+    './js-overview.md',
     './js-intro.md',
     './js-basic.md',
     './js-advanced.md',
@@ -48,18 +43,21 @@ module.exports = {
     './react-hooks.md',
     './redux-observable.md',
   ],
+  '学习杂谈': [
+    //
+    './study-the-only-way.md',
+    './study-fortune.md',
+    './study-the-costly-way.md',
+  ],
   '开发生活': [
     //
     './linux-basic-security.md',
     './clean-keyboard.md',
-  ],
-  '杂记（未分类）': [
-    //
     './npm-verdaccio.md',
-  ],
-  'TLDR': [
-    //
-    './tldr.md',
     './js-foundation.md',
   ],
+};
+
+module.exports = {
+  sidebarStructure,
 };

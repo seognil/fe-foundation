@@ -1,9 +1,9 @@
 # JavaScript 学习指南
 
-我自己目前在 **JS 本身** 上的学习可能已经累计超过 200~500 小时。  
+我自己目前在 JS 本身上的学习可能已经累计超过 200~500 小时。  
 （甚至还没进入核心层面，只能算略懂，甚至有一些理解偏差）
 
-对于学习 JS 语言来说，我认为合适的方式大致是：
+对于**学习 JS 语言**来说，我认为合适的方式大致是：
 
 - 预先理解最基本的编程思想
 - 熟悉 JS 基本语法，了解 JS 的大致样貌
@@ -14,8 +14,8 @@
 
 - 前置学习
   - [前端开发入行指南](./fe-development-cookbook.md)
+- JavaScript 语言
   - [JavaScript 简介](./js-intro.md)
-- JavaScript 语言系列
   - [JavaScript 入门指南](./js-basic.md)
     - [前端模块化](./js-modular.md)
     - JavaScript 基本对象

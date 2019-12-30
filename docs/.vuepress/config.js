@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const moment = require('moment');
 
-const navStructure = require('../note/nav');
+const { sidebarStructure } = require('../note/nav');
+// => { [groupName: string]: string[] }
 
 // * ---------------------------------------------------------------- sidebar
 
@@ -13,18 +14,19 @@ const toNavUrl = (url) => path.resolve('/note', url);
 
 // * --------------------------------
 
-// => { [groupName: string]: string[] }
-
-const articleSidebar = Object.entries(navStructure)
+const articleSidebar = Object.entries(sidebarStructure)
   .map(([groupName, list]) => [groupName, list.filter(hasFile)])
   .filter(([, list]) => list.length > 0)
   .map(([g, list]) => [g, list.map(toNavUrl)])
-  .map(([title, children]) => ({ title, children, collapsable: false }));
-
+  .map(([title, children]) => ({ title, children, collapsable: true }));
 // => [{ title, children: string[], collapsable }]
 
-const navCateOfFirst = articleSidebar.map(({ title: text, children: [link] }) => ({ text, link }));
+// * fix
+articleSidebar[0].children[0] = './note/';
 
+// * ----------------
+
+const navCateOfFirst = articleSidebar.map(({ title: text, children: [link] }) => ({ text, link }));
 // => [{ text, link }]
 
 // * ---------------------------------------------------------------- config
@@ -49,7 +51,7 @@ const config = {
     // editLinks: true,
 
     nav: [
-      { text: '分类', items: navCateOfFirst },
+      { text: '笔记', link: '/note/' },
       { text: '关于', link: '/about/ref.md' },
 
       { text: 'Learning-By-Doing', link: 'https://github.com/seognil-study/learning-by-doing' },
