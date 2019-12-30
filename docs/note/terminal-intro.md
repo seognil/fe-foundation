@@ -1,5 +1,7 @@
 # 命令行 简介
 
+查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+
 ## 什么是 命令行
 
 > 命令行界面（英语：Command-Line Interface，缩写：CLI）是在图形用户界面得到普及之前使用最为广泛的用户界面，它通常不支持鼠标，用户通过键盘输入指令，计算机接收到指令后，予以执行。也有人称之为字符用户界面（character user interface, CUI）。
@@ -71,6 +73,28 @@ VI 或 VIM 是一个 Linux 上流行的命令行编辑器，
   用法例如：`tldr ls`、`tldr git`、`tldr git add`
 
 * [explainshell](https://explainshell.com/)：一个在线解释网站，能够解释你输入的命令和参数
+
+### 管道
+
+Unix 中有管道的概念，用于拼接不同命令，  
+将上一个命令的输出当做下一个命令的输入，  
+实现命令的组合运用。
+
+命令的拼接有两种主要方式：
+
+[管道 (Unix)](<https://zh.wikipedia.org/wiki/%E7%AE%A1%E9%81%93_(Unix)>)  
+下面 `ls` 和 `tail` 是两个独立的命令，`|` 是管道
+
+```bash
+ls -l | tail -n 2
+```
+
+[xargs](https://zh.wikipedia.org/wiki/Xargs)  
+下面 `where` 和 `ls` 是两个命令，`xargs` 用于传递参数
+
+```bash
+where bash | xargs ls -la
+```
 
 ### 环境变量
 

@@ -2,6 +2,8 @@
 
 > 参考自：[装了啥 - 云谦](https://github.com/sorrycc/awesome-tools)
 
+查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+
 ## 魔法丝袜之影
 
 - 略
@@ -20,6 +22,7 @@
     - [StackBlitz](http://stackblitz.com/)：在线代码编辑和分享
     - [Netlify](https://www.netlify.com/)：静态托管服务
     - [Zeit now](https://zeit.co/)：静态托管服务
+    - [astralapp](https://app.astralapp.com/dashboard)：GitHub Star 管理器
   - 私人
     - [YouTube](https://www.youtube.com/)：看视频
     - [SoundCloud](https://soundcloud.com/)：听音乐
@@ -28,6 +31,7 @@
 
 * 付费
   - [FrontendMasters](https://frontendmasters.com/)：前端学习教程
+  - [知乎盐选会员](https://www.zhihu.com/xen/market/vip-privileges)：听听 Live
   - [百度云](https://pan.baidu.com/)
   - 阿里云域名
   - 阿里 88 会员

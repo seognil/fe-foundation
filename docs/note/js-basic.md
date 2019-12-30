@@ -1,118 +1,68 @@
 # JavaScript 入门指南
 
-> Libraries come and go,  
-> Patterns and approaches stick around.
+查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
 
-## JavaScript 简介
-
-### 什么是 JavaScript
-
-JavaScript（通常缩写为 JS）是一种解释型高级语言。  
-通常作为开发 Web 页面的脚本语言，  
-但是它也可以在非浏览器环境中使用，例如 Node.js。
-
-广义的 JavaScript 包含三个部分：
-
-- `ES`：ECMAScript，脚本语言标准
-- `DOM`：Document Object Model，文档对象模型
-- `BOM`： Browser Object Model，浏览器对象模型
-
-狭义的 JavaScript 可以只指 `ECMAScript`，  
-可以简单理解为浏览器、Node 嵌入式等所有环境都必须支持的 JS 功能子集。  
-（去掉了 `document`、`window` 等概念）
-
-### 什么是 ES6
-
-ES 就是 ECMAScript，  
-ES2015/ES6 是 ES 的一个里程碑（大更新）版本，  
-其中 2015 表示年份，6 表示版本号，  
-（目前最新的是 ES2019/ES10）  
-ES6+ 是前端开发的基本语言。
-
-- ES6 相比 ES5：
-  - 多了一些语法
-    - 或需要被预编译成 ES5 以增加旧环境兼容性
-  - 多了一些 API
-    - 或需要 Polyfill
-  - 多了一些数据结构和类型
-    - 或可以被预转译
-    - 部分特性无法被完美模拟（如 Proxy）
-
-### 为什么要用 JavaScript
-
-- 如果你想编程入门
-- 如果你想魔改某些页面
-- 如果你想从事前端开发工作
-
-## 学习 JavaScript
+## 学习 JavaScript 初级知识
 
 ### 概览
 
-我自己目前在 **JS 本身** 上的学习可能已经累计超过 200~500 小时。  
-（甚至还没进入核心层面，只能算略懂甚至有一些理解偏差）
-
-但对于入门来说，我认为合适的方式是：  
-先理解最基本的编程思想，  
-熟悉 JS 语法特性并了解 JS 的大致样貌，  
-然后再逐渐覆盖各个部分的细节。
-
 - 耗时：
-  - 从零入门到掌握基本语法，最好控制在 20~60 小时之内
-  - 熟悉 API 和进阶原理可能需要以实战作为铺垫（几百小时）
+  - 从零入门到掌握基本语法和 API，大约在 20~40 小时之内
 - 难点：
-  - 自动化处理的思维
+  - 培养编程（自动化处理）的思维
   - 熟练运用常用 API
-  - 掌握高级特性，例如：作用域、原型链、this、闭包…
 - 工具：
-  - [Chrome](./chrome.md)
-  - [VS Code](./vscode.md)
-  - [Node.js](./npm-overview.md)
+  - [前端开发入门指南](./fe-development-cookbook.md)
+    - [Chrome](./chrome.md)
+    - [VS Code](./vscode.md)
+      - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ### 学习路线
 
-- 前置基础
-  - **调整好网络**
-  - [英语 训练指南（编程篇）](./english-using.md)
-  - [计算机科学 入门指南](./computer-science.md)
-  - HTML + CSS
-- 学习 JavaScript 入门
-  - 基本
-    - 学习 ES5 主要概念
-      - 语法和特性
-      - 基本内置对象
-      - DOM 操作
-    - 学习 ES6+ 基本概念
-    - JSON
-  - Node.js、npm、模块化
-  - 进阶
-    - Event Loop
-    - 闭包
-    - 垃圾回收
-    - JS 代码执行原理
-- 实战
-  - 抄几个 Example，做点小东西
-- 进阶
-  - Node.js 开发
-  - V8 和 libuv
-- 迷思
-  - 什么是元编程
-  - 什么是反射
-  - 什么是运算符重载，JS 里能不能实现
+- 前置学习
+  - 准备工作
+    - **调整好网络**
+    - [学习方法论](./english-using.md)
+    - [英语 训练指南（编程篇）](./english-using.md)
+    - [计算机科学 入门指南](./computer-science.md)
+  - [JavaScript 简介](./js-intro.md)
+- 学习 JavaScript 基础
+  - 准备工作
+    - 学习如何运行 JavaScript 代码
+    - 学会简单调试（`console.log`）
+  - 学习 ES5 主要概念
+    - 练习所有语法和特性
+    - 练习所有常用 API
+  - 学习 ES6+ 基本概念
+  - 了解 JSON 的概念
+- 下一步
+  - 查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
 
 ## 资料
 
 ### 自学教材
 
-- [JavaScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/javascript/)
-- [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)
-- [JavaScript Crash Course For Beginners](https://www.youtube.com/watch?v=hdI2bqOjy3c)
+其实这些材料有很多内容是重复的，  
+然而重复的好处是可以加深记忆，熟悉之后阅读速度会变快。  
+（比如我为了写这篇文章，重新复习完**所有**这些材料只花了不到一天。）
 
-* [现代 JavaScript 教程](https://zh.javascript.info/)
-* [JavaScript 标准参考教程（alpha）](https://javascript.ruanyifeng.com/)
-* [ECMAScript 6 入门 - 阮一峰](https://es6.ruanyifeng.com/)
-
-- [前端模块化](./js-modular.md)
-- [正则表达式](./regexp.md)
+- 视频教程
+  - [JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour [2019]](https://www.youtube.com/watch?v=W6NZfCO5SIk)  
+    48 分钟：如何基于 HTML 运行 JS，JS 基本语法
+  - [JavaScript Crash Course For Beginners](https://www.youtube.com/watch?v=hdI2bqOjy3c)  
+    100 分钟：JS 简介，JS(ES6) 语法、基本类型、API，类，简单 DOM 编程
+  - [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)  
+    200 分钟：运行 JS 的多种方式，JS(ES6) 语法、API、执行细节、代码技巧、模块化（共 134 个基本知识点）
+- 语法快速入门
+  - [JavaScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/javascript/)
+- 文档级教程
+  - [现代 JavaScript 教程](https://zh.javascript.info/)：前几章（JS 基础部分）
+  - [JavaScript 教程 - 阮一峰](https://wangdoc.com/javascript/index.html)：前几章（除了 DOM 的部分）
+  - [ECMAScript 6 入门 - 阮一峰](https://es6.ruanyifeng.com/)：前几章（ES6 语法扩展的部分）
+- 书籍
+  - [JavaScript 权威指南](https://book.douban.com/subject/2228378/)：犀牛书，第一部分（语言核心）
+  - [JavaScript 高级程序设计](https://book.douban.com/subject/10546125/)：红宝书、高程，（第 3 版）前七章（JS 部分）
+  - [你不知道的 JavaScript](https://book.douban.com/series/40642)：小黄书，下卷 第一部分（ES5） + 第二部分前两章（ES6）
 
 ### ES6+
 
@@ -121,50 +71,24 @@ ES6+ 是前端开发的基本语言。
 
 ### 文档
 
-- 语言特性
-  - [语句和声明](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements)
-  - [表达式和运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators)
-  - [运算符优先级](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
-  - [函数](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions)
-- [JavaScript 标准内置对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
+- [JavaScript - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
+  - 语言特性
+    - [语句和声明](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements)
+    - [表达式和运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators)
+    - [运算符优先级](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+    - [函数](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions)
+  - [JavaScript 标准内置对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
 
-* [JavaScript - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 * [Standard ECMA-262](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
-
-### 书
-
-- [JavaScript 权威指南](https://book.douban.com/subject/2228378/) 犀牛书（不推荐，直接看 MDN 就好了）
-- [JavaScript 高级程序设计](https://book.douban.com/subject/10546125/) 红宝书
-- [JavaScript 语言精粹](https://book.douban.com/subject/3590768/) 蝴蝶书
-- [你不知道的 JavaScript](https://book.douban.com/series/40642) 小黄书（共三卷）
-- [JavaScript 忍者秘籍](https://book.douban.com/subject/26638316/) 忍者书
-
-### 进阶
-
-- [The JavaScript Survival Guide](https://www.youtube.com/watch?v=9emXNzqCKyg)
-- [JavaScript Pro Tips - Code This, NOT That](https://www.youtube.com/watch?v=Mus_vwhTCq0)
-- [JavaScript: Understanding the Weird Parts - The First 3.5 Hours](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts)
 
 ### 实战
 
-- [JavaScript 30 - Wes Bos](https://javascript30.com/)
-- [TodoMVC](http://todomvc.com/)
-
-### JS 概况/漫谈
-
-- [硬核前端（劝退篇）](./fe-hardcore-overview.md)
-
-<!-- * [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh) -->
-<!-- * state of js -->
-
-- [为什么认为 Backbone 是现代前端框架的基石](https://zhuanlan.zhihu.com/p/30982369)
-- [[译文] 现代 js 框架存在的根本原因](https://juejin.im/post/5b111436e51d4506d06205fd)
-
-## JavaScript 知识体系
+## JavaScript 初级知识体系
 
 ### JavaScript 语言特性
 
-- 高级语言
+- 区分大小写
+- 高级语言（不是机器语言）
 - 弱类型（不用手动声明类型）
 - 动态类型（一个变量可以转换类型）
 - 多范式（FP、OO）
@@ -172,65 +96,123 @@ ES6+ 是前端开发的基本语言。
   - 函数也是 Object
 - 函数是一等公民
   - 高阶函数的概念
+  - 函数没有重载
 - 单线程
-- 垃圾回收
 - 非阻塞（EventLoop 队列）
+- 垃圾回收
 - JIT（Just-In-Time）
 
 ### JavaScript 语言概念
 
-#### 基本组成
+#### JavaScript 语言组成
 
-- 基本类型/内置对象
-  - Primitive Types 原始值
-    - **string**、**number**（浮点数）、**boolean**
-    - **null**、**undefined**
-    - **Symbol**（符号，表示唯一标识，ES6 新类型）
-  - 对象，标准内置对象，数据结构
-    - **Object**
-      - **Function**
-      - **Array**、**RegExp**、**Date**、**Promise** 等
-      - ArrayLike（如 BigUint64Array 等）
-      - **Map**、**Set** 等
-      - **Proxy**
-- 声明（Declaration）
-  - **function**、**var**、**let**、**const**、**class**
+- 语法
+  - 区分大小写、标识符（变量）、注释、语句、
+  - 严格模式 `"use strict;"`
+  - 原始表达式、字面量表达式
+- 关键字和保留字
+- 变量（声明 Declaration）
+  - `function`、`var`、`let`、`const`、`class`
+- 数据类型
+  - `typeof`、`instanceof`
+  - 基本类型/内置对象
+    - Primitive Types 原始值
+      - `string`、`number`（浮点数）、`boolean`
+      - `null`、`undefined`
+      - `Symbol`（符号，表示唯一标识，ES6 新类型）
+    - 引用类型/对象，标准内置对象，数据结构
+      - `Object`
+        - `Function`
+        - `Array`、`RegExp`、`Date`、`Math` 等
+- 全局对象、包装对象
+- 操作符（Operator）
+  - 一元操作符：`++`、`--`
+  - 位操作符：`~`、`&`、`|`、`^`、`<<`、`>>`、`>>>`
+  - 布尔操作符：`!`、`&&`、`||`
+  - 乘性操作符：`*`、`/`、`%`
+  - 加性操作符：`+`、`-`
+  - 关系操作符：`<`、`>`、`<=`、`>=`
+  - 相等操作符：`==`、`===`
+  - 条件操作符（三元）：`a ? b : c`
+  - 赋值操作符：`=`、`+=` 等
+  - 逗号操作符： `(1, 2)` （返回逗号最后一项）
+  - 分组操作符：`()` （圆括号）
 - 语句（Statement）
-  - 普通顺序**语句**
+  - 顺序语句
     - 声明、赋值、运算、调用、解构等
-  - **控制流**
-    - Block（花括号代码块）、if、break、try catch 等
-  - **迭代**（循环）
-    - for、while 等
-- 函数调用（Call）
-  - `fn(...args)`
+    - `with`（改变作用域）、`throw`、`void`、`eval`
+  - 控制流
+    - `if`、`break`/`continue`、`try/catch/finally`、`switch`
+  - 迭代（循环）
+    - `do-while`、`while`、`for`、`for-in`
+- 函数
+  - 函数声明、函数表达式
+  - 调用（call）、按值传递
+  - 直接调用、方法调用、构造函数、apply/call/bind
+  - `this`、`arguments`（参数组）、`return`
+- 对象
+  - 属性、访问器（getter/setter）
+  - `new`、`delete`
+  - `toString`、`valueOf`
 
-#### 表达式/运算符（Expressions/operators）
-
-- 运算符特性：
+* 运算符特性：
   - 结合律和优先级
   - 一句语句可以包含多个运算符
   - 运算符可以理解为一种"内建函数调用语法"
-- Primary expressions（主要表达式、保留字、字面量）
-- LHS（Left hand side，指等号左边部分的代码）
-- 运算符
-  - 一元操作符
-  - 数学运算
-  - 位运算
-  - 自增自减
-  - 三元
-  - 赋值、逗号
-  - 关系运算（in、instanceof、比大小）
 
-#### 高级特性/难点
+#### 常用 API（ES6+）
 
-- 短路运算
-- this
-- 基本包装类型、装箱、拆箱
-- 相等性、隐式类型转换
-- 基于原型链的类
-
-TODO（待补充）
+- [Number](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number)
+  - `.toFixed()`
+  - `isFinite()`, `isNaN()`, `parseInt()`, `parseFloat()`
+  - `Number.EPSILON`, `Number.MAX_SAFE_INTEGER`
+- [String](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String)
+  - `.length`
+  - `.concat()`, `.slice()`, `.split()`
+  - `.includes()`, `.indexOf()`, `.match()`, `.replace()`
+  - `.padStart()`, `.padEnd()`, `.startsWith()`, `.endsWith()`, `.trim()`
+  - `.charAt()`, `.charCodeAt()`
+  - `String.fromCharCode()`, `String.raw()`
+- [Array](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)
+  - `.length`
+  - `.push()`, `.pop()`, `.shift()`, `.unshift()`
+  - `.reverse()`, `.sort()`, `.flat()`
+  - `.map()`, `.filter()`, `.reducer()`, `.forEach()`, `.every()`, `.some()`
+  - `.concat()`, `.join()`, `.slice()`, `.splice()`
+  - `.includes()`, `.indexOf()`, `.find()`, `.findIndex()`
+  - `Array.from()`, `Array.isArray()`
+- [Object](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object)
+  - `Object.assign()`, `Object.create()`
+  - `Object.getPrototypeOf()`
+  - `Object.keys()`, `Object.values()`, `Object.entries()`, `Object.fromEntries()`
+  - `Object.freeze()`, `Object.seal()`
+  - `.toString()`, `.valueOf()`
+- [Function](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function)
+  - `.length`, `.name`
+  - `.call()`, `.apply()`, `.bind()`
+- [Math](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math)
+  - `Math.E`, `Math.PI`, `Math.SQRT1_2`, `Math.SQRT2`
+  - `Math.abs()`, `Math.sign()`, `Math.ceil()`, `Math.floor()`, `Math.round()`, `Math.random()`
+  - `Math.max()`, `Math.min()`, `Math.pow()`, `Math.log()`, `Math.log10()`, `Math.log2()`
+  - `Math.sin()`, `Math.cos()`, `Math.tan()`, `Math.asin()`, `Math.acos()`, `Math.atan()`
+- [Date](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date)
+  - `Date.now()`, `Date.parse()`
+  - `.getTime()`, `.getMonth()`, `.getDate()`, `getDay()`
+  - `.getFullYear()`, `.getHours()`, `.getMinutes()`, `.getSeconds()`, `.getMilliseconds()`
+- [RegExp](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+  - `.exec()`, `.test()`
+- [JSON](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+  - `JSON.parse`, `JSON.stringify()`
+- [Promise](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - `Promise.all()`, `Promise.race()`, `Promise.resolve()`, `Promise.reject()`
+  - `.then()`, `.catch()`, `.finally()`
+- [console](https://developer.mozilla.org/en-US/docs/Web/API/console)
+  - `console.log()`, `console.warn()`, `console.info()`, `console.error()`, `console.dir()`
+  - `console.clear()`, `console.trace()`, `console.count()`, `console.assert()`
+  - `console.time()`, `console.timeEnd()`, `console.group()`, `console.groupEnd()`
+- [window/global](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowOrWorkerGlobalScope)
+  - `setTimeout()`, `clearTimeout()`
+  - `setInterval()`, `clearInterval()`
 
 ### 术语表
 
@@ -246,11 +228,25 @@ TODO（待补充）
 - **AKA**：As Known As
 - **Meta**：MetaDate，元信息，指关于信息的信息，比如：代码是信息，代码的版本是元信息
 
+* **LHS**：Left hand side，指等号左边部分的表达式语句
+* **RHS**：Right hand side，同理指等号右边部分
+* **argument**：形参
+* **parameter**：实参
+
 ## JavaScript 典型代码
 
 ### ES5 基本语法
 
 ```javascript
+// 单行注释
+
+/* 注释 */
+
+/*
+  多行注释
+  多行注释
+*/
+
 // * ---------------- 变量
 
 var a = '1';
@@ -397,22 +393,27 @@ typeof [1, 2]; // => 'object'
 ### ES6+ 新增语法
 
 ```javascript
-// * 显式块级作用域
+// * ---------------- 显式块级作用域
 {
-  // * 声明
+  // console.log(num);
+  // let 和 const 会有暂时性死区现象
+  // 提升了声明，但是没有赋值，取值会报错
+  // => ReferenceError: Cannot access 'num' before initialization
+
+  // * ---------------- 声明
   let num = 2;
-  const str = `hello ${num}`;
+  const str = `hello ${num}`; // => 'hello 2' （字符串增强）
 
   let obj = {
     k: 1,
-    num, // => 2 （自动查找上下文变量）
+    num, // => 2 （对象增强，自动查找上下文变量）
   };
 
-  // * 箭头函数、默认值
+  // * ---------------- 箭头函数、默认值
   const fn = (a, b = 666) => console.log(a, b);
   fn(233); // => 233 666
 
-  // * 类
+  // * ---------------- 类
   class MyClass extends Object {
     constructor(val) {
       super(val);
@@ -426,41 +427,13 @@ typeof [1, 2]; // => 'object'
   const inst = new MyClass(666);
   inst.log(); // => really 666
 
-  // * 解构赋值（可嵌套）、剩余参数
-  const [a, b, ...c] = [1, 2, 3, 4, 5];
+  // * ---------------- 解构赋值（可嵌套）、剩余参数
+  const [a, b, ...c] = [1, 2, 3, 4, 5]; // => a=1, b=2, c=[3, 4, 5]
   const { toString, valueOf } = Object;
+
+  const arr = [...c]; // => [3, 4, 5] （新的数组）
 
   const fn2 = (a, ...rest) => console.log(rest);
   fn2(1, 2, 3); // => [2, 3]
 }
 ```
-
-## JavaScript 相关
-
-### JS 版本/方言/历史
-
-- [The Weird History of JavaScript](https://www.youtube.com/watch?v=Sh6lK57Cuk4)
-- [JavaScript: How It's Made](https://www.youtube.com/watch?v=FSs_JYwnAdI)
-- [漫谈 JavaScript 方言与派系](https://www.blackglory.me/javascript-dialects-and-factions/)
-
-在现代前端开发中，  
-开发时需要使用配套的解析工具，  
-发布前基本上都会预编译到 ES5。
-
-- **ECMAScript** 官方规范（from _Ecma TC39_）
-  - **ES1~3**：1995 起，上古版本
-  - **ES5**：（aka `ES3.1`）2009 起的版本
-  - **ES6**：（aka `ES2015`）2015 年大更新的版本，带动了 JS 预编译生态，后续逐年小幅度更新
-  - **Vanilla JavaScript**：民间称呼，指的就是标准/原生/不使用库的 JS，Vanilla 表示 Plain 或者 Pure
-- **JSON**： JavaScript Object Notation，JS 对象表示法，基于 JS 语法子集的数据格式
-- 类型系统
-  - **TypeScript**：带类型检查的扩展集（from _Microsoft_）
-  - **Flow**：比 TS 功能少一点的类型检查扩展集，现已式微（from _Facebook_）
-- 框架语言（基于 ES、TS 并含有扩展语法的 DSL/语法糖）
-  - **JSX**：React 的 JS + HTML 混合语法
-  - **Vue**：Vue 自己的（文件和 template）格式
-- **ClojureScript**：Clojure+JS 的函数式方言
-- 其他方言（现已式微的）
-  - **ActionScript**：以 ES4 衍生发展成的旁支（用于 _Adobe_ Flash，但是 Flash 已死）
-  - **CoffeeScript**：方言之一，简化了 JS 语法
-  - **LiveScript**：CoffeeScript 的兄弟版本（JS 早期曾用名也是这个，但是不同的东西）

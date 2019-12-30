@@ -1,10 +1,10 @@
-# 前端开发入行指南
+# 前端开发入门指南
 
 > 从野路子入门到系统性~~精通~~略懂
 
 ## 路线图
 
-### 编程入门
+### 编程入门和开发环境准备
 
 - （可以看看我关于学习的一些杂谈（鸡汤））
   - [为什么要学习](./study-the-only-way.md)
@@ -38,7 +38,7 @@
   - [Web Development In 2020 - A Practical Guide](https://www.youtube.com/watch?v=0pThnRneDjw)
   - [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)
 
-* 铺垫
+* 铺垫学习
   - [Markdown 学习指南](./markdown.md)：学习写文档用的标记语言
   - [Git 学习指南](./git.md)：学习版本管理和周边概念
   - [Node 概览（先行版）](./npm-overview.md)：了解 Node.js（前端开发的重要组成部分）
@@ -53,19 +53,14 @@
   - Less/Sass 预处理
 * [JavaScript ↓](#javascript-%e8%b7%af%e7%ba%bf%e5%9b%be)
 
-## JavaScript 路线图
+### JavaScript 生态路线图
 
 -  别人的路线图
   - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)
   - [Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)
-- JS 概论
-  - [为什么认为 Backbone 是现代前端框架的基石](https://zhuanlan.zhihu.com/p/30982369)
-  - [[译文] 现代 js 框架存在的根本原因](https://juejin.im/post/5b111436e51d4506d06205fd)
 
-* [JavaScript 入门指南](./js-basic.md)
-  - [正则表达式](./regexp.md)
-  - [前端模块化](./js-modular.md)
-* [TypeScript](./typescript.md)
+* [JavaScript 学习指南](./js-foundation.md)（系列）
+* [TypeScript 学习指南](./typescript.md)
 * 框架类库
   - Vue/React
     - 组件渲染（[React Hooks 学习指南](./react-hooks.md)）
@@ -125,34 +120,3 @@
 不过当你的技能体系能覆盖以上至少一半内容时，  
 那么你已经是一个不错的工程师了，  
 你可以自己发现的未来道路：）
-
-## 小记
-
-近年来，前端已从最早的玩具发展为成体系的系统工程开发，  
-逐步赶上了传统软件开发和编程领域的步伐。
-
-现在做前端开发，在真正开始写第一行业务代码之前，  
-需要很多前置的技术储备，并学习很多工具。
-
-前端内的技术教程千千万，  
-~~（比如之前在掘金，关于 EventLoop 的文章每个月看到八百遍）~~  
-但是我 _很少_ 看到国内有文章系统地介绍：  
-一个现代化的前端工程应该从哪里开始入门和起步，  
-在前端体系之外、之前，应该要做，或最好要做什么事情。  
-在前端体系之后，还可以做哪些事情，向何处发展。
-
-本系列根据我的工作经历，以及各路资料整理而成。  
-目标是，在有限的篇幅中，对前端开发的职业规划做一个向导，  
-一个只有一台干净电脑（Mac）的新手，如何从零学习并从事前端开发的工作。
-
-所基于的开发环境是 MacOS。  
-（Windows 和 Linux 有部分是相同的，另一部分是有替代方案的）
-
-当然，有很多更全面的资料，  
-比我有限的人生经验不知道高到哪里去了，  
-这些参考资料的链接对应地分散在各个章节中。  
-希望对各位读者有所帮助。
-
-根据自己的实际情况，**学以致用，循序渐进**，这是坠吼的。
-
-> —— 此系列写给我的朋友 东神、阿辉

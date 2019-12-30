@@ -1,5 +1,7 @@
 # 关于 VS Code
 
+查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+
 ## VS Code 简介
 
 [VS Code](https://code.visualstudio.com/) 是一个跨平台代码编辑器，由微软开发并开源，  

@@ -28,13 +28,13 @@
 
 ### 学习路线
 
-- 前置基础
-  - 学习 Redux
-  - 学习 Rxjs（v6）
-  - 学习 TypeScript
+- 前置学习
+  - [Redux 学习指南](./redux.md)
+  - [RxJS 学习指南](./rxjs.md)
+  - [TypeScript 学习指南](./typescript.md)
 - 学习 redux-observable
   - 练习使用所有 API 和 Interface
-- 实战到业务中
+- 在业务中实战
 
 ## 资料
 

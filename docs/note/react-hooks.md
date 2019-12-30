@@ -35,10 +35,10 @@ Hooks 隐藏了 Class 写法中生命周期的概念，
 
 ### 学习路线
 
-- 前置基础
+- 前置学习
   - 理解 functional programming
     - side effect
-  - 理解 JS 执行原理
+  - [JavaScript 进阶指南](./js-advanced.md)
 - 了解 React 基本概念
   - 理解 展示组件、容器组件 的区别
   - 学习 Context 的特性

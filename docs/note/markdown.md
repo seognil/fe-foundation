@@ -39,7 +39,7 @@ Table Of Contents 的缩写，表示目录。
 
 ### 学习路线
 
-- 前置基础
+- 前置学习
   - HTML
 - 学习 Markdown
   - Markdown 全部基本语法

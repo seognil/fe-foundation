@@ -42,10 +42,10 @@ Redux 可以和 React 搭配使用。
 
 ### 学习路线
 
-- 前置基础
+- 前置学习
   - 理解 FP 编程范式
-  - （学习 React）
-  - （学习 TypeScript）
+  - （[React 学习指南](./react-hooks.md)）
+  - （[TypeScript 学习指南](./typescript.md)）
 - 学习 Redux
   - `redux`
     - `createStore` & `Store`
