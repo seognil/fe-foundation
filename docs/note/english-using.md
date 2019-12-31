@@ -24,7 +24,7 @@
 
 程序的编码是最早来自英语：
 
-- [ASCII](https://en.wikipedia.org/wiki/ASCII)
+- [Characters, Symbols and the Unicode Miracle - Computerphile](https://www.youtube.com/watch?v=MijmeoH9LT4)
 
 编程语言中的很多关键字也来源于英语：
 

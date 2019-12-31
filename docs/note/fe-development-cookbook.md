@@ -21,7 +21,8 @@
 
 - 配置一套开发环境，准备学习前端开发
   - 魔法丝袜之影（略）：保障稳定的网络
-  - [我的 2019 装了啥](./my-workstation.md)：以供参考
+  - [装了啥](./my-workstation.md)
+  - [我的阅读](./my-reading.md)
   - [命令行 简介](./terminal-intro.md)：了解命令行（前端开发的重要组成部分）
   - [打造趁手的终端](./terminal-config.md)：配置命令行
   - [Mac、设置和软件](./mac.md)：调一下系统，装一些工具

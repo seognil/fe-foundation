@@ -46,6 +46,9 @@
 然而重复的好处是可以加深记忆，熟悉之后阅读速度会变快。  
 （比如我为了写这篇文章，重新复习完**所有**这些材料只花了不到一天。）
 
+- 快速入门
+  - [How to Run JavaScript Code](https://fireship.io/courses/javascript/beginner-js-where-to-run/)
+  - [JavaScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/javascript/)
 - 视频教程
   - [JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour [2019]](https://www.youtube.com/watch?v=W6NZfCO5SIk)  
     48 分钟：如何基于 HTML 运行 JS，JS 基本语法
@@ -53,8 +56,6 @@
     100 分钟：JS 简介，JS(ES6) 语法、基本类型、API，类，简单 DOM 编程
   - [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)  
     200 分钟：运行 JS 的多种方式，JS(ES6) 语法、API、执行细节、代码技巧、模块化（共 134 个基本知识点）
-- 语法快速入门
-  - [JavaScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/javascript/)
 - 文档级教程
   - [现代 JavaScript 教程](https://zh.javascript.info/)：前几章（JS 基础部分）
   - [JavaScript 教程 - 阮一峰](https://wangdoc.com/javascript/index.html)：前几章（除了 DOM 的部分）
@@ -207,8 +208,9 @@
   - `Promise.all()`, `Promise.race()`, `Promise.resolve()`, `Promise.reject()`
   - `.then()`, `.catch()`, `.finally()`
 - [console](https://developer.mozilla.org/en-US/docs/Web/API/console)
-  - `console.log()`, `console.warn()`, `console.info()`, `console.error()`, `console.dir()`
-  - `console.clear()`, `console.trace()`, `console.count()`, `console.assert()`
+  - `console.log()`, `console.warn()`, `console.info()`, `console.error()`, `console.clear()`
+  - `console.table()`, `console.dir()`, `console.trace()`
+  - `console.count()`, `console.assert()`
   - `console.time()`, `console.timeEnd()`, `console.group()`, `console.groupEnd()`
 - [window/global](https://developer.mozilla.org/zh-CN/docs/Web/API/WindowOrWorkerGlobalScope)
   - `setTimeout()`, `clearTimeout()`

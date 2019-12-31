@@ -11,6 +11,7 @@ const sidebarStructure = {
     './fe-hardcore-overview.md',
 
     './my-workstation.md',
+    './my-reading.md',
     './terminal-intro.md',
     './terminal-config.md',
     './mac.md',
