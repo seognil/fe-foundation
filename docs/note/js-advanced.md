@@ -1,6 +1,6 @@
 # JavaScript 进阶指南（先行版）
 
-> 查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
+> 返回 [JavaScript 学习指南](./js-foundation.md) 系列
 
 ## 学习 JavaScript 进阶知识
 
@@ -48,6 +48,8 @@
 同样的道理，可能会有很多重复的题，选择性跳过，建立自己的知识体系  
 注意到纯 JS 和 DOM 编程的题可能会混在一起，可以考虑分开刷
 
+- 代码片段
+  - [JavaScript - 30 seconds of code](https://www.30secondsofcode.org/js/p/1)
 - 在线刷题
   - [codewars](https://www.codewars.com/?language=javascript)
 - 别人的笔记（按字典排序）
@@ -58,6 +60,7 @@
   - [JavaScript 进阶问题列表](https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md)
   - [javaScript 问题 - FEGuide 前端指南](https://github.com/FEGuideTeam/FEGuide/tree/master/javascript%E9%97%AE%E9%A2%98)
   - [JS - 前端进阶之道](https://github.com/InterviewMap/CS-Interview-Knowledge-Map/blob/master/JS/JS-ch.md)
+  - [JS 相关问题 - 前端工作面试问题](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/translations/chinese/README.md#js-%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98)
   - [JS 进阶 - 前端每日一问](https://github.com/sanyuan0704/frontend_daily_question#js-%E8%BF%9B%E9%98%B6)：JS 的部分
   - [搞搞 js - PersonalBlog Nealyang 全栈前端](https://github.com/Nealyang/PersonalBlog#%E6%90%9E%E6%90%9Ejs)：JS 部分（语言本身相关的那些）
   - [深入系列目录 - 冴羽的博客](https://github.com/mqyqingfeng/Blog#%E6%B7%B1%E5%85%A5%E7%B3%BB%E5%88%97%E7%9B%AE%E5%BD%95)

@@ -1,6 +1,6 @@
 # 正则表达式 学习指南
 
-> 查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
+> 返回 [JavaScript 学习指南](./js-foundation.md) 系列
 
 ## 正则表达式 简介
 
@@ -17,17 +17,13 @@
 - 几乎所有代码编辑器的搜索功能：VS Code、sublime、vim、IntelliJ IDEA 系列
 - [Chrome 正则搜索插件](https://chrome.google.com/webstore/detail/chrome-regex-search/bpelaihoicobbkgmhcbikncnpacdbknn)
 
-正则包括以下主要概念：
+#### 正则表达式 概念分类
 
 - 转义字符
 - 位置匹配
 - 组合和量词
 - 正则中具有多种功能的字符们
-  - `()`
-  - `?`
-  - `^`
-  - `\`
-  - `$`
+  - `()`, `?`, `^`, `\`, `$`
 - 断言
 - flags（检索方式）
 
@@ -75,11 +71,14 @@ toThousand(123456789); // => "123,456,789"
 
 ### 自学教材
 
-- [《JS 正则迷你书》](https://github.com/qdlaoyao/js-regex-mini-book)
-- 《JavaScript 忍者秘籍》 中的正则章节
-- 《JavaScript 高级程序设计》中的正则章节
-- [正则表达式零宽断言详解](https://www.cnblogs.com/onepixel/articles/7717789.html)
-- [Unicode: flag "u" and class \p{...}](https://javascript.info/regexp-unicode)
+- 电子书
+  - [《JS 正则迷你书》](https://github.com/qdlaoyao/js-regex-mini-book)
+- 书籍
+  - [JavaScript 高级程序设计](https://book.douban.com/subject/10546125/)：（第三版）5.4 RegExp 类型
+  - [JavaScript 忍者秘籍](https://book.douban.com/subject/26638316/)：（第二版）第 10 章（正则）
+- 正则细节
+  - [正则表达式零宽断言详解](https://www.cnblogs.com/onepixel/articles/7717789.html)
+  - [Unicode: flag "u" and class \p{...}](https://javascript.info/regexp-unicode)
 
 ### 在线正则解析（帮助理解）
 

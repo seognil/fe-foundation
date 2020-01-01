@@ -83,12 +83,14 @@ ReactiveX 的 JS 具体实现
 
 ### RxJS 自学教材
 
-- [Learn RxJS](https://www.learnrxjs.io/) ：（v6）学习 RxJS，非常详细的站，有（几乎）所有 API 代码用法和实战 Demo
-- [Launchpad for RxJS](https://reactive.how/rxjs/) ：（v6）动画演示（一部分），API 按类型整理划分
-- [RxJS - API List](https://rxjs.dev/api) ：RxJS 官方文档
-- [RxJS example + marble diagram](https://thinkrx.io/rxjs/interval/) ：（v6）通过代码生成的弹珠台
-- [RxJS Marbles](https://rxmarbles.com/) ：弹珠台，可直接拖动，只有动画
-- 《深入浅出 RxJS》 - 程墨 （rxjs v5）
+- 教程/工具
+  - [Learn RxJS](https://www.learnrxjs.io/) ：（v6）学习 RxJS，非常详细的站，有（几乎）所有 API 代码用法和实战 Demo
+  - [Launchpad for RxJS](https://reactive.how/rxjs/) ：（v6）动画演示（一部分），API 按类型整理划分
+  - [RxJS - API List](https://rxjs.dev/api) ：RxJS 官方文档
+  - [RxJS example + marble diagram](https://thinkrx.io/rxjs/interval/) ：（v6）通过代码生成的弹珠台
+  - [RxJS Marbles](https://rxmarbles.com/) ：弹珠台，可直接拖动，只有动画
+- 书籍
+  - [深入浅出 RxJS](https://book.douban.com/subject/30217949/) （v5）
 
 ### 实战
 

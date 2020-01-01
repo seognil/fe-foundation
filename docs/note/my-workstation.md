@@ -1,6 +1,8 @@
 # 装了啥
 
-> 查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+> 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列
+
+---
 
 > 参考自：[装了啥 - 云谦](https://github.com/sorrycc/awesome-tools)
 
@@ -10,9 +12,9 @@
 
 ## Mac 和软件
 
-- 《[Mac 和软件](./mac.md)》
-- 《[关于 Chrome](./chrome.md)》
-- 《[关于 VS Code](./vscode.md)》
+- [Mac 和软件](./mac.md)
+- [关于 Chrome](./chrome.md)
+- [关于 VS Code](./vscode.md)
 
 ## 在线服务
 

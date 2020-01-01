@@ -1,6 +1,6 @@
 # JavaScript 简介
 
-> 查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
+> 返回 [JavaScript 学习指南](./js-foundation.md) 系列
 
 ## 什么是 JavaScript
 

@@ -1,6 +1,6 @@
 # 命令行 简介
 
-> 查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+> 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列
 
 ## 什么是 命令行
 
@@ -30,7 +30,7 @@
 这个命令将会在终端中，打印显示当前文件夹下的所有文件。  
 这样就完成了一个基本的命令行操作。
 
-这是我的终端界面 ↓（参考下一篇文章《[打造趁手的终端](./terminal-config.md)》）
+这是我的终端界面 ↓（参考下一篇文章 [打造趁手的终端](./terminal-config.md)）
 
 ![iterm2](./img/iterm2-showcase.png)
 

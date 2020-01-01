@@ -1,10 +1,10 @@
 # 打造趁手的终端
 
-> 查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+> 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列
 
 ## proxy
 
-在上一篇文章《[命令行简介](./terminal-intro.md)》中，我们提到 proxy 有诸多好处，正确配置或能直接提高生产效率。
+在上一篇文章 [命令行简介](./terminal-intro.md) 中，我们提到 proxy 有诸多好处，正确配置或能直接提高生产效率。
 
 - 给 浏览器 和 软件 配置 proxy
 - 给 Terminal 配置 proxy
@@ -136,6 +136,6 @@ export PATH="$PATH:/usr/local/opt/node@10/bin"
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)：一个 `fish` 风格的 zsh 高亮插件
   - `brew install zsh-syntax-highlighting`
 
-接着可以参考我的另一篇文章《[Mac 和软件](./mac.md)》，安装一些其他的工具。
+接着可以参考我的另一篇文章 [Mac 和软件](./mac.md)，安装一些其他的工具。
 
 ![iterm2-showcase](./img/iterm2-showcase.png)

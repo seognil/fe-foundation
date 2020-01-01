@@ -1,23 +1,12 @@
 ## 资料（不分先后）
 
-[Learn X in Y minutes](https://learnxinyminutes.com/)
+[npm rank](https://gist.github.com/anvaka/8e8fa57c7ee1350e3491)
 
-[2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)  
-[npm rank](https://gist.github.com/anvaka/8e8fa57c7ee1350e3491)  
-[前端进阶之道](https://yuchengkai.cn/docs/zh/frontend/)  
-[前端九部 - 入门者手册 2019](https://www.yuque.com/fe9/basic)  
-[2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)  
 [JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)  
-[LeetCode](https://leetcode.com)  
-[系统设计入门](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)  
-[[译] Coding Interview University 一套完整的学习手册帮助自己准备 Google 的面试](https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md)  
-[ECMAScript compatibility table](https://kangax.github.io/compat-table/es6/)
+[LeetCode](https://leetcode.com)
 
-[冴羽的博客](https://github.com/mqyqingfeng/Blog)  
 [前端面试每日 3+1（每日三问）](https://github.com/haizlin/fe-interview/blob/master/category/history.md)  
 [MuYunyun/blog](https://github.com/MuYunyun/blog)
-
-[前端开发技术目录（我以前写的部分文档 后续将迁移到本站）](https://www.yuque.com/seognil/fe-foundation)
 
 ## Mantras
 

@@ -1,6 +1,6 @@
 # 计算机科学 入门指南
 
-> 查看 [前端开发入门指南](./fe-development-cookbook.md) 完整系列
+> 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列
 
 ## 计算机科学 简介
 
@@ -84,7 +84,7 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
   - 深入学习各个子课程
 - 进阶
   - 学习 CS50 系列视频（入门课程）
-  - CSAPP（《深入理解计算机系统》）
+  - 《深入理解计算机系统》（CSAPP）
 - 迷思
   - 记得自己记录
 
@@ -96,13 +96,18 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
   - [Map of Computer Science](https://www.youtube.com/watch?v=SzJ46YA_RaA)
   - [How do computers read code?](https://www.youtube.com/watch?v=QXjU9qTsYCc)
   - [如何自学编程？](https://www.zhihu.com/lives/860490807847841792)
-- 系列教程
+- 视频教程（系列）
   - CCCS
     - [Crash Course Computer Science - YouTube](https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
     - [计算机科学速成课 - bilibili](https://www.bilibili.com/video/av21376839/)
   - CS50
     - [CS50 Lectures 2018 - YouTube](https://www.youtube.com/watch?v=5azaK2cBKGw&list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&index=2)
     - [CS50 Lectures 2018 - bilibili](https://www.bilibili.com/video/av45936507)
+- 知识体系 
+  - [[译] Coding Interview University 一套完整的学习手册帮助自己准备 Google 的面试](https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md)
+  - [系统设计入门](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
+- 进阶书籍
+  - [深入理解计算机系统](https://book.douban.com/subject/26912767/)（CSAPP）
 
 ### 编程漫谈
 
@@ -113,11 +118,6 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 - [编程到底难在哪里？](https://www.zhihu.com/question/22508677)
 - [把代码写的太灵活不好吗？为什么会被上司批评？](https://www.zhihu.com/question/52951851)
 - [为何部分程序员从不使用 break 或 continue 语句？](https://www.zhihu.com/question/334216911)
-
-### 知识体系 
-
-- [Coding Interview University](https://github.com/jwasham/coding-interview-university)
-- [The System Design Primer](https://github.com/donnemartin/system-design-primer)
 
 ### 中国高校 CS 课程体系
 

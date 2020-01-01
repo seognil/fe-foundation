@@ -1,6 +1,6 @@
 # JavaScript 入门指南
 
-> 查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
+> 返回 [JavaScript 学习指南](./js-foundation.md) 系列
 
 ## 学习 JavaScript 初级知识
 
@@ -36,7 +36,7 @@
   - 学习 ES6+ 基本概念
   - 了解 JSON 的概念
 - 下一步
-  - 查看 [JavaScript 学习指南](./js-foundation.md) 完整系列
+  - 返回 [JavaScript 学习指南](./js-foundation.md) 系列
 
 ## 资料
 

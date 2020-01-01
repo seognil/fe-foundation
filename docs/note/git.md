@@ -17,7 +17,7 @@ Git 是一个流行的文件版本管理工具。
 ### 安装和打开 Git
 
 基础的 Git 工具需要基于命令行，  
-（参考我的另一篇文章《[命令行简介](./terminal-intro.md)》）
+（参考我的另一篇文章 [命令行简介](./terminal-intro.md)）
 
 用 Brew 安装 Git：`brew install git`
 
@@ -60,7 +60,8 @@ GitHub 是一个免费的 Git 远端仓库，
 （类似的远端仓库还有 [GitLab](https://about.gitlab.com/)、[Bitbucket](https://bitbucket.org/product/)、[CODING](https://coding.net/) 等）
 
 GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他功能，  
-如 issues 系统，page 服务 等
+如 issues 系统，page 服务 等  
+[什么是 GitHub？](https://www.bilibili.com/video/av22883127)
 
 ## 学习 Git
 
@@ -90,24 +91,28 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 
 ### 自学教材
 
-- [学习 Git 分支（有中文）](https://learngitbranching.js.org/)
-- [Git 菜单](https://github.com/geeeeeeeeek/git-recipes/blob/master/README.md)
-- [Introduction to Git Use](https://developpaper.com/introduction-to-git-use/)
-- [Git and GitHub for Poets - Daniel Shiffman](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
-- [Git 教程 - 廖雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
-
-### Git Flow
-
-- [Git 工作流程 - 阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
-- [Git flow 入门教程](https://www.jianshu.com/p/b446c43577f9)
-- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- 视频
+  - [Git & Github 超简单入门教学 10 分钟学会使用 github！](https://www.bilibili.com/video/av62967996)
+  - [什么是 GitHub？](https://www.bilibili.com/video/av22883127)
+  - [Git and GitHub for Poets - Daniel Shiffman](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+- 教程
+  - [Git 菜单](https://github.com/geeeeeeeeek/git-recipes/blob/master/README.md)
+  - [Git 教程 - 廖雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
+  - [Introduction to Git Use](https://developpaper.com/introduction-to-git-use/)
+- 在线练习
+  - [学习 Git 分支（有中文）](https://learngitbranching.js.org/)
+- Git Flow
+  - [Git flow 入门教程](https://www.jianshu.com/p/b446c43577f9)
+  - [Git 工作流程 - 阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+  - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ### 进阶
 
 - [Git Merge - Atlassian Tutorials](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 - [What is the difference between `git merge` and `git merge --no-ff`?](https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
 - [Git 协同与提交规范](https://www.yuque.com/fe9/basic/nruxq8)
-- [Pro Git](https://git-scm.com/book/zh/v2)
+
+* [Pro Git](https://git-scm.com/book/zh/v2)
 
 ## Git 知识体系
 

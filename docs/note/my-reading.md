@@ -1,5 +1,9 @@
 # 我的阅读
 
+> 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列
+
+---
+
 > 从不同渠道学习，成为更好的自己。
 
 ## 视频
@@ -13,14 +17,17 @@
   - [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/videos)
   - [Metosin](https://www.youtube.com/channel/UC1lFJanm5Wp6IpNk-2C1Sxw/videos)
   - [TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw/videos)
-- 泛学习
+- 社会/文化/科技
   - [Guan Video 观视频工作室](https://www.youtube.com/channel/UCYfJG6cGfW84FVLuy7semEg/videos)
   - [Kevin in Shanghai](https://www.youtube.com/channel/UC_HW6aVLpyvPIhc7w8YA8Ag/videos)
   - [Mr & Mrs Gao](https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ/videos)
   - [李永乐老师](https://www.youtube.com/channel/UCSs4A6HYKmHA2MG_0z-F0xw/videos)
-  - [李自然说](https://www.youtube.com/channel/UCgLUl1WDoDXUtxPaZeSZHsw/videos)
   - [箭廠視頻](https://www.youtube.com/channel/UC_9AeV5Riy9AsIJZEsnsCDw/videos)
-- 编程教程
+- 经济/商业
+  - [巫师财经](https://www.youtube.com/channel/UC55ahPQ7m5iJdVWcOfmuE6g/videos)
+  - [李自然说](https://www.youtube.com/channel/UCgLUl1WDoDXUtxPaZeSZHsw/videos)
+  - [狼爸爸的工作室](https://www.youtube.com/channel/UC2dWZP6pgyoWZljdkP2yhEw/videos)
+- 编程视频教程
   - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ/videos)
   - [The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw/videos)
   - [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA/videos)
@@ -32,7 +39,7 @@
   - [Toppc Lin](https://www.youtube.com/channel/UCcBHyNvAbtxX8TRJYSQiObw/videos)
   - [极客湾 geekerwan](https://www.youtube.com/channel/UCeUJO1H3TEXu2syfAAPjYKQ/videos)
   - [翼王](https://www.youtube.com/channel/UCxcuxsAjdnQaiRwYb5CVISw/videos)
-- 游戏
+- 游戏文化
   - [Gamker 攻壳官方频道](https://www.youtube.com/channel/UCLgGLSFMZQB8c0WGcwE49Gw/videos)
   - [敖厂长](https://www.youtube.com/channel/UCCkMW93Am1pLfk2nZFKAmbQ/videos)
   - [森纳映画](https://www.youtube.com/channel/UCDNeEBgigHHGtJJOpHSnadA/videos)
