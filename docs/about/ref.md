@@ -1,13 +1,3 @@
-## 资料（不分先后）
-
-[npm rank](https://gist.github.com/anvaka/8e8fa57c7ee1350e3491)
-
-[JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)  
-[LeetCode](https://leetcode.com)
-
-[前端面试每日 3+1（每日三问）](https://github.com/haizlin/fe-interview/blob/master/category/history.md)  
-[MuYunyun/blog](https://github.com/MuYunyun/blog)
-
 ## Mantras
 
 > Every Expert Was Once A Beginner.
@@ -73,3 +63,13 @@
 > If you're willing to restrict the flexibility of your approach,  
 > you can almost always do something better.  
 >  -- John Carmack
+
+## 资料（未整理）
+
+[npm rank](https://gist.github.com/anvaka/8e8fa57c7ee1350e3491)
+
+[JavaScript 算法与数据结构](https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md)  
+[LeetCode](https://leetcode.com)
+
+[前端面试每日 3+1（每日三问）](https://github.com/haizlin/fe-interview/blob/master/category/history.md)  
+[MuYunyun/blog](https://github.com/MuYunyun/blog)

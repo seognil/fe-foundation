@@ -52,7 +52,7 @@ const config = {
 
     nav: [
       { text: '笔记', link: '/note/' },
-      { text: '关于', link: '/about/ref.md' },
+      { text: '鸡汤', link: '/about/ref.md' },
 
       { text: 'Learning-By-Doing', link: 'https://github.com/seognil-study/learning-by-doing' },
     ],
