@@ -33,16 +33,22 @@
 
 ## TODO (DEV)
 
-- [x] category nav autoload
-- [ ] fix zeit vuepress missiong last updated
-- [ ] fix zeit 404 page config
-- [ ] update article layout (add cc 4.0 section)
-- [ ] update better nav-bar and toc-bar
-- [ ] add comment section
-- [ ] add archive page
-- [ ] add custom 404 page design
-- [ ] add dynamic list homepage
-- [ ] update zeit 301 config
+
+- [ ] zeit
+  - [ ] fix: zeit vuepress missiong last updated
+  - [ ] fix: zeit 404 page config
+  - [ ] update: zeit 301 config
+- [ ] vuepress
+  - [x] feat: nav of category autoload
+  - [ ] feat: disable url hash
+  - [ ] update: article layout
+    - [ ] add: cc 4.0 section
+    - [ ] add: comment section
+    - [ ] add: toc-bar
+  - [ ] feat: analyze first and last commit of every page
+    - [ ] add: archive page
+    - [ ] add: homepage (latest, hottest)
+  - [ ] update: custom 404 page design (dead link)
 
 ---
 

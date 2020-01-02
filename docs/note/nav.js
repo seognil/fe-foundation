@@ -55,7 +55,7 @@ const sidebarStructure = {
     './linux-basic-security.md',
     './clean-keyboard.md',
     './npm-verdaccio.md',
-    './js-foundation.md',
+    './js-foundation-old.md',
   ],
 };
 

@@ -16,27 +16,25 @@
 - [关于 Chrome](./chrome.md)
 - [关于 VS Code](./vscode.md)
 
-## 在线服务
+## 服务
 
-- 免费
-  - 干活
-    - [A SOFT MURMUR](https://asoftmurmur.com/)：白噪声（干活时听）
-    - [StackBlitz](http://stackblitz.com/)：在线代码编辑和分享
-    - [Netlify](https://www.netlify.com/)：静态托管服务
-    - [Zeit now](https://zeit.co/)：静态托管服务
-    - [astralapp](https://app.astralapp.com/dashboard)：GitHub Star 管理器
-  - 私人
-    - [YouTube](https://www.youtube.com/)：看视频
-    - [SoundCloud](https://soundcloud.com/)：听音乐
-    - [Mega cloud](https://mega.nz/)：网盘
-    - [Dropbox](https://www.dropbox.com/)：网盘
-
-* 付费
-  - [FrontendMasters](https://frontendmasters.com/)：前端学习教程
+- 学习
+  - [YouTube](https://www.youtube.com/)：杂项
+  - [FrontendMasters](https://frontendmasters.com/)：前端学习
+  - [Brilliant](https://brilliant.org/)：理科学习
   - [知乎盐选会员](https://www.zhihu.com/xen/market/vip-privileges)：听听 Live
-  - [百度云](https://pan.baidu.com/)
-  - 阿里云域名
-  - 阿里 88 会员
+- 干活
+  - [A SOFT MURMUR](https://asoftmurmur.com/)：白噪声（干活时听）
+  - [StackBlitz](http://stackblitz.com/)：在线代码编辑和分享
+  - [Netlify](https://www.netlify.com/)：静态托管服务
+  - [Zeit now](https://zeit.co/)：静态托管服务
+  - [astralapp](https://app.astralapp.com/dashboard)：GitHub Star 管理器
+  - [阿里云域名](https://wanwang.aliyun.com/)：网站域名
+- 私人
+  - [SoundCloud](https://soundcloud.com/)：听音乐
+  - [bilibili 大会员](https://account.bilibili.com/account/big)：看番、看电影
+    <!-- - [百度云超级会员](https://pan.baidu.com/buy/center#/svip)：下载别人分享的文件 -->
+  - 阿里 88 VIP
 
 ## 每天都用
 

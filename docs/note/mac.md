@@ -31,7 +31,9 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
 
 [我的环境自动配置脚本（未完成）](https://github.com/seognil/dotfiles)
 
-## 基本设置
+## 配置
+
+### 基本设置
 
 - 优先 [打造趁手的终端](./terminal-config.md)
 
@@ -59,11 +61,12 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
   defaults write -g KeyRepeat -int 1
   ```
 
-## 软件/工具
+### 软件/工具
 
 我用的一些重要工具：
 
-- - Parallels Desktop
+- 手动安装
+  - [Network Link Conditioner](https://nshipster.com/network-link-conditioner/)：网络环境模拟实用工具（限速）
 - `brew install`
   - 保持更新
     - [git](./git.md)：版本管理工具（参考 [Git 学习指南](./git.md)）
@@ -84,21 +87,26 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
     - [google-chrome](https://www.google.com/chrome/)：浏览器（参考 [关于 Chrome](./chrome.md)）
     - [firefox](https://www.mozilla.org/en-US/firefox/)：浏览器
     - [visual-studio-code](https://code.visualstudio.com/)：轻量级代码编辑器（参考 [关于 VS Code](./vscode.md)）
-    - [docker](https://www.docker.com/)：轻量级虚拟机
-    - [postman](https://www.getpostman.com/)：网络请求监听
     - [sourcetree](https://www.sourcetreeapp.com/)：图形界面 Git 管理器
-    - [go2shell](https://zipzapmac.com/Go2Shell)：Finder 打开到终端
+    - [docker](https://www.docker.com/)：轻量级虚拟化技术
+    - [parallels](https://www.parallels.com/products/desktop/)：虚拟机客户端
     - [switchhosts](https://github.com/oldj/SwitchHosts)：Host 编辑器
+    - [postman](https://www.getpostman.com/)：网络请求监听
   - 软件（日常）
     - [bettertouchtool](https://folivora.ai/)：改键软件
     - [unshaky](https://github.com/aahung/Unshaky)：防止 Mac 键盘问题（屏蔽触发过快）
-    - [dropbox](https://www.dropbox.com/)：网盘
     - [iina](https://iina.io/)：视频播放器
     - [itsycal](https://www.mowglii.com/itsycal/)：日历
     - [imazing](https://imazing.com/)：iPhone 备份
+    - [dropbox](https://www.dropbox.com/)：网盘
+    - [megasync](https://mega.nz/sync)：网盘
+    - [google-backup-and-sync](https://www.google.com/drive/download/backup-and-sync/)：网盘
   - 增强
-    - [font-sarasa-gothic](https://github.com/be5invis/Sarasa-Gothic)：字体
-    - [tuxera-ntfs](https://www.tuxera.com/products/tuxera-ntfs-for-mac/)：NTFS 读写
+    - [font-sarasa-gothic](https://github.com/be5invis/Sarasa-Gothic)：更纱黑体
+    - [openinterminal](https://github.com/Ji4n1ng/OpenInTerminal)：Finder 打开到终端
+      <!-- - [go2shell](https://zipzapmac.com/Go2Shell)：Finder 打开到终端 -->
+    - [tuxera-ntfs](https://www.tuxera.com/products/tuxera-ntfs-for-mac/)：NTFS 读写支持
+    - [rcdefaultapp](http://www.rubicode.com/Software/RCDefaultApp/)：默认应用配置面板
   - 监控
     - [daisydisk](https://daisydiskapp.com/)：磁盘空间分析
     - [intel-power-gadget](https://software.intel.com/en-us/articles/intel-power-gadget)：功耗占用监控
