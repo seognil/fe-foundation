@@ -10,7 +10,7 @@
 
 - 略
 
-## Mac 和软件
+## 软件
 
 - [Mac 和软件](./mac.md)
 - [关于 Chrome](./chrome.md)
@@ -19,7 +19,7 @@
 ## 服务
 
 - 学习
-  - [YouTube](https://www.youtube.com/)：杂项
+  - [YouTube](https://www.youtube.com/)：综合
   - [FrontendMasters](https://frontendmasters.com/)：前端学习
   - [Brilliant](https://brilliant.org/)：理科学习
   - [知乎盐选会员](https://www.zhihu.com/xen/market/vip-privileges)：听听 Live
@@ -33,7 +33,7 @@
 - 私人
   - [SoundCloud](https://soundcloud.com/)：听音乐
   - [bilibili 大会员](https://account.bilibili.com/account/big)：看番、看电影
-    <!-- - [百度云超级会员](https://pan.baidu.com/buy/center#/svip)：下载别人分享的文件 -->
+  - [百度云超级会员](https://pan.baidu.com/buy/center#/svip)：下载别人分享的文件
   - 阿里 88 VIP
 
 ## 每天都用
