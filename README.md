@@ -11,7 +11,7 @@
 
 在线阅读：[https://fe.rualc.com/](https://fe.rualc.com/)
 
-（另一个项目代码学习相关的仓库：[Learning By Doing](https://github.com/seognil-study/learning-by-doing)）
+（另一个项目代码学习相关的仓库：[Learn By Doing](https://github.com/seognil-study/learn-by-doing)）
 
 ## 关于
 
@@ -22,17 +22,14 @@
 主要包括：
 
 - 技术体系系列
-  - 前端开发系列（outdated）
-  - 深入理解 JS 系列（outdated）
-- 学习指南系列
-  - CS 体系（working on）
-  - JS 工具系列（working on）
+  - 前端入行系列（撰写中）
+  - JavaScript 学习系列（撰写中）
+  - 学习指南系列
 - 以及我的一些杂谈
 
 若有偏差 [敬请斧正](https://github.com/seognil/fe-foundation/issues/new)
 
 ## TODO (DEV)
-
 
 - [ ] zeit
   - [ ] fix: zeit vuepress missiong last updated

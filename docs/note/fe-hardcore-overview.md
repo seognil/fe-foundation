@@ -27,6 +27,8 @@
 
 [从 VSCode 看大型 IDE 技术架构](https://zhuanlan.zhihu.com/p/96041706)
 
+[页面可视化搭建工具前生今世](https://zhuanlan.zhihu.com/p/37171897)
+
 #### 前端行业的近况
 
 > 每 18 至 24 个月，前端都会难一倍。 —— 赫门 / 2015 “深 JS”大会
@@ -40,6 +42,8 @@
 
 [未来的前端工程师](https://juejin.im/post/5a474c8ff265da430a50ea57)
 
+[给 2019 前端的 5 个建议](https://github.com/camsong/blog/issues/11)
+
 [「2019 JSConf.Asia - 尤雨溪」在框架设计中寻求平衡](https://zhuanlan.zhihu.com/p/76622839)
 
 [现代 Web 开发的现状与未来（JSDC 2019 演讲全文）](https://zhuanlan.zhihu.com/p/88616149)
@@ -47,6 +51,8 @@
 [这些年的体验技术部 · 前端工程 - 与云共舞，未来已来](https://www.yuque.com/afx/about/basement)
 
 [《蚂蚁前端研发最佳实践》文字稿](https://github.com/sorrycc/blog/issues/90)
+
+[VS Code 成主宰、Vue 备受热捧！2019 前端开发趋势必读](https://zhuanlan.zhihu.com/p/97741102)
 
 ![stateofjs2019](./img/stateofjs2019-dark-fs8.png)  
 <https://2019.stateofjs.com/tshirt/>

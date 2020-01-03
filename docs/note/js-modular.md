@@ -106,7 +106,7 @@ JS 的模块化经历了各种历史时期，在不同时期产生了不同的�
 - [UNPKG](https://unpkg.com/)
 - [BootCDN](https://www.bootcdn.cn/)
 
-## Learning By Doing
+## Learn By Doing
 
 可以直接使用 [Rollup](https://github.com/rollup/rollup) 来理解不同模块化方案在用法上的异同
 

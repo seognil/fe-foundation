@@ -6,10 +6,12 @@
 
 > 从不同渠道学习，成为更好的自己。
 
+（以下各列表按字典排序）
+
 ## 视频
 
-每天晚饭后都会看看 YouTube  
-部分关注的频道（按字典排序）：
+每天晚饭后都会看看（听听）视频  
+部分关注的 YouTube 频道：
 
 - 编程杂谈
   - [Computerphile](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA/videos)
@@ -27,7 +29,7 @@
   - [巫师财经](https://www.youtube.com/channel/UC55ahPQ7m5iJdVWcOfmuE6g/videos)
   - [李自然说](https://www.youtube.com/channel/UCgLUl1WDoDXUtxPaZeSZHsw/videos)
   - [狼爸爸的工作室](https://www.youtube.com/channel/UC2dWZP6pgyoWZljdkP2yhEw/videos)
-- 编程视频教程
+- 编程学习
   - [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ/videos)
   - [The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw/videos)
   - [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA/videos)
@@ -54,18 +56,22 @@
   - [ALTER](https://www.youtube.com/channel/UCMOB6uDg7e-h8OuCw8dK2_Q/videos)
   - [Corridor](https://www.youtube.com/channel/UCsn6cjffsvyOZCZxvGoJxGg/videos)
 
+## 音频
+
+- [电台 | 机核 GCORES](https://www.gcores.com/radios)
+- [知乎 Live - 全新的实时问答](https://www.zhihu.com/lives/)
+
 ## 文字（编程篇）
 
 - 关注的博客（国内，编程类）
   - Barret 李靖：[小胡子哥的个人网站](https://www.barretlee.com/blog/archives/)
+  - Phodal Huang：[Phodal - A Growth Engineer](https://www.phodal.com/blog/)
   - Surmon：[Surmon.me - 來苏之望，念狂梦猖](https://surmon.me/sitemap)
   - 唯敬：[折腾范儿の味精](http://awhisper.github.io/archives/)
-  - 工业聚：[工业聚 - 知乎（timeline）](https://www.zhihu.com/people/lucifier129/activities)
   - 王垠：[当然我在扯淡](http://www.yinwang.org/)
   - 阮一峰：[阮一峰的网络日志](http://www.ruanyifeng.com/blog/archives.html)
   - 陈皓：[酷 壳 - CoolShell](https://coolshell.cn/featured)
   - 黄玄：[黄玄的博客| Hux Blog](http://huangxuan.me/archive/)
-- 知乎：关注有五百多人了…懒得整理（大部分是编程从业者，不仅限前端）
 - 关注的人（国外）
   - Dan Abramov
     - [Overreacted](https://overreacted.io/)
@@ -78,6 +84,39 @@
     - [阻止文明倒塌：Jonathan Blow 在莫斯科 DevGAMM 上的演讲](https://www.gcores.com/articles/110509)
 - 聚合
   - [湾区日报](https://wanqu.co/issues/)
+
+## 知乎
+
+知乎是一个很好的知识分享平台，  
+关注有五百多人了…有机会慢慢整理。  
+（大部分是编程从业者，不仅限前端）
+
+- 编程
+  - 前端
+    - [Cat Chen](https://www.zhihu.com/people/catchen/activities)
+    - [doodlewind](https://www.zhihu.com/people/doodlewind/activities)
+    - [hijiangtao](https://www.zhihu.com/people/hijiangtao/activities)
+    - [i5ting](https://www.zhihu.com/people/i5ting/activities)
+    - [Jason](https://www.zhihu.com/people/huang-jason/activities)
+    - [justjavac](https://www.zhihu.com/people/justjavac.com/activities)
+    - [phodal](https://www.zhihu.com/people/phodal/activities)
+    - [rebornix](https://www.zhihu.com/people/rebornix/activities)
+    - [偏右悄悄地](https://www.zhihu.com/people/afc163/activities)
+    - [寸志](https://www.zhihu.com/people/stein.cun/activities)
+    - [小爝](https://www.zhihu.com/people/xiao-jue-83/activities)
+    - [小芋头君](https://www.zhihu.com/people/li-shou-xin/activities)
+    - [尤雨溪](https://www.zhihu.com/people/evanyou/activities)
+    - [工业聚](https://www.zhihu.com/people/lucifier129/activities)
+    - [李玉北](https://www.zhihu.com/people/li-yu-bei/activities)
+    - [杨健](https://www.zhihu.com/people/hardfist/activities)
+    - [程墨 Morgan](https://www.zhihu.com/people/morgancheng/activities)
+    - [贺师俊](https://www.zhihu.com/people/he-shi-jun/activities)
+    - [韩骏](https://www.zhihu.com/people/formulahendry/activities)
+    - [顾轶灵](https://www.zhihu.com/people/justineo/activities)
+    - [黄子毅](https://www.zhihu.com/people/huang-zi-yi-83/activities)
+  - （）
+    - [Belleve](https://www.zhihu.com/people/be5invis/activities)
+    - [Milo Yip](https://www.zhihu.com/people/miloyip/activities)
 
 ## 书籍（编程篇）
 

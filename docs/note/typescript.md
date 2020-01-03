@@ -72,10 +72,13 @@ TS 和 JS 在这些 API 方面的差别在变小，
 ### 实践
 
 - [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide/tree/zh-pre)
-- [DefinitelyTyped](http://definitelytyped.org/)
+- [TIPs - 深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/tips/stringBasedEmuns.html)
+- [TypeScript 中的 never 类型具体有什么用？](https://www.zhihu.com/question/354601204/answer/888551021)
 
-### 概念
+### 概览
 
+- [TypeScript 解决了什么痛点？](https://www.zhihu.com/question/308844713)
+- [The TypeScript Tax](https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b)
 - [编译工具 - 2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh#section-compiler)
 - [编程语言的类型系统为何如此重要？](https://www.zhihu.com/question/23434097)
 - [弱类型、强类型、动态类型、静态类型语言的区别是什么？](https://www.zhihu.com/question/19918532)
@@ -188,8 +191,10 @@ TypeScript 来自微软，在特性上更丰富。
 
 可以尝试 [Babel 在线编译](https://babeljs.io/repl#?presets=typescript) 来理解
 
+[TypeScript 编译原理 - 深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/compiler/overview.html)
+
 ### TypeScript 是如何基于 JavaScript 被开发出来的
 
-这个问题对于使用和入门时没必要搞懂…且需要扎实的 CS 基础作为铺垫。
+这个问题需要扎实的 CS 基础作为铺垫…
 
 [如何看懂 typescript 核心源码，并可以参照 typescript 写一个类似的项目？](https://www.zhihu.com/question/318505680)

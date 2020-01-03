@@ -26,7 +26,7 @@
 
 另一个角度是，  
 根据已有的经验或许能够解决新的问题，  
-但是在成熟的方法论指导下，可能可以解决得更漂亮。   
+但是在成熟的方法论指导下，可能可以解决得更漂亮。
 
 显然，无论何种程度，人总是要学习的，
 
@@ -41,7 +41,10 @@
 
 ## 扩展阅读
 
-- [他们是肉造的 - 泰利·比森](https://www.zhihu.com/question/321878154)
-- [乡村教师 - 刘慈欣](http://www.00txt.com/xiangcunjiaoshi/2033.html)
-- [五个比 Bitcoin 更好的投资](https://wanqu.co/a/6067/%E4%BA%94%E4%B8%AA%E6%AF%94-bitcoin-%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%8A%95%E8%B5%84/)
-- [巴菲特公式](https://wanqu.co/a/4065/2016-10-12-the-buffett-formula/)
+- 鸡汤
+  - [五个比 Bitcoin 更好的投资](https://wanqu.co/a/6067/%E4%BA%94%E4%B8%AA%E6%AF%94-bitcoin-%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%8A%95%E8%B5%84/)
+  - [巴菲特公式](https://wanqu.co/a/4065/2016-10-12-the-buffett-formula/)
+  - [最好的投资](https://wanqu.co/a/4701/)
+- 短片小说
+  - [他们是肉造的 - 泰利·比森](https://www.zhihu.com/question/321878154)
+  - [乡村教师 - 刘慈欣](http://www.00txt.com/xiangcunjiaoshi/2033.html)

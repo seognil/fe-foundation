@@ -54,7 +54,7 @@ const config = {
       { text: '笔记', link: '/note/' },
       { text: '鸡汤', link: '/about/ref.md' },
 
-      { text: 'Learning-By-Doing', link: 'https://github.com/seognil-study/learning-by-doing' },
+      { text: 'Learn-By-Doing', link: 'https://github.com/seognil-study/learn-by-doing' },
     ],
     repo: 'seognil/fe-foundation',
 

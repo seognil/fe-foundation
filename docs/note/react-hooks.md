@@ -61,7 +61,7 @@ Hooks 隐藏了 Class 写法中生命周期的概念，
 
 ### 我的学习代码
 
-- [React - Learning By Doing](https://github.com/seognil-study/learning-by-doing/tree/master/react)
+- [React - Learn By Doing](https://github.com/seognil-study/learn-by-doing/tree/master/react)
 
 ### 自学教材
 

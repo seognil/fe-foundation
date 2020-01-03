@@ -70,7 +70,7 @@ ReactiveX 的 JS 具体实现
 
 ### 我的学习代码
 
-- [RxJs - Learning By Doing](https://github.com/seognil-study/learning-by-doing/tree/master/rxjs)
+- [RxJs - Learn By Doing](https://github.com/seognil-study/learn-by-doing/tree/master/rxjs)
 
 ### 关于 响应式编程
 
