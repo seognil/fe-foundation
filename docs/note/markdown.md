@@ -52,6 +52,7 @@ Table Of Contents 的缩写，表示目录。
 
 ### 自学教材
 
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 - [Markdown Cheatsheet](https://github.com/tchapi/markdown-cheatsheet)
 - [Markdown - Learn X in Y minutes](https://learnxinyminutes.com/docs/markdown/)
 

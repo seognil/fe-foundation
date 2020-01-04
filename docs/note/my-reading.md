@@ -61,6 +61,13 @@
 - [电台 | 机核 GCORES](https://www.gcores.com/radios)
 - [知乎 Live - 全新的实时问答](https://www.zhihu.com/lives/)
 
+## 游戏开发
+
+- [卡姐 Cara](https://space.bilibili.com/180052141/video)
+  - [Game Maker's Toolkit](https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw/videos)
+  - [Noclip](https://www.youtube.com/channel/UC0fDG3byEcMtbOqPMymDNbw/videos)
+  - [Gaming Historian](https://www.youtube.com/channel/UCnbvPS_rXp4PC21PG2k1UVg/videos)
+
 ## 文字（编程篇）
 
 - 关注的博客（国内，编程类）

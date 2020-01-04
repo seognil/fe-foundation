@@ -105,6 +105,9 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
   - [Git flow 入门教程](https://www.jianshu.com/p/b446c43577f9)
   - [Git 工作流程 - 阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
   - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- GitHub
+  - [GitHub Guides](https://guides.github.com/)
+  - [使用 GitHub 操作自动化工作流程](https://help.github.com/cn/actions)
 
 ### 进阶
 
