@@ -32,7 +32,8 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - 工具：
   - [TypeScript](https://www.npmjs.com/package/typescript)
   - [ts-node](https://github.com/TypeStrong/ts-node)
-  - [VSCode](https://formulae.brew.sh/cask/visual-studio-code)
+  - [VSCode](./vscode.md)
+    - [Types auto installer](https://marketplace.visualstudio.com/items?itemName=jvitor83.types-autoinstaller)：自动安装 @types
   - [@babel/preset-typescript](https://babeljs.io/docs/en/babel-preset-typescript)
   - [rollup-plugin-typescript2](https://www.npmjs.com/package/rollup-plugin-typescript2)
   - `webpack/parcel/cli`
@@ -78,10 +79,12 @@ TS 和 JS 在这些 API 方面的差别在变小，
 ### 概览
 
 - [TypeScript 解决了什么痛点？](https://www.zhihu.com/question/308844713)
+- [随着 TypeScript 继续普及，会不会出现直接跑 TypeScript 的运行时？](https://www.zhihu.com/question/363807522/answer/961295958)
 - [The TypeScript Tax](https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b)
-- [编译工具 - 2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh#section-compiler)
-- [编程语言的类型系统为何如此重要？](https://www.zhihu.com/question/23434097)
-- [弱类型、强类型、动态类型、静态类型语言的区别是什么？](https://www.zhihu.com/question/19918532)
+
+* [编译工具 - 2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh#section-compiler)
+* [编程语言的类型系统为何如此重要？](https://www.zhihu.com/question/23434097)
+* [弱类型、强类型、动态类型、静态类型语言的区别是什么？](https://www.zhihu.com/question/19918532)
 
 ### 进阶
 

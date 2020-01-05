@@ -43,6 +43,7 @@
   - [翼王](https://www.youtube.com/channel/UCxcuxsAjdnQaiRwYb5CVISw/videos)
 - 游戏文化
   - [Gamker 攻壳官方频道](https://www.youtube.com/channel/UCLgGLSFMZQB8c0WGcwE49Gw/videos)
+  - [MadcatClan](https://www.youtube.com/channel/UC4P8jsqloj9e6eYCLz0yr7Q/videos)
   - [敖厂长](https://www.youtube.com/channel/UCCkMW93Am1pLfk2nZFKAmbQ/videos)
   - [森纳映画](https://www.youtube.com/channel/UCDNeEBgigHHGtJJOpHSnadA/videos)
   - [黑镖客梦回](https://www.youtube.com/channel/UCmDguW2dEDyM5saVbkB91gg/videos)
