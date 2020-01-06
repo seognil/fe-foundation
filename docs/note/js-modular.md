@@ -56,16 +56,22 @@
 
 ## 参考资料
 
-- [How javascript modules work - from past to present](https://www.youtube.com/watch?v=JDDn57_z5Og)
-- [How Require and Exports work in NodeJS](https://www.youtube.com/watch?v=LCs1Sn9D6bA)
-- [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
-- [Browserify and the Universal Module Definition](https://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html)
-- [常见问题 - Rollup.js 中文网](https://www.rollupjs.com/guide/faqs/)
-- [深入理解 ES6 模块机制](https://zhuanlan.zhihu.com/p/33843378)
-- [Dynamic Imports](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Dynamic_Imports)
-- [webpack 源码学习系列之一：如何实现一个简单的 webpack](https://github.com/youngwind/blog/issues/99)
-- [[webpack]源码解读：命令行输入 webpack 的时候都发生了什么？](https://github.com/DDFE/DDFE-blog/issues/12)
-- [输出文件分析 - 深入浅出 Webpack](https://webpack.wuhaolin.cn/5%E5%8E%9F%E7%90%86/5-2%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90.html)
+- 视频
+  - [JavaScript Modules in 100 Seconds](https://www.youtube.com/watch?v=qgRUr-YUk1Q)
+  - [How javascript modules work - from past to present](https://www.youtube.com/watch?v=JDDn57_z5Og)
+  - [How Require and Exports work in NodeJS](https://www.youtube.com/watch?v=LCs1Sn9D6bA)
+- 文档
+  - [import - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import)
+- 文章
+  - [‪Module Cheatsheet](https://www.samanthaming.com/tidbits/79-module-cheatsheet)
+  - [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
+  - [深入理解 ES6 模块机制](https://zhuanlan.zhihu.com/p/33843378)
+- 工具
+  - [Browserify and the Universal Module Definition](https://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html)
+  - [常见问题 - Rollup.js 中文网](https://www.rollupjs.com/guide/faqs/)
+  - [webpack 源码学习系列之一：如何实现一个简单的 webpack](https://github.com/youngwind/blog/issues/99)
+  - [[webpack]源码解读：命令行输入 webpack 的时候都发生了什么？](https://github.com/DDFE/DDFE-blog/issues/12)
+  - [输出文件分析 - 深入浅出 Webpack](https://webpack.wuhaolin.cn/5%E5%8E%9F%E7%90%86/5-2%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90.html)
 
 ## JS 中的模块化方案
 

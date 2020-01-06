@@ -66,7 +66,6 @@ VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）
   - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)：路径自动补全
   - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)：包名自动补全
   - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)：代码自动补全（AI-based）
-  - [Types auto installer](https://marketplace.visualstudio.com/items?itemName=jvitor83.types-autoinstaller)：自动安装 @types
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)：格式化
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)：静态检查
   - [Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)：多行字典排序
