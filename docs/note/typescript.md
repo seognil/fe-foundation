@@ -76,13 +76,12 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 ### 自学教材
 
-- 教程
-  - [TypeScript - The Basics](https://www.youtube.com/watch?v=ahCwqrYpIuM)
-  - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
-  - [TypeScript 入门教程](https://ts.xcatliu.com/)
-- Repo
-  - [typescript-fundamentals](https://github.com/mike-works/typescript-fundamentals)
-- 文档
+- 快速入门
+  - [TypeScript - The Basics](https://www.youtube.com/watch?v=ahCwqrYpIuM)：12 分钟，历史背景、基本使用、语法简介
+  - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)：语法速查表
+- 社区文档
+  - [TypeScript 入门教程](https://ts.xcatliu.com/)：比较详细的入门文档（进阶章节是指高级特性）
+- 官方文档
   - [Documentation - TypeScript](https://www.typescriptlang.org/docs/home.html)
   - [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)
 - 在线调试
@@ -103,19 +102,11 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - TS 高级
   - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
   - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)
-  - [如何看懂 typescript 核心源码，并可以参照 typescript 写一个类似的项目？](https://www.zhihu.com/question/318505680)
-- 工程化
-  - [Deno: A secure runtime for JavaScript and TypeScript.](https://github.com/denoland/deno)
+- Rollup 打包
   - [How to bundle a npm package with TypeScript and Rollup](https://medium.com/@paleo.said/how-to-bundle-an-npm-package-with-typescript-and-rollup-f80e0f196189)
   - [Building and publishing a module with TypeScript and Rollup.js](https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396)
-
-### 工具
-
-- 工具
-  - [types-checker](https://www.npmjs.com/package/types-checker)：自动安装 @types
-- 打包插件
-  - [@babel/preset-typescript](https://babeljs.io/docs/en/babel-preset-typescript)
-  - [rollup-plugin-typescript2](https://www.npmjs.com/package/rollup-plugin-typescript2)
+- 运行时
+  - [Deno: A secure runtime for JavaScript and TypeScript.](https://github.com/denoland/deno)
 
 ## TypeScript 知识体系
 
@@ -132,7 +123,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
     - `!` [Non-null assertion operator](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator)
   - [**基础类型**](http://www.typescriptlang.org/docs/handbook/basic-types.html)
     - JS 基本类型 `number`、`string`、`boolean`、`undefined`、`null`
-    - `Array`、[Tuple](http://www.typescriptlang.org/docs/handbook/basic-types.html#tuple) （严格的、退化的数组）
+    - `Array`、元组 [Tuple](http://www.typescriptlang.org/docs/handbook/basic-types.html#tuple) （严格的、退化的数组）
     - `any` 任意类型、`never` 永不、`void` 空值（一般用于函数返回 `undefined`）
     - [枚举](http://www.typescriptlang.org/docs/handbook/enums.html) `Enums`
   - [**函数**](http://www.typescriptlang.org/docs/handbook/functions.html)
@@ -187,11 +178,6 @@ TS 和 JS 在这些 API 方面的差别在变小，
     - `ThisParameterType`
     - `OmitThisParameter`
     - `ThisType<T>`
-
-- 工程化
-  - [.d.ts 声明文件](http://www.typescriptlang.org/docs/handbook/declaration-files/library-structures.html)
-  - [DefinitelyTyped](http://definitelytyped.org/)
-  - [tsconfig.json](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html#using-tsconfigjson)
 
 ## TypeScript 典型代码
 
@@ -278,6 +264,21 @@ const nestArr: NumVal = [1, 2, 3, [1, 2, [3]]];
 ```
 
 ## TypeScript 相关
+
+### TS 工程化
+
+- 工具
+  - [types-checker](https://www.npmjs.com/package/types-checker)：自动安装 @types
+  - [DefinitelyTyped](http://definitelytyped.org/)
+- ESLint
+  - [Getting Started with ESLint](https://eslint.org/docs/user-guide/getting-started)
+  - [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)
+- 官方文档
+  - [.d.ts 声明文件](http://www.typescriptlang.org/docs/handbook/declaration-files/library-structures.html)
+  - [tsconfig.json](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html#using-tsconfigjson)
+- 打包插件
+  - [@babel/preset-typescript](https://babeljs.io/docs/en/babel-preset-typescript)
+  - [rollup-plugin-typescript2](https://www.npmjs.com/package/rollup-plugin-typescript2)
 
 ### 从 JS 迁移到 TS
 
