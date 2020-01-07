@@ -47,26 +47,32 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - 学习和使用 TypeScript 常用特性
   - 尝试将以前写的 JS 代码转换成 TS 版本
   - 了解 @types （[DefinitelyTyped](http://definitelytyped.org/)）
-- 实践
-  - 写业务时全面使用 TS （包括业务代码和 npm 包）
+- 实战
+  - 写业务时逐步使用 TS （包括业务代码和 npm 包）
   - package 开发打包和声明文件
 - 进阶
+  - 学习 TS 的高级用法
   - 阅读一些用库的 TS 相关源码（比如 [redux](https://github.com/reduxjs/redux/blob/master/src/createStore.ts)）
-  - TS 的高级用法（比如 `type MyChoice = keyof typeof MyObject`）
 - 迷思
   - 如何将 Object.keys 转换成 enum
   - 如何把数组转换成字面量类型
+  - 如何给复杂的处理函数写类型
+  - 如何写一个类型表示排除 undefined 的 any
 
 ## 资料
 
 ### 概览
 
-- [TypeScript 解决了什么痛点？](https://www.zhihu.com/question/308844713)
-- [编程语言的类型系统为何如此重要？](https://www.zhihu.com/question/23434097)
-- [弱类型、强类型、动态类型、静态类型语言的区别是什么？](https://www.zhihu.com/question/19918532)
-- [随着 TypeScript 继续普及，会不会出现直接跑 TypeScript 的运行时？](https://www.zhihu.com/question/363807522/answer/961295958)
-- [The TypeScript Tax](https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b)
-- [编译工具 - 2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh#section-compiler)
+- 编程漫谈
+  - [编程语言的类型系统为何如此重要？](https://www.zhihu.com/question/23434097)
+  - [弱类型、强类型、动态类型、静态类型语言的区别是什么？](https://www.zhihu.com/question/19918532)
+- 生态
+  - [编译工具 - 2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh#section-compiler)
+- TS
+  - [TypeScript 解决了什么痛点？](https://www.zhihu.com/question/308844713)
+  - [浅谈 TypeScript 类型系统](https://zhuanlan.zhihu.com/p/64446259)
+  - [随着 TypeScript 继续普及，会不会出现直接跑 TypeScript 的运行时？](https://www.zhihu.com/question/363807522/answer/961295958)
+  - [The TypeScript Tax](https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b)
 
 ### 自学教材
 
@@ -79,14 +85,18 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - 文档
   - [Documentation - TypeScript](https://www.typescriptlang.org/docs/home.html)
   - [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)
-- 工具
+- 在线调试
+  - [TypeScript Playground](https://www.typescriptlang.org/play/index.html)
   - [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)
 
-### 实践
+### 实战
 
-- [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide/tree/zh-pre)
+- [Do's and Don'ts](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html)
+- [狡猾的 TypeScript: 易错点梳理](https://zhuanlan.zhihu.com/p/101182925)
 - [TIPs - 深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/tips/stringBasedEmuns.html)
 - [TypeScript 中的 never 类型具体有什么用？](https://www.zhihu.com/question/354601204/answer/888551021)
+
+* [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide/tree/zh-pre)
 
 ### 进阶
 
@@ -94,7 +104,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
   - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)
   - [如何看懂 typescript 核心源码，并可以参照 typescript 写一个类似的项目？](https://www.zhihu.com/question/318505680)
-- 工程
+- 工程化
   - [Deno: A secure runtime for JavaScript and TypeScript.](https://github.com/denoland/deno)
   - [How to bundle a npm package with TypeScript and Rollup](https://medium.com/@paleo.said/how-to-bundle-an-npm-package-with-typescript-and-rollup-f80e0f196189)
   - [Building and publishing a module with TypeScript and Rollup.js](https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396)
@@ -111,62 +121,77 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 ### TypeScript 主要概念
 
-- TS 类型检查模式
-  - 鸭式辩型匹配
+- TS 类型识别模式
+  - [Duck Typing](https://en.wikipedia.org/wiki/Duck_typing)
+  - [类型推断](http://www.typescriptlang.org/docs/handbook/type-inference.html)
 
-* 基本
-  - `type` 类型别名、`interface` 接口、`extends`
-    - interface 合并（重复名字的）
-  - JS 基本类型 `number`、 `string` 等，类型自动推断
-  - `Array`、Tupple （严格的、退化的数组）
-  - `any` 任意类型、`never` 永不、`void` 空值（undefined、null）
-  - `|` Intersection、`&` Union，类型组合操作
-  - Functions
+* TS 类型系统
+  - `type` 类型别名、`interface` 接口
+  - [**变量声明**/使用](http://www.typescriptlang.org/docs/handbook/variable-declarations.html)
+    - `const` [const declarations](http://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
+    - `!` [Non-null assertion operator](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator)
+  - [**基础类型**](http://www.typescriptlang.org/docs/handbook/basic-types.html)
+    - JS 基本类型 `number`、`string`、`boolean`、`undefined`、`null`
+    - `Array`、[Tuple](http://www.typescriptlang.org/docs/handbook/basic-types.html#tuple) （严格的、退化的数组）
+    - `any` 任意类型、`never` 永不、`void` 空值（一般用于函数返回 `undefined`）
+    - [枚举](http://www.typescriptlang.org/docs/handbook/enums.html) `Enums`
+  - [**函数**](http://www.typescriptlang.org/docs/handbook/functions.html)
     - 函数的多种定义方式
-    - `this`：声明 this 的类型
-    - Overloads 重载
-  - `class`
+    - `this` [this 参数](http://www.typescriptlang.org/docs/handbook/functions.html#this-parameters)
+    - Overloads [重载](http://www.typescriptlang.org/docs/handbook/functions.html#overloads)
+  - [**接口**](http://www.typescriptlang.org/docs/handbook/interfaces.html) `interface`
+    - `?` [Optional Properties](http://www.typescriptlang.org/docs/handbook/interfaces.html#optional-properties)
+    - `readonly` [Readonly properties](http://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties)
+    - [Indexable Types](http://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types) 可索引类型
+      - `{ [x: string]: number }`
+    - `implements`、`extends`
+    - [Hybrid Types](http://www.typescriptlang.org/docs/handbook/interfaces.html#hybrid-types) 混合类型，JS 中允许的 函数 + 对象字段
+  - [**类**](http://www.typescriptlang.org/docs/handbook/classes.html) `class`
     - `extends`、`implements`、`abstract`
     - `public`/`private`/`protected`，简写法（constructor 参数）
+    - `readonly`
+    - `get`/`set`
     - `static`
-* 其他常用概念
-  - `Enums` 枚举
-  - `Literal Types` 字面量类型
-  - `Generics` 泛型
-  - `Decorators` 装饰器
-* 修饰符/操作符
-  - `!` 显式（强制）断言
-  - `?` 可选断言（可能为 undefined）
-  - `-?`
-  - `as` 断言
-  - `in`
-  - `infer`
-  - `instanceof`
-  - `is`
-  - `keyof`
-  - `readonly`
-  - `typeof`
-* [Utility Types 工具类型](https://www.typescriptlang.org/docs/handbook/utility-types.html)
-  - `Partial<T>`
-  - `Readonly<T>`
-  - `Record<K,T>`
-  - `Pick<T,K>`
-  - `Omit<T,K>`
-  - `Exclude<T,U>`
-  - `Extract<T,U>`
-  - `NonNullable<T>`
-  - `Parameters<T>`
-  - `ConstructorParameters<T>`
-  - `ReturnType<T>`
-  - `InstanceType<T>`
-  - `Required<T>`
-  - `ThisParameterType`
-  - `OmitThisParameter`
-  - `ThisType<T>`
-* 开发相关
-  - [.d.ts 声明文件](https://www.tslang.cn/docs/handbook/declaration-files/publishing.html)
+  - [**泛型**](http://www.typescriptlang.org/docs/handbook/generics.html) Generics
+  - [**装饰器**](http://www.typescriptlang.org/docs/handbook/decorators.html) Decorators
+* TS 类型操作
+  - [声明合并](http://www.typescriptlang.org/docs/handbook/declaration-merging.html)
+  - [高级类型](http://www.typescriptlang.org/docs/handbook/advanced-types.html)
+    - `|` Union 联合类型、`&` Intersection 交叉类型
+    - 类型收缩（Type Narrowing）（推断）
+      - 控制流分析（[Control Flow Based Type Analysis](http://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#control-flow-based-type-analysis)）
+      - **类型保护**（[Type Guard](http://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types)）
+        - `as`、`in`、`is`、`typeof`、`instanceof`
+      - 可辨识联合（[Discriminated Unions](http://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions)）
+    - 字面量类型（Literal Types）（类似枚举的联合类型）
+    - **索引类型** [Index types](http://www.typescriptlang.org/docs/handbook/advanced-types.html#index-types)、**映射类型** [Mapped types](http://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types)
+      - `keyof`
+      - `-?` [What does -? mean in TypeScript?](https://stackoverflow.com/questions/52417131/what-does-mean-in-typescript/52417260#52417260)
+    - **条件类型**（[Conditional Types](http://www.typescriptlang.org/docs/handbook/advanced-types.html#conditional-types)）
+      - `T extends U ? X : Y`
+      - `infer`
+  - [Utility Types 工具类型](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+    - `Partial<T>`
+    - `Readonly<T>`
+    - `Record<K,T>`
+    - `Pick<T,K>`
+    - `Omit<T,K>`
+    - `Exclude<T,U>`
+    - `Extract<T,U>`
+    - `NonNullable<T>`
+    - `Parameters<T>`
+    - `ConstructorParameters<T>`
+    - `ReturnType<T>`
+    - `InstanceType<T>`
+    - `Required<T>`
+    - `ThisParameterType`
+    - `OmitThisParameter`
+    - `ThisType<T>`
+
+- 工程化
+  - [.d.ts 声明文件](http://www.typescriptlang.org/docs/handbook/declaration-files/library-structures.html)
   - [DefinitelyTyped](http://definitelytyped.org/)
-  - [tsconfig.json](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
+  - [tsconfig.json](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html#using-tsconfigjson)
 
 ## TypeScript 典型代码
 
@@ -187,7 +212,7 @@ type MyList = number[];
 
 let list: MyList = [1, 2, 3];
 
-// * ---------------- 函数
+// * ---------------- 函数的几种声明方式
 
 let square = (n: number): number => n * n;
 let square2: (n: number) => number = (n) => n * n;
@@ -208,7 +233,7 @@ enum Color {
   Blue = 'Blue',
 }
 
-// * ---------------- interface 和 class
+// * ---------------- 接口、类
 
 interface CarInterface {
   model: string;
@@ -217,7 +242,7 @@ interface CarInterface {
 }
 
 class Car implements CarInterface {
-  constructor(readonly model, private engine, public radio?) {}
+  constructor(readonly model, private engine, public radio?) {} // 简写法
 
   static Manufacturer: string = 'BMW';
   getYear() {}
@@ -233,27 +258,56 @@ let myOb: Observable<number> = new Observable(2);
 
 // * -------------------------------- 实用技巧
 
-// * ---------------- 对象的额外字段
+// * ---------------- 接口、对象
 
 interface MyDict {
   type: string;
-  [name: string]: number | string;
+  [name: string]: string; // 可索引
 }
 
 const dict: MyDict = {
   type: 'a dict',
-  num: 233,
-  word: 'hello',
+  num: 233, // Error!
+  word: 'hello', // Valid
 };
 
-// * ---------------- 嵌套的声明
+// * ---------------- 递归的声明
 
-type NumVal = 1 | 2 | 3 | NumArr;
-interface NumArr extends Array<NumVal> {}
+type NumVal = 1 | 2 | 3 | NumVal[];
 const nestArr: NumVal = [1, 2, 3, [1, 2, [3]]];
 ```
 
 ## TypeScript 相关
+
+### 从 JS 迁移到 TS
+
+[Migrating from JavaScript](https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html)
+
+- 注意！
+  - 别同时修改代码逻辑
+  - 别再在低测试覆盖率时迁移
+  - 初期无需写太严谨的类型（开发效率）
+  - 别忘记写 Type 的测试
+  - 不要急着上线
+- 步骤
+  - 第一阶段
+    - 确保测试全部通过
+    - 把 `.js` 文件重命名成 `.ts`
+    - 修复类型检查错误或 TS 编译器报错
+    - 别改代码逻辑
+    - 确保测试全部通过
+  - 第二阶段
+    - 确保测试全部通过
+    - 禁止隐式 `any` （`{"noImplicitAny": true }`）
+    - 尽量明确类型
+      - 安装依赖的 `@types` （[DefinitelyTyped](http://definitelytyped.org/)）
+      - 实在不行用显式的 `any`
+    - 确保测试全部通过
+  - 第三阶段
+    - 逐步升级，小步 commit
+    - 打开全部严格模式 （[Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)）
+    - 将显式 `any` 替换成具体类型
+    - 尽力避免不安全类型声明
 
 ### TypeScript 和 Flow
 

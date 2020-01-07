@@ -83,7 +83,7 @@
 - XXX 在线演示或调试的网站（如果有的话）
 - [Learn X in Y minutes](https://learnxinyminutes.com/)
 
-### 实践
+### 实战
 
 - 「深入理解 XXX」可能会包含 Recipes（直译为食谱）也就是小型 Demo 源码
 - 可能在别人的总结文章中也会有一些题目

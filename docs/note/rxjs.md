@@ -51,7 +51,7 @@ ReactiveX 的 JS 具体实现
 - 学习 Rxjs
   - 掌握 RxJS 核心概念
     - Observable 及上下游
-    - 多播
+    - 多播操作符、Subject
     - Scheduler
   - 尝试 RxJS 所有（类型）的 API
     - 同类 API 之间的效果差异
@@ -63,7 +63,6 @@ ReactiveX 的 JS 具体实现
   - 实现一个自己的 Observable
   - 阅读 RxJS 源码实现
 - 迷思
-  - cold vs hot Observable
   - 如何手动结束/关闭一个 Observable
 
 ## 资料
@@ -116,9 +115,15 @@ ReactiveX 的 JS 具体实现
 - Subject: 多播的 Observable（可以作为 Observable 和 Subscription 的中间层）
 - Scheduler：调度器
 
+* Cold VS Hot Observable
+  - Cold：多次订阅产生多个独立的事件流（用途例如：`interval`）
+  - Hot：多次订阅共享同一个事件流（用途例如：`fromEvent`、`Subject`）
+
 ## RxJS 典型代码
 
-### 伪代码
+### RxJS 基本用法
+
+#### 伪代码
 
 ```javascript
 // * 注册 事件流
@@ -139,7 +144,7 @@ Subscription = Ob.subscribe( Observer{
 Subscription.unsubscribe()
 ```
 
-### 具体代码 v5
+#### 具体代码 v5
 
 ```javascript
 // Node.js
@@ -153,7 +158,7 @@ const sub$ = ob$.subscribe((e) => console.warn(e));
 setTimeout(() => sub$.unsubscribe(), 3000);
 ```
 
-### 具体代码 v6
+#### 具体代码 v6
 
 ```javascript
 // Node.js
@@ -168,13 +173,24 @@ const sub$ = ob$.subscribe((e) => console.warn(e));
 setTimeout(() => sub$.unsubscribe(), 3000);
 ```
 
+### RxJS 实用代码
+
+```javascript
+// * interval of requestAnimationFrame, tick frame time (ms)
+const rafInterval$ = () =>
+  of(Date.now(), animationFrameScheduler).pipe(
+    map((start) => Date.now() - start),
+    repeat(),
+  );
+```
+
 ## RxJS 相关
 
 ### RxJS 和 TypeScript
 
 RxJS 源码是 TypeScript 写的，对 TS 支援度很不错
 
-但也有些 bug：
+但目前还有些 bug：
 
 ```typescript
 // * 没有正确识别
