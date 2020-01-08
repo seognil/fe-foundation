@@ -24,11 +24,11 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 ### 概览
 
-- 耗时：从入门到熟悉需要大约 15~40 小时（个人估计）
+- 耗时：从入门到熟悉需要大约 20~40 小时（个人估计）
 - 难点：
-  - 学习 JS 中没有的 TS 特性
-  - 在业务中综合运用
-  - TS 的高级用法
+  - 理解 JS 中没有的 TS 特性
+  - 训练 TS 的高级用法（泛型、交集、条件等）
+    <!-- - 官方文档不够用，需要花时间求助于社区实践 -->
 - 工具：
   - [TypeScript](https://www.npmjs.com/package/typescript)
   - [ts-node](https://github.com/TypeStrong/ts-node)
@@ -45,6 +45,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - 学习 TypeScript
   - （学习 JavaScript）
   - 学习和使用 TypeScript 常用特性
+    - 学习泛型和类型推导——TS 最难的部分之一
   - 尝试将以前写的 JS 代码转换成 TS 版本
   - 了解 @types （[DefinitelyTyped](http://definitelytyped.org/)）
 - 实战
@@ -80,33 +81,42 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - [TypeScript - The Basics](https://www.youtube.com/watch?v=ahCwqrYpIuM)：12 分钟，历史背景、基本使用、语法简介
   - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)：语法速查表
 - 社区文档
-  - [TypeScript 入门教程](https://ts.xcatliu.com/)：比较详细的入门文档（进阶章节是指高级特性）
-- 官方文档
-  - [Documentation - TypeScript](https://www.typescriptlang.org/docs/home.html)
-  - [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)
-- 在线调试
-  - [TypeScript Playground](https://www.typescriptlang.org/play/index.html)
-  - [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)
+  - [TypeScript for Beginner Programmers](https://ts.chibicode.com/)：几篇入门文章（排版不错：）
+    - [TypeScript Generics for People Who Gave Up on Understanding Generics](https://ts.chibicode.com/generics/)：泛型入门
+  - [TypeScript 入门教程](https://ts.xcatliu.com/)：比较丰富的入门文档（进阶章节是指高级特性）
+  - [狡猾的 TypeScript: 易错点梳理](https://zhuanlan.zhihu.com/p/101182925)：几道基本概念题
+- 官方文档（及汉化）
+  - [Documentation - TypeScript](https://www.typescriptlang.org/docs/home.html)：官方版（最新）
+    - [Do's and Don'ts](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html)：一些最佳实践贴士
+  - [TypeScript-Handbook](https://zhongsp.gitbook.io/typescript-handbook/)：社区汉化版（尽量保持同步，目前 3.6）
+  - [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)：中文网（版本较旧，目前 3.1）
+- 在线调试（TS 检查、编译到 JS）
+  - [TypeScript Playground](https://www.typescriptlang.org/play/index.html)：官方的
+  - [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)：Babel 的
 
-### 实战
+### 实战/进阶
 
-- [Do's and Don'ts](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html)
-- [狡猾的 TypeScript: 易错点梳理](https://zhuanlan.zhihu.com/p/101182925)
-- [TIPs - 深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/tips/stringBasedEmuns.html)
-- [TypeScript 中的 never 类型具体有什么用？](https://www.zhihu.com/question/354601204/answer/888551021)
+- TS 语言
+  - 进阶教材
+    - [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)：官方文档中的一章
+    - [TypeScript Evolution](https://mariusschulz.com/blog/series/typescript-evolution)：系列文章
+    - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)：深入 TS 英文版
+    - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)：深入 TS 汉化版
+    - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)：25 分钟，包含很多 TS 进阶用法（2018 年）
+  - TS 进阶概念解析
+    - [The unknown Type in TypeScript](https://mariusschulz.com/blog/the-unknown-type-in-typescript)
+    - [infer - 深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/tips/infer.html)
+    - [TypeScript 中的 never 类型具体有什么用？](https://www.zhihu.com/question/354601204/answer/888551021)
+    - 类型推导
+      - [TypeScript 类型推导趣事一则](https://zhuanlan.zhihu.com/p/82396659)
+      - [Typescript Tips: 动态重载实现廉价版 dependent type](https://zhuanlan.zhihu.com/p/95829351)
 
-* [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide/tree/zh-pre)
-
-### 进阶
-
-- TS 高级
-  - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
-  - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)
-- Rollup 打包
-  - [How to bundle a npm package with TypeScript and Rollup](https://medium.com/@paleo.said/how-to-bundle-an-npm-package-with-typescript-and-rollup-f80e0f196189)
-  - [Building and publishing a module with TypeScript and Rollup.js](https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396)
-- 运行时
-  - [Deno: A secure runtime for JavaScript and TypeScript.](https://github.com/denoland/deno)
+* 开发
+  - TS + 框架
+    - [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide/tree/zh-pre)
+  - Rollup 打包
+    - [How to bundle a npm package with TypeScript and Rollup](https://medium.com/@paleo.said/how-to-bundle-an-npm-package-with-typescript-and-rollup-f80e0f196189)
+    - [Building and publishing a module with TypeScript and Rollup.js](https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396)
 
 ## TypeScript 知识体系
 
@@ -125,6 +135,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
     - JS 基本类型 `number`、`string`、`boolean`、`undefined`、`null`
     - `Array`、元组 [Tuple](http://www.typescriptlang.org/docs/handbook/basic-types.html#tuple) （严格的、退化的数组）
     - `any` 任意类型、`never` 永不、`void` 空值（一般用于函数返回 `undefined`）
+    - [`unknown`](http://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type)
     - [枚举](http://www.typescriptlang.org/docs/handbook/enums.html) `Enums`
   - [**函数**](http://www.typescriptlang.org/docs/handbook/functions.html)
     - 函数的多种定义方式
@@ -242,7 +253,7 @@ class Observable<T> {
 
 let myOb: Observable<number> = new Observable(2);
 
-// * -------------------------------- 实用技巧
+// * -------------------------------- 示例
 
 // * ---------------- 接口、对象
 
@@ -261,9 +272,37 @@ const dict: MyDict = {
 
 type NumVal = 1 | 2 | 3 | NumVal[];
 const nestArr: NumVal = [1, 2, 3, [1, 2, [3]]];
+
+// * -------------------------------- 实用技巧
+
+// * 联合转交集
+type UnionToIntersection<U> = (U extends any
+? (k: U) => void
+: never) extends (k: infer I) => void
+  ? I
+  : never;
 ```
 
 ## TypeScript 相关
+
+### 泛型中的命名习惯
+
+很多代码中使用泛型，一般只使用一个大写字母，  
+这些实际相当于助记符，是缩写。
+
+- `T` (for **T**ype)
+- `E` (for **E**lement)
+- `K` (for **K**ey)
+- `V` (for **V**alue)
+
+* `U` 没找到出处…  
+  推测是 `T` 的后一位字母，就像 `i, j, k` 一样…  
+  也可能是指 _Union_
+
+其他根据具体上下文可以同样推测：
+
+- `S` **S**tate
+- `A` **A**ction
 
 ### TS 工程化
 
