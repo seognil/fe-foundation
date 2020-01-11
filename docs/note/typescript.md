@@ -79,6 +79,8 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 - 快速入门
   - [TypeScript - The Basics](https://www.youtube.com/watch?v=ahCwqrYpIuM)：12 分钟，历史背景、基本使用、语法简介
+  - [VS Code - IntelliSense](https://www.youtube.com/watch?v=lSPHucggmLo)：前 3 分钟，TS 在 VSCode 自动完成功能中的作用
+  - [Working with TypeScript in Visual Studio Code](https://www.youtube.com/watch?v=6x8Xhhe37WE)：9 分钟，TS 在 VSCode 中的使用
   - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)：语法速查表
 - 社区文档
   - [TypeScript for Beginner Programmers](https://ts.chibicode.com/)：几篇入门文章（排版不错：）
@@ -119,6 +121,29 @@ TS 和 JS 在这些 API 方面的差别在变小，
     - [Building and publishing a module with TypeScript and Rollup.js](https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396)
 
 ## TypeScript 知识体系
+
+### 如何运行 TypeScript
+
+- 命令行命令
+  - `tsc`，官方编译器
+    - 安装 `npm install -g typescript`
+  - `ts-node`，TS + Node
+    - 安装 `npm install -g ts-node`
+  - `parcel`, 自动检测运行
+    - 安装 `npm install -g parcel`
+- TS 运行配置
+  - [Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)：编译选项
+  - [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)：配置文件
+- 工程化
+  - 工具
+    - [types-checker](https://www.npmjs.com/package/types-checker)：自动安装 @types
+    - [DefinitelyTyped](http://definitelytyped.org/)：@types 官网
+  - ESLint
+    - [Getting Started with ESLint](https://eslint.org/docs/user-guide/getting-started)：ESLint 官方教程
+    - [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)：ESLint 的 TS 插件
+  - 打包插件
+    - [@babel/preset-typescript](https://babeljs.io/docs/en/babel-preset-typescript)：babel 的
+    - [rollup-plugin-typescript2](https://www.npmjs.com/package/rollup-plugin-typescript2)：rollup 的
 
 ### TypeScript 主要概念
 
@@ -303,21 +328,6 @@ type UnionToIntersection<U> = (U extends any
 
 - `S` **S**tate
 - `A` **A**ction
-
-### TS 工程化
-
-- 工具
-  - [types-checker](https://www.npmjs.com/package/types-checker)：自动安装 @types
-  - [DefinitelyTyped](http://definitelytyped.org/)
-- ESLint
-  - [Getting Started with ESLint](https://eslint.org/docs/user-guide/getting-started)
-  - [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)
-- 官方文档
-  - [.d.ts 声明文件](http://www.typescriptlang.org/docs/handbook/declaration-files/library-structures.html)
-  - [tsconfig.json](http://www.typescriptlang.org/docs/handbook/tsconfig-json.html#using-tsconfigjson)
-- 打包插件
-  - [@babel/preset-typescript](https://babeljs.io/docs/en/babel-preset-typescript)
-  - [rollup-plugin-typescript2](https://www.npmjs.com/package/rollup-plugin-typescript2)
 
 ### 从 JS 迁移到 TS
 
