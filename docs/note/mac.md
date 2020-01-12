@@ -52,7 +52,7 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
   brew cask install font-sarasa-gothic
   ```
 
-  后续配置以 VSCode 为例：`"editor.fontFamily": "sarasa term sc"`
+  后续配置以 VS Code 为例：`"editor.fontFamily": "sarasa term sc"`
 
 - 系统设置，将光标移动速度调到极快  
   在命令行执行以下代码并重启

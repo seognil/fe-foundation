@@ -55,7 +55,7 @@ Git 的作用是管理**文件内容**的版本，而不是**代码内容**的�
 
 GitHub 是一个免费的 Git 远端仓库，  
 有很多著名的项目和工具都托管在 GitHub 上，  
-如 [VSCode](https://github.com/microsoft/vscode)、 [React](https://github.com/facebook/react) 等
+如 [VS Code](https://github.com/microsoft/vscode)、 [React](https://github.com/facebook/react) 等
 
 （类似的远端仓库还有 [GitLab](https://about.gitlab.com/)、[Bitbucket](https://bitbucket.org/product/)、[CODING](https://coding.net/) 等）
 

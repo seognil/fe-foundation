@@ -32,7 +32,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - 工具：
   - [TypeScript](https://www.npmjs.com/package/typescript)
   - [ts-node](https://github.com/TypeStrong/ts-node)
-  - [VSCode](./vscode.md)
+  - [VS Code](./vscode.md)
 
 ### 学习路线
 
@@ -79,8 +79,8 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 - 快速入门
   - [TypeScript - The Basics](https://www.youtube.com/watch?v=ahCwqrYpIuM)：12 分钟，历史背景、基本使用、语法简介
-  - [VS Code - IntelliSense](https://www.youtube.com/watch?v=lSPHucggmLo)：前 3 分钟，TS 在 VSCode 自动完成功能中的作用
-  - [Working with TypeScript in Visual Studio Code](https://www.youtube.com/watch?v=6x8Xhhe37WE)：9 分钟，TS 在 VSCode 中的使用
+  - [VS Code - IntelliSense](https://www.youtube.com/watch?v=lSPHucggmLo)：前 3 分钟，TS 在 VS Code 的自动完成中起到的作用
+  - [Working with TypeScript in Visual Studio Code](https://www.youtube.com/watch?v=6x8Xhhe37WE)：10 分钟，在 VS Code 中的使用 TS
   - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)：语法速查表
 - 社区文档
   - [TypeScript for Beginner Programmers](https://ts.chibicode.com/)：几篇入门文章（排版不错：）

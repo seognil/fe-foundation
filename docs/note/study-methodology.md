@@ -28,7 +28,7 @@
   - 养成总结**知识体系**的习惯
   - 更好的**时间管理**计划
 - 工具：
-  - 文本编辑器（我用 [VSCode](https://code.visualstudio.com/)）
+  - 文本编辑器（我用 [VS Code](./vscode.md)）
   - 云存储（我用过的，~~目前主力 Dropbox~~）
     - [Dropbox](https://www.dropbox.com/)
     - [OneDrive](https://onedrive.live.com/)

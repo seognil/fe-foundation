@@ -57,21 +57,27 @@
 ## 参考资料
 
 - 视频
-  - [JavaScript Modules in 100 Seconds](https://www.youtube.com/watch?v=qgRUr-YUk1Q)
-  - [How javascript modules work - from past to present](https://www.youtube.com/watch?v=JDDn57_z5Og)
-  - [How Require and Exports work in NodeJS](https://www.youtube.com/watch?v=LCs1Sn9D6bA)
+  - [JavaScript Modules in 100 Seconds](https://www.youtube.com/watch?v=qgRUr-YUk1Q)  
+    100 秒：ESM 和 CJS 简介
+  - [How javascript modules work - from past to present](https://www.youtube.com/watch?v=JDDn57_z5Og)  
+    10 分钟：JS 模块化历史，script 标签 -> AMD -> CJS -> ESM
+  - [Modules, import and export / Intro to JavaScript ES6 programming, lesson 13](https://www.youtube.com/watch?v=SmBb2SSZqFU)  
+    5 分钟：模块化的起源和本质，ESM 语法简介
+  - [How Require and Exports work in NodeJS](https://www.youtube.com/watch?v=LCs1Sn9D6bA)  
+    9 分钟：Node.js 模块化原理分析
 - 文档
-  - [import - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import)
+  - [import - MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import)：ES Module 文档
 - 文章
-  - [‪Module Cheatsheet](https://www.samanthaming.com/tidbits/79-module-cheatsheet)
+  - [‪Module Cheatsheet](https://www.samanthaming.com/tidbits/79-module-cheatsheet)：ESM 语法速查表
   - [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
   - [深入理解 ES6 模块机制](https://zhuanlan.zhihu.com/p/33843378)
 - 工具
-  - [Browserify and the Universal Module Definition](https://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html)
+  - [Browserify and the Universal Module Definition](https://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html)：UMD
   - [常见问题 - Rollup.js 中文网](https://www.rollupjs.com/guide/faqs/)
-  - [webpack 源码学习系列之一：如何实现一个简单的 webpack](https://github.com/youngwind/blog/issues/99)
-  - [[webpack]源码解读：命令行输入 webpack 的时候都发生了什么？](https://github.com/DDFE/DDFE-blog/issues/12)
-  - [输出文件分析 - 深入浅出 Webpack](https://webpack.wuhaolin.cn/5%E5%8E%9F%E7%90%86/5-2%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90.html)
+  - Webpack
+    - [webpack 源码学习系列之一：如何实现一个简单的 webpack](https://github.com/youngwind/blog/issues/99)
+    - [[webpack]源码解读：命令行输入 webpack 的时候都发生了什么？](https://github.com/DDFE/DDFE-blog/issues/12)
+    - [输出文件分析 - 深入浅出 Webpack](https://webpack.wuhaolin.cn/5%E5%8E%9F%E7%90%86/5-2%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E5%88%86%E6%9E%90.html)
 
 ## JS 中的模块化方案
 

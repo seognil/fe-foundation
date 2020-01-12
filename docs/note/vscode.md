@@ -10,22 +10,32 @@ VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）
 
 用 Brew 安装 VS Code：`brew cask install visual-studio-code`
 
-安装完成后，可以 [注册 `code` 命令](https://code.visualstudio.com/docs/setup/mac)，  
+安装完成后，可以 [注册 `code` 命令](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)，  
 使得在命令行中执行 `code ./project1` 即可用 VS Code 打开项目或文件。
 
 ### VS Code 基本功能
 
-- [插件市场](https://marketplace.visualstudio.com/vscode)
-- [内建 git 功能](https://code.visualstudio.com/Docs/editor/versioncontrol#_git-support)
-- [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
-- [settings](https://code.visualstudio.com/docs/getstarted/settings)
-- [代码格式化](https://code.visualstudio.com/docs/editor/codebasics#_formatting)
-- [快捷键系统](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference)
+- 命令行
+  - [注册 `code` 命令](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
+- 功能系统
+  - [命令面板](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette)
+  - [插件系统](https://code.visualstudio.com/docs/editor/extension-gallery)
+  - [内建终端](https://code.visualstudio.com/docs/editor/integrated-terminal)
+  - [内建 Git](https://code.visualstudio.com/Docs/editor/versioncontrol#_git-support)
+  - [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+  - [settings](https://code.visualstudio.com/docs/getstarted/settings)
+- 增强功能
+  - [intellisense](https://code.visualstudio.com/docs/editor/intellisense)
+  - [定义跳转](https://code.visualstudio.com/Docs/editor/editingevolved#_peek)
+  - [全局重命名](https://code.visualstudio.com/Docs/editor/editingevolved#_rename-symbol)
+  - [代码格式化](https://code.visualstudio.com/docs/editor/codebasics#_formatting)
+- 开发
+  - [Debugger](https://code.visualstudio.com/Docs/editor/debugging)
+- [快捷键](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference)
   - <kbd>cmd</kbd>+<kbd>p</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>p</kbd>
   - <kbd>cmd</kbd>+<kbd>f</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>f</kbd>
   - <kbd>cmd</kbd>+<kbd>d</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>L</kbd>
   - <kbd>opt</kbd>+<kbd>shift</kbd>+<kbd>o</kbd>：organize imports
-- [terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 
 ### VS Code 源码
 
@@ -35,9 +45,13 @@ VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）
 
 ### 入门
 
-- [Visual Studio Code Intro & Setup](https://www.youtube.com/watch?v=fnPhJHN0jTE)
-- [Visual Studio Code Can Do That: Tips & Tricks : Build 2018](https://www.youtube.com/watch?v=OOG3xcUQY5k)
-  <!-- - [VS Code Top-Ten Pro Tips](https://www.youtube.com/watch?v=u21W_tfPVrY) -->
+- [VS Code Top-Ten Pro Tips](https://www.youtube.com/watch?v=u21W_tfPVrY)  
+  10 分钟：10 个 VS Code 常用功能一览
+- [Visual Studio Code Intro & Setup](https://www.youtube.com/watch?v=fnPhJHN0jTE)  
+  40 分钟：（2017 年的视频，有些功能现在可能改变，但总体是相似的）  
+  VS Code 界面功能和配置，基本使用，一些插件介绍，Git 简介
+- [Visual Studio Code Can Do That: Tips & Tricks : Build 2018](https://www.youtube.com/watch?v=OOG3xcUQY5k)  
+  80 分钟：
   <!-- - [15 VS Code Extensions For Front-End Developers in 2019](https://www.youtube.com/watch?v=LdF2RcelRg0) -->
 
 ### 插件
