@@ -52,7 +52,7 @@
   - [JavaScript - 30 seconds of code](https://www.30secondsofcode.org/js/p/1)
 - 在线刷题
   - [codewars](https://www.codewars.com/?language=javascript)
-- 别人的笔记（按字典排序）
+- 别人整理的题目（按字典排序）
   - [JavaScript - FE-Interview-Questions](https://github.com/poetries/FE-Interview-Questions/blob/master/JavaScript.md)
   - [JavaScript - 前端硬核面试专题](https://github.com/biaochenxuying/blog/blob/master/interview/fe-interview.md#4-javascript)：第四章（JS）、第五章（ES6+）
   - [JavaScript 基础 - 前端面试与进阶指南](https://github.com/Advanced-Interview-Question/front-end-interview/blob/dev/docs/guide/jsBasic.md)

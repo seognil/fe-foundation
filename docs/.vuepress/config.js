@@ -40,8 +40,8 @@ const config = {
   //   },
   // },
 
-  title: 'FE 笔记',
-  description: '前端开发技术笔记',
+  title: '前端指南',
+  description: '前端技术学习指南',
   head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square-blue.png' }]],
 
   dest: './public',
@@ -51,8 +51,8 @@ const config = {
     // editLinks: true,
 
     nav: [
-      { text: '笔记', link: '/note/' },
-      { text: '鸡汤', link: '/about/ref.md' },
+      { text: '指南', link: '/note/' },
+      { text: '关于我', link: '/about/' },
 
       { text: 'Learn-By-Doing', link: 'https://github.com/seognil-study/learn-by-doing' },
     ],

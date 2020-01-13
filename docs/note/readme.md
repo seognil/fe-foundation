@@ -1,12 +1,12 @@
-# 关于笔记
+# 关于本站
 
 ## 系列文章
 
 主要在写一些系列文章（更新中）：
 
-- [前端入行系列](./fe-development-cookbook.md)
-- [JavaScript 语言系列](./js-foundation.md)
-- [学习指南系列](./study-methodology.md)
+- [前端入门指南系列](./fe-development-cookbook.md)
+- [JavaScript 语言学习系列](./js-foundation.md)
+- [其他学习指南系列](./study-methodology.md)
 
 还有一些其他的杂记。
 
