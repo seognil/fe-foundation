@@ -102,9 +102,10 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 - 在线练习
   - [学习 Git 分支（有中文）](https://learngitbranching.js.org/)
 - Git Flow
-  - [Git flow 入门教程](https://www.jianshu.com/p/b446c43577f9)
-  - [Git 工作流程 - 阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+  - [Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
   - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+  - [Gitflow — Branch Guide](https://medium.com/@rafavinnce/gitflow-branch-guide-8a523360c053)
+  - [Git 工作流程 - 阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
 - GitHub
   - [GitHub Guides](https://guides.github.com/)
   - [使用 GitHub 操作自动化工作流程](https://help.github.com/cn/actions)
