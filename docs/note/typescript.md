@@ -96,15 +96,17 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - [TypeScript Playground](https://www.typescriptlang.org/play/index.html)：官方的
   - [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)：Babel 的
 
-### 实战/进阶
+### 进阶/实战
 
 - TS 语言
-  - 进阶教材
-    - [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)：官方文档中的一章
-    - [TypeScript Evolution](https://mariusschulz.com/blog/series/typescript-evolution)：系列文章
-    - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)：深入 TS 英文版
-    - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)：深入 TS 汉化版
+  - 深入理解 TypeScript
+    - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)：英文版
+    - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)：社区汉化版
+  - 视频
     - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)：25 分钟，包含很多 TS 进阶用法（2018 年）
+  - 文章
+    - [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)：官方文档中的「高级类型」章节
+    - [TypeScript Evolution](https://mariusschulz.com/blog/series/typescript-evolution)：TS 语言特性系列文章
   - TS 进阶概念解析
     - [The unknown Type in TypeScript](https://mariusschulz.com/blog/the-unknown-type-in-typescript)
     - [infer - 深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/tips/infer.html)

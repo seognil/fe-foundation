@@ -37,10 +37,14 @@
 （学习前端开发除 JS 以外的部分，JS 单独成节，因为内容实在太多了…）
 
 - **别人的路线图**
-  - [前端九部 - 入门者手册 2019](https://www.yuque.com/fe9/basic)
-  - [2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)
-  - [Web Development In 2020 - A Practical Guide](https://www.youtube.com/watch?v=0pThnRneDjw)
-  - [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)
+  - 视频
+    - [Web Development In 2020 - A Practical Guide](https://www.youtube.com/watch?v=0pThnRneDjw)：72 分钟，概览指南
+  - 文档集
+    - [前端九部 - 入门者手册 2019](https://www.yuque.com/fe9/basic)：系列文章
+    - [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)：超详细指南
+  - 路线图
+    - [WEB DEVELOPER ROADMAP - 2020](https://github.com/kamranahmedse/developer-roadmap)：Web 开发者学习路线图
+    - [2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)：上面的繁中汉化版（2019 年版）
 
 ---
 
@@ -67,8 +71,8 @@
 ### JavaScript 生态路线图
 
 - **别人的路线图**
-  - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)
-  - [Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)
+  - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)：系列视频教程
+  - [Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)：系列视频教程
 
 ---
 
