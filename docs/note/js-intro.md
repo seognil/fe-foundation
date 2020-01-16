@@ -51,8 +51,9 @@ ES6+ 是前端开发的基本语言。
 
 - [硬核前端（劝退篇）](./fe-hardcore-overview.md)
 
-<!-- * [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh) -->
-<!-- * state of js -->
+* [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)
+* [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)
+  <!-- * [The State of JavaScript 2019](https://2019.stateofjs.com/zh/) -->
 
 - [为什么认为 Backbone 是现代前端框架的基石](https://zhuanlan.zhihu.com/p/30982369)
 - [[译文] 现代 js 框架存在的根本原因](https://juejin.im/post/5b111436e51d4506d06205fd)

@@ -88,10 +88,10 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - [TypeScript 入门教程](https://ts.xcatliu.com/)：比较丰富的入门文档（进阶章节是指高级特性）
   - [狡猾的 TypeScript: 易错点梳理](https://zhuanlan.zhihu.com/p/101182925)：几道基本概念题
 - 官方文档（及汉化）
-  - [Documentation - TypeScript](https://www.typescriptlang.org/docs/home.html)：官方版（最新）
+  - [Documentation - TypeScript](https://www.typescriptlang.org/docs/home.html)：官方文档（最新）
     - [Do's and Don'ts](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html)：一些最佳实践贴士
-  - [TypeScript-Handbook](https://zhongsp.gitbook.io/typescript-handbook/)：社区汉化版（尽量保持同步，目前 3.6）
-  - [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)：中文网（版本较旧，目前 3.1）
+  - [TypeScript-Handbook](https://zhongsp.gitbook.io/typescript-handbook/)：社区汉化版（尽量保持官方同步）
+  - [基础类型 - TypeScript 中文网](https://www.tslang.cn/docs/handbook/basic-types.html)：中文网（社区汉化版，版本较旧，（2020-01）目前只到 3.1）
 - 在线调试（TS 检查、编译到 JS）
   - [TypeScript Playground](https://www.typescriptlang.org/play/index.html)：官方的
   - [Babel - Try it out](https://babeljs.io/repl#?presets=typescript)：Babel 的

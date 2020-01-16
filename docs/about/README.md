@@ -29,9 +29,9 @@
 
 （从 2019/10 起）开始系统地写文章，目前有几个系列：
 
-- [前端入门指南系列](./fe-development-cookbook.md)
-- [JavaScript 语言学习系列](./js-foundation.md)
-- [其他学习指南系列](./study-methodology.md)
+- [前端入门指南系列](/note/fe-development-cookbook.md)
+- [JavaScript 语言学习系列](/note/js-foundation.md)
+- [其他学习指南系列](/note/study-methodology.md)
 
 主要的目的有两个：
 
@@ -56,13 +56,13 @@
 
 完成的工作：
 
-- [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)：翻译
-- [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)：翻译
-  <!-- - [The State of JavaScript 2019](https://2019.stateofjs.com/) -->
-- [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)：校对、改进、版本更新
-  <!-- - [Typescript-Handbook](https://github.com/zhongsp/TypeScript/pull/274)：[官方文档](https://www.typescriptlang.org/) 的社区翻译中的一章 -->
-- [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide)：翻译（但还未 [合并](https://github.com/piotrwitek/react-redux-typescript-guide/pull/199)）
-- [开始 – React 官方文档](https://zh-hans.reactjs.org/docs/getting-started.html)：在 React 官方翻译计划中完成了几篇文章的翻译和校对
+- [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)：[翻译](https://github.com/bestofjs/javascript-risingstars/pull/49)
+- [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)：[翻译](https://github.com/bestofjs/javascript-risingstars/pull/39)
+  <!-- - [The State of JavaScript 2019](https://2019.stateofjs.com/zh/)：[翻译](https://github.com/StateOfJS/State-of-JS-2019/pull/50) -->
+- [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)：[校对](https://github.com/conventional-commits/conventionalcommits.org/pull/124)、[改进](https://github.com/conventional-commits/conventionalcommits.org/pull/126)、[版本更新](https://github.com/conventional-commits/conventionalcommits.org/pull/155)
+- [Typescript-Handbook](https://zhongsp.gitbook.io/typescript-handbook/release-notes/typescript-3.7)：[翻译](https://github.com/zhongsp/TypeScript/pull/274)了 [TS 官方文档中的一章](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html)
+- [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide)：[翻译](https://github.com/piotrwitek/react-redux-typescript-guide/pull/199)（但还未合并）
+- [开始 – React 官方文档](https://zh-hans.reactjs.org/docs/getting-started.html)：React 官方翻译计划几篇文章 [翻译和校对](https://github.com/reactjs/zh-hans.reactjs.org/pulls?q=is%3Apr+is%3Aclosed+author%3Aseognil)
 
 原本目的有几个：
 

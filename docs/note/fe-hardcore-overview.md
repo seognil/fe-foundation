@@ -54,8 +54,11 @@
 
 [VS Code 成主宰、Vue 备受热捧！2019 前端开发趋势必读](https://zhuanlan.zhihu.com/p/97741102)
 
-![stateofjs2019](./img/stateofjs2019-dark-fs8.png)  
-<https://2019.stateofjs.com/tshirt/>
+![stateofjs2019](./img/stateofjs2019-dark-fs8.png)
+
+[2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)  
+[2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)  
+<!-- [The State of JavaScript 2019](https://2019.stateofjs.com/zh/) -->
 
 ### 所以，前端工程师是什么？
 
