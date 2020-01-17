@@ -44,6 +44,7 @@
     - [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)：超详细指南
   - 路线图
     - [WEB DEVELOPER ROADMAP - 2020](https://github.com/kamranahmedse/developer-roadmap)：Web 开发者学习路线图
+    - [在 2020 年成为一个 Web 开发者](https://github.com/seognil/developer-roadmap-chinese-simplified)：上面的简中汉化版（2020 年版）
     - [2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)：上面的繁中汉化版（2019 年版）
 
 ---
