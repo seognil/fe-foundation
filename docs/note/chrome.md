@@ -58,7 +58,8 @@ Chrome 对于前端开发来说（尤其是调试代码）非常方便，
 
 - 杂项
   - [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)：Proxy 管理工具
-  - [Tab Manager Plus for Chrome](https://chrome.google.com/webstore/detail/tab-manager-plus-for-chro/cnkdjjdmfiffagllbiiilooaoofcoeff)：标签管理器
+  - [Workona](https://chrome.google.com/webstore/detail/workona/ailcmbgekjpnablpdkmaaccecekgdhlh?hl=en)：工作区管理器（增强的标签管理器）
+  - ~~[Tab Manager Plus for Chrome](https://chrome.google.com/webstore/detail/tab-manager-plus-for-chro/cnkdjjdmfiffagllbiiilooaoofcoeff)：标签管理器~~
   - [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)：脚本扩展平台
   - [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)：网站样式扩展平台
 - 英语

@@ -2,6 +2,11 @@
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列
 
+<!-- ## Mac 配置教程
+
+- [How to Set Up Your Mac for Maximum Productivity](https://www.youtube.com/watch?v=XBi3OB23Utk)
+- [2: Maximising your Mac Productivity: Alfred 🎩️](https://www.youtube.com/watch?v=GWRddk0Ybnc) -->
+
 ## Mac 的键盘
 
 | 符号 |  名称   | 缩写 |
@@ -96,6 +101,7 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
     - [rocket-chat](https://rocket.chat/)：开发聊天、Bot
   - 杂项
     - 增强
+      - [alfred](https://www.alfredapp.com/)：增强版 spotlight
       - [font-sarasa-gothic](https://github.com/be5invis/Sarasa-Gothic)：更纱黑体
       - [openinterminal](https://github.com/Ji4n1ng/OpenInTerminal)：Finder 打开到终端
         <!-- - [go2shell](https://zipzapmac.com/Go2Shell)：Finder 打开到终端 -->
