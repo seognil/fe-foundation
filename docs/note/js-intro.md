@@ -51,6 +51,8 @@ ES6+ 是前端开发的基本语言。
 
 - [硬核前端（劝退篇）](./fe-hardcore-overview.md)
 
+- [王垠对 JS 的评价](https://zhuanlan.zhihu.com/p/54821270)
+
 * [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)
 * [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)
   <!-- * [The State of JavaScript 2019](https://2019.stateofjs.com/zh/) -->

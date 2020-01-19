@@ -99,6 +99,7 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
     - [switchhosts](https://github.com/oldj/SwitchHosts)：Host 编辑器
     - [postman](https://www.getpostman.com/)：网络请求监听
     - [rocket-chat](https://rocket.chat/)：开发聊天、Bot
+    - [keycastr](https://github.com/keycastr/keycastr)：显示按键（录屏时用）
   - 杂项
     - 增强
       - [alfred](https://www.alfredapp.com/)：增强版 spotlight
@@ -117,7 +118,8 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
       - [geekbench](https://www.geekbench.com/)：CPU/GPU 测评
   - 日常
     - 其他
-      - [bettertouchtool](https://folivora.ai/)：改键软件
+      - [fliqlo](https://fliqlo.com/)：超大时钟屏保
+      - [bettertouchtool](https://folivora.ai/)：快捷键改键软件
       - [unshaky](https://github.com/aahung/Unshaky)：防止 Mac 键盘问题（屏蔽触发过快）
       - [keka]：压缩软件
       - [iina](https://iina.io/)：视频播放器
