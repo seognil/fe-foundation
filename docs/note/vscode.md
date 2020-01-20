@@ -77,6 +77,7 @@ VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）
   - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)：显示包的 import 大小
   - [filesize](https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize)：显示文件大小
 - 自动化
+  <!-- - [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)：npm 自动导入补全 -->
   - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)：路径自动补全
   - [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)：包名自动补全
   - [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)：代码自动补全（AI-based）

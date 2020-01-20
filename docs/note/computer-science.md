@@ -118,6 +118,7 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 - [编程到底难在哪里？](https://www.zhihu.com/question/22508677)
 - [把代码写的太灵活不好吗？为什么会被上司批评？](https://www.zhihu.com/question/52951851)
 - [为何部分程序员从不使用 break 或 continue 语句？](https://www.zhihu.com/question/334216911)
+- [「低耦合，高内聚」真的好吗？](https://www.zhihu.com/question/347264877/answer/834666851)
 
 ### 中国高校 CS 课程体系
 

@@ -205,3 +205,7 @@ git push <origin> <master>
 ```
 
 ![git-cheatsheet-cn](./img/git-cheatsheet-cn.jpeg)
+
+![git-mindmap](./img/git-mindmap-fs8.png)
+
+[如何优雅的使用 Git？](https://www.zhihu.com/question/20866683/answer/975066538)
