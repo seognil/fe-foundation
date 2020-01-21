@@ -39,6 +39,7 @@ const sidebarStructure = {
     './markdown.md',
     './git.md',
     './typescript.md',
+    './jest.md',
     './rxjs.md',
     './redux.md',
     './react-hooks.md',

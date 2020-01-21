@@ -92,6 +92,7 @@
   - npm 组件开发（[lib-starter](https://github.com/seognil-lab/lib-starter)）
   - 静态检查/编码规范
   - 自动化测试
+    - 单元测试（[Jest 学习指南](./jest.md)）
   - 持续集成
   - （静态）部署
   - 性能优化
