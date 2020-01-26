@@ -40,6 +40,7 @@ const sidebarStructure = {
     './git.md',
     './typescript.md',
     './jest.md',
+    './testing-library.md',
     './rxjs.md',
     './redux.md',
     './react-hooks.md',
