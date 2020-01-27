@@ -93,6 +93,8 @@
   - 静态检查/编码规范
   - 自动化测试
     - 单元测试（[Jest 学习指南](./jest.md)）
+    - UI 测试（[testing-library 学习指南](./testing-library.md)）
+    - E2E 测试（cypress）
   - 持续集成
   - （静态）部署
   - 性能优化

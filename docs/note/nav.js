@@ -46,7 +46,7 @@ const sidebarStructure = {
     './react-hooks.md',
     './redux-observable.md',
   ],
-  '学习杂谈': [
+  '杂谈': [
     //
     './study-the-only-way.md',
     './study-fortune.md',

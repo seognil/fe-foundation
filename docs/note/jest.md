@@ -40,7 +40,7 @@ Jest 相比 Mocha 有更为清晰的说明文档，
 ### 概览
 
 - 耗时：从入门到熟悉基本使用及 API，6~16 小时
-- 难点：
+- 难点：理解 Jest 的一些特性（快照、Timer 等）
 - 工具：[jest](https://jestjs.io/en/)
 
 ### 学习路线
@@ -121,7 +121,7 @@ Jest 相比 Mocha 有更为清晰的说明文档，
         - `.toStrictEqual(value)`：`toEqual` + 对比显式和隐式 `undefined`
         - `.toMatchObject(object)`：`toEqual` + 支持不完整对比
       - 其他
-        - `.toHaveProperty(keyPath, value?)`：对象字段检查q
+        - `.toHaveProperty(keyPath, value?)`：对象字段检查
         - `.toBeInstanceOf(Class)`：`instanceof`
     - 数字
       - `.toBeGreaterThan(number)`

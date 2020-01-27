@@ -16,16 +16,23 @@
   - vue
   - svelte
 
+UI 测试工具还有 Airbnb 的 [enzyme](https://airbnb.io/enzyme/)，侧重有所不同：
+
+- enzyme 用于保证 React 组件的输入输出结构
+- testing-library 的特性
+  - 不面向具体组件代码进行测试
+  - 面向最终 DOM 进行测试（Query）
+  - 模拟用户的交互方式（`fireEvent`）
+  - 所以也支持除了 React 以外的其他 UI 框架
+
 ### 为什么要用 testing-library
 
 [Writing Better Tests with React Testing Library - Time to React - August 2019](https://www.youtube.com/watch?v=hFm0enk-qfM)
 
 - 如果你需要 UI 测试
-- testing-library 的特性
-  - 不面向具体组件代码进行测试
-  - 面向最终 DOM 进行测试（Query）
-  - 模拟用户的交互方式（`fireEvent`）
-  - 简单、灵活
+- 在 [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh#section-test-framework) 的测试分类中处于领先地位
+- `create-react-app` 已经使用 `@testing-library/react`，  
+  以及 React 官方文档中也推荐使它用
 
 ## 学习 testing-library
 
@@ -45,7 +52,7 @@
   - （React 测试）
 - 学习 testing-library
   - 练习文档中 DOM 章节所有主要 API，了解异同
-  - 了解衍生库的 API
+  - 了解衍生库的 API，与 Jest、React 配合
   - 了解 [A11y](https://developer.mozilla.org/en-US/docs/Web/Accessibility) 和 [ARIA](https://www.w3.org/TR/wai-aria-1.2/#tree_exclusion) 的概念
 - 实战
   - 仿照文档中的 Recipe 章节进行练习
@@ -57,10 +64,9 @@
 
 - 概览
   - [通过写测试用例学习前端知识](https://www.bilibili.com/video/av44802599/)  
-    12 分钟，通过编写测试学习其他前端知识  
-    （视频中的 `react-testing-library` 已更名为 `@testing-library/react`）
+    12 分钟，通过编写测试学习其他前端知识
   - [Writing Better Tests with React Testing Library - Time to React - August 2019](https://www.youtube.com/watch?v=hFm0enk-qfM)  
-    16 分钟，基本用法和理念介绍，和 [enzyme](https://airbnb.io/enzyme/) 的对比
+    16 分钟，介绍基本用法和理念，和 [enzyme](https://airbnb.io/enzyme/) 的对比
 - 我写的 demo：[testing-library - Learn By Doing](https://github.com/seognil-study/learn-by-doing/tree/master/testing/testing-library)
 - [官方文档](https://testing-library.com/)
   - API
@@ -194,7 +200,7 @@
 - [API 列表](https://testing-library.com/docs/react-testing-library/api)
   - `render`：基于了 ReactDOM 的 `render`，扩展了 `getBy` 等方法
   - `cleanup`：清除内部的渲染树
-  - `act`：React 的 act
+  - `act`：包装了 [React 的 act](https://reactjs.org/docs/testing-recipes.html#act)（保证渲染、事件全部完成以便执行后续测试）
 
 ## testing-library 典型代码
 
@@ -209,7 +215,7 @@
 
 test("Query Basic", () => {
   const container = createHTML(
-    `<span> Hello World! </span>`
+    `<span> Hello World! </span>`,
   );
 
   // * ---------------- getBy
@@ -234,7 +240,7 @@ test("Query Basic", () => {
 
   // * ---------------- findBy (Promise)
 
-  findByText(container, /hello/i).then(e => {
+  findByText(container, /hello/i).then((e) => {
     // console.log(prettyDOM(e));
   }); // ✅ =>
   // `<span>
@@ -277,7 +283,7 @@ test("ByTestId", () => {
 
 test("within", () => {
   const container = createHTML(
-    `<span> Hello World! </span>`
+    `<span> Hello World! </span>`,
   );
   const { getByText } = within(container);
   getByText(/Hello/); // ✅
@@ -287,7 +293,7 @@ test("within", () => {
 
 test("fireEvent", () => {
   const container = createHTML(
-    `<button onClick="console.log('fire')"></button>`
+    `<button onClick="console.log('fire')"></button>`,
   );
 
   fireEvent(container, new MouseEvent("click"));
@@ -302,10 +308,10 @@ test("fireEvent", () => {
 
 test("wait", async () => {
   const container = createHTML(
-    `<span> Hello World! </span>`
+    `<span> Hello World! </span>`,
   );
 
-  const asyncRender = fn => setTimeout(fn, 0);
+  const asyncRender = (fn) => setTimeout(fn, 0);
   asyncRender(() => (container.textContent = "Learn Test"));
 
   await wait(() => getByText(container, "Learn Test"));
@@ -315,23 +321,23 @@ test("wait", async () => {
 test("waitForElement", async () => {
   const container = createHTML(`<div></div>`);
 
-  const asyncRender = fn => setTimeout(fn, 0);
+  const asyncRender = (fn) => setTimeout(fn, 0);
   asyncRender(() =>
-    container.appendChild(createHTML(`<span>Hello</span>`))
+    container.appendChild(createHTML(`<span>Hello</span>`)),
   );
 
   const dom = await waitForElement(
     () => getByText(container, "Hello"),
-    { container }
+    { container },
   ); // ✅ => HTMLSpanElement
 });
 
 test("waitForDomChange", async () => {
   const container = createHTML(`<div></div>`);
 
-  const asyncRender = fn => setTimeout(fn, 0);
+  const asyncRender = (fn) => setTimeout(fn, 0);
   asyncRender(() =>
-    container.appendChild(createHTML(`<span>Hello</span>`))
+    container.appendChild(createHTML(`<span>Hello</span>`)),
   );
 
   await waitForDomChange({ container });
@@ -349,3 +355,12 @@ test("waitForDomChange", async () => {
 [Make it so the TypeScript definitions work automatically without config #123](https://github.com/testing-library/jest-dom/issues/123)
 
 如 `@testing-library/jest-dom` 的依赖中包含 `@types/testing-library__jest-dom`
+
+### 包名
+
+很多视频中会提到 `react-testing-library`，这个是之前的名字，  
+现已更名为 `@testing-library/react`
+
+同理，其他包也都更名到 `@testing-library/xxx`
+
+如 `dom-testing-library` => `@testing-library/dom`
