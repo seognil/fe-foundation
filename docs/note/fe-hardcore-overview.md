@@ -58,7 +58,7 @@
 
 [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)  
 [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)  
-<!-- [The State of JavaScript 2019](https://2019.stateofjs.com/zh/) -->
+[The State of JavaScript 2019](https://2019.stateofjs.com/zh/)
 
 ### 所以，前端工程师是什么？
 

@@ -58,7 +58,7 @@
 
 - [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)：[翻译](https://github.com/bestofjs/javascript-risingstars/pull/49)
 - [2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh)：[翻译](https://github.com/bestofjs/javascript-risingstars/pull/39)
-  <!-- - [The State of JavaScript 2019](https://2019.stateofjs.com/zh/)：[翻译](https://github.com/StateOfJS/State-of-JS-2019/pull/50) -->
+- [The State of JavaScript 2019](https://2019.stateofjs.com/zh/)：[翻译](https://github.com/StateOfJS/State-of-JS-2019/pull/50)
 - [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)：[校对](https://github.com/conventional-commits/conventionalcommits.org/pull/124)、[改进](https://github.com/conventional-commits/conventionalcommits.org/pull/126)、[版本更新](https://github.com/conventional-commits/conventionalcommits.org/pull/155)
 - [Typescript-Handbook](https://zhongsp.gitbook.io/typescript-handbook/release-notes/typescript-3.7)：[翻译](https://github.com/zhongsp/TypeScript/pull/274)了 [TS 官方文档中的一章](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html)
 - [用 TypeScript 写 React & Redux - 完全指南](https://github.com/seognil-contributor/react-redux-typescript-guide)：[翻译](https://github.com/piotrwitek/react-redux-typescript-guide/pull/199)（但还未合并）
