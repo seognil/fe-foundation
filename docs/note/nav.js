@@ -24,9 +24,13 @@ const sidebarStructure = {
     //
     './study-methodology.md',
     './english-using.md',
-    './computer-science.md',
     './markdown.md',
     './git.md',
+  ],
+  '计算机科学': [
+    //
+    './computer-science.md',
+    './functional-programming.md',
   ],
   'JavaScript 语言': [
     //
@@ -37,6 +41,7 @@ const sidebarStructure = {
     // './js-hardcore.md',
     './js-modular.md',
     './regexp.md',
+    './npm-verdaccio.md',
     './js-foundation-old.md',
   ],
   '前端框架类库': [
@@ -55,7 +60,6 @@ const sidebarStructure = {
     //
     './linux-basic-security.md',
     './clean-keyboard.md',
-    './npm-verdaccio.md',
     './study-the-only-way.md',
     './study-fortune.md',
     './study-the-costly-way.md',
