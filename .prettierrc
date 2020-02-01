@@ -1,9 +1,18 @@
 {
-  "printWidth": 60,
+  "printWidth": 100,
   "arrowParens": "always",
   "trailingComma": "all",
   "tabWidth": 2,
+  "singleQuote": true,
   "quoteProps": "consistent",
   "semi": true,
-  "useTabs": false
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "printWidth": 60
+      }
+    }
+  ]
 }
