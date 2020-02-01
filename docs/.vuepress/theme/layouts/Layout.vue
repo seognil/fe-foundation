@@ -63,6 +63,19 @@ export default {
     }
   },
 
+  created() {
+    // * ---------------- markdown-it-attrs patch
+
+    const removeAttrSlug = (str) => str.replace(/\s{[^}]*}\s*$/, '');
+
+    this.$site.pages.forEach((p) => {
+      p.headers &&
+        p.headers.forEach((h) => {
+          h.title = removeAttrSlug(h.title);
+        });
+    });
+  },
+
   computed: {
     shouldShowNavbar () {
       const { themeConfig } = this.$site

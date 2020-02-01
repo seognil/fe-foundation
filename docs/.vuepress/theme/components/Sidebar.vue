@@ -16,25 +16,7 @@ export default {
 
   components: { SidebarLinks, NavLinks },
 
-  props: ['items'],
-
-  created() {
-    // * markdown-it-attrs patch
-
-    const removeAttrSlug = (str) => str.replace(/\s{[^}]*}\s*$/, '');
-
-    const functor = removeAttrSlug;
-
-    this.items.forEach((category) => {
-      category.children.forEach((article) => {
-        article.headers &&
-          article.headers.forEach((header) => {
-            header.title = functor(header.title);
-          });
-      });
-    });
-
-  },
+  props: ['items']
 }
 </script>
 
