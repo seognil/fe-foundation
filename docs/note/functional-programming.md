@@ -1,8 +1,8 @@
 # 函数式编程 入门指南
 
-## 函数式编程 简介
+## 函数式编程 简介 {#intro}
 
-### 什么是 函数式编程
+### 什么是 函数式编程 {#what-is}
 
 函数式编程，Functional Programming，简称 FP，  
 是一种编程范式。
@@ -25,7 +25,7 @@
 
 学习 FP，可以从计算层作为切入点。
 
-### 代码风格
+### 代码风格 {#code-style}
 
 函数式编程和其他范式之间的风格差异  
 在 JavaScript 中：
@@ -73,7 +73,7 @@ for (let i = 0; i < people.length; i++) {
 }
 ```
 
-### 为什么要学习 函数式编程
+### 为什么要学习 函数式编程 {#why}
 
 - 当你学习一些新兴前端工具，你需要了解基本的 FP
   - [Redux](./redux.md)
@@ -90,9 +90,9 @@ for (let i = 0; i < people.length; i++) {
   - ClojureScript
   - JavaScript
 
-## 学习 函数式编程
+## 学习 函数式编程 {#study}
 
-### 概览
+### 概览 {#study-overview}
 
 - 耗时：
   - 从入门到理解基本概念，大约 10~20 小时
@@ -104,7 +104,7 @@ for (let i = 0; i < people.length; i++) {
   - [JavaScript](./js-foundation.md)
   - [Rmada](https://ramdajs.com/)
 
-### 学习路线
+### 学习路线 {#study-roadmap}
 
 - 前置学习
   - [计算机科学入门](./computer-science.md)
@@ -125,9 +125,16 @@ for (let i = 0; i < people.length; i++) {
 - 迷思
   - 如何更好地管理副作用
 
-## 资料
+## 资料 {#references}
 
-### 视频
+### GitHub {#ref-from-github}
+
+- [Awesome Functional Programming](https://github.com/xgrommx/awesome-functional-programming)：资料收集
+- [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)：FP 术语解释
+- [fantasy-land](https://github.com/fantasyland/fantasy-land)
+- [ramda-fantasy](https://github.com/ramda/ramda-fantasy)
+
+### 视频 {#video .timeline-note}
 
 - [Object Oriented vs Functional Programming with TypeScript](https://www.youtube.com/watch?v=fsVL_xrYO0w)：12 分钟，OOP vs FP
   - 1: 26 - FP：纯函数、副作用、Immutable、函数作为参数/返回值、高阶函数、无状态
@@ -135,11 +142,16 @@ for (let i = 0; i < people.length; i++) {
   - 7: 39 - 继承 vs 组合
   - 10: 03 - Mixin
 - Computerphile 频道
-  - [Programming Paradigms - Computerphile](https://www.youtube.com/watch?v=sqV3pL5x8PI)：10 分钟，指令式 vs 函数式
-  - [Functional Programming & Haskell - Computerphile](https://www.youtube.com/watch?v=LnX3B9oaKzw)：9 分钟，无副作用的好处，FP 在产业界的使用，Haskell 的历史，性能、编译优化、并行，健壮性、测试生成
-  - [Lambda Calculus - Computerphile](https://www.youtube.com/watch?v=eis11j_iGMs)：12 分钟，Lambda 演算，历史、简介、重要性，邱奇-图灵论题。纯 FP 是无类型的。TRUE、FALSE、Y Combinator
-  - [Essentials: Functional Programming's Y Combinator - Computerphile](https://www.youtube.com/watch?v=9T8A89jgeTI)：13 分钟，Y Combinator，fac、loop、rec
-  - [What is a Monad? - Computerphile](https://www.youtube.com/watch?v=t1e8gqXLbsU)：22 分钟，Maybe、Nothing、Just，一些 Haskell，Monad 是 FP 中处理副作用的通用模式
+  - [Programming Paradigms - Computerphile](https://www.youtube.com/watch?v=sqV3pL5x8PI)：10 分钟
+    - 指令式 vs 函数式，Haskell
+  - [Functional Programming & Haskell - Computerphile](https://www.youtube.com/watch?v=LnX3B9oaKzw)：9 分钟
+    - 无副作用的好处，FP 在产业界的使用，Haskell 的历史，性能、编译优化、并行，健壮性、测试生成
+  - [Lambda Calculus - Computerphile](https://www.youtube.com/watch?v=eis11j_iGMs)：12 分钟
+    - Lambda 演算，历史、简介、重要性，邱奇-图灵论题。纯 FP 是无类型的。TRUE、FALSE、Y Combinator
+  - [Essentials: Functional Programming's Y Combinator - Computerphile](https://www.youtube.com/watch?v=9T8A89jgeTI)：13 分钟
+    - Y Combinator，fac、loop、rec
+  - [What is a Monad? - Computerphile](https://www.youtube.com/watch?v=t1e8gqXLbsU)：22 分钟
+    - Maybe、Nothing、Just，一些 Haskell，Monad 是 FP 中处理副作用的通用模式
 - 讲座
   - [GOTO 2018 • Functional Programming in 40 Minutes • Russ Olsen](https://www.youtube.com/watch?v=0if71HOyVjY)：42 分钟
     - 0: 00 - 介绍，历史背景，概述
@@ -184,7 +196,7 @@ for (let i = 0; i < people.length; i++) {
     - 20: 24 - 在 React 中的尝试
     - 26: 18 - 小结，映射 = 组合 = 程序结构
 
-### 文章
+### 文章 {#article}
 
 - 雾雨魔法店 - 知乎专栏
   - [函数式编程的早期历史](https://zhuanlan.zhihu.com/p/24648375)
@@ -217,13 +229,7 @@ for (let i = 0; i < people.length; i++) {
   - [从 Haskell 到 JavaScript 的翻译，我读过的最好的 Monad 介绍的部分内容](https://zhuanlan.zhihu.com/p/94859885)
   - [Functional Programming Is Not Popular Because It Is Weird](https://probablydance.com/2016/02/27/functional-programming-is-not-popular-because-it-is-weird/)
 
-### 代码 - GitHub
-
-- [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)：FP 术语解释
-- [fantasy-land](https://github.com/fantasyland/fantasy-land)
-- [ramda-fantasy](https://github.com/ramda/ramda-fantasy)
-
-### 系列文章
+### 系列文章 {#series-articles}
 
 - A GENTLE INTRODUCTION TO FUNCTIONAL JAVASCRIPT
   - [Part 1: Building blocks and motivation](https://jrsinclair.com/articles/2016/gentle-introduction-to-functional-javascript-intro/)
@@ -266,9 +272,9 @@ for (let i = 0; i < people.length; i++) {
     - [Master the JavaScript Interview: What is Functional Programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
     - [Elements of JavaScript Style](https://medium.com/javascript-scene/elements-of-javascript-style-caa8821cb99f)
 
-## 函数式编程 知识体系
+## 函数式编程 知识体系 {#knowledge-map}
 
-### 前端中常见的 FP 概念
+### 前端中常见的 FP 概念 {#fp-in-frontend}
 
 - Higher-Order Functions (HOF)：高阶函数
 - Closure：闭包
@@ -281,9 +287,9 @@ for (let i = 0; i < people.length; i++) {
 - Lambda Calculus：Lambda 演算
 - Lazy evaluation：惰性求值
 
-## 函数式编程 典型代码
+## 函数式编程 典型代码 {#code-example}
 
-### 关于副作用
+### 关于副作用 {#code-of-side-effect}
 
 FP：
 
