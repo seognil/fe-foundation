@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const moment = require('moment');
 
+const markdownItAttrs = require('markdown-it-attrs');
+
 const { sidebarStructure } = require('../note/nav');
 // => { [groupName: string]: string[] }
 
@@ -32,14 +34,6 @@ const navCateOfFirst = articleSidebar.map(({ title: text, children: [link] }) =>
 // * ---------------------------------------------------------------- config
 
 const config = {
-  // locales: {
-  //   '/': {
-  //     lang: 'zh-CN',
-  //     title: 'FE 笔记',
-  //     description: '前端开发技术笔记',
-  //   },
-  // },
-
   title: '前端指南',
   description: '前端技术学习指南',
   head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square-blue.png' }]],
@@ -76,6 +70,14 @@ const config = {
       },
     ],
   ],
+  markdown: {
+    extendMarkdown: (md) => {
+      md.use(markdownItAttrs, {
+        leftDelimiter: '{',
+        rightDelimiter: '}',
+      });
+    },
+  },
 };
 
 // * ---------------------------------------------------------------- output
