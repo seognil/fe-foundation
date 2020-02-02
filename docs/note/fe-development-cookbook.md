@@ -104,15 +104,20 @@
   - 算法和数据结构
   - **编程范式**
     - 面向对象编程
-    - 函数式编程
+    - [函数式编程 入门指南](./functional-programming.md)
     - 响应式编程
     - 流式编程（[RxJS 学习指南](./rxjs.md)）
     - 面向切面编程
-  - **设计模式**
-    - 设计模式（特指 GoF 的 23 种）
-    - MVC、MVP、MVVM
-    - 依赖注入
-  - 软件工程（思想）
+  - **程序设计**
+    - 设计原则
+    - 设计模式
+      - GoF 设计模式
+      - 函数式设计模式
+      - （游戏设计模式）
+      - 依赖注入
+    - 架构模式
+      - MVC、MVP、MVVM
+  - 软件工程
 - **特化**
   - BFF（Backends For Frontends）
   - SSR（Server-Side Rendering）

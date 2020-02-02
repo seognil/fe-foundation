@@ -17,13 +17,14 @@
 - 群论
 - 范畴论
 
-但 FP 和 OOP 的关系也不是高低贵贱之分，而是风格差异。
+但 FP 和 OOP 的关系也不是高低贵贱之分，而是风格差异。  
+这些思想不是教条，而是前人为了写出更好的代码进行的思考和总结。  
+在学习 FP 的过程中也一定会碰到和 OOP 在设计模式上的对比。
 
-极端的纯粹 FP 是不切实际且有难度的，  
 在实际业务中，经常会不得不和副作用打交道。  
-（网络请求，用户事件，I/O 等）
-
-学习 FP，可以从计算层作为切入点。
+（网络请求，用户事件，I/O 等）  
+JavaScript 是一个多范式的编程语言，  
+初学 FP，可以先保持原有的编码习惯，并从计算层逐渐切入。
 
 ### 代码风格 {#code-style}
 
@@ -87,8 +88,9 @@ for (let i = 0; i < people.length; i++) {
   - 组合开发
 - 注重 FP 的编程语言
   - Haskell
-  - ClojureScript
-  - JavaScript
+  - F#
+  - Clojure（from Lisp）
+  - ClojureScript（from JavaScript）
 
 ## 学习 函数式编程 {#study}
 
@@ -96,7 +98,8 @@ for (let i = 0; i < people.length; i++) {
 
 - 耗时：
   - 从入门到理解基本概念，大约 10~20 小时
-  - 深入理解和系统训练，至少 80 小时
+  - Functional JavaScript 代码训练，大约 4~12 小时
+  - 系统学习函数式架构和模式，至少 80 小时
 - 难点：
   - 新的编程思维方式
   - 数学和 FP 高等概念
@@ -120,16 +123,22 @@ for (let i = 0; i < people.length; i++) {
   - 将已有的逻辑以 FP 方式重新实现
 - 进阶
   - 系统地 FP 概念代码训练（如 Monad 等）
-  - 学习 Haskell
-  - 学习 FP 设计模式
+  - 学习 Haskell/F#/Clojure
+  - 学习 FP 架构设计和设计模式
 - 迷思
   - 如何更好地管理副作用
+  - 专为 FP 设计的语言有相应优化（如内置 Immutable），如何处理 JS 中的 FP 性能
 
 ## 资料 {#references}
 
+### 代码训练 {#code-training}
+
+- [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)
+- [Functional programming design patterns by Scott Wlaschin](https://www.youtube.com/watch?v=E8I19uA-wGY)
+
 ### GitHub {#ref-from-github}
 
-- [Awesome Functional Programming](https://github.com/xgrommx/awesome-functional-programming)：资料收集
+- [Awesome Functional Programming](https://github.com/xgrommx/awesome-functional-programming)
 - [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)：FP 术语解释
 - [fantasy-land](https://github.com/fantasyland/fantasy-land)
 - [ramda-fantasy](https://github.com/ramda/ramda-fantasy)
@@ -154,13 +163,13 @@ for (let i = 0; i < people.length; i++) {
     - Maybe、Nothing、Just，一些 Haskell，Monad 是 FP 中处理副作用的通用模式
 - 讲座
   - [GOTO 2018 • Functional Programming in 40 Minutes • Russ Olsen](https://www.youtube.com/watch?v=0if71HOyVjY)：42 分钟
-    - 0: 00 - 介绍，历史背景，概述
+    - 0: 00 - 介绍，产业历史背景，概述
     - 2: 55 - 什么是 FP，FP 不是黑魔法，OOP 概览和可能存在的局限性
     - 8: 29 - 什么是编程，不同编程语言中的概念
     - 10: 06 - FP 和 OOP 中相同的部分，FP 更相当于是一种组织代码的理念
     - 11: 17 - 计科和数学碰到的相同困境：如何组织系统、如何做抽象？
     - 13: 48 - 函数，集合，输入输出，map，纯函数，副作用
-    - 17: 41 - 为什么 FP 使程序更易于编写和理解，新的问题和解决方案，Immutable，Persistent data structure
+    - 17: 41 - 为什么 FP 使程序更易于编写和理解，新的问题和解决方案，Immutable，可持久化数据结构
     - 26: 03 - 如何处理副作用
     - 33: 22 - FP 不是万能的，它不能解决人工错误（如边界错误），线程安全
     - 37: 43 - 一个 Clojure 项目中的 FP 使用情况
@@ -184,9 +193,53 @@ for (let i = 0; i < people.length; i++) {
     - 39: 58 - 小结 & 问答
       - 42: 04 - FP 没有精确的定义
       - 44: 00 - 性能需求应根据使用场景进行权衡
+  - [Learning Functional Programming with JavaScript - Anjana Vakil - JSUnconf](https://www.youtube.com/watch?v=e-5obm1G_FY)：30 分钟
+    - 0: 00 - 开场，在 JS 中使用 FP 的经历
+    - 1: 50 - 什么是 FP，Why FP JS，JS 中的 `this` 陷阱
+    - 4: 42 - 纯函数，副作用，HOC，Map/Reduce/Filter，Immutable
+    - 16: 12 - 可持久化数据（Persistent Data），结构共享
+    - 22: 27 - 结语 & 提问
+      - 24: 54 - 编程范式之争
+      - 28: 10 - Map
+    - 提到的资料：
+      - [Ideal Hash Trees - Phil Bagwell](https://lampwww.epfl.ch/papers/idealhashtrees.pdf)
+      - [An introduction to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
+  - [Anjana Vakil: Immutable data structures for functional JS | JSConf EU](https://www.youtube.com/watch?v=Wo0qiGPSV-s)：26 分钟
+    - 0：00 - 开场，FP JS 与不可变数据，个人介绍
+    - 2：00 - FP 和 Immutable 简介，结构共享，Trie（字典树）
+    - 11：52 - 二进制化，Bitmapped Bector Trie，Hash Array Mapped Trie
+    - 18：42 - 小结，JS 库介绍：Mori、Immutable
+  - [Scenic City Summit 2016: Jeremy Fairbank - Functional Programming Basics in ES6 (JavaScript)](https://www.youtube.com/watch?v=HvMemAgOw6I)：58 分钟
   - [Functional programming design patterns by Scott Wlaschin](https://www.youtube.com/watch?v=E8I19uA-wGY)：65 分钟
+    - 0: 00 - 前言，FP 设计模式，写 OO 和 FP 的经历，F#
+    - 3: 43 - OO 模式/原则
+    - 4: 50 - FP 模式：FP 核心原则、函数作为参数、Monad、Map、Monoid
+    - 6: 04 - FP 核心原则：函数是实体、组合、类型/而不是类。组合是分形的，类型是可组合的，完整度（Totality），静态类型
+    - 18: 16 - 函数作为参数：DIY 原则，函数类型作为接口，策略模式，装饰器，单参数
+    - 27: 49 - 偏应用，依赖注入
+    - 32: 46 - 好莱坞原则/连续函数调用，利用偏函数将错误处理外置化
+    - 36: 10 - 回调函数，链式化
+    - 38: 42 - Monad，链式连续
+    - 41: 35 - Bind，Monadic Bind，Bind 错误处理模式
+    - 44: 52 - Map，Option，Lift，Functor
+    - 49: 30 - Monoid，数学性质：闭包（数学）；结合律，并行化；单位元，半群，MapReduce，Homomorphism，Endomorphism
+    - 64: 01 - Monad and Monoid
+  - [Functional architecture - The pits of success - Mark Seemann](https://www.youtube.com/watch?v=US8QG9I1XW0)：60 分钟
+    - 0: 00 - 前言，函数式架构，维持成本 vs 稳定平衡，F#、Haskell，Hindley–Milner 类型系统
+    - 7: 37 - 稳定平衡的其中三个方面：接口和适配器；服务、实体、值对象；可测试性
+      - 8: 17 - Hexagonal architecture，OOP 和 FP 对相同架构的实施差异，最大化纯函数的作用
+        - 16: 50 - Haskell 例子：酒店登记，副作用外置化，编译器限制
+      - 33: 14 - 服务和数据，OO 的行为膨胀和不可维护性问题，实体、值对象、服务分割
+        - 41: 07 - FP 中的情况，数据、函数
+      - 43: 36 - 可测试性，Test-induced Damage，代码噪音，代码隔离
+    - 58: 17 - 小结
+    - 视频中提到的书：
+      - [Agile Principles, Patterns, and Practices in C#](https://book.douban.com/subject/1815898/)
+      - [Dependency Injection Principles, Practices, and Patterns](https://book.douban.com/subject/30932387/)
+      - [Patterns of Enterprise Application Architecture](https://book.douban.com/subject/1229954//)
+      - [Domain-Driven Design](https://book.douban.com/subject/1418618/)
   - [Brian Lonsdorf - Oh Composable World!](https://www.youtube.com/watch?v=SfWR3dKnFIo)：28 分钟
-    - 0: 40 - chain、pipeline、控制流
+    - 0: 40 - 组合编程，chain、pipeline、控制流
     - 3: 51 - 编程中的反数学范式，范畴论，组合
       - 7: 09 - 声明：Box
       - 10: 39 - 循环：map/filter/reduce
@@ -228,6 +281,11 @@ for (let i = 0; i < people.length; i++) {
   - [函数响应式编程 ( FRP ) 从入门到"放弃"——基础概念篇](https://halfrost.com/functional_reactive_programming_concept/)
   - [从 Haskell 到 JavaScript 的翻译，我读过的最好的 Monad 介绍的部分内容](https://zhuanlan.zhihu.com/p/94859885)
   - [Functional Programming Is Not Popular Because It Is Weird](https://probablydance.com/2016/02/27/functional-programming-is-not-popular-because-it-is-weird/)
+
+<!-- [JS 函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/)
+[用 JS 代码完整解释 Monad](https://zhuanlan.zhihu.com/p/56810671)
+[写给小白的 Monad 指北](https://zhuanlan.zhihu.com/p/65449477)
+[使用 JavaScript 实现“真·函数式编程”](https://zhuanlan.zhihu.com/p/83963085) -->
 
 ### 系列文章 {#series-articles}
 
@@ -275,6 +333,8 @@ for (let i = 0; i < people.length; i++) {
 ## 函数式编程 知识体系 {#knowledge-map}
 
 ### 前端中常见的 FP 概念 {#fp-in-frontend}
+
+From [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)
 
 - Higher-Order Functions (HOF)：高阶函数
 - Closure：闭包
