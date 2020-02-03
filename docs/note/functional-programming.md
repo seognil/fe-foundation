@@ -1,4 +1,4 @@
-# 函数式编程 入门指南
+# 函数式编程 入门指南 {#title}
 
 ## 函数式编程 简介 {#intro}
 
@@ -22,9 +22,14 @@
 在学习 FP 的过程中也一定会碰到和 OOP 在设计模式上的对比。
 
 在实际业务中，经常会不得不和副作用打交道。  
-（网络请求，用户事件，I/O 等）  
-JavaScript 是一个多范式的编程语言，  
+（网络请求，用户事件，I/O 等）
+
+前端中 JS 是基本语言，JS 是一个多范式的编程语言，  
 初学 FP，可以先保持原有的编码习惯，并从计算层逐渐切入。
+
+也没有必要教条地遵循 FP 的开发模式，  
+如：完全不使用 `if`/`for`、只用 `const` 等新手 FP 装逼行为。  
+因为从编程语言设计的层面来说（如编译优化），JS 不完全适用于纯 FP 模式。
 
 ### 代码风格 {#code-style}
 
@@ -133,15 +138,19 @@ for (let i = 0; i < people.length; i++) {
 
 ### 代码训练 {#code-training}
 
-- [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)
-- [Functional programming design patterns by Scott Wlaschin](https://www.youtube.com/watch?v=E8I19uA-wGY)
+- [Functional Programming - Learn By Doing](https://github.com/seognil-study/learn-by-doing/tree/master/paradigm/functional-programming)
+
+* [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)
+* [Functional programming design patterns by Scott Wlaschin](https://www.youtube.com/watch?v=E8I19uA-wGY)
 
 ### GitHub {#ref-from-github}
 
-- [Awesome Functional Programming](https://github.com/xgrommx/awesome-functional-programming)
+- [Awesome Functional Programming](https://github.com/xgrommx/awesome-functional-programming)：Awesome FP
+- [Mostly Adequate Guide](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/)：JS 函数式编程指南（英文版）
+- [JS 函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/)：JS 函数式编程指南（汉化版）
 - [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)：FP 术语解释
-- [fantasy-land](https://github.com/fantasyland/fantasy-land)
-- [ramda-fantasy](https://github.com/ramda/ramda-fantasy)
+- [fantasy-land](https://github.com/fantasyland/fantasy-land)：代数 + JS
+- [ramda-fantasy](https://github.com/ramda/ramda-fantasy)：Fantasy Land + Ramda
 
 ### 视频 {#video .timeline-note}
 
@@ -205,21 +214,39 @@ for (let i = 0; i < people.length; i++) {
       - [Ideal Hash Trees - Phil Bagwell](https://lampwww.epfl.ch/papers/idealhashtrees.pdf)
       - [An introduction to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
   - [Anjana Vakil: Immutable data structures for functional JS | JSConf EU](https://www.youtube.com/watch?v=Wo0qiGPSV-s)：26 分钟
-    - 0：00 - 开场，FP JS 与不可变数据，个人介绍
-    - 2：00 - FP 和 Immutable 简介，结构共享，Trie（字典树）
-    - 11：52 - 二进制化，Bitmapped Bector Trie，Hash Array Mapped Trie
-    - 18：42 - 小结，JS 库介绍：Mori、Immutable
+    - 0: 00 - 开场，FP JS 与不可变数据，个人介绍
+    - 2: 00 - FP 和 Immutable 简介，结构共享，Trie（字典树）
+    - 11: 52 - 二进制化，Bitmapped Bector Trie，Hash Array Mapped Trie
+    - 18: 42 - 小结，JS 库介绍：Mori、Immutable
   - [Scenic City Summit 2016: Jeremy Fairbank - Functional Programming Basics in ES6 (JavaScript)](https://www.youtube.com/watch?v=HvMemAgOw6I)：58 分钟
+    - 0: 00 - 开场，FP in ES6，个人介绍
+    - 0: 55 - JS 中的 FP 库，什么是 FP，数学中的函数，Lambda 演算
+    - 4: 24 - 四个原则：纯函数，声明式；安全性，Immutable；透明性，状态；模块化，组合开发
+    - 6: 03 - ES6 简介：const，箭头函数、剩余参数、默认参数，解构，`Object.assign`，class
+    - 12: 56 - 纯函数 vs 非纯函数，副作用，引用透明，非纯函数难以测试，隐藏的状态就是不确定的状态
+    - 17: 11 - 指令式 vs 声明式，
+    - 19: 49 - Immutable，避免 Immutable 的技术方法，`Object.freeze`
+      - 优势：数据安全、UNDO/REDO、显式数据流、内存使用、并发安全
+      - 劣势：代码冗余，更多对象创建、更多垃圾回收、内存使用
+    - 26: 28 - 函数一等公民，别名，作为参数，闭包，作为返回值，HOC
+    - 31: 16 - 偏应用，partial，柯里化，闭包（数学），compose
+    - 45: 22 - 递归，Stack Overflow，尾调用优化
+    - 56: 00：资源
+      - 书：[Mostly Adequate Guide](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/)
+      - 语言：Elm、ClojureScript、PureScript（emmm…这是 2016 年的视频…so…）
+      - 库：Lodash、Ramda、RxJS、Bacon.js、Immutable.js
+      - 框架：React、Redux
   - [Functional programming design patterns by Scott Wlaschin](https://www.youtube.com/watch?v=E8I19uA-wGY)：65 分钟
+    <!-- - [Functional Design Patterns - Scott Wlaschin](https://www.youtube.com/watch?v=srQt1NAHYC0)：66 分钟 -->
     - 0: 00 - 前言，FP 设计模式，写 OO 和 FP 的经历，F#
     - 3: 43 - OO 模式/原则
     - 4: 50 - FP 模式：FP 核心原则、函数作为参数、Monad、Map、Monoid
     - 6: 04 - FP 核心原则：函数是实体、组合、类型/而不是类。组合是分形的，类型是可组合的，完整度（Totality），静态类型
     - 18: 16 - 函数作为参数：DIY 原则，函数类型作为接口，策略模式，装饰器，单参数
     - 27: 49 - 偏应用，依赖注入
-    - 32: 46 - 好莱坞原则/连续函数调用，利用偏函数将错误处理外置化
+    - 32: 46 - 好莱坞原则/Continuous，利用偏函数将错误处理外置化
     - 36: 10 - 回调函数，链式化
-    - 38: 42 - Monad，链式连续
+    - 38: 42 - Monad，Chaining Continuous
     - 41: 35 - Bind，Monadic Bind，Bind 错误处理模式
     - 44: 52 - Map，Option，Lift，Functor
     - 49: 30 - Monoid，数学性质：闭包（数学）；结合律，并行化；单位元，半群，MapReduce，Homomorphism，Endomorphism
@@ -248,6 +275,10 @@ for (let i = 0; i < people.length; i++) {
     - 17: 58 - 风格
     - 20: 24 - 在 React 中的尝试
     - 26: 18 - 小结，映射 = 组合 = 程序结构
+
+<!-- [Brian Beckman: Don't fear the Monad](https://www.youtube.com/watch?v=ZhuHCtR3xq8)：67 分钟 -->
+
+<!-- - [Anouk Ruhaak – Get started with Functional Programming | otsconf 2015](https://www.youtube.com/watch?v=6f5dt923FmQ)：19 分钟 -->
 
 ### 文章 {#article}
 
@@ -282,7 +313,7 @@ for (let i = 0; i < people.length; i++) {
   - [从 Haskell 到 JavaScript 的翻译，我读过的最好的 Monad 介绍的部分内容](https://zhuanlan.zhihu.com/p/94859885)
   - [Functional Programming Is Not Popular Because It Is Weird](https://probablydance.com/2016/02/27/functional-programming-is-not-popular-because-it-is-weird/)
 
-<!-- [JS 函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/)
+<!--
 [用 JS 代码完整解释 Monad](https://zhuanlan.zhihu.com/p/56810671)
 [写给小白的 Monad 指北](https://zhuanlan.zhihu.com/p/65449477)
 [使用 JavaScript 实现“真·函数式编程”](https://zhuanlan.zhihu.com/p/83963085) -->
@@ -337,7 +368,7 @@ for (let i = 0; i < people.length; i++) {
 From [Functional Programming Jargon](https://github.com/hemanth/functional-programming-jargon)
 
 - Higher-Order Functions (HOF)：高阶函数
-- Closure：闭包
+- Closure：闭包（数学集合中的概念）
 - Currying：柯里化
 - Function Composition：函数组合
 - Pure Function：纯函数
@@ -347,6 +378,30 @@ From [Functional Programming Jargon](https://github.com/hemanth/functional-progr
 - Lambda Calculus：Lambda 演算
 - Lazy evaluation：惰性求值
 
+### Ramda 中有关 FP 概念的 API {#fp-in-ramda}
+
+- partial
+- curry
+- lift
+- compose/pipe
+
+### FP 基本原则 {#fp-principle}
+
+- 纯函数
+  - 引用透明（输入输出可控）
+  - 无副作用
+  - 不要硬编码
+- 面向接口开发（静态类型）
+- 代码设计
+  - 数据和方法
+    - 行为外置化（OO 方法 => 函数传参）
+  - 函数
+    - 副作用外置化（如 error handler、callback 通过传参实现）
+- 特性
+  - 不使用 this
+- 代码封装
+  - 模块化
+
 ## 函数式编程 典型代码 {#code-example}
 
 ### 关于副作用 {#code-of-side-effect}
@@ -354,10 +409,10 @@ From [Functional Programming Jargon](https://github.com/hemanth/functional-progr
 FP：
 
 ```typescript
-// * 柯里化
 import { curry } from 'ramda';
 
 let two = 2;
+// * 纯函数，柯里化
 const add = curry((a, b) => a + b);
 
 const add2 = add(two); // => fn {}
