@@ -80,8 +80,8 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
   - 学习 CCCS 系列视频
   - 建立自己的 CS 知识体系
 - 下一步
-  - （前端）学习 JavaScript （或其他你想从事的领域的基本编程语言）
-  - 深入学习各个子课程
+  - （前端）[学习 JavaScript](./js-foundation.md) （或其他你想从事的领域的基本编程语言）
+  - 深入学习 CS 的各个子学科
 - 进阶
   - 学习 CS50 系列视频（入门课程）
   - 《深入理解计算机系统》（CSAPP）
@@ -93,9 +93,10 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 ### 自学教材
 
 - 概览
-  - [Map of Computer Science](https://www.youtube.com/watch?v=SzJ46YA_RaA)
-  - [How do computers read code?](https://www.youtube.com/watch?v=QXjU9qTsYCc)
-  - [如何自学编程？](https://www.zhihu.com/lives/860490807847841792)
+  - [Map of Computer Science](https://www.youtube.com/watch?v=SzJ46YA_RaA)：11 分钟
+  - [How do computers read code?](https://www.youtube.com/watch?v=QXjU9qTsYCc)：12 分钟
+  - [如何自学编程？](https://www.zhihu.com/lives/860490807847841792)：110 分钟
+  - [如何自学计算机专业课程？](https://www.zhihu.com/lives/837669764146003968)：106 分钟
 - 视频教程（系列）
   - CCCS
     - [Crash Course Computer Science - YouTube](https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
@@ -120,6 +121,16 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 - [为何部分程序员从不使用 break 或 continue 语句？](https://www.zhihu.com/question/334216911)
 - [「低耦合，高内聚」真的好吗？](https://www.zhihu.com/question/347264877/answer/834666851)
 
+* Devon Crawford
+  - [3 years of Computer Science in 8 minutes](https://www.youtube.com/watch?v=ReVeUvwTGdU)：8 分钟
+    - 3 年 CS 学习经历，基本编程（Java），底层语言（C），数据结构（C），汇编，二进制加法，数字电路
+  - [Day in the Life of a Computer Science Student | UoG](https://www.youtube.com/watch?v=iURPY28jOD4)：6 分钟
+    - CS 学生的一天，课程，作业，算法
+  - [Hardest Computer Science Course Explained | Angel of Death UoG](https://www.youtube.com/watch?v=S20NcDLF_t4)：8 分钟
+    - 一个作业（解析一个文件），C、JS、Web Server、MySQL
+  - [Why I'm not in School](https://www.youtube.com/watch?v=eDjGBOxuuZs)
+    - Gap Year 的两周，Container，K8s，Home Router
+
 ### 中国高校 CS 课程体系
 
 - [顶尖中文大学计算机专业课程体系 - 网易云课堂](https://study.163.com/curricula/cs.htm)
@@ -132,6 +143,22 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 * [中国科学技术大学课程资源](https://github.com/USTC-Resource/USTC-Course)
 
 ## CS 知识体系
+
+### 视频小结
+
+- [Map of Computer Science](https://www.youtube.com/watch?v=SzJ46YA_RaA)：11 分钟
+  - **CS 理论**：阿兰图灵，图灵机，通用计算机，RAM，CPU，硬件，Lambda 演算，可计算性理论，停机问题，计算复杂度，P/NP，算法，信息论，计算理论，密码学，逻辑门，图论，计算几何，自动机理论，量子计算，并行计算，形式化方法，数据结构
+  - **计算机工程**：队列，多进程，计算机架构，FPGA，软件和编程语言，编译器，操作系统，软件工程，网络，数据管理，性能，图形学
+  - **应用**：优化，布尔可满足性问题，人工智能，机器学习，计算机视觉，图像处理，自然语言处理，知识表示，大数据，物联网，黑客，计算科学，超算，人机交互，VR/AR，远程呈现，机器人学
+
+![Map of Computer Science](./img/map-of-computer-science-fs8.png)
+
+- [How do computers read code?](https://www.youtube.com/watch?v=QXjU9qTsYCc)：12 分钟
+  - 编译器
+  - 源文件，字节码，中间码，机器码，可执行文件，二进制指令
+  - 词法分析（Lexical），语法分析（Syntactic），语义分析（Semantic），Token，分析树
+  - 汇编，if，函数
+  - 语法高亮，静态分析，OO，FP，库，链接器，构建工具，Debugger
 
 ### CCCS 视频小结
 
