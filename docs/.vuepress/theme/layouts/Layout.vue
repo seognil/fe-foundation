@@ -73,6 +73,7 @@ export default {
         p.headers.forEach((h) => {
           h.title = removeAttrSlug(h.title);
         });
+      p.title && (p.title = removeAttrSlug(p.title));
     });
   },
 
