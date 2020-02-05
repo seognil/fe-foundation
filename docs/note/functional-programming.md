@@ -434,3 +434,46 @@ const result1 = add2(3); // => 5
 two = 2.1;
 const result2 = add2(3); // => 5.1
 ```
+
+## 函数式编程 相关 {#related}
+
+### FP 在 JS 中的应用 {#fp-in-real-js-world}
+
+虽然这些库在 JS 中仅仅采用了 FP 的风格，  
+或仅仅只实施了 FP 理念中的极小一部分。
+
+但无论如何，FP 在现实开发中的确占有一席之地。
+
+#### RxJS
+
+[RxJS](./rxjs.md) v6 取消了 v5 版链式调用写法，  
+转而使用 pipe 和纯函数进行实现。
+
+[HowTo: Convert to pipe syntax - RxJS v5.x to v6 Update Guide](https://rxjs-dev.firebaseapp.com/guide/v6/migration#howto-convert-to-pipe-syntax)
+
+```typescript
+// * v5
+const v5$ = Observable.interval(500)
+  .filter((e) => e % 2 === 0)
+  .map((e) => e * 10);
+
+// * v6
+const v6$ = interval(500).pipe(
+  filter((e) => e % 2 === 0),
+  map((e) => e * 10),
+);
+```
+
+#### React Hooks
+
+[React Hooks](./react-hooks.md) 系列函数虽然在内部实现机制上有副作用，  
+（通过切换 `ReactCurrentDispatcher`，以及在内部保存数据）  
+但在语法上相比之前 class 的写法已经比较有 FP 的味道了。
+
+```jsx
+const App = () => {
+  const [value, setState] = useState(0);
+  const count = () => setState((value) => value + 1);
+  return <button onClick={count}> {value} </button>;
+};
+```
