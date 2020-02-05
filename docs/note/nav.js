@@ -35,7 +35,6 @@ const sidebarStructure = {
   'JavaScript 语言': [
     //
     './js-foundation.md',
-    './typescript.md',
     './js-intro.md',
     './js-basic.md',
     './js-advanced.md',
@@ -45,13 +44,19 @@ const sidebarStructure = {
     './npm-verdaccio.md',
     './js-foundation-old.md',
   ],
+  '其他语言': [
+    //
+    './typescript.md',
+  ],
   '前端框架类库': [
+    //
     './rxjs.md',
     './redux.md',
     './react-hooks.md',
     './redux-observable.md',
   ],
   '工程化/测试/持续集成': [
+    //
     './jest.md',
     './testing-library.md',
     './cypress.md',
