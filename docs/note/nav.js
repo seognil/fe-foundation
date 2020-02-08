@@ -65,6 +65,7 @@ const sidebarStructure = {
     //
     './linux-basic-security.md',
     './clean-keyboard.md',
+    './cloc.md',
     './study-the-only-way.md',
     './study-fortune.md',
     './study-the-costly-way.md',
