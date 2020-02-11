@@ -36,6 +36,7 @@ const sidebarStructure = {
     //
     './js-foundation.md',
     './js-intro.md',
+    './syntactic-sugar.md',
     './js-basic.md',
     './js-advanced.md',
     // './js-hardcore.md',
