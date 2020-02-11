@@ -49,6 +49,8 @@
 
 ## 示例
 
+注：更多示例参考我在 [Learn By Doing](https://github.com/seognil-study/learn-by-doing/tree/master/js/syntactic-sugar/src) 中的代码
+
 - ES6+ 基本
   - 遍历器：`for...of`
     ```ts
