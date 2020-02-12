@@ -27,6 +27,7 @@
   - 遍历器：`for...of`
   - 模板字符串：`` ` ` ``、`${}`
   - 箭头函数：`() => {}`
+  - 默认参数：`(a = 1) => {}`
   - 类：`class`、`constructor`
   - 解构赋值：`[ ] = [ ]`、`{ } = { }`、`...`
   - 异步函数：`async`、`await`
@@ -42,6 +43,7 @@
 - TypeScript
   - 类型：`type`、`interface`
   - 泛型：`<T1, T2, ...>`
+  - 可选参数：`?`
   - 可选链：`?`
   - 非空断言：`!`
   - 空值合并：`??`
@@ -73,6 +75,10 @@
     ```ts
     const fn = (a, b) => a + b;
     ```
+  - 默认参数：`(a = 1) => {}`
+    ```ts
+    const fn = (a = 1) => a;
+    ```
   - 类：`class`、`constructor`
     ```ts
     class MyClass {
@@ -82,8 +88,9 @@
     ```
   - 解构赋值：`[ ] = [ ]`、`{ } = { }`、`...`
     ```ts
-    const [a, b] = arr;
-    const { c, ...d } = obj;
+    const [a, b, , c] = arr;
+    const { d, ...e } = obj;
+    const fn = (p, ...ps) => {};
     [x, y] = [y, x];
     ```
   - 异步函数：`async`、`await`
@@ -156,6 +163,10 @@
     let pairToArr = (p: Pair<string, number>) => {
       return [p.item1, p.item2];
     };
+    ```
+  - 可选参数：`?`
+    ```ts
+    const fn = (a?) => a;
     ```
   - 可选链：`?`
     ```ts
@@ -403,6 +414,13 @@ let a, b;
 a = b = c;
 ```
 
+或拆分成多个语句：
+
+```ts
+let b = c;
+let a = b;
+```
+
 另一方面，连续赋值的写法由于可能会造成理解偏差，  
 会被格式化工具加上括号。
 
@@ -464,10 +482,14 @@ a > b > c;
 - [TypeScript 学习指南](./typescript.md)
 - [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
 
-类型、类、泛型等基本概念，在各种文档中直接能查到。
+TS 部分，按作用可大致分为类型系统相关，和业务代码语法糖。
 
-可选链（`?`）、非空断言（`!`）、空值合并（`??`），在 [TS 3.7 更新](https://zhongsp.gitbook.io/typescript-handbook/release-notes/typescript-3.7) 以后支持。  
-主要作用在于简化语法，属于语法糖。  
+类型、类、泛型等基本 TS 概念，在各种文档中直接能查到。
+
+[可选参数](https://zhongsp.gitbook.io/typescript-handbook/handbook/functions#ke-xuan-can-shu-he-mo-ren-can-shu)（函数参数上的 `?`）用于支持类型系统。
+
+可选链 `?`、非空断言 `!`、空值合并 `??`，在 [TS 3.7 更新](https://zhongsp.gitbook.io/typescript-handbook/release-notes/typescript-3.7) 以后支持，  
+主要作用在于简化业务代码语法，属于语法糖，  
 实际上它们也出现在 JS 目前的草案中。
 
 #### 可选链
@@ -720,7 +742,13 @@ const times_ten = (a, b) => [a * 10, b * 10];
 const [x, y] = times_ten(1, 2);
 ```
 
-TS 中 [元组类型](https://zhongsp.gitbook.io/typescript-handbook/handbook/basic-types#yuan-zu-tuple) 的概念也是类似数组。
+实际上返回数组的设计在 [React Hooks](./react-hooks.md) 中大量出现，如：
+
+```tsx
+const [state, setstate] = useState(initialState);
+```
+
+而 TS 中 [元组类型](https://zhongsp.gitbook.io/typescript-handbook/handbook/basic-types#yuan-zu-tuple) 的概念也是类似于数组。
 
 #### 模式匹配
 
