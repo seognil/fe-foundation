@@ -42,10 +42,10 @@
   - 类： `public`、`private`、`protected`、`static`
   - 装饰器（Decorator）：`@something`
 - JS 不支持的/其他的
-  - 元组（Tuple）：Python 返回多个值的例子
-  - 模式匹配：Haskell 多个函数体的例子
-  - 管道（Pipeline）：F# 用 `|>` 链接多个函数的例子
-  - 运算符重载：C++ 定义运算符行为的例子
+  - 元组（Tuple）：Python 的例子
+  - 模式匹配：Haskell 的例子
+  - 管道（Pipeline）：F# 的例子
+  - 运算符重载：C++ 的例子
 
 ## 示例
 
@@ -256,12 +256,16 @@
 
 > async function 用来定义一个返回 AsyncFunction 对象的异步函数。异步函数是指通过事件循环异步执行的函数，它会通过一个隐式的 Promise 返回其结果。如果你在代码中使用了异步函数，就会发现它的语法和结构会更像是标准的同步函数。
 
+async 的一个主要作用是用同步的风格写异步代码。
+
 - [function\*](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/function*)
 - [Generator.prototype.next()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Generator/next)
 - [Generator 函数的语法](https://es6.ruanyifeng.com/#docs/generator)
 
 > function\* 这种声明方式(function 关键字后跟一个星号）会定义一个生成器函数 (generator function)，它返回一个 Generator 对象。  
 > 生成器对象是由一个 generator function 返回的,并且它符合可迭代协议和迭代器协议。
+
+生成器的一个主要作用是方便地生成延迟计算的函数。
 
 ---
 
