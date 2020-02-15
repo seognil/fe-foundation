@@ -20,7 +20,7 @@ const articleSidebar = Object.entries(sidebarStructure)
   .map(([groupName, list]) => [groupName, list.filter(hasFile)])
   .filter(([, list]) => list.length > 0)
   .map(([g, list]) => [g, list.map(toNavUrl)])
-  .map(([title, children]) => ({ title, children, collapsable: true }));
+  .map(([title, children]) => ({ title, children, collapsable: false }));
 // => [{ title, children: string[], collapsable }]
 
 // * fix

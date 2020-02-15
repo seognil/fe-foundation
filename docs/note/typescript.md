@@ -104,6 +104,9 @@ TS 和 JS 在这些 API 方面的差别在变小，
     - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)：社区汉化版
   - 视频
     - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)：25 分钟，包含很多 TS 进阶用法（2018 年）
+  - [Effective TypeScript - 原书](https://www.oreilly.com/library/view/effective-typescript/9781492053736/)
+    - [Effective Typescript：使用 Typescript 的 n 个技巧 - 杨健](https://zhuanlan.zhihu.com/p/104311029)
+    - [Effective Typescript - 杨健](https://blog.staleclosure.com/effective-typescript/)
   - 文章
     - [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)：官方文档中的「高级类型」章节
     - [TypeScript Evolution](https://mariusschulz.com/blog/series/typescript-evolution)：TS 语言特性系列文章
@@ -266,7 +269,11 @@ interface CarInterface {
 }
 
 class Car implements CarInterface {
-  constructor(readonly model, private engine, public radio?) {} // 简写法
+  constructor(
+    readonly model,
+    private engine,
+    public radio?,
+  ) {} // 简写法
 
   static Manufacturer: string = 'BMW';
   getYear() {}

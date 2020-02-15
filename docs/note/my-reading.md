@@ -17,6 +17,7 @@
   - [Computerphile](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA/videos)
   - [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA/videos)
   - [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/videos)
+  - [GOTO Conferences](https://www.youtube.com/user/GotoConferences/videos)
   - [Metosin](https://www.youtube.com/channel/UC1lFJanm5Wp6IpNk-2C1Sxw/videos)
   - [TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw/videos)
 - 社会/文化/科技
@@ -76,6 +77,7 @@
   - Phodal Huang：[Phodal - A Growth Engineer](https://www.phodal.com/blog/)
   - Surmon：[Surmon.me - 來苏之望，念狂梦猖](https://surmon.me/sitemap)
   - 唯敬：[折腾范儿の味精](http://awhisper.github.io/archives/)
+  - 杨健：[Gatsby Starter Blog（模板改个名字吧老铁…）](https://blog.staleclosure.com/)
   - 王垠：[当然我在扯淡](http://www.yinwang.org/)
   - 阮一峰：[阮一峰的网络日志](http://www.ruanyifeng.com/blog/archives.html)
   - 陈皓：[酷 壳 - CoolShell](https://coolshell.cn/featured)
@@ -83,6 +85,8 @@
 - 关注的人（国外）
   - Dan Abramov
     - [Overreacted](https://overreacted.io/)
+  - Eric Elliott
+    - [Eric Elliott - Medium](https://medium.com/@_ericelliott)
   - Joel Spolsky
     - [JOEL ON SOFTWARE](https://www.joelonsoftware.com/archives/)
     - [Joel 说软件](https://www.kancloud.cn/wizardforcel/joel-on-software/99166)
