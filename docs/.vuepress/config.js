@@ -3,6 +3,7 @@ const path = require('path');
 const moment = require('moment');
 
 const markdownItAttrs = require('markdown-it-attrs');
+const { slugify } = require('transliteration');
 
 const { sidebarStructure } = require('../note/nav');
 // => { [groupName: string]: string[] }
@@ -16,15 +17,15 @@ const toNavUrl = (url) => path.resolve('/note', url);
 
 // * --------------------------------
 
+const urlFix = (e) => (e === '/note' ? '/note/' : e);
+
 const articleSidebar = Object.entries(sidebarStructure)
   .map(([groupName, list]) => [groupName, list.filter(hasFile)])
   .filter(([, list]) => list.length > 0)
   .map(([g, list]) => [g, list.map(toNavUrl)])
+  .map(([title, children]) => [title, children.map(urlFix)])
   .map(([title, children]) => ({ title, children, collapsable: false }));
 // => [{ title, children: string[], collapsable }]
-
-// * fix
-articleSidebar[0].children[0] = './note/';
 
 // * ----------------
 
@@ -62,6 +63,7 @@ const config = {
   plugins: [
     [
       '@vuepress/last-updated',
+      'vuepress-plugin-smooth-scroll',
       {
         transformer: (timestamp, lang) => {
           moment.locale(lang);
@@ -70,13 +72,39 @@ const config = {
       },
     ],
   ],
+  cache: false,
   markdown: {
+    // https://v1.vuepress.vuejs.org/guide/markdown.html#advanced-configuration
+    // options for markdown-it-anchor
+    anchor: {
+      level: 2,
+      slugify: (str) => slugify(str),
+    },
     extendMarkdown: (md) => {
       md.use(markdownItAttrs, {
         leftDelimiter: '{',
         rightDelimiter: '}',
       });
     },
+  },
+  extendPageData($page) {
+    const p = $page;
+
+    // * ---------------- fix markdown-it-attrs for sidebar
+
+    const removeAnchorAttr = (str) => str.replace(/\s{[^}]*}\s*$/, '');
+
+    if (p.title) {
+      p.title = removeAnchorAttr(p.title);
+    }
+
+    if (p.headers) {
+      p.headers.forEach((h) => {
+        h.title = removeAnchorAttr(h.title);
+      });
+    }
+
+    // * ----------------
   },
 };
 

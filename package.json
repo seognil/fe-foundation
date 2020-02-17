@@ -18,8 +18,10 @@
     "preview": "npm run build && http-server -o -c-1 ./dist"
   },
   "devDependencies": {
-    "markdown-it-attrs": "^3.0.1",
+    "markdown-it-attrs": "^3.0.2",
     "moment": "^2.24.0",
-    "vuepress": "^1.0.3"
+    "ramda": "^0.27.0",
+    "transliteration": "^2.1.8",
+    "vuepress": "^1.3.0"
   }
 }
