@@ -1,12 +1,12 @@
 const sidebarStructure = {
   '简介': [
     //
-    './',
-    './about-the-guild.md',
-    './study-guild-abstraction.md',
     './fe-development-cookbook.md',
     './fe-hardcore-overview.md',
     './my-reading.md',
+    './',
+    './about-the-guild.md',
+    './study-guild-abstraction.md',
   ],
   '开发环境': [
     //

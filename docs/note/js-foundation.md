@@ -1,4 +1,6 @@
-# JavaScript 学习指南（撰写中）
+# JavaScript 学习指南 \*
+
+\* 撰写中
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列
 

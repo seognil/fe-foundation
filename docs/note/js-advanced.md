@@ -1,4 +1,6 @@
-# JavaScript 进阶指南（先行版）
+# JavaScript 进阶指南 \*
+
+\* 撰写中
 
 > 返回 [JavaScript 学习指南](./js-foundation.md) 系列
 
