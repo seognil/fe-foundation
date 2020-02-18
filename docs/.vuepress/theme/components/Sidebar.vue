@@ -16,6 +16,10 @@ export default {
 
   components: { SidebarLinks, NavLinks },
 
+  mounted() {
+    this.$el.scrollTo(0, this.$el.querySelector('.active').offsetTop - 24);
+  },
+
   props: ['items']
 }
 </script>
