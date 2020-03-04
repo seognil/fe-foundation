@@ -100,15 +100,17 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
   - [Git 教程 - 廖雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
   - [Introduction to Git Use](https://developpaper.com/introduction-to-git-use/)
 - 在线练习
-  - [学习 Git 分支（有中文）](https://learngitbranching.js.org/)
+  - [学习 Git 分支](https://learngitbranching.js.org/)：在线编程闯关式教程（右下角可调中文）
+  - [Git 与 GitHub 入门实践](https://www.shiyanlou.com/courses/1035)：提供了一个在线虚拟环境可供练习
 - Git Flow
   - [Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
   - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
   - [Gitflow — Branch Guide](https://medium.com/@rafavinnce/gitflow-branch-guide-8a523360c053)
   - [Git 工作流程 - 阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
 - GitHub
+  - [GitHub 漫游指南 - Phodal](http://github.phodal.com/)
   - [GitHub Guides](https://guides.github.com/)
-  - [使用 GitHub 操作自动化工作流程](https://help.github.com/cn/actions)
+    - [使用 GitHub 操作自动化工作流程](https://help.github.com/cn/actions)
 
 ### 进阶
 

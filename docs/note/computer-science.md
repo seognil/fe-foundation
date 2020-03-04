@@ -109,6 +109,7 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
   - [系统设计入门](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
 - 进阶书籍
   - [深入理解计算机系统](https://book.douban.com/subject/26912767/)（CSAPP）
+  - [计算机程序的构造和解释](https://book.douban.com/subject/1148282/)（SICP）
 
 ### 编程漫谈
 

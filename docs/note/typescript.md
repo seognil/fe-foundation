@@ -1,4 +1,4 @@
-# TypeScript 学习指南
+# TypeScript 入门指南
 
 ## TypeScript 简介
 
@@ -70,6 +70,7 @@ TS 和 JS 在这些 API 方面的差别在变小，
 - 生态
   - [编译工具 - 2018 年 JavaScript 明星项目](https://risingstars.js.org/2018/zh#section-compiler)
 - TS
+  - [TypeScript 体系调研报告](https://zhuanlan.zhihu.com/p/29564751)
   - [TypeScript 解决了什么痛点？](https://www.zhihu.com/question/308844713)
   - [浅谈 TypeScript 类型系统](https://zhuanlan.zhihu.com/p/64446259)
   - [随着 TypeScript 继续普及，会不会出现直接跑 TypeScript 的运行时？](https://www.zhihu.com/question/363807522/answer/961295958)
@@ -99,17 +100,18 @@ TS 和 JS 在这些 API 方面的差别在变小，
 ### 进阶/实战
 
 - TS 语言
+  - 视频
+    - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)：25 分钟，包含很多 TS 进阶用法（2018 年）
   - 深入理解 TypeScript
     - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)：英文版
     - [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)：社区汉化版
-  - 视频
-    - [Fun Times with Advanced TypeScript](https://www.youtube.com/watch?v=TtDP6lpSjWc)：25 分钟，包含很多 TS 进阶用法（2018 年）
-  - [Effective TypeScript - 原书](https://www.oreilly.com/library/view/effective-typescript/9781492053736/)
+  - Effective TypeScript
+    - [Effective TypeScript](https://www.oreilly.com/library/view/effective-typescript/9781492053736/)：原书 Oreilly 购买链接
     - [Effective Typescript：使用 Typescript 的 n 个技巧 - 杨健](https://zhuanlan.zhihu.com/p/104311029)
     - [Effective Typescript - 杨健](https://blog.staleclosure.com/effective-typescript/)
   - 文章
     - [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)：官方文档中的「高级类型」章节
-    - [TypeScript Evolution](https://mariusschulz.com/blog/series/typescript-evolution)：TS 语言特性系列文章
+    - [TypeScript Evolution](https://mariusschulz.com/blog/series/typescript-evolution)：TS 语言特性，系列文章
   - TS 进阶概念解析
     - [The unknown Type in TypeScript](https://mariusschulz.com/blog/the-unknown-type-in-typescript)
     - [infer - 深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/tips/infer.html)
@@ -124,6 +126,8 @@ TS 和 JS 在这些 API 方面的差别在变小，
   - Rollup 打包
     - [How to bundle a npm package with TypeScript and Rollup](https://medium.com/@paleo.said/how-to-bundle-an-npm-package-with-typescript-and-rollup-f80e0f196189)
     - [Building and publishing a module with TypeScript and Rollup.js](https://hackernoon.com/building-and-publishing-a-module-with-typescript-and-rollup-js-faa778c85396)
+  - 杂项
+    - [TS 常见问题整理](https://juejin.im/post/5e33fcd06fb9a02fc767c427)：TS 语言、tsconifg、React + TS
 
 ## TypeScript 知识体系
 
@@ -343,9 +347,9 @@ type UnionToIntersection<U> = (U extends any
 [Migrating from JavaScript](https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html)
 
 - 注意！
-  - 别同时修改代码逻辑
-  - 别再在低测试覆盖率时迁移
-  - 初期无需写太严谨的类型（开发效率）
+  - 不要一边迁移一边修改代码逻辑
+  - 不要在低测试覆盖率时迁移
+  - 初期无需写太严谨的类型（为了开发效率）
   - 别忘记写 Type 的测试
   - 不要急着上线
 - 步骤
@@ -364,7 +368,7 @@ type UnionToIntersection<U> = (U extends any
     - 确保测试全部通过
   - 第三阶段
     - 逐步升级，小步 commit
-    - 打开全部严格模式 （[Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)）
+    - 打开全部的 `strict` 选项 （[Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)）
     - 将显式 `any` 替换成具体类型
     - 尽力避免不安全类型声明
 
