@@ -115,6 +115,7 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 ### 进阶
 
 - [Git Merge - Atlassian Tutorials](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
+- [Advanced Git log - Atlassian Tutorials](https://www.atlassian.com/git/tutorials/git-log)
 - [What is the difference between `git merge` and `git merge --no-ff`?](https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
 - [Git 协同与提交规范](https://www.yuque.com/fe9/basic/nruxq8)
 
@@ -126,25 +127,15 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 
 - Git
   - 基本操作
-    - init
-    - add/reset
-    - commit
-    - checkout
-    - merge
-    - pull/push/fetch
-    - remote
+    - `init`、`add/reset`、`commit`、`checkout`、`merge`、`pull/push/fetch`、`remote`
   - 其他常用操作
-    - stash
-    - revert
-    - rebase
-    - diff
-    - cherry-pick
+    - `stash`、`revert`、`rebase`、`diff`、`cherry-pick`
 - Git Flow 分支模型
-  - master
-  - release
-  - develop
-  - feature
-  - fix
+  - `master`
+  - `release`
+  - `develop`
+  - `feature`
+  - `fix`
 
 ### Git 工具
 
@@ -180,7 +171,7 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 - [submodule](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)/[lerna](https://github.com/lerna/lerna)，管理多仓库项目的方式
 - badge（[shields.io](https://shields.io/)），为项目提供元信息图标
 
-## Git 基本命令
+### Git 基本命令
 
 ```bash
 # shell
@@ -206,8 +197,114 @@ git pull <origin> <master>
 git push <origin> <master>
 ```
 
+## Git 知识体系（图）
+
+### Git cheatsheet
+
 ![git-cheatsheet-cn](./img/git-cheatsheet-cn.jpeg)
+
+### Git Flow
+
+![git-flow](./img/git-flow-fs8.png)
+
+### Git 思维导图
 
 ![git-mindmap](./img/git-mindmap-fs8.png)
 
-[如何优雅的使用 Git？](https://www.zhihu.com/question/20866683/answer/975066538)
+> [如何优雅的使用 Git？](https://www.zhihu.com/question/20866683/answer/975066538)
+
+## Git 实用命令
+
+我将一些实用的命令封装成 `shell` 函数，可以分析 `git` 提交情况
+
+以 React Repo 为例
+
+```bash
+git clone https://github.com/facebook/react
+cd react
+```
+
+#### 统计 repo 中的所有协作者
+
+```bash
+$ git shortlog -sne --all
+```
+
+```bash
+  2569  Paul O’Shannessy <paul@oshannessy.com>
+  1615  Dan Abramov <dan.abramov@gmail.com>
+  1524  Sophie Alpert <git@sophiebits.com>
+  1026  Brian Vaughn <bvaughn@fb.com>
+   817  Sebastian Markbåge <sebastian@calyptus.eu>
+   612  Jim Sproch <jsproch@fb.com>
+   376  Brian Vaughn <brian.david.vaughn@gmail.com>
+   369  Vjeux <vjeuxx@gmail.com>
+   368  Pete Hunt <floydophone@gmail.com>
+   325  Andrew Clark <acdlite@fb.com>
+```
+
+#### 统计某人 git 提交时间分布
+
+（省略参数则统计自己的情况）
+
+```bash
+function gitTime() {
+  local self="$(git config user.name)"
+  local author=$([[ "$1" == '' ]] && echo $self || echo $1)
+
+  git log --author="$author" --date=iso | perl -nalE 'if (/^Date:\s+[\d-]{10}\s(\d{2})/) { say $1+0 }' | sort | uniq -c | perl -MList::Util=max -nalE '$h{$F[1]} = $F[0]; }{ $m = max values %h; foreach (0..23) { $h{$_} = 0 if not exists $h{$_} } foreach (sort {$a <=> $b } keys %h) { say sprintf "%02d - %4d %s", $_, $h{$_}, "*"x ($h{$_} / $m * 50); }'
+
+  echo $author
+}
+```
+
+```bash
+$ gitTime 'Dan Abramov'
+
+00 -   61 ********************************
+01 -   34 ******************
+02 -   64 **********************************
+03 -   42 **********************
+04 -   29 ***************
+05 -    4 **
+06 -    0
+07 -    0
+08 -    0
+09 -    4 **
+10 -    5 **
+11 -   27 **************
+12 -   42 **********************
+13 -   62 ********************************
+14 -   80 ******************************************
+15 -   65 **********************************
+16 -   72 **************************************
+17 -   56 *****************************
+18 -   90 ***********************************************
+19 -   94 **************************************************
+20 -   46 ************************
+21 -   68 ************************************
+22 -   70 *************************************
+23 -   42 **********************
+Dan Abramov
+```
+
+#### 统计某人每周提交量
+
+（省略参数则统计自己的情况）
+
+```bash
+function gitWeekly() {
+  local self="$(git config user.name)"
+  local author=$([[ "$1" == '' ]] && echo $self || echo $1)
+
+  echo "\n$author"
+  git log --stat --author="$author" --since="1 week ago" --no-merges | grep 'files changed' | awk '{ins += $4}{del += $6} END{print "git weekly: "ins"+ "del"-"}'
+}
+```
+
+```bash
+$ gitWeekly 'Dan Abramov'
+
+Dan Abramov
+git weekly: 133+ 39-
+```
