@@ -119,7 +119,7 @@ For compilers to find node@10 you may need to set:
 export PATH="$PATH:/usr/local/opt/node@10/bin"
 ```
 
-## 打造趁手的终端
+## 打造趁手的终端 {#zsh}
 
 个人使用的命令行基本作业环境是：`iTerm2 + zsh + oh-my-zsh`  
 （代替 MacOS 自带的 `Terminal.app + bash` 方案）
@@ -133,8 +133,10 @@ export PATH="$PATH:/usr/local/opt/node@10/bin"
   - （`~/.zshrc`：装完自动生成的配置文件，可以在这里进行客制化）
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)：一个流行的 zsh 配置集
   - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)：一个 `fish` 风格的 zsh 高亮插件
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)：命令语法高亮插件
   - `brew install zsh-syntax-highlighting`
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)：根据 history 的自动补全
+  - `brew install zsh-autosuggestions`
 
 接着可以参考我的另一篇文章 [Mac 和软件](./mac.md)，安装一些其他的工具。
 

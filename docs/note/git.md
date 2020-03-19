@@ -171,6 +171,24 @@ GitHub 也是一个社区和服务，除 Git 基本功能外还有很多其他�
 - [submodule](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)/[lerna](https://github.com/lerna/lerna)，管理多仓库项目的方式
 - badge（[shields.io](https://shields.io/)），为项目提供元信息图标
 
+## Git 知识体系（图）
+
+### Git cheatsheet
+
+![git-cheatsheet-cn](./img/git-cheatsheet-cn.jpeg)
+
+### Git Flow
+
+![git-flow](./img/git-flow-fs8.png)
+
+### Git 思维导图
+
+![git-mindmap](./img/git-mindmap-fs8.png)
+
+> [如何优雅的使用 Git？](https://www.zhihu.com/question/20866683/answer/975066538)
+
+## Git 典型命令
+
 ### Git 基本命令
 
 ```bash
@@ -197,23 +215,28 @@ git pull <origin> <master>
 git push <origin> <master>
 ```
 
-## Git 知识体系（图）
+### Alias
 
-### Git cheatsheet
+[oh-my-zsh](./terminal-config.md#zsh) 预设增强了 git 的 alias，  
+配合 [tig](https://github.com/jonas/tig) 和 [git-cz](https://github.com/commitizen/cz-cli)，以及 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)，  
+可以有效提升命令行中的 git 操作体验。
 
-![git-cheatsheet-cn](./img/git-cheatsheet-cn.jpeg)
+oh-my-zsh 中的部分 alias 如下：
 
-### Git Flow
+```bash
+ga='git add'
+gaa='git add --all'
+gss='git status -s'
+gco='git checkout'
+gcb='git checkout -b'
+gcm='git checkout master'
+gpf='git push --force-with-lease'
+grb='git rebase'
+grbm='git rebase master'
+grbc='git rebase --continue'
+```
 
-![git-flow](./img/git-flow-fs8.png)
-
-### Git 思维导图
-
-![git-mindmap](./img/git-mindmap-fs8.png)
-
-> [如何优雅的使用 Git？](https://www.zhihu.com/question/20866683/answer/975066538)
-
-## Git 实用命令
+### Git 实用命令
 
 我将一些实用的命令封装成 `shell` 函数，可以分析 `git` 提交情况
 
