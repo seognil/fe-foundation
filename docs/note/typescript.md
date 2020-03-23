@@ -226,6 +226,8 @@ TS 和 JS 在这些 API 方面的差别在变小，
 
 ## TypeScript 典型代码
 
+### TypeScript 基本语法
+
 Check [TypeScript - Learn X in Y minutes](https://learnxinyminutes.com/docs/typescript/)
 
 ```typescript
@@ -310,15 +312,43 @@ const dict: MyDict = {
 
 type NumVal = 1 | 2 | 3 | NumVal[];
 const nestArr: NumVal = [1, 2, 3, [1, 2, [3]]];
+```
 
-// * -------------------------------- 实用技巧
+### TypeScript 实用代码
 
-// * 联合转交集
+#### 联合转交集
+
+```ts
 type UnionToIntersection<U> = (U extends any
 ? (k: U) => void
 : never) extends (k: infer I) => void
   ? I
   : never;
+```
+
+#### 复杂的类型声明
+
+[infer - 深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/tips/infer.html)
+
+通过编写泛型和类型推断，能够拥有更准确的类型，  
+能保证业务代码拥有更充分的类型提示，提升代码整体质量。
+
+```ts
+type MapEveryToPromise<T extends object> = {
+  [K in keyof T]: T[K] extends infer P ? Promise<P> : never;
+};
+
+const dataPool = {
+  key1: 1,
+  key2: 'hello',
+  // ...
+};
+
+const advanceDataPool: MapEveryToPromise<typeof dataPool> = {
+  key1: Promise.resolve(1),
+  key2: Promise.resolve('hello'),
+  // ...
+};
 ```
 
 ## TypeScript 相关
@@ -397,3 +427,13 @@ TypeScript 来自微软，在特性上更丰富。
 这个问题需要扎实的 CS 基础作为铺垫…
 
 [如何看懂 typescript 核心源码，并可以参照 typescript 写一个类似的项目？](https://www.zhihu.com/question/318505680)
+
+### TypeScript 有哪些不足
+
+目前不支持高阶泛型
+
+[Allow classes to be parametric in other parametric classes](https://github.com/Microsoft/TypeScript/issues/1213#issuecomment-523245130)
+
+导致让这个 demo [typescript-generic-problem](https://stackblitz.com/edit/typescript-generic-problem?file=index.ts)  
+中的全部代码都拥有准确的类型是一件很困难的事情，  
+只能修改业务代码，或手动进行类型声明来妥协。
