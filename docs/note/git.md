@@ -221,19 +221,34 @@ git push <origin> <master>
 配合 [tig](https://github.com/jonas/tig) 和 [git-cz](https://github.com/commitizen/cz-cli)，以及 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)，  
 可以有效提升命令行中的 git 操作体验。
 
-oh-my-zsh 中的部分 alias 如下：
+按大致开发流程，oh-my-zsh 中有部分 alias 如下：
 
 ```bash
 ga='git add'
 gaa='git add --all'
+
 gss='git status -s'
+
+git cz # 安装 git-cz 后可代替原有的 commit 命令
+
 gco='git checkout'
 gcb='git checkout -b'
 gcm='git checkout master'
+
+gm='git merge'
+
+gl='git pull'
 gpf='git push --force-with-lease'
+gpsup='git push --set-upstream origin $(git_current_branch)'
+
+gbd='git branch -d'
+
 grb='git rebase'
 grbm='git rebase master'
 grbc='git rebase --continue'
+
+grh='git reset'
+grhh='git reset --hard'
 ```
 
 ### Git 实用命令
@@ -320,14 +335,19 @@ function gitWeekly() {
   local self="$(git config user.name)"
   local author=$([[ "$1" == '' ]] && echo $self || echo $1)
 
-  echo "\n$author"
-  git log --stat --author="$author" --since="1 week ago" --no-merges | grep 'files changed' | awk '{ins += $4}{del += $6} END{print "git weekly: "ins"+ "del"-"}'
+  local gitchange="$(git log --stat --author="$author" --since="1 week ago" --no-merges | grep 'files changed')"
+  local ins="$(echo $gitchange | grep -oE '\d+ ins' | awk '{val += $1} END{print ""val""}')"
+  local del="$(echo $gitchange | grep -oE '\d+ del' | awk '{val += $1} END{print ""val""}')"
+
+  echo ""
+  echo "  Author:      $author"
+  echo "  git weekly:  $ins +, $del -"
 }
 ```
 
 ```bash
 $ gitWeekly 'Dan Abramov'
 
-Dan Abramov
-git weekly: 133+ 39-
+  Author:      Dan Abramov
+  git weekly:  133 +, 39 -
 ```
