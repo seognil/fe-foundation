@@ -63,11 +63,34 @@ const config = {
   plugins: [
     [
       '@vuepress/last-updated',
-      'vuepress-plugin-smooth-scroll',
       {
         transformer: (timestamp, lang) => {
           moment.locale(lang);
           return moment(timestamp).format('lll');
+        },
+      },
+    ],
+    'vuepress-plugin-smooth-scroll',
+    // [
+    //   'vuepress-plugin-medium-zoom',
+    //   {
+    //     selector: 'img',
+    //     delay: 1000,
+    //     options: {
+    //       // margin: 24,
+    //       background: 'hsla(0, 0%, 0%, 0.1)',
+    //       scrollOffset: 0,
+    //     },
+    //   },
+    // ],
+    [
+      'vuepress-plugin-zooming',
+      {
+        selector: 'img',
+        delay: 1000,
+        options: {
+          bgColor: 'hsla(0, 0%, 0%, 0.1)',
+          // zIndex: 10000,
         },
       },
     ],
