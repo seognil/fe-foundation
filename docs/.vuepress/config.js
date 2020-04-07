@@ -49,7 +49,8 @@ const config = {
       { text: '指南', link: '/note/' },
       { text: '关于我', link: '/about/' },
 
-      { text: 'Learn-By-Doing', link: 'https://github.com/seognil-study/learn-by-doing' },
+      { text: '算法', link: 'https://github.com/seognil-study/leetcode' },
+      { text: '动手练', link: 'https://github.com/seognil-study/learn-by-doing' },
     ],
     repo: 'seognil/fe-foundation',
 
