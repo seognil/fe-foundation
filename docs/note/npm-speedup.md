@@ -1,40 +1,135 @@
 # 用 Proxy 进一步提高 npm 安装速度
 
+## 碰到的问题
+
 在前一篇 [Node 概览](./npm-overview.md) 中我们提到：  
 可以使用换源的方式提高 npm 的安装速度，  
-`nrm use taobao` 已经够快。
+`nrm use taobao` 已经足够快。
 
-但有的时候 npm 的安装还是会表现出假死的状态。  
-（yarn 或其他工具也有这个问题）  
-这是网络问题，从某些地址下载包文件可能太慢，从而造成了假死的现象。
+但在安装一些包的时候，还是会表现出假死状态或失败报错。  
+例如安装 `node-sass`、`cypress`、`puppeteer` 等。  
+（用 npm 或 yarn 或其他工具都有这个问题）
 
-例如：
+## 原因
+
+这是网络原因，因为这些包需要从 npm 以外的地址下载数据。  
+所以只有 npm 换源起不到作用。
+
+**node-sass**
 
 ```bash
-npm i puppeteer # 安装 puppeteer（或者 node-sass、cypress 等也有类似情况）
-> puppeteer@1.12.2 install /Users/lc/0Work/test-npm/node_modules/puppeteer
+$ npm i --save-dev node-sass
+...
+> node-sass@4.13.1 install /Users/lc/0Work/temp/test/node_modules/node-sass
+> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v4.13.1/darwin-x64-79_binding.node
+```
+
+**cypress**
+
+```bash
+$ npm i --save-dev cypress
+...
+> cypress@4.3.0 postinstall /Users/lc/0Work/temp/test/node_modules/cypress
+> node index.js --exec install
+
+Installing Cypress (version: 4.3.0)
+
+  ⠧  Downloading Cypress
+     Unzipping Cypress
+     Finishing Installation
+```
+
+**puppeteer**
+
+```bash
+$ npm i --save-dev puppeteer
+...
+> puppeteer@2.1.1 install /Users/lc/0Work/temp/test/node_modules/puppeteer
 > node install.js
+
+Downloading Chromium r722234 - 116.4 Mb [                    ] 1% 536.9s
 ```
 
-```bash
-yarn add puppeteer
-# ...
-[4/4] 🔨  Building fresh packages...
-[1/1] ⢀ puppeteer
+在这些包的实际文件中，  
+也果然能够找到关于下载链接或代理的代码。
+
+**node-sass**: `node_modules/node-sass/lib/extensions.js`
+
+```js
+function getBinaryUrl() {
+  var site =
+    getArgument('--sass-binary-site') ||
+    process.env.SASS_BINARY_SITE ||
+    process.env.npm_config_sass_binary_site ||
+    (pkg.nodeSassConfig && pkg.nodeSassConfig.binarySite) ||
+    'https://github.com/sass/node-sass/releases/download';
+
+  return [site, 'v' + pkg.version, getBinaryName()].join(
+    '/',
+  );
+}
 ```
 
-将会一直卡在这一步  
-是因为 `puppeteer` 这个包有自己安装脚本，  
-会从 `https://storage.googleapis.com` 下载 Chromium。  
-（在安装成功后，到 `node_modules/puppeteer` 查找这个地址即可确认）  
-而因为网络问题速度太慢，导致安装过程卡死在这一步。
+**cypress**: `node_modules/cypress/lib/tasks/download.js`
 
-有两个解决方法：  
-一是添加 `--ignore-scripts` 无视额外安装脚本，  
-例如：`npm i puppeteer --ignore-scripts`
+```js
+var defaultBaseUrl = 'https://download.cypress.io/';
 
-另一种方法，是使用代理，  
-（以下内容仅限 mac，不涉及 windows，命令可能不同但原理类似）  
+var getProxyUrl = function getProxyUrl() {
+  return (
+    process.env.HTTPS_PROXY ||
+    process.env.https_proxy ||
+    process.env.npm_config_https_proxy ||
+    process.env.HTTP_PROXY ||
+    process.env.http_proxy ||
+    process.env.npm_config_proxy ||
+    null
+  );
+};
+```
+
+**puppeteer**: `node_modules/puppeteer/lib/BrowserFetcher.js`
+
+```js
+const DEFAULT_DOWNLOAD_HOST =
+  'https://storage.googleapis.com';
+
+const supportedPlatforms = [
+  'mac',
+  'linux',
+  'win32',
+  'win64',
+];
+const downloadURLs = {
+  linux:
+    '%s/chromium-browser-snapshots/Linux_x64/%d/%s.zip',
+  mac: '%s/chromium-browser-snapshots/Mac/%d/%s.zip',
+  win32: '%s/chromium-browser-snapshots/Win/%d/%s.zip',
+  win64: '%s/chromium-browser-snapshots/Win_x64/%d/%s.zip',
+};
+```
+
+那么如果环境访问外网太慢或无法访问外网，  
+显然就会导致安装太慢或失败。
+
+## 解决方法
+
+有几个解决方法：
+
+一是添加 `--ignore-scripts` 直接无视额外安装脚本，  
+例如：`npm i --save-dev node-sass --ignore-scripts`
+
+二是使用**对应的镜像源**参数，  
+例如：`npm i --save-dev node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/`
+
+（这适用于离线部署的情况，比如企业内网。）
+
+## 代理的方法
+
+而个人开发的万金油方法，是使用代理，  
+（以下内容基于 mac，windows 的命令可能不同但原理类似）  
 在终端中执行：
 
 ```bash
@@ -42,40 +137,41 @@ export http_proxy="http://127.0.0.1:1080"
 ```
 
 其中的 `http://127.0.0.1:1080` 是我们配置的一个内网 proxy，  
-启用代理以达到提速的效果。proxy 的配置这里不详细说明。
+直接将所有请求转发到（公司的）高速服务器。  
+（关于 proxy 的配置方式这里不详细说明。）
 
-但是手动操作有点麻烦，我们可以封装成函数。  
-拿 bash 举例。  
-编辑 `~/.bashrc` 这个 bash runtime config 文件，  
-在文件最后加入以下代码并保存。  
-（zsh 或其他环境原理类似，在配置文件的语法上可能略有差异。）
+可以在 `~/.zshrc` 里做更详细的处理，  
+并把代理封装成两个函数作为快捷开关。  
+（`bash` 或 `fish` 等其他 `shell` 类似）
 
 ```bash
-# .bashrc
-export no_proxy=localhost,127.0.0.1,mysite.com # no_proxy 列表
+export no_proxy=localhost,127.0.0.1,mysite.com # 白名单
+
 function proxy() {
   export http_proxy="http://127.0.0.1:1080" # 改成你自己的地址
   export https_proxy="http://127.0.0.1:1080" # 改成你自己的地址
   echo "HTTP Proxy on"
 }
+
 function unproxy() {
   unset http_proxy https_proxy # 取消 proxy
   echo "HTTP Proxy off"
 }
-proxy # 可以加入这一行实现打开终端就直接开启 proxy
+
+proxy # 可以加入这一行实现打开终端直接开启 proxy
 ```
 
 这样就生成了 `proxy`、`unproxy` 两个开关代理的方法。  
-然后打开新的终端，再尝试执行：
+然后打开新的终端，再尝试安装：
 
 ```bash
-# cd ./test-npm/
-proxy
-npm i puppeteer
+# cd temp/test/
+# proxy
+npm i --save-dev puppeteer
 ```
 
-此时 Chromium 的下载已经通过代理，所以不会再卡死。
+此时外部文件的下载已经通过高速代理，所以不会再卡住安装。
 
 ```bash
-Downloading Chromium r624492 - 84.5 Mb [==                 ] 12% 79.0s
+Downloading Chromium r722234 - 116.4 Mb [======              ] 28% 19.7s
 ```
