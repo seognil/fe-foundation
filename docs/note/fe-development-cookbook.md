@@ -16,6 +16,42 @@
   - [关于学习指南系列](./about-the-guild.md)
   - [学习指南模板](./study-guild-abstraction.md)
 
+## 前端开发路线图（收集的）
+
+- **前端开发概览**
+  - 视频
+    - [Web Development In 2020 - A Practical Guide](https://www.youtube.com/watch?v=0pThnRneDjw)：72 分钟，概览指南
+  - CheckList
+    - [前端九部 - 入门者手册 2019](https://www.yuque.com/fe9/basic)：系列文章
+    - [【自检】前端知识清单](http://www.conardli.top/blog/article/%E7%BB%BC%E5%90%88/%E3%80%90%E8%87%AA%E6%A3%80%E3%80%91%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%B8%85%E5%8D%95.html)
+- **JavaScript 及框架类库学习教程**
+  - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)：系列视频教程
+  - [Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)：系列视频教程
+- **前端工具生态概览**
+  - [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)：JS 项目流行度统计
+  - [The State of JavaScript 2019](https://2019.stateofjs.com/zh/)：前端开发习惯调查
+
+### Front-end Developer Handbook
+
+> [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)  
+> [前端开发者手册 2019](https://yylifen.github.io/front-end-handbook-2019/index.html)：汉化版
+
+![Front-end Developer Handbook 2019](./img/FM_2019Cover_final.jpg)
+
+### WEB DEVELOPER ROADMAP
+
+> [在 2020 年成为一个 Web 开发者](https://github.com/seognil/developer-roadmap-chinese-simplified)：我翻译的简中汉化版  
+> [WEB DEVELOPER ROADMAP - 2020](https://github.com/kamranahmedse/developer-roadmap)：Web 开发者学习路线图  
+> [2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)：繁中汉化版
+
+![WEB DEVELOPER ROADMAP - 2020 Chinese](./img/frontend-map-fs8.png)
+
+### Web Developer Learning Path
+
+> [Ladybug Podcast](https://twitter.com/LadybugPodcast/status/1247051343212281856)
+
+![Ladybug Podcast: Web Developer Learning Path](./img/ladybug-dev-web-developer-learning-path.jpeg)
+
 ## 前端开发路线图（我写的）
 
 ### 编程入门和开发环境准备
@@ -118,34 +154,6 @@
   - [React 源码解析](https://github.com/KieSun/react-interpretation)
   - [深入浅出 Webpack](https://webpack.wuhaolin.cn/)
   - [[webpack]源码解读：命令行输入 webpack 的时候都发生了什么？](https://github.com/DDFE/DDFE-blog/issues/12)
-
-## 前端开发路线图（收集的）
-
-- **前端开发概览**
-  - 视频
-    - [Web Development In 2020 - A Practical Guide](https://www.youtube.com/watch?v=0pThnRneDjw)：72 分钟，概览指南
-  - 文档集
-    - [前端九部 - 入门者手册 2019](https://www.yuque.com/fe9/basic)：系列文章
-    - [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)：超详细指南
-  - 路线图
-    - [WEB DEVELOPER ROADMAP - 2020](https://github.com/kamranahmedse/developer-roadmap)：Web 开发者学习路线图
-    - [在 2020 年成为一个 Web 开发者](https://github.com/seognil/developer-roadmap-chinese-simplified)：上面的简中汉化版（2020 年版）
-    - [2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)：上面的繁中汉化版（2019 年版）
-- **前端工具生态概览**
-  - [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)：JS 项目流行度统计
-  - [The State of JavaScript 2019](https://2019.stateofjs.com/zh/)：前端开发习惯调查
-- **JavaScript 及框架类库学习教程**
-  - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)：系列视频教程
-  - [Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)：系列视频教程
-
-![frontend-map](./img/frontend-map-fs8.png)
-
-> from: [在 2020 年成为一个 Web 开发者](https://github.com/seognil/developer-roadmap-chinese-simplified)：我翻译的  
-> from: [WEB DEVELOPER ROADMAP - 2020](https://github.com/kamranahmedse/developer-roadmap)：Web 开发者学习路线图
-
-![ladybug-dev-web-developer-learning-path](./img/ladybug-dev-web-developer-learning-path.jpeg)
-
-> from: [Ladybug Podcast](https://twitter.com/LadybugPodcast/status/1247051343212281856)
 
 ## 小结
 

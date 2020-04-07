@@ -62,6 +62,7 @@ ES6+ 是前端开发的基本语言。
 
 ## JavaScript 版本/方言/历史
 
+- [JavaScript: The First 20 Years](https://zenodo.org/record/3710954)
 - [The Weird History of JavaScript](https://www.youtube.com/watch?v=Sh6lK57Cuk4)
 - [JavaScript: How It's Made](https://www.youtube.com/watch?v=FSs_JYwnAdI)
 - [漫谈 JavaScript 方言与派系](https://www.blackglory.me/javascript-dialects-and-factions/)
