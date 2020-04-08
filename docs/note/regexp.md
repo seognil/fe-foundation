@@ -14,18 +14,18 @@
 
 - [JS 中的 RegExp 对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp)、[python 中的 `re` 模块](https://docs.python.org/zh-cn/3/library/re.html)
 - Unix 中的 `sed` 命令、`grep` 命令的 `-E` 参数
-- 几乎所有代码编辑器的搜索功能：VS Code、sublime、vim、IntelliJ IDEA 系列
+- 几乎所有代码编辑器的搜索功能：VS Code、Sublime Text、vim、IntelliJ IDEA 系列
 - [Chrome 正则搜索插件](https://chrome.google.com/webstore/detail/chrome-regex-search/bpelaihoicobbkgmhcbikncnpacdbknn)
 
 #### 正则表达式 概念分类
 
 - 转义字符
-- 位置匹配
+- 位置匹配（边界，如单词边界、行开头）
 - 组合和量词
 - 正则中具有多种功能的字符们
   - `()`, `?`, `^`, `\`, `$`
-- 断言
-- flags（检索方式）
+- 断言（边界，预测前后字符串）
+- flags（不同的检索策略，如是否忽略大小写）
 
 ### 为什么要用 正则表达式
 
@@ -36,7 +36,8 @@
 
 - 实现基于模式查询的自动处理
 
-一个经典的正则例子，以千分位切割数字：
+一个经典的正则例子，以千分位切割数字：  
+把 ((不是边界、且右边有(3\*n 个数字))的位置)，变成逗号。
 
 ```javascript
 const toThousand = (str) =>
@@ -72,20 +73,20 @@ toThousand(123456789); // => "123,456,789"
 
 ### 自学教材
 
-- 电子书
+- 电子教程
   - [《JS 正则迷你书》](https://github.com/qdlaoyao/js-regex-mini-book)
+  - [Learn Regex The Easy Way](https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md)：中文版
 - 书籍
   - [JavaScript 高级程序设计](https://book.douban.com/subject/10546125/)：（第三版）5.4 RegExp 类型
   - [JavaScript 忍者秘籍](https://book.douban.com/subject/26638316/)：（第二版）第 10 章（正则）
-- 正则细节
+- 正则的细节
   - [正则表达式零宽断言详解](https://www.cnblogs.com/onepixel/articles/7717789.html)
   - [Unicode: flag "u" and class \p{...}](https://javascript.info/regexp-unicode)
 
 ### 在线正则解析（帮助理解）
 
-- [Rubular](https://rubular.com/r/xfQHocREGj)
-- [RegExr](https://regexr.com/)
-- [Regulex](https://jex.im/regulex/)
+- [RegExr](https://regexr.com/)：规则解析
+- [Regulex](https://jex.im/regulex/)：可视化解析
 
 ### 文档
 
@@ -96,7 +97,7 @@ toThousand(123456789); // => "123,456,789"
 
 ### 正则基本概念
 
-（个人整理和分类）
+（个人整理和分类，用语可能不太规范，但容易理解）
 
 - **正则基础规则**
   - 正则支持任意朴素字符
@@ -121,17 +122,17 @@ toThousand(123456789); // => "123,456,789"
     - `\n` 换行
     - `\r` 回车
     - `\/` `/`（因为 JS 正则字面量写法以斜杠包裹，所以需要转义。其他具有功能的字符也同理，例如：`/c:\/\[path\]/` => `c:/[path]`）
-- **捕获和引用**（括号，可用于后续处理如 replace）
+- **捕获和引用**（括号，可用于后续处理，如 replace）
   - **捕获组** `()`
     - `(hallo)` 匹配 hallo，且捕获括号内内容
-    - （捕获组的引用顺序按左括号从左到右为 1234…）
+    - （捕获组的捕获顺序，按左括号从左到右为 1234…）
   - **正则内引用** `\1`
     - `(ab),\1` 匹配 'ab,ab'
   - **结果引用**（replace 第二参数的特殊字符）
     - `$1` 按捕获顺序，例如：`'abcd'.replace(/(ab)/, '$1,') => 'ab,c'`
     - `$&` 匹配的整个子串
-    - `` $` `` 匹配子串的左边文本
-    - `$'` 匹配子串的右边文本
+    - `` $` `` 匹配子串的左边文本（键盘左侧的反引号）
+    - `$'` 匹配子串的右边文本（键盘右侧的引号）
     - `$$` 转义 `$`
 - **组合模式（正则串的单次组合）**
   - **或** `|`
@@ -151,7 +152,7 @@ toThousand(123456789); // => "123,456,789"
     - `$` 行结尾
     - `\b` 单词边界
     - `\B` 非单词边界
-  - **断言**（右边的 a 可以是任意正则模式）
+  - **断言**（其中的 a 可以是任意子正则）
     - `(?=a)` Positive lookahead，右边匹配
     - `(?!a)` Negative lookahead，右边不匹配
     - `(?<=a)` Positive lookbehind，左边匹配
@@ -165,14 +166,14 @@ toThousand(123456789); // => "123,456,789"
 ### JavaScript 中的正则
 
 - RegExp
-  - `exec(str) => array-like | null`
-  - `test(str) => boolean`
+  - `reg.exec(str) => ArrayLike | null`
+  - `reg.test(str) => boolean`
 - String
-  - `match(reg) => array-like | null`
-  - `matchAll(reg) => Iterator`
-  - `replace(reg|str, str|fn) => string`
-  - `search(reg) => index | -1`
-  - `split(reg|str, limit?) => array`
+  - `str.match(reg) => ArrayLike | null`
+  - `str.matchAll(reg) => Iterator`
+  - `str.replace(reg|str, str|fn) => string`
+  - `str.search(reg) => index | -1`
+  - `str.split(reg|str, limit?) => array`
 
 ```javascript
 // * -------------------------------- 构造正则
@@ -184,7 +185,9 @@ var re1 = /foo*/g;
 var re2 = RegExp('foo*', 'g');
 
 re1 instanceof RegExp; // => true
+re2 instanceof RegExp; // => true
 
+typeof re1; // => "object"
 typeof re2; // => "object"
 
 // * ---------------- flag example: g and u
@@ -272,7 +275,7 @@ var newString = 'abc12345#$*%'.replace(
 - `Positive lookbehind` => `零宽负向先行断言`
 - `Negative lookbehind` => `零宽正向后行断言`
 
-你瞧瞧，这说的是人话吗？
+嗨，我的老伙计！您瞧瞧，这说的是人话吗？
 
 `Positive`/`Negative` 翻译成 正向/负向？上下文呢？  
 正向的意思是指字符串方向么？
@@ -287,7 +290,7 @@ var newString = 'abc12345#$*%'.replace(
 或者说 **应该匹配**/**不应该匹配**。
 
 可以发现和 正向/负向 没有半毛钱关系,  
-实数垃圾翻译。
+实属垃圾翻译。
 
 `lookahead`/`lookbehind` => `先行`/`后行`，也可以改进。
 
@@ -299,7 +302,7 @@ var newString = 'abc12345#$*%'.replace(
 恰恰相反，是指后面的字符串。  
 不良的翻译造成了理解的困惑。
 
-实际上，它们在英文中原本是词组形式：
+实际上，英文中有这么一对词组：
 
 - look ahead：预测、向前看、计划未来
 - look behind：回顾、回头看
@@ -315,7 +318,7 @@ var newString = 'abc12345#$*%'.replace(
 - `零宽度正回顾后发断言`
 - `零宽度负回顾后发断言`
 
-但是我觉得它还有一些问题：  
+但是我觉得它也有一些问题：  
 `正`/`负` 的传达的意思依然不够精确，  
 `预测先行`/`回顾后发` 相当于翻译了两遍。  
 （记不记得编码中的 DRY 原则？）
@@ -339,10 +342,10 @@ var newString = 'abc12345#$*%'.replace(
 - 左边不匹配
 
 `=` 就是匹配，`!` 就是不匹配，  
-默认编码顺序是右边，`<` 左尖括号用来表示左边。
+默认编码顺序是右边，用 `<` 左尖括号来表示左边。
 
 这样简单的规则总结不仅更符合编码直觉，  
-和断言语法中的助记符顺序也是一一对应的。
+和断言语法中的助记符也非常对应。
 
 我的翻译在“信达雅”上，“雅”先不谈，  
 但是“信达”程度应该比什么“零宽正向先行断言”高多了，
@@ -350,4 +353,4 @@ var newString = 'abc12345#$*%'.replace(
 但是垃圾翻译已经先入为主并普及了，我也没办法，  
 那么以后沟通的时候索性直接用英文原文得了。
 
-（再次说明了英文的重要性，以及垃圾二手资料的危害性）
+（再次说明了看懂一手英文的重要性，以及垃圾二手资料的危害性）
