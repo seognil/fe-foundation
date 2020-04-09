@@ -27,7 +27,7 @@
 - 计算机科学和编程相关
   - [深入理解计算机系统](https://book.douban.com/subject/26912767/)：CSAPP
   - [计算机程序的构造和解释](https://book.douban.com/subject/1148282/)：SICP
-  - [编码](https://book.douban.com/subject/4822685/)：编码 隐匿在计算机软硬件背后的语言
+  - [编码](https://book.douban.com/subject/4822685/)：副标题 隐匿在计算机软硬件背后的语言
   - [算法（第 4 版）](https://book.douban.com/subject/19952400/)
   - [数学之美 （第二版）](https://book.douban.com/subject/26163454/)
   - [设计模式](https://refactoringguru.cn/design-patterns/)
@@ -35,7 +35,8 @@
   - [游戏引擎架构（第 2 版）](https://book.douban.com/subject/34864920/)
   - [Composing Software: The Book](https://medium.com/javascript-scene/composing-software-the-book-f31c77fc3ddc)：组合软件 - Eric Elliott
 - 其他
-  - [创新者的窘境](https://book.douban.com/subject/25807982/)
+  - [创新者的窘境](https://book.douban.com/subject/25807982/)：关于技术和商业
+  - [代谢增长论](https://book.douban.com/subject/33440184/)：副标题 技术小波和文明兴衰
 
 ## 视频
 
