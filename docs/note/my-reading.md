@@ -4,11 +4,42 @@
 
 ---
 
-> 从不同渠道学习，成为更好的自己。
+> 维京勇士北风造
 
-（以下各列表按字典排序）
+## 书籍（编程篇）
+
+<!-- [A Study Path for Game Programmer](https://github.com/miloyip/game-programmer/) -->
+
+- JavaScript 语言
+  - 实体书
+    - [JavaScript 权威指南](https://book.douban.com/subject/2228378/)：犀牛书
+    - [JavaScript 高级程序设计](https://book.douban.com/subject/10546125/)：红宝书、高程
+    - [你不知道的 JavaScript](https://book.douban.com/series/40642)：小黄书（共三卷）
+    - [JavaScript 忍者秘籍](https://book.douban.com/subject/26638316/)：忍者书
+    - [JavaScript 语言精粹](https://book.douban.com/subject/3590768/)：蝴蝶书
+  - 电子书
+    - [ECMAScript Language Specification](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf)
+    - [JavaScript: The First 20 Years](https://zenodo.org/record/3710954/files/jshopl-preprint-2020-03-13.pdf)
+- 前端开发工具书
+  - [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)
+  - [深入浅出 RxJS](https://book.douban.com/subject/30217949/)
+  - [《JS 正则迷你书》](https://github.com/qdlaoyao/js-regex-mini-book)
+- 计算机科学和编程相关
+  - [深入理解计算机系统](https://book.douban.com/subject/26912767/)：CSAPP
+  - [计算机程序的构造和解释](https://book.douban.com/subject/1148282/)：SICP
+  - [编码](https://book.douban.com/subject/4822685/)：编码 隐匿在计算机软硬件背后的语言
+  - [算法（第 4 版）](https://book.douban.com/subject/19952400/)
+  - [数学之美 （第二版）](https://book.douban.com/subject/26163454/)
+  - [设计模式](https://refactoringguru.cn/design-patterns/)
+  - [游戏编程模式](https://gpp.tkchu.me/)
+  - [游戏引擎架构（第 2 版）](https://book.douban.com/subject/34864920/)
+  - [Composing Software: The Book](https://medium.com/javascript-scene/composing-software-the-book-f31c77fc3ddc)：组合软件 - Eric Elliott
+- 其他
+  - [创新者的窘境](https://book.douban.com/subject/25807982/)
 
 ## 视频
+
+（按字典排序）
 
 每天晚饭后都会看看（听听）视频  
 部分关注的 YouTube 频道：
@@ -129,9 +160,3 @@
   - （）
     - [Belleve](https://www.zhihu.com/people/be5invis/activities)
     - [Milo Yip](https://www.zhihu.com/people/miloyip/activities)
-
-## 书籍（编程篇）
-
-很惭愧，目前读的比较少（主要是一些 JS 相关的）  
-和大佬的没法比：[A Study Path for Game Programmer](https://github.com/miloyip/game-programmer/)  
-以后有机会再写…
