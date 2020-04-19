@@ -21,6 +21,25 @@
 - [JavaScript 学习指南](https://fe.rualc.com/note/js-foundation.html)
 - [其他学习指南系列](https://fe.rualc.com/note/study-methodology.html)
 
+## TODO（Writing）
+
+目前规划中，但还未填坑的（~~今年内完成？~~）
+
+- HTML 基本知识体系
+- CSS 基本知识体系
+- JavaScript 系列
+  - DOM 编程
+  - 异步编程
+  - Node 编程
+  - 进阶篇（补充）
+  - 核心篇（N 个部分）
+- 算法
+- Gof 设计模式
+
+## TODO（nav）
+
+- better readme structure（generate from json）
+
 ## TODO (DEV)
 
 - [ ] zeit
