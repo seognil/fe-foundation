@@ -17,7 +17,7 @@
 对于初学者来说，我推荐优先了解和使用以下工具，可以显著地提高代码学习效率：
 
 - [DevTools](#devtools)
-- [node](#%e5%91%bd%e4%bb%a4%e8%a1%8c)
+- [node](#terminal)
 - [Parcel](#parcel)
 - [Code Runner](#code-runner)
 - [Quokka](#quokka)
