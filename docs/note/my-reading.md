@@ -16,7 +16,7 @@
     - [JavaScript 高级程序设计](https://book.douban.com/subject/10546125/)：红宝书、高程
     - [你不知道的 JavaScript](https://book.douban.com/series/40642)：小黄书（共三卷）
     - [JavaScript 忍者秘籍](https://book.douban.com/subject/26638316/)：忍者书
-    - [JavaScript 语言精粹](https://book.douban.com/subject/3590768/)：蝴蝶书
+    - [JavaScript 语言精粹](https://book.douban.com/subject/3590768/)：蝴蝶书，Good Parts
   - 电子书
     - [ECMAScript Language Specification](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf)
     - [JavaScript: The First 20 Years](https://zenodo.org/record/3710954/files/jshopl-preprint-2020-03-13.pdf)
