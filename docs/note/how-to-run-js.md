@@ -389,7 +389,7 @@ var fn = function fn() {
 };
 ```
 
-配合 `@babel/preset-env` 插件，将 JSX 转义成普通 JS 语法  
+配合 `@babel/preset-react` 插件，将 JSX 转义成普通 JS 语法  
 （这样就很明显解释了，为什么 React 项目代码中需要 `import React`）
 
 ```jsx

@@ -21,7 +21,7 @@
 - [JavaScript 学习指南](https://fe.rualc.com/note/js-foundation.html)
 - [其他学习指南系列](https://fe.rualc.com/note/study-methodology.html)
 
-## TODO（Writing）
+## TODO (Writing)
 
 目前规划中，但还未填坑的（~~今年内完成？~~）
 
@@ -36,7 +36,7 @@
 - 算法
 - Gof 设计模式
 
-## TODO（nav）
+## TODO (nav)
 
 - better readme structure（generate from json）
 
