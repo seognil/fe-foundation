@@ -93,7 +93,9 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 ### 自学教材
 
 - 概览
-  - [Map of Computer Science](https://www.youtube.com/watch?v=SzJ46YA_RaA)：11 分钟
+  - Map of Computer Science
+    - [Map of Computer Science](https://www.youtube.com/watch?v=SzJ46YA_RaA)：11 分钟
+    - [图解计算机科学](https://www.bilibili.com/video/BV1TJ411a7uo)
   - [How do computers read code?](https://www.youtube.com/watch?v=QXjU9qTsYCc)：12 分钟
   - [如何自学编程？](https://www.zhihu.com/lives/860490807847841792)：110 分钟
   - [如何自学计算机专业课程？](https://www.zhihu.com/lives/837669764146003968)：106 分钟
@@ -102,8 +104,27 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
     - [Crash Course Computer Science - YouTube](https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
     - [计算机科学速成课 - bilibili](https://www.bilibili.com/video/av21376839/)
   - CS50
-    - [CS50 Lectures 2018 - YouTube](https://www.youtube.com/watch?v=5azaK2cBKGw&list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&index=2)
-    - [CS50 Lectures 2018 - bilibili](https://www.bilibili.com/video/av45936507)
+    - CS50 2019
+      - [CS50 Lectures 2019](https://www.youtube.com/playlist?list=PLhQjrBD2T381L3iZyDTxRwOBuUt6m1FnW)
+      - [哈佛公开课 CS50 2019 - David J. Malan【九集全】【中英字幕】](https://www.bilibili.com/video/BV1MJ411V73c)
+    - CS50 Walkthroughs 2019
+      - [CS50 Walkthroughs 2019](https://www.youtube.com/playlist?list=PLhQjrBD2T381AUFv2ZbwN9wM0pkNy-uHa)
+      - [哈佛公开课 CS50 Walkthroughs 2019 【演练讲解】【中英字幕】](https://www.bilibili.com/video/BV147411k7Kc)
+    - CS50 Shorts
+      - [CS50 Shorts](https://www.youtube.com/playlist?list=PLhQjrBD2T381k8ul4WQ8SQ165XqY149WW)
+      - [哈佛公开课 CS50 Shorts - Doug Bloyd【短片 50】【中英字幕】](https://www.bilibili.com/video/BV1m7411c7fF)
+    - CS50 Beyond 2019
+      - [CS50 Beyond 2019](https://www.youtube.com/playlist?list=PLhQjrBD2T381Q6R1jRxgXknYO7VuTYPBI)
+      - [哈佛公开课 CS50 Beyond 2019【网页前端开发】【中英字幕】](https://www.bilibili.com/video/BV1K7411q7Dd)
+    - CS50's Web Programming with Python and JavaScript
+      - [CS50's Web Programming with Python and JavaScript](https://www.youtube.com/playlist?list=PLhQjrBD2T382hIW-IsOVuXP1uMzEvmcE5)
+      - [[双字]CS50's Web Programming with Python and JavaScript](https://www.bilibili.com/video/BV12741187gA)
+    - CS50 2018
+      - [CS50 Lectures 2018 - YouTube](https://www.youtube.com/watch?v=5azaK2cBKGw&list=PLhQjrBD2T382eX9-tF75Wa4lmlC7sxNDH&index=2)
+      - [CS50 Lectures 2018 - bilibili](https://www.bilibili.com/video/av45936507)
+    - CS50's Understanding Technology 2017
+      - [CS50's Understanding Technology 2017](https://www.youtube.com/playlist?list=PLhQjrBD2T382p8amnvUp1rws1p7n7gJ2p)
+      - [计算机入门 - CS50 - 理解技术 - David J. Malan 【六集全】【中英字幕】](https://www.bilibili.com/video/BV1sJ41147Vu)
 - 知识体系 
   - [[译] Coding Interview University 一套完整的学习手册帮助自己准备 Google 的面试](https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md)
   - [系统设计入门](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
