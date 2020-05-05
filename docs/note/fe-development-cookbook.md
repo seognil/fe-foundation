@@ -52,6 +52,25 @@
 
 ![Ladybug Podcast: Web Developer Learning Path](./img/ladybug-dev-web-developer-learning-path.jpeg)
 
+### Phodal
+
+<https://github.com/phodal>
+
+~~（大佬太猛了，看都来不及啊><）~~
+
+- [Phodal's Idea 实战指南](http://ideabook.phodal.com/)
+- [GitHub 漫游指南](http://github.phodal.com/)
+- [Growth - an app to help you Be Awesome Developer](http://growth.ren/)
+- [Growth: 全栈增长工程师指南](https://growth.phodal.com/)
+- [Growth: 全栈增长工程师实战](http://growth-in-action.phodal.com/)
+- [RePractise](http://repractise.phodal.com/)
+- [我的职业是前端工程师](https://ued.party/)
+- [Serverless 应用开发指南](http://serverless.ink/)
+- [写给软件工程师看的硬件编程指南](https://phodal.github.io/make/)
+- [Thinking in Microfrontend (微前端的那些事儿)](https://microfrontends.cn/)
+- [系统重构与迁移指南](https://migration.ink/)
+- [Developer 进阶书单](https://phodal.github.io/booktree/)
+
 ## 前端开发路线图（我写的）
 
 ### 编程入门和开发环境准备
