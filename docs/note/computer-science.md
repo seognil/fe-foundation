@@ -128,6 +128,10 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
 - 知识体系 
   - [[译] Coding Interview University 一套完整的学习手册帮助自己准备 Google 的面试](https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md)
   - [系统设计入门](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
+  - Teach Yourself Computer Science
+    - [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+    - [自学计算机科学](https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md)
+  - [MIT Challenge](https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/)
 - 进阶书籍
   - [深入理解计算机系统](https://book.douban.com/subject/26912767/)（CSAPP）
   - [计算机程序的构造和解释](https://book.douban.com/subject/1148282/)（SICP）
@@ -152,6 +156,11 @@ CS 是一个很大的体系，不然也不可能在高校中专门开设一个�
     - 一个作业（解析一个文件），C、JS、Web Server、MySQL
   - [Why I'm not in School](https://www.youtube.com/watch?v=eDjGBOxuuZs)
     - Gap Year 的两周，Container，K8s，Home Router
+
+- ["Uncle" Bob Martin - "The Future of Programming"](https://www.youtube.com/watch?v=ecIWPzGEbFc)
+- Teach Yourself Programming in Ten Years
+  - [Teach Yourself Programming in Ten Years](https://norvig.com/21-days.html)
+  - [十年学会编程](https://liuyandong.com/2017/10/25/122/)
 
 ### 中国高校 CS 课程体系
 

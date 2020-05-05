@@ -109,7 +109,7 @@
   - Svelte：新一代 UI 框架（编译器）
   - GraphQL
 - **工程**
-  - 打包（[webpack-starter](https://github.com/seognil-lab/webpack-starter)）
+  - 打包（[webpack-playground](https://github.com/seognil-study/webpack-playground)）
   - npm 组件开发（[lib-starter](https://github.com/seognil-lab/lib-starter)）
   - 静态检查/编码规范
   - 自动化测试
