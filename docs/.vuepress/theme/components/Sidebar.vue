@@ -17,7 +17,10 @@ export default {
   components: { SidebarLinks, NavLinks },
 
   mounted() {
-    this.$el.scrollTo(0, this.$el.querySelector('.active').offsetTop - 24);
+    const activedNavItem = this.$el.querySelector('.active')
+    if (activedNavItem) {
+      this.$el.scrollTo(0, activedNavItem.offsetTop - 24);
+    }
   },
 
   props: ['items']
