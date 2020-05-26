@@ -1,8 +1,7 @@
-# Node.js/npm 概览
+# npm 基本概念和使用
 
 ## 概览
 
-- [Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
 - [npm-package.json | npm Documentation](https://docs.npmjs.com/files/package.json)
 
 简单开发只需安装一个版本的 `node` 即可，  

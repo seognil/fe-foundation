@@ -17,8 +17,6 @@ const sidebarStructure = {
     './chrome.md',
     './vscode.md',
     './video-hotkey.md',
-    './npm-overview.md',
-    './npm-speedup.md',
   ],
   '辅助技能': [
     //
@@ -37,14 +35,21 @@ const sidebarStructure = {
     './js-foundation.md',
     './js-intro.md',
     './how-to-run-js.md',
-    './syntactic-sugar.md',
     './js-basic.md',
     './js-advanced.md',
     // './js-hardcore.md',
+    './syntactic-sugar.md',
     './js-modular.md',
     './regexp.md',
-    './npm-verdaccio.md',
     './js-foundation-old.md',
+  ],
+  'Node.js 和 NPM': [
+    //
+    './node-basic.md',
+    './npm-overview.md',
+    './npm-speedup.md',
+    './npm-verdaccio.md',
+    // './node-problems.md',
   ],
   '其他语言': [
     //

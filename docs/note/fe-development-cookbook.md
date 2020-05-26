@@ -98,8 +98,6 @@
 - **铺垫学习**
   - [Markdown 学习指南](./markdown.md)：学习写文档用的标记语言
   - [Git 学习指南](./git.md)：学习版本管理和周边概念
-  - [Node 概览（先行版）](./npm-overview.md)：了解 Node.js（前端开发的重要组成部分）
-  - [进一步提高 npm 安装速度（Proxy）](./npm-speedup.md)：npm 配置调优
   - [关于 Chrome](./chrome.md)：学习浏览器调试
   - [关于 VS Code](./vscode.md)：学习使用代码编辑器
 - **前端相关**
@@ -117,7 +115,8 @@
 
 ### JavaScript 生态路线图
 
-- [JavaScript 学习指南（系列）](./js-foundation.md)：了解 JavaScript 语言特性
+- [JavaScript 语言（系列）](./js-foundation.md)：了解 JavaScript 语言特性
+- [Node.js 和 NPM（系列）](./node-basic.md)：了解 JavaScript 的一个 Runtime
 - [TypeScript 学习指南](./typescript.md)：JavaScript + 静态类型系统
 - **框架类库**
   - Vue/React：国内主流的两大 UI 框架

@@ -29,25 +29,30 @@
   - [前端开发入门指南](./fe-development-cookbook.md)
 - **JavaScript**
   - [JavaScript 简介](./js-intro.md)
+  - [运行 JavaScript 代码的十几种方式](./how-to-run-js.md)
   - **JavaScript 语言核心**
     - [JavaScript 入门指南](./js-basic.md)
-      - [前端模块化](./js-modular.md)
-      - _JavaScript 内置对象_
-        - [正则表达式](./regexp.md)
-        - Promise（TODO）
     - [JavaScript 进阶指南](./js-advanced.md)
     - JavaScript 硬核指南（TODO）
-  - **JavaScript 客户端编程**
-    - JavaScript DOM 编程指南（TODO）
-      - 事件、代理事件
-      - 本地存储
-    - JavaScript 网络开发指南（TODO）
-      - ajax、fetch、跨域、cookie
-    - JavaScript 移动端开发指南（TODO）
-      - TouchEvent
-      - 传感器（陀螺仪等）
-    - JavaScript Node.js 编程指南（TODO）
-      - Node 内置对象
-      - 网络、框架、中间件
-  - **实战入门**
-    - npm 生态
+  - [前端模块化](./js-modular.md)
+  - _JavaScript 内置对象_
+    - [正则表达式](./regexp.md)
+    - Promise（TODO）
+  - [语法糖、操作符、关键字、特性](./syntactic-sugar.md)
+- **JavaScript 编程**
+  - JavaScript DOM 编程指南（TODO）
+    - 事件、代理事件
+    - 本地存储
+  - JavaScript 异步编程（TODO）
+  - JavaScript 网络开发指南（TODO）
+    - ajax、fetch、跨域、cookie
+  - JavaScript 移动端开发指南（TODO）
+    - TouchEvent
+    - 传感器（陀螺仪等）
+- **Node.js 和 NPM**
+  - [Node.js 入门指南](./node-basic.md)
+  - [npm 基本概念和使用](./npm-overview.md)
+  - [用 Proxy 进一步提高 npm 安装速度](./npm-speedup.md)
+  - [使用 verdaccio 搭建私有 npm 仓库](./npm-verdaccio.md)
+  - [Node.js 踩坑记录](./node-problems.md)
+  - 开发和发布一个 npm 包（TODO）
