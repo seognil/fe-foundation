@@ -69,18 +69,19 @@
 
 ### HTML 的学习重点
 
-如果进行基本的 Web 页面开发，你应该大致了解：
+如果进行基本的 Web 页面开发，关于 HTML 你应该大致了解：
 
+- 组织页面结构的元素：[\<article\>][article], [\<div\>][div], [\<h1\>][h1], [\<p\>][p], [\<span\>][span] 等
 - 预设显示效果的元素：[\<i\>][i], [\<strong\>][strong], [\<code\>][code], [\<pre\>][pre], [\<table\>][table] 等
 - 预设功能的元素：[\<video\>][video], [\<canvas\>][canvas], [\<input\>][input] 等
-- 表单和输入：[\<form\>][form], [\<input\>][input] 的各种行为和用法
+- 表单和输入：[\<form\>][form], [\<input\>][input] 等元素的各种属性、行为和用法
 
 如果你想要更进一步，关于 HTML 还有这些内容可以了解：
 
-- SEO 优化：[\<head\>][head] 中的 [\<title\>][title]、[\<meta\>][meta] 信息
-- 语义化：[\<body\>][body] 内的结构设计和标签使用（和 SEO 也有关）
-- 无障碍、可访问性：[ARIA](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)、[\<img\>][img] 的 `alt` 属性等等
 - 外部资源加载：[\<link\>][link], [\<script\>][script]，它们涉及跨域、隐私策略、加载顺序等问题
+- SEO 优化：[\<head\>][head] 中 [\<title\>][title]、[\<meta\>][meta] 提供的信息
+- 语义化：[\<body\>][body] 内的结构设计和标签的选择（和 SEO 也有关）
+- 无障碍、可访问性：[ARIA](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)、[\<img\>][img] 的 `alt` 属性等等
 
 ### 内容分类
 
@@ -118,11 +119,12 @@
 - [The elements of HTML - HTML Living Standard](https://html.spec.whatwg.org/multipage/#toc-semantics)
 - [Semantic HTML - 顾轶灵](http://justineo.github.io/slideshows/semantic-html/#/)
 
-下面的列表来源于 HTML 标准文档，涵盖了大量元素（非全部）。
+以下列表的结构来源于 [HTML 标准文档](https://html.spec.whatwg.org/multipage/#toc-semantics)，涵盖了大量元素（非全部）。
 
-所有的标签都链接到 MDN，以便查看元素实际的效果和作用。  
-（MDN 的中文页面 Demo 可能缺失，所以全部指向英文文档）  
-（同时英文文档中的说明也更详细）
+分类链接指向 [HTML 标准文档](https://html.spec.whatwg.org/multipage/#toc-semantics)。
+
+所有的元素链接指向 MDN，以便查看元素实际的效果和作用。  
+（在 MDN 的中文页面中 Demo 可能会缺失，所以全部指向英文的版本）
 
 - [4.1 The document element](https://html.spec.whatwg.org/multipage/semantics.html)
   - [\<html\>][html]：文档根元素
@@ -185,9 +187,9 @@
   - [\<form\>][form]：表单区域（内置的组件，可以用 `submit` 进行提交）
   - [\<label\>][label]：标签（可以用于和选择框关联）
   - [\<input\>][input]：输入，可以 `submit`
-    - [\<type\>][type] 属性，根据 type 不同，可以表示单行输入框、密码、滑动条、单选框等不同形式：`hidden`, `search`, `tel`, `url`, `email`, `password`, `date`, `month`, `week`, `time`, `datetime-local`, `number`, `range`, `color`, `checkbox`, `radio`, `file`, `submit`, `image`, `reset`, `button`
+    - [\<type\>][type] 属性，根据 `type` 值的不同，可以表示单行输入框、密码、滑动条、单选框等不同形式。`type` 可选的值：`hidden`, `search`, `tel`, `url`, `email`, `password`, `date`, `month`, `week`, `time`, `datetime-local`, `number`, `range`, `color`, `checkbox`, `radio`, `file`, `submit`, `image`, `reset`, `button`
     - 其他属性：`maxlength`, `minlength`, `size`, `readonly`, `required`, `multiple`, `pattern`, `min`, `step`, `list`, `placeholder`
-  - [\<textarea\>][textarea]：多行的输入框
+  - [\<textarea\>][textarea]：支持多行的输入框
   - [\<button\>][button]：按钮，可以 `submit`
   - （下拉菜单系列）
     - [\<select\>][select]：选择项
