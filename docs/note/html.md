@@ -40,7 +40,7 @@
 - 学习 HTML
   - 文档
     - 翻阅 HTML 标准文档
-    - 翻阅 MDN 中标签的文档，查看例子和演示
+    - 翻阅 MDN 中元素的文档，查看例子和实际效果
     - 理解元素、标签、属性等概念
   - 动手玩，亲自尝试 `<input>` 等元素的各种预设功能
   - 练习使用 [Emmet](https://emmet.io/) 快速编写 HTML
@@ -55,17 +55,52 @@
 
 ### 自学教材
 
-- [HTML 元素参考 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
-- [The elements of HTML - HTML Living Standard](https://html.spec.whatwg.org/multipage/#toc-semantics)
-- [Semantic HTML - 顾轶灵](http://justineo.github.io/slideshows/semantic-html/#/)
+- [HTML 简介 - MDN](https://developer.mozilla.org/zh-CN/docs/Glossary/HTML)
 
-* [内容分类 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
+* [HTML 元素参考 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
+* [The elements of HTML - HTML Living Standard](https://html.spec.whatwg.org/multipage/#toc-semantics)
+* [Semantic HTML - 顾轶灵](http://justineo.github.io/slideshows/semantic-html/#/)
+
+- [内容分类 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
+
+### 视频 {#video .timeline-note}
+
+- [HTML Crash Course For Absolute Beginners](https://www.youtube.com/watch?v=UB1O30fR-EE)：60 分钟，2017 年
+  - 0:00 - HTML 简介，简单的编辑环境
+  - 11:14 - 标签的语法
+  - 12:32 - 典型的页面和 HTML 结构，Doctype
+  - 14:12 - 大量的 HTML 元素的演示
+  - 49:24 - 通过一个实例（写一个简单的博客结构），了解 HTML 语义化（含少量 CSS）
 
 ### 无障碍
 
 - [ARIA - MDN](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)
 
 ## HTML 知识体系
+
+### 琐碎的知识
+
+- [DOCTYPE](https://developer.mozilla.org/zh-CN/docs/Glossary/Doctype)
+- [空元素](https://developer.mozilla.org/zh-CN/docs/Glossary/%E7%A9%BA%E5%85%83%E7%B4%A0)：标签的写法分为闭合和非闭合，所以 _空元素_ 又可以称为 _自闭合标签_，这些元素内部无法再嵌套其他元素
+  - [\<area\>][area], [\<base\>][base], [\<br\>][br], [\<col\>][col], [\<colgroup\>][colgroup], [\<command\>][command], [\<embed\>][embed], [\<hr\>][hr], [\<img\>][img], [\<input\>][input], [\<keygen\>][keygen], [\<link\>][link], [\<meta\>][meta], [\<param\>][param], [\<source\>][source], [\<track\>][track], [\<wbr\>][wbr]
+- [Web Component](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)：可以自己设计 HTML 元素，类似现代 Web 框架中组件的概念。但是是更官方的标准，不依赖任何其他 JS 框架。（目前这种方式还不流行）
+
+### 标签的属性
+
+- [全局属性 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes)
+- [3.2.6 Global attributes](https://html.spec.whatwg.org/multipage/dom.html#global-attributes)
+
+HTML 元素的标签上可以添加属性
+
+- 一些常见的全局属性
+  - [id](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/id)：全文档唯一的标识符
+  - [class](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/class)：类，可以使 CSS 或 JS 批量地施加效果
+  - [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title)：hover 上去会显示 title 中的信息
+  - [style](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style)：用于写内联样式
+- [data-\*](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/data-*)：自定义数据，一般用于 JS 读写数据
+- [aria-\*](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)：无障碍系列属性
+- [DOM 回调事件](https://developer.mozilla.org/zh-CN/docs/Web/Guide/Events/Event_handlers)：事件系列属性，不过现在一般很少直接写在 HTML 中了，可以用 JS 的其他方式来实现。
+  - [onclick](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick), [onscroll](https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onscroll), [oninput](https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/oninput) 等
 
 ### HTML 的学习重点
 
@@ -80,7 +115,7 @@
 
 - 外部资源加载：[\<link\>][link], [\<script\>][script]，它们涉及跨域、隐私策略、加载顺序等问题
 - SEO 优化：[\<head\>][head] 中 [\<title\>][title]、[\<meta\>][meta] 提供的信息
-- 语义化：[\<body\>][body] 内的结构设计和标签的选择（和 SEO 也有关）
+- 语义化：[\<body\>][body] 内的结构设计和元素的选择（和 SEO 也有关）
 - 无障碍、可访问性：[ARIA](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)、[\<img\>][img] 的 `alt` 属性等等
 
 ### 内容分类
@@ -221,8 +256,60 @@
     - [\<slot\>][slot]：插槽（类似于 Vue 中的 slot）
   - [\<canvas\>][canvas]：画布元素，可以通过 JS 编程控制。
 
+## HTML 典型代码
+
+### 基本结构
+
+一个 HTML 文件至少要包含：
+
+- DOCTYPE：用于指明是 HTML
+- html
+  - head：一些 meta 信息（不会渲染到页面中，具有其他作用）
+  - body：主要内容（渲染到页面中）
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>文档的标题（会反映在浏览器标签页中）</title>
+  </head>
+  <body>
+    <h1>H1 标题</h1>
+    <p>段落</p>
+    <p>另一个段落</p>
+  </body>
+</html>
+```
+
+### 一个简单例子
+
+通过 VS Code 中内置的 Emmet 功能生成的基本 HTML 代码，并加入样式 和 JS 代码的标签。
+
+（这里略过 CSS 和 JS 的代码）
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
+```
+
 <!-- Links -->
 
+[h1]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html
 [head]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
 [title]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title
@@ -235,7 +322,6 @@
 [section]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
 [nav]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
 [aside]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside
-[h1]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1
 [hgroup]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup
 [header]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header
 [footer]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer
@@ -310,9 +396,16 @@
 [template]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
 [slot]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot
 [canvas]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas
+[area]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area
+[col]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col
+[colgroup]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup
+[command]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/command
+[embed]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed
+[keygen]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen
+[param]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param
+[wbr]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
 [h1]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1
 [svg]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/svg
-[embed]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed
 [math]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/math
 [object]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object
 [menu]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu
