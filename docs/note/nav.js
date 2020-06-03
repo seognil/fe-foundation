@@ -33,6 +33,7 @@ const sidebarStructure = {
   'HTML/CSS': [
     //
     './html.md',
+    './css.md',
   ],
   'JavaScript 语言': [
     //

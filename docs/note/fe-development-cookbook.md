@@ -101,19 +101,14 @@
   - [关于 Chrome](./chrome.md)：学习浏览器调试
   - [关于 VS Code](./vscode.md)：学习使用代码编辑器
 - **前端相关**
-  - HTML5
-    - 基本 HTML 元素和属性
-  - CSS
-    - 基本 CSS 模型和属性
-    - 响应式布局
-    - Less/Sass 预处理
-    - 动画及性能优化
-  - [JavaScript ↓](#javascript-%e7%94%9f%e6%80%81%e8%b7%af%e7%ba%bf%e5%9b%be)
+  - [HTML5](./html.md)
+  - [CSS](./css.md)
+  - [JavaScript ↓](#js-roadmap)
 - **后端相关**
   - 计算机网络
   - 简单后端开发（Node.js）
 
-### JavaScript 生态路线图
+### JavaScript 生态路线图 {#js-roadmap}
 
 - [JavaScript 语言（系列）](./js-foundation.md)：了解 JavaScript 语言特性
 - [Node.js 和 NPM（系列）](./node-basic.md)：了解 JavaScript 的一个 Runtime

@@ -6,22 +6,30 @@
 
 > HTML（HyperText Markup Language，超文本标记语言） 是一种描述语言，用来定义网页结构。
 
-### 为什么要用 HTML
+大白话：HTML 是用来写页面结构的。
 
-对于网页的页面，  
-无论是朴素地开发，还是使用 Web 框架和组件，  
-你都需要了解 HTML。
+### 什么是 WHATWG
 
-[React](https://zh-hans.reactjs.org/) 中的 [JSX](https://zh-hans.reactjs.org/docs/introducing-jsx.html) 或 [Vue](https://cn.vuejs.org/index.html) 中的 [template](https://cn.vuejs.org/v2/guide/single-file-components.html) 最终都会生成 HTML，让浏览器进行渲染。
+> 网页超文本应用技术工作小组（英语：Web Hypertext Application Technology Working Group，缩写：WHATWG），是一个以推动网络 HTML 标准为目的而成立的组织。在 2004 年，由 Apple 公司、Mozilla 基金会和 Opera 软件公司所组成。
+
+大白话：WHATWG 是修订 HTML 规范的一群人。
+
+### 为什么要学习 HTML
+
+- 当你要写页面
+
+对于网页页面，无论是朴素地徒手开发，还是使用 Web 框架和组件，你都需要了解 HTML。
+
+前端框架 [React](https://zh-hans.reactjs.org/) 中的 [JSX](https://zh-hans.reactjs.org/docs/introducing-jsx.html) 或 [Vue](https://cn.vuejs.org/index.html) 中的 [template](https://cn.vuejs.org/v2/guide/single-file-components.html) 最终也都是生成 HTML 让浏览器渲染罢了。
 
 ## 学习 HTML
 
-只针对 HTML 中的**元素**。  
-关于 CSS、DOM 以及 Web 编程，我们将在后续的文章中进行。
+本篇只包含 HTML 中的**元素**和标签部分。  
+关于 CSS、DOM 以及 Web 编程，我们可以在后续的文章中进行。
 
 ### 概览
 
-通过阅读 HTML 标准文档，对**所有**预设的元素和标签进行速览。
+通过快速浏览 HTML 标准文档，了解 HTML 规范中**所有**的元素和标签。
 
 - 耗时：从入门到了解大致 HTML 知识体系，1~6 小时
 - 难点：SEO、无障碍等
@@ -38,14 +46,14 @@
   - [计算机科学 入门指南](./computer-science.md)
   - [关于 Chrome](./chrome.md)
 - 学习 HTML
-  - 文档
+  - 快速阅读文档
     - 翻阅 HTML 标准文档
     - 翻阅 MDN 中元素的文档，查看例子和实际效果
     - 理解元素、标签、属性等概念
   - 动手玩，亲自尝试 `<input>` 等元素的各种预设功能
   - 练习使用 [Emmet](https://emmet.io/) 快速编写 HTML
 - 实战
-  - 你可以直接使用 Web 框架开发项目，并在需要的时候随时翻阅文档。
+  - 你可以直接开发一个 Web 应用，随用随查，通过完成实际的需求来熟悉 HTML。
 - 进阶
   - HTML 的 SEO 优化
   - HTML 的页面结构优化
@@ -55,6 +63,8 @@
 
 ### 自学教材
 
+#### 文字
+
 - [HTML 简介 - MDN](https://developer.mozilla.org/zh-CN/docs/Glossary/HTML)
 
 * [HTML 元素参考 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
@@ -63,7 +73,7 @@
 
 - [内容分类 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
 
-### 视频 {#video .timeline-note}
+#### 视频 {#video .timeline-note}
 
 - [HTML Crash Course For Absolute Beginners](https://www.youtube.com/watch?v=UB1O30fR-EE)：60 分钟，2017 年
   - 0:00 - HTML 简介，简单的编辑环境
@@ -104,7 +114,7 @@ HTML 元素的标签上可以添加属性
 
 ### HTML 的学习重点
 
-如果进行基本的 Web 页面开发，关于 HTML 你应该大致了解：
+如果进行基本的 Web 页面开发，关于 HTML 你大致需要了解：
 
 - 组织页面结构的元素：[\<article\>][article], [\<div\>][div], [\<h1\>][h1], [\<p\>][p], [\<span\>][span] 等
 - 预设显示效果的元素：[\<i\>][i], [\<strong\>][strong], [\<code\>][code], [\<pre\>][pre], [\<table\>][table] 等
@@ -118,48 +128,17 @@ HTML 元素的标签上可以添加属性
 - 语义化：[\<body\>][body] 内的结构设计和元素的选择（和 SEO 也有关）
 - 无障碍、可访问性：[ARIA](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)、[\<img\>][img] 的 `alt` 属性等等
 
-### 内容分类
+### HTML 元素及分类
 
-- [内容分类 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
+**通过阅读标准文档，建立 HTML 知识体系**
 
-> 每一个 HTML 元素都必须遵循定义了它可以包含哪一类内容的规则。 这些规则被归类为几个常见的元素内容模型（content model）。每个 HTML 元素都属于 0 个、1 个或多个内容模型，每个模型都有一些规则使得元素中的内容必须遵循一个 HTML 规范文档( HTML-conformant document)。
+以下列表中的所有链接都来自：
 
-![Content_categories_venn.png](https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png?size=webview)
+- [HTML Living Standard](https://html.spec.whatwg.org/multipage/)：HTML 标准文档
+- [HTML 元素参考 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)：MDN 开发者手册，查看元素实际的显示效果和作用  
+  （MDN 的中文页面可能会缺失 Demo，所以姑且全部指向英文的版本，反正主要目的是查看元素的显示效果）
 
-- **主内容类（Main content categories）**
-  - **元数据内容（Metadata content）**
-    - [\<base\>][base], [\<link\>][link], [\<meta\>][meta], [\<noscript\>][noscript], [\<script\>][script], [\<style\>][style], [\<title\>][title]
-  - **流式元素（Flow content）**
-    - 其他大部分具有结构效果的元素，比如 [\<div\>][div], [\<h1\>][h1], [\<a\>][a], [\<strong\>][strong], [\<noscript\>][noscript], [\<svg\>][svg], [\<video\>][video] 等
-    - 有一些特殊情况，比如 带 `scoped` 属性的 [\<style\>][style] 等
-  - **章节元素（Sectioning content）**
-    - [章节与大纲](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document) 规范（目前未实施）涉及的元素，[\<header\>][header], [\<footer\>][footer], [\<h1\>-\<h6\>][h1], [\<article\>][article], [\<aside\>][aside], [\<nav\>][nav], [\<section\>][section]
-  - **标题元素（Heading content）**
-    - [\<h1\>-\<h6\>][h1], [\<hgroup\>][hgroup]
-  - **短语元素（Phrasing content）**
-    - 可以简单理解为行内元素，比如 [\<strong\>][strong], [\<kbd\>][kbd], [\<label\>][label], [\<input\>][input], [\<textarea\>][textarea], [\<img\>][img], [\<svg\>][svg], [\<video\>][video] 等
-  - **嵌入元素（Embedded content）**
-    - [\<audio\>][audio], [\<canvas\>][canvas], [\<embed\>][embed], [\<iframe\>][iframe], [\<img\>][img], [\<math\>][math], [\<object\>][object], [\<svg\>][svg], [\<video\>][video]
-  - **交互元素（Interactive content）**
-    - [\<a\>][a], [\<button\>][button], [\<details\>][details], [\<embed\>][embed], [\<iframe\>][iframe], [\<label\>][label], [\<select\>][select], [\<textarea\>][textarea]
-    - 某些元素加上属性也可以交互：[\<audio\>][audio], [\<img\>][img], [\<input\>][input], [\<menu\>][menu], [\<object\>][object], [\<video\>][video]
-  - **表单相关内容（Form-associated content）**
-    - [\<form\>][form], [\<input\>][input], [\<select\>][select] 等
-  - **支持脚本元素**
-    - 不会被渲染到页面中的就脚本元素：[\<script\>][script], [\<template\>][template]
-
-### HTML 常用元素
-
-- [HTML 元素参考 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
-- [The elements of HTML - HTML Living Standard](https://html.spec.whatwg.org/multipage/#toc-semantics)
-- [Semantic HTML - 顾轶灵](http://justineo.github.io/slideshows/semantic-html/#/)
-
-以下列表的结构来源于 [HTML 标准文档](https://html.spec.whatwg.org/multipage/#toc-semantics)，涵盖了大量元素（非全部）。
-
-分类链接指向 [HTML 标准文档](https://html.spec.whatwg.org/multipage/#toc-semantics)。
-
-所有的元素链接指向 MDN，以便查看元素实际的效果和作用。  
-（在 MDN 的中文页面中 Demo 可能会缺失，所以全部指向英文的版本）
+（还有什么比标准文档更权威呢？）
 
 - [4.1 The document element](https://html.spec.whatwg.org/multipage/semantics.html)
   - [\<html\>][html]：文档根元素
@@ -256,6 +235,36 @@ HTML 元素的标签上可以添加属性
     - [\<slot\>][slot]：插槽（类似于 Vue 中的 slot）
   - [\<canvas\>][canvas]：画布元素，可以通过 JS 编程控制。
 
+### 内容分类
+
+- [内容分类 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
+
+> 每一个 HTML 元素都必须遵循定义了它可以包含哪一类内容的规则。 这些规则被归类为几个常见的元素内容模型（content model）。每个 HTML 元素都属于 0 个、1 个或多个内容模型，每个模型都有一些规则使得元素中的内容必须遵循一个 HTML 规范文档( HTML-conformant document)。
+
+![Content_categories_venn.png](https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png?size=webview)
+
+- **主内容类（Main content categories）**
+  - **元数据内容（Metadata content）**
+    - [\<base\>][base], [\<link\>][link], [\<meta\>][meta], [\<noscript\>][noscript], [\<script\>][script], [\<style\>][style], [\<title\>][title]
+  - **流式元素（Flow content）**
+    - 其他大部分具有结构效果的元素，比如 [\<div\>][div], [\<h1\>][h1], [\<a\>][a], [\<strong\>][strong], [\<noscript\>][noscript], [\<svg\>][svg], [\<video\>][video] 等
+    - 有一些特殊情况，比如 带 `scoped` 属性的 [\<style\>][style] 等
+  - **章节元素（Sectioning content）**
+    - [章节与大纲](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document) 规范（目前未实施）涉及的元素，[\<header\>][header], [\<footer\>][footer], [\<h1\>-\<h6\>][h1], [\<article\>][article], [\<aside\>][aside], [\<nav\>][nav], [\<section\>][section]
+  - **标题元素（Heading content）**
+    - [\<h1\>-\<h6\>][h1], [\<hgroup\>][hgroup]
+  - **短语元素（Phrasing content）**
+    - 可以简单理解为行内元素，比如 [\<strong\>][strong], [\<kbd\>][kbd], [\<label\>][label], [\<input\>][input], [\<textarea\>][textarea], [\<img\>][img], [\<svg\>][svg], [\<video\>][video] 等
+  - **嵌入元素（Embedded content）**
+    - [\<audio\>][audio], [\<canvas\>][canvas], [\<embed\>][embed], [\<iframe\>][iframe], [\<img\>][img], [\<math\>][math], [\<object\>][object], [\<svg\>][svg], [\<video\>][video]
+  - **交互元素（Interactive content）**
+    - [\<a\>][a], [\<button\>][button], [\<details\>][details], [\<embed\>][embed], [\<iframe\>][iframe], [\<label\>][label], [\<select\>][select], [\<textarea\>][textarea]
+    - 某些元素加上属性也可以交互：[\<audio\>][audio], [\<img\>][img], [\<input\>][input], [\<menu\>][menu], [\<object\>][object], [\<video\>][video]
+  - **表单相关内容（Form-associated content）**
+    - [\<form\>][form], [\<input\>][input], [\<select\>][select] 等
+  - **支持脚本元素**
+    - 不会被渲染到页面中的就脚本元素：[\<script\>][script], [\<template\>][template]
+
 ## HTML 典型代码
 
 ### 基本结构
@@ -263,9 +272,9 @@ HTML 元素的标签上可以添加属性
 一个 HTML 文件至少要包含：
 
 - DOCTYPE：用于指明是 HTML
-- html
-  - head：一些 meta 信息（不会渲染到页面中，具有其他作用）
-  - body：主要内容（渲染到页面中）
+- \<html\>
+  - \<head\>：一些 meta 信息（不会渲染到页面中，具有其他作用）
+  - \<body\>：主要内容（渲染到页面中）
 
 ```html
 <!DOCTYPE html>
