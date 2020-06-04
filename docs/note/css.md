@@ -334,15 +334,15 @@ CSS 预处理器是近年来前端开发的标配，
 
 ```css
 #demo-animation {
-  animation: 3s linear 1s infinite alternate slidein;
+  animation: 1s ease-in-out 1s infinite alternate slidein;
 }
 
 @keyframes slidein {
   from {
-    margin-left: 0%;
+    transform: translateX(0);
   }
   to {
-    margin-left: 80%;
+    transform: translateX(100%);
   }
 }
 ```
@@ -351,7 +351,7 @@ CSS 预处理器是近年来前端开发的标配，
 
 <style>
   #demo-animation {
-    animation: 3s linear 1s infinite alternate none running slidein;
+    animation: 1s ease-in-out 1s infinite alternate none running slidein;
     background-color: #1766aa;
     margin: 20px;
     border: 5px solid #333;
@@ -362,10 +362,10 @@ CSS 预处理器是近年来前端开发的标配，
 
   @keyframes slidein {
     from {
-      margin-left: 0%;
+      transform: translateX(0);
     }
     to {
-      margin-left: 80%;
+      transform: translateX(100%);
     }
   }
 </style>
