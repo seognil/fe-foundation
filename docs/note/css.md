@@ -139,7 +139,35 @@ CSS 的知识体系很大，大量的规则细节需要在实践中不断踩坑�
 - Column
   - [写给自己看的 CSS columns 分栏布局教程](https://www.zhangxinxu.com/wordpress/2019/01/css-css3-columns-layout/)
 
-### CSS 预处理器
+### CSS 框架、库
+
+如果你打开搜索引擎搜索 `css frameworks`，你会发现相比预处理器，CSS 的框架要多得多。
+
+现在的前端开发可以使用组件框架，直接内置了很多风格统一的组件，  
+比如 [Ant Design](https://ant.design/components/overview-cn/) 或 [Element UI](https://element.eleme.cn/#/zh-CN/component/layout)。  
+又例如 Material Design 有 React 组件版本的 [MATERIAL-UI](https://material-ui.com/zh/)。
+
+如果不使用第三方组件库而是自行开发，也可以选择 CSS 框架。  
+（我近几年接触 CSS 不太多，这里就简单列举几个我了解过的高星 CSS 框架。）
+
+- 布局和组件，配合它们提供的 JS 文件还能实现交互效果。
+  - [Bootstrap](https://getbootstrap.com/)：老牌 CSS 框架
+  - [Materialize](https://materializecss.com/)：Material Design 风格的框架
+  - [Bulma](https://bulma.io/)：一个基于 Flex 的框架，纯 CSS，不含 JS
+- 2D 动画，提供元素的简单动画效果
+  - [Animate.css](https://animate.style/)
+  - [CSShake](https://elrumordelaluz.github.io/csshake/)
+- 其他
+  - [Font Awesome](https://fontawesome.com/)：一个矢量图标库
+  - [98.css](https://jdan.github.io/98.css/)：Win98 风格的样式
+
+### 现代 CSS 技术
+
+- [The State of CSS 2019](https://2019.stateofcss.com/tw/)：2019 年 CSS 领域技术分析，可以了解很多 CSS 的新标准和新技术。
+
+正如 The State of CSS 所描绘的那样，CSS 的世界也像 JS 那样在爆发式发展，各种新技术的使用率在不断上升。例如 React SSR 框架 [Next.js](https://nextjs.org/)，就同时集成并运用了 css-modules、styled-jsx、Sass、PostCSS 多种 CSS 技术。
+
+#### CSS 预处理器
 
 - [2019 年，你是否可以抛弃 CSS 预处理器？ | Aotu.io「凹凸实验室」](https://aotu.io/notes/2019/10/29/css-preprocessor/index.html)
 - [CSS 预处理器 - MDN](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS_preprocessor)
@@ -161,35 +189,37 @@ CSS 预处理器是近年来前端开发的标配，
 - [Stylus](https://stylus-lang.com/)
 - [PostCSS](https://postcss.org/)
 
-### CSS 框架、库
+#### CSS 方法论
 
-如果你打开搜索引擎搜索 `css frameworks`，你会发现相比预处理器，CSS 的框架要多得多。
+这些理论不属于 CSS 规范，它们是实践中产生的方法论，  
+目的都是为了提升大型项目中，样式代码的可维护性和可扩展性。
 
-我近几年接触 CSS 不多，  
-并且现在的前端开发一般会使用 Web 框架，直接内置了风格统一的组件，  
-比如 [Ant Design](https://ant.design/components/overview-cn/) 或 [Element UI](https://element.eleme.cn/#/zh-CN/component/layout)。  
-纯 CSS 框架的作用就变小了，例如 Material Design，其实有 React 组件版本的 [MATERIAL-UI](https://material-ui.com/zh/)，可以直接进行开发，更方便。
+- [方法论 - The State of CSS 2019](https://2019.stateofcss.com/tw/technologies/methodologies/)
+  - BEM - [BEM](http://getbem.com/introduction/)：一种 class 的命名规范
+  - Atomic CSS - [Atomic CSS](https://acss.io/)：原子 CSS，通过基本样式库的组合而不是直接写 CSS 代码来编写样式
+  - OOCSS
+  - SMACSS - [Scalable and Modular Architecture for CSS](http://smacss.com/)：一种可扩展和模块化的 CSS 架构模式
+  - ITCSS - [ITCSS: Scalable and Maintainable CSS Architecture](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)：一种可扩展和可维护的 CSS 架构模式
 
-这里就简单列举几个我了解过的高星 CSS 框架。
-
-- 布局和组件，配合它们提供的 JS 文件还能实现交互效果。
-  - [Bootstrap](https://getbootstrap.com/)：老牌 CSS 框架
-  - [Materialize](https://materializecss.com/)：Material Design 风格的框架
-  - [Bulma](https://bulma.io/)：一个基于 Flex 的框架，纯 CSS，不含 JS
-- 2D 动画，提供元素的简单动画效果
-  - [Animate.css](https://animate.style/)
-  - [CSShake](https://elrumordelaluz.github.io/csshake/)
-- 其他
-  - [Font Awesome](https://fontawesome.com/)：一个矢量图标库
-  - [98.css](https://jdan.github.io/98.css/)：Win98 风格的样式
-
-### CSS in JS
-
-说到 Web 框架，近年来逐渐流行通过 JS 编写 CSS，不过这些 CSS in JS 的方案目前还称不上最佳实践。  
-用预处理器的开发方式也很多，毕竟胜在简单方便。
+#### CSS in JS
 
 - [CSS in JavaScript - 2019 JavaScript Rising Stars](https://risingstars.js.org/2019/zh#section-css-in-js)
+- [CSS-in-JS - The State of CSS 2019](https://2019.stateofcss.com/tw/technologies/css-in-js/)
 - [What actually is CSS-in-JS?](https://medium.com/dailyjs/what-is-actually-css-in-js-f2f529a2757)
+
+现代 Web 框架可以通过 JS 编写 HTML 和业务逻辑，  
+同样的，借助额外的工具，还可以用 JS 来编写 CSS。  
+（当然，不用这些高科技，直接编写 CSS 或使用预处理器的方案也很常见，胜在简单方便。）
+
+其实 CSS in JS 技术主要是 React 技术圈在使用。  
+像 Vue 有 [单文件组件](https://cn.vuejs.org/v2/guide/single-file-components.html) 的开发方案，Angular 也有标准的 [文件结构](https://angular.cn/guide/file-structure#application-source-files)。  
+唯独 React 只解决了 JS 和 HTML 的问题，没怎么照顾到 CSS，产生了技术缺口。
+
+一些 CSS in JS 的库：
+
+- [styled-components](https://github.com/styled-components/styled-components)：通过 JS 函数生成绑定样式的 React 组件。
+- [css-modules](https://github.com/css-modules/css-modules)：可模块化的 CSS，可以用于组件的样式计算和切换。
+- [styled-jsx](https://github.com/vercel/styled-jsx)：在 JSX 中写样式，使 React 也能单文件编写组件。
 
 ### 工具和网站
 
@@ -232,7 +262,6 @@ CSS 预处理器是近年来前端开发的标配，
 - [为什么 CSS 这么难学？](https://www.zhihu.com/question/66167982)
 - [CSS Grid 布局那么好，为什么至今没有人开发出基于 Grid 布局的前端框架呢？](https://www.zhihu.com/question/397861009/answer/1260563343)
 - [iCSS](https://github.com/chokcoco/iCSS)：“CSS 奇技淫巧，在这里，都有。”
-- [BEM](http://getbem.com/introduction/)：曾经流行的一种 CSS 命名规范
 - [css-guidelines](https://github.com/chris-pearce/css-guidelines#general-principles)：推荐编码风格（看看就好，应该保持和自己的团队风格统一）
 - [编写可维护的 CSS](https://segmentfault.com/a/1190000000388784)：另一份编码风格指南（可能比较陈旧）
 
@@ -269,14 +298,14 @@ CSS 预处理器是近年来前端开发的标配，
   - [各种数值单位 - W3C](https://www.w3.org/TR/css-values-3/#lengths)：`em`, `vh`, `px`, `deg`, `Hz` 等
   - [calc() - W3C](https://www.w3.org/TR/css-values-3/#calc-notation) 可以用来进行数值计算
   - [attr() - W3C](https://www.w3.org/TR/css-values-3/#attr-notation) 可以读取 HTML 元素属性来计算
-- CSS 变量：[CSS Custom Properties for Cascading Variables Module Level 1 - W3C](https://www.w3.org/TRcss-variables-1/)）
+- CSS 变量：[CSS Custom Properties for Cascading Variables Module Level 1 - W3C](https://www.w3.org/TRcss-variables-1/)
   - [CSS 现在自带变量功能了 - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 - 盒子模型：[Box Model - W3C](https://www.w3.org/TR/CSS2/box.html#box-model)
   - [盒子模型 - MDN](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#%E7%9B%92%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%90%84%E4%B8%AA%E9%83%A8%E5%88%86)：4 个部分，外边距、边框、内边距、内容
   - [border-box - MDN](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#%E6%9B%BF%E4%BB%A3%EF%BC%88IE%EF%BC%89%E7%9B%92%E6%A8%A1%E5%9E%8B)
   - [外边距折叠 - MDN](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/The_box_model#%E5%A4%96%E8%BE%B9%E8%B7%9D%E6%8A%98%E5%8F%A0)
   - [overflow - MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow)
-- 布局方案（三个新的布局方案，详情见 [上文](#layout)）
+- 布局方案（三个新的布局方案，详情见 [上文](#layout)
   - [CSS Flexible Box Layout Module Level 1 - W3C](https://www.w3.org/TR/css-flexbox-1/)：`flexbox` 弹性盒子
   - [CSS Grid Layout Module Level 1 - W3C](https://www.w3.org/TR/css-grid-1/)：`grid` 网格布局
   - [CSS Multi-column Layout Module Level 1 - W3C](https://www.w3.org/TR/css-multicol-1/)：`column` 多列
@@ -438,7 +467,7 @@ CSS 预处理器是近年来前端开发的标配，
 
 Sass 支持变量和嵌套，还有很多其他功能。
 
-以下 Sass 代码
+以下 Sass 代码：
 
 ```scss
 $brandColor: #f60;
@@ -454,7 +483,7 @@ $size: 1em;
 }
 ```
 
-会被编译成如下 CSS 代码
+会被编译成如下 CSS 代码：
 
 ```css
 .selector {
