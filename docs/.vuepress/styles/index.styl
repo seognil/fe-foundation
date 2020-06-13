@@ -29,11 +29,6 @@ kbd {
     white-space: nowrap;
 }
 
-.content__default a[href^='/'],
-.content__default a[href^='#'] {
-    text-decoration: underline dotted hsla(220, 80%, 60%, 0.5);
-}
-
 .timeline-note + ul a + ul,
 .timeline-note + ul a + ul ul {
     line-height: 1.3;
@@ -47,4 +42,27 @@ kbd {
 
 main.page {
     word-break: break-word;
+}
+
+main a[href^='/'],
+main a[href^='#'] {
+    text-decoration: underline dotted hsla(220, 80%, 60%, 0.5);
+    color: $accentColor
+}
+
+a .icon.outbound {
+    display: none;
+}
+
+main h2:nth-of-type(4n+1) {
+    border-bottom: 2px solid hsl(0, 50%, 70%);
+}
+main h2:nth-of-type(4n+2) {
+    border-bottom: 2px solid hsl(50, 50%, 70%);
+}
+main h2:nth-of-type(4n+3) {
+    border-bottom: 2px solid hsl(100, 50%, 70%);
+}
+main h2:nth-of-type(4n+4) {
+    border-bottom: 2px solid hsl(220, 50%, 70%);
 }
