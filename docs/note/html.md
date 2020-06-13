@@ -66,11 +66,9 @@
 #### 文字
 
 - [HTML 简介 - MDN](https://developer.mozilla.org/zh-CN/docs/Glossary/HTML)
-
-* [HTML 元素参考 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
-* [The elements of HTML - HTML Living Standard](https://html.spec.whatwg.org/multipage/#toc-semantics)
-* [Semantic HTML - 顾轶灵](http://justineo.github.io/slideshows/semantic-html/#/)
-
+- [HTML 元素参考 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
+- [The elements of HTML - HTML Living Standard](https://html.spec.whatwg.org/multipage/#toc-semantics)
+- [Semantic HTML - 顾轶灵](http://justineo.github.io/slideshows/semantic-html/#/)
 - [内容分类 - MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
 
 #### 视频 {#video .timeline-note}
