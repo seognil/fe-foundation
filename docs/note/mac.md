@@ -61,9 +61,18 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
 
 - 系统设置，将光标移动速度调到极快  
   在命令行执行以下代码并重启
+
   ```bash
   defaults write -g InitialKeyRepeat -int 15
   defaults write -g KeyRepeat -int 1
+  ```
+
+- 允许运行任意来源的软件  
+  本来在之前版本系统中，可以在控制面板里直接打钩，后来隐藏起来了  
+  敲这个命令效果等价
+
+  ```bash
+  sudo spctl --master-enable
   ```
 
 ### 软件/工具
@@ -71,7 +80,8 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
 我用的一些重要工具：
 
 - 手动安装
-  - [Network Link Conditioner](https://nshipster.com/network-link-conditioner/)：网络环境模拟实用工具（限速）
+  - [Additional Tools for Xcode](https://developer.apple.com/download/more/?=additional%20tools)（官网下载地址）
+    - [Network Link Conditioner](https://nshipster.com/network-link-conditioner/)：关于 Tools 中的网络环境模拟工具（给电脑限速的）
   - [DriveDx](https://binaryfruit.com/drivedx)：磁盘健康信息
 - `brew install`
   - 开发

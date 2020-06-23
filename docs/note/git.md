@@ -221,34 +221,51 @@ git push <origin> <master>
 配合 [tig](https://github.com/jonas/tig) 和 [git-cz](https://github.com/commitizen/cz-cli)，以及 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)，  
 可以有效提升命令行中的 git 操作体验。
 
-按大致开发流程，oh-my-zsh 中有部分 alias 如下：
+oh-my-zsh 中的部分常用 alias 如下：
 
 ```bash
+# * ---------------- 文件变更
+
 ga='git add'
 gaa='git add --all'
+
+gstall='git stash --all'
+gstaa='git stash apply'
 
 gss='git status -s'
 
 git cz # 安装 git-cz 后可代替原有的 commit 命令
 
-gco='git checkout'
-gcb='git checkout -b'
-gcm='git checkout master'
+grh='git reset'
+grhh='git reset --hard'
 
-gm='git merge'
+# * ---------------- 分支增删改查
+
+gfa='git fetch --all --prune'
 
 gl='git pull'
+
+gp='git push'
 gpf='git push --force-with-lease'
 gpsup='git push --set-upstream origin $(git_current_branch)'
 
+gco='git checkout'
+gcb='git checkout -b'
+gcm='git checkout master'
+gcd='git checkout develop'
+
 gbd='git branch -d'
+gbD='git branch -D'
+gp origin -d xxx
+
+# * ---------------- 合并和基变
+
+gm='git merge'
+gm --no-ff xxx
 
 grb='git rebase'
 grbm='git rebase master'
 grbc='git rebase --continue'
-
-grh='git reset'
-grhh='git reset --hard'
 ```
 
 ### Git 实用命令

@@ -79,6 +79,7 @@ Node.js 的偶数版本作为 LTS（long-term support，长期维护支持），
 
 #### 文字
 
+- [一杯茶的时间，上手 Node.js](https://zhuanlan.zhihu.com/p/97413574)
 - [【知乎 Live】狼叔：如何正确的学习 Node.js](https://github.com/i5ting/How-to-learn-node-correctly)：2018 年，有点老了，当时还是 Node v8 版本的，现在都 v14 了。不过变化只发生在工具生态和一些 API 上，Node 本身的基本设计和理论知识没有太大变化。所以依然值得一看。
 - [Node 官方文档](https://nodejs.org/api/index.html)
 
