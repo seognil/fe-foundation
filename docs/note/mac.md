@@ -75,13 +75,18 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
   sudo spctl --master-enable
   ```
 
+- 提高 timemachine 的速度
+  ```
+  sudo sysctl debug.lowpri_throttle_enabled=0
+  ```
+  （系统重启后会失效，需要再次设置）
+
 ### 软件/工具
 
 我用的一些重要工具：
 
 - 手动安装
-  - [Additional Tools for Xcode](https://developer.apple.com/download/more/?=additional%20tools)（官网下载地址）
-    - [Network Link Conditioner](https://nshipster.com/network-link-conditioner/)：关于 Tools 中的网络环境模拟工具（给电脑限速的）
+  - [Additional Tools for Xcode](https://developer.apple.com/download/more/?=additional%20tools)（官网下载地址），可以查看 [Network Link Conditioner](https://nshipster.com/network-link-conditioner/) 这篇文章了解其中的网络环境模拟工具（给电脑限速的）
   - [DriveDx](https://binaryfruit.com/drivedx)：磁盘健康信息
 - `brew install`
   - 开发

@@ -17,12 +17,18 @@
 ```bash
 function proxyon() {
   # http://127.0.0.1:1080 是一个内网 IP
-  export http_proxy='http://127.0.0.1:1080'
-  export https_proxy='https://127.0.0.1:1080'
+  export ALL_PROXY='http://127.0.0.1:1080'
+
+  # 或者只配置 http
+  # export http_proxy='http://127.0.0.1:1080'
+  # export https_proxy='https://127.0.0.1:1080'
 }
 
 function proxyoff() {
-  unset http_proxy https_proxy
+  unset ALL_PROXY
+
+  # 或者对应的
+  # unset http_proxy https_proxy
 }
 ```
 
@@ -49,14 +55,24 @@ MacOS 生态有中有一个名为 [Homebrew](https://brew.sh/) 的命令行工�
 
 [安装 Homebrew](https://brew.sh/)：
 
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-安装完成后在命令行中键入命令：
+以及 [brew cu](https://github.com/buo/homebrew-cask-upgrade)，cask upgrade 的增强版：
+
+```
+brew tap buo/cask-upgrade
+```
+
+安装完成后在命令行中可以键入命令：
 
 - `brew`
-  - 装 CLI 软件的
+  装 CLI 软件的
 - `brew cask`
-  - `brew` 自带的自命令，装 GUI 软件的
+  `brew` 自带的自命令，装 GUI 软件的
+- `brew cu`
+  cask 的升级默认跳过一部分自带更新功能的软件，cu 则可以完全管理
 
 ### Homebrew 基本用法
 
@@ -73,6 +89,8 @@ brew outdated
 
 brew search iterm2
 brew cask install iterm2
+
+brew cu
 ```
 
 #### 调整软件仓库
