@@ -9,7 +9,7 @@
 [关于本站](./readme.md)
 
 - **杂谈**：我的关于学习的一些粗浅理解（鸡汤）
-  - [我的阅读](./my-reading.md)
+  - [我都从哪学习](./my-reading.md)
   - [为什么要学习](./study-the-only-way.md)
   - [关于学习的鸡汤](./study-fortune.md)
   - [培训机构的局限性](./study-the-costly-way.md)

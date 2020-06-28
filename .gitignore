@@ -99,6 +99,6 @@ n
 # * ---------------------------------------------------------------- 
 
 dist
-docs/draft
+draft/
 tempCodeRunnerFile.*
 TODO.*

@@ -46,7 +46,8 @@ const config = {
     // editLinks: true,
 
     nav: [
-      { text: '指南', link: '/note/' },
+      { text: '指南', link: '/note/fe-development-cookbook' },
+      { text: '资料', link: '/note/my-reading' },
       { text: '关于我', link: '/about/' },
 
       { text: '算法', link: 'https://github.com/seognil-study/leetcode' },

@@ -55,7 +55,7 @@
 Learn From The Best 岂不美哉？
 
 我不推荐培训机构的原因之一也是如此：我见过更好的。  
-[我的阅读](./my-reading.md)
+[我都从哪学习](./my-reading.md)
 
 ## 定位差异
 
