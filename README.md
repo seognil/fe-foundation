@@ -14,51 +14,26 @@
 
 ## 关于
 
-个人整理的前端技能学习路径  
-主要文章系列：
+本站是个人整理的前端技能学习路径、笔记、资料收集。
+
+Roadmap：
 
 - [前端开发入门指南](https://fe.rualc.com/note/fe-development-cookbook.html)
-- [JavaScript 学习指南](https://fe.rualc.com/note/js-foundation.html)
+
+主要文章系列：
+
+- [开发环境配置系列](https://fe.rualc.com/note/my-workstation.html)
+- [JavaScript 学习系列](https://fe.rualc.com/note/js-foundation.html)
+- [Node 基础系列](https://fe.rualc.com/note/node-basic.html)
 - [其他学习指南系列](https://fe.rualc.com/note/study-methodology.html)
 
-## TODO (Writing)
+以及，授人以鱼不如授人以渔：
 
-目前规划中，但还未填坑的（~~今年内完成？~~）
+- [我都从哪学习](https://fe.rualc.com/note/my-reading.html)
 
-- HTML 基本知识体系
-- CSS 基本知识体系
-- JavaScript 系列
-  - DOM 编程
-  - 异步编程
-  - Node 编程
-  - 进阶篇（补充）
-  - 核心篇（N 个部分）
-- 算法
-- Gof 设计模式
+## WIP
 
-## TODO (nav)
-
-- better readme structure（generate from json）
-
-## TODO (DEV)
-
-- [ ] zeit
-  - [ ] fix: zeit vuepress missiong last updated
-  - [ ] fix: zeit 404 page config
-  - [ ] update: zeit 301 config
-- [ ] vuepress
-  - [x] feat: nav of category autoload
-  - [ ] feat: disable url hash
-  - [ ] update: article layout
-    - [ ] add: cc 4.0 section
-    - [ ] add: comment section
-    - [ ] add: toc-bar
-  - [ ] feat: analyze first and last commit of every page
-    - [ ] add: archive page
-    - [ ] add: homepage (latest, hottest)
-  - [ ] update: custom 404 page design (dead link)
-- [ ] readme
-  - [ ] readme toc generate
+写作计划和开发任务现在使用 [GitHub Projects](https://github.com/seognil/fe-foundation/projects/1) 进行管理。
 
 ---
 
