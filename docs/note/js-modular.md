@@ -70,6 +70,7 @@
 - 文章
   - [‪Module Cheatsheet](https://www.samanthaming.com/tidbits/79-module-cheatsheet)：ESM 语法速查表
   - [前端模块化：CommonJS,AMD,CMD,ES6](https://juejin.im/post/5aaa37c8f265da23945f365c)
+  - [JavaScript 模块化七日谈](https://huangxuan.me/2015/07/09/js-module-7day/)
   - [深入理解 ES6 模块机制](https://zhuanlan.zhihu.com/p/33843378)
 - 工具
   - [Browserify and the Universal Module Definition](https://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html)：UMD
@@ -178,7 +179,10 @@ export { name1, name2, …, nameN } from …;
 
 var lodash = require('lodash');
 
-const result = lodash.every([true, 1, null, 'yes'], Boolean);
+const result = lodash.every(
+  [true, 1, null, 'yes'],
+  Boolean,
+);
 
 module.exports = result;
 ```
@@ -227,7 +231,10 @@ Node.js 文档：
 var result = (function(lodash) {
   'use strict';
 
-  const result = lodash.every([true, 1, null, 'yes'], Boolean);
+  const result = lodash.every(
+    [true, 1, null, 'yes'],
+    Boolean,
+  );
 
   return result;
 })(lodash);
@@ -261,15 +268,20 @@ const result = (
 
 ```javascript
 (function(global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined'
+  typeof exports === 'object' &&
+  typeof module !== 'undefined'
     ? (module.exports = factory(require('lodash')))
     : typeof define === 'function' && define.amd
     ? define(['lodash'], factory)
-    : ((global = global || self), (global.result = factory(global.lodash)));
+    : ((global = global || self),
+      (global.result = factory(global.lodash)));
 })(this, function(lodash) {
   'use strict';
 
-  const result = lodash.every([true, 1, null, 'yes'], Boolean);
+  const result = lodash.every(
+    [true, 1, null, 'yes'],
+    Boolean,
+  );
 
   return result;
 });
@@ -309,7 +321,10 @@ UMD 支持 IIFE，所以也需要指定输出名。
 define(['lodash'], function(lodash) {
   'use strict';
 
-  const result = lodash.every([true, 1, null, 'yes'], Boolean);
+  const result = lodash.every(
+    [true, 1, null, 'yes'],
+    Boolean,
+  );
 
   return result;
 });
