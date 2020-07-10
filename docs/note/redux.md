@@ -59,9 +59,11 @@ Redux 可以和 React 搭配使用。
       - （`react-logger`）
       - （`redux-thunk`）
   - `react-redux`
-    - `Provider` & `connect`
+    - `Provider`
+    - `connect`
+    - `useSelector`、`useDispatch`、`useStore`
   - `redux-react-hook`
-    - `StoreContext`、`useDispatch`、`useMappedState`
+    - `StoreContext`、`useMappedState`、`useDispatch`
 - 实战
   - 掌握基本用法
   - 异步操作，设计数据流
@@ -82,12 +84,17 @@ Redux 可以和 React 搭配使用。
 - [What is Redux?](https://www.youtube.com/watch?v=np8A_aW7Pew)
 - [Redux 中文文档](https://cn.redux.js.org/)
 - [Getting Started with Redux - Redux](https://redux.js.org/introduction/getting-started)
+- [Hooks - React Redux](https://react-redux.js.org/next/api/hooks)
 - [Redux Tutorial by Dan Abramov on egghead.io](https://egghead.io/courses/getting-started-with-redux)
 - [Building React Applications with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux)
 
 ### 实战
 
 - [Recipes - Redux](https://redux.js.org/recipes/recipe-index)
+- Learn By Doing
+  - [redux](https://github.com/seognil-study/learn-by-doing/tree/master/redux)
+  - [react-redux](https://github.com/seognil-study/learn-by-doing/tree/master/react-redux)
+  - [redux-react-hook](https://github.com/seognil-study/learn-by-doing/tree/master/redux-react-hook)
 
 ## Redux 知识体系
 
@@ -122,6 +129,9 @@ Redux 可以和 React 搭配使用。
 - **connect** (mapStateToProps?, mapDispatchToProps?)
   - mapStateToProps: `(state, ownProps?) => Object`
   - mapDispatchToProps: `actionCreators | (dispatch, ownProps?) => Object`
+- **useSelector** `(selector: Function, equalityFn?: Function) => AnyData`
+- **useDispatch** `() => Dispatch`
+- **useStore** `() => Store`
 
 #### redux-react-hook
 
@@ -158,7 +168,9 @@ store.dispatch({ type: 'INCREMENT', payload: 7 });
 store.dispatch({ type: 'DECREMENT' });
 ```
 
-### react-redux
+### react-redux (connect)
+
+connect 的写法
 
 `parcel index.html`
 
@@ -200,11 +212,55 @@ ReactDOM.render(
 );
 ```
 
+### react-redux (hooks)
+
+hooks 的写法，注意到写法上的区别，组件的 props 部分能够更干净。
+
+`parcel index.html`
+
+```html
+<!-- index.html -->
+
+<div id="app"></div>
+<script src="script.tsx"></script>
+```
+
+```javascript
+// script.tsx
+import * as React from 'react';
+import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import {
+  Provider,
+  connect,
+  useSelector,
+  useDispatch,
+} from 'react-redux';
+
+const reducer = (state, { type }) =>
+  type === 'add' ? state + 1 : state;
+const store = createStore(reducer, 123);
+
+const App = () => {
+  const value = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const clicker = () => dispatch({ type: 'add' });
+  return <button onClick={clicker}>count: {value}</button>;
+};
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.querySelector('#app'),
+);
+```
+
 ### redux-react-hook
 
-注意到，`redux-react-hook` 和 `react-redux` 的主要区别在于使用方式。
+注意到，`redux-react-hook` 和 `react-redux` 的主要区别在于 API，其实原理都是类似的，都是对 React hooks 中 `useReducer`、`useMemo`、`useContext` 等 API 的封装。
 
-也就是如何利用 Hooks 风格的 API 来实现同样的连接效果。
+它和 `react-redux` 的 hooks 版区别在于，`redux-react-hook` 中的函数是生成的，而不是通用函数，TS 数据类型可以绑定而不用每次都重新写，这样使用 TS 时会更方便。理解了这一点，那么也可以基于 `react-redux` 进行简单的二次封装，来更好地支持 TS。
 
 `parcel index.html`
 
@@ -322,6 +378,6 @@ Redux 源码是 TS 写的，
 
 ### react-redux 是怎么实现的
 
-React 有个 `Context/Provider` 的功能用来实现全局数据访问，  
+React 一组 `Context/Provider` 的功能用来实现全局数据访问，  
 react-redux 利用了 Context 来存放 Store 并封装了 API，  
 从而实现任意深度的组件都能读写 Store。
