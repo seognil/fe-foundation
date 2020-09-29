@@ -35,6 +35,10 @@ Roadmap：
 
 写作计划和开发任务现在使用 [GitHub Projects](https://github.com/seognil/fe-foundation/projects/1) 进行管理。
 
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/seognil/fe-foundation.svg)](https://starchart.cc/seognil/fe-foundation)
+
 ---
 
 若有偏差 [敬请斧正](https://github.com/seognil/fe-foundation/issues/new)
