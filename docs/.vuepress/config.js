@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const moment = require('moment');
+const dayjs = require('dayjs');
+const localizedFormat = require('dayjs/plugin/localizedFormat');
+dayjs.extend(localizedFormat);
 
 const markdownItAttrs = require('markdown-it-attrs');
 const { slugify } = require('transliteration');
@@ -67,8 +69,8 @@ const config = {
       '@vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
-          moment.locale(lang);
-          return moment(timestamp).format('lll');
+          dayjs.locale(lang);
+          return dayjs(timestamp).format('lll');
         },
       },
     ],
