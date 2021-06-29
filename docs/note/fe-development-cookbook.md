@@ -1,10 +1,8 @@
-# 前端开发入门指南 \*
+# 前端开发入门指南 （2019-2021）\*
 
 \* 撰写中
 
 > 从野路子入门到系统性~~精通~~略懂
-
-（2019~2020）
 
 [关于本站](./readme.md)
 
@@ -16,22 +14,22 @@
   - [关于学习指南系列](./about-the-guild.md)
   - [学习指南模板](./study-guild-abstraction.md)
 
-## 前端开发路线图（收集的）
+## 前端开发路线图（收集）
 
 - **前端开发概览**
   - 视频
-    - [Web Development In 2020 - A Practical Guide](https://www.youtube.com/watch?v=0pThnRneDjw)：72 分钟，概览指南
+    - [Web Development In 2021 - A Practical Guide](https://www.youtube.com/watch?v=VfGW0Qiy2I0)：75 分钟，概览指南
   - CheckList
     - [前端九部 - 入门者手册 2019](https://www.yuque.com/fe9/basic)：系列文章
     - [【自检】前端知识清单](http://www.conardli.top/blog/article/%E7%BB%BC%E5%90%88/%E3%80%90%E8%87%AA%E6%A3%80%E3%80%91%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%B8%85%E5%8D%95.html)
 - **JavaScript 及框架类库学习教程**
   - [JavaScript Tutorials - freeCodeCamp.org](https://www.youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V)：系列视频教程
   - [Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)：系列视频教程
-- **前端工具生态概览**
-  - [2019 年 JavaScript 明星项目](https://risingstars.js.org/2019/zh)：JS 项目流行度统计
-  - [The State of JavaScript 2019](https://2019.stateofjs.com/zh/)：前端开发习惯调查
+- **上一年的前端生态小结**
+  - [2020 年 JavaScript 明星项目](https://risingstars.js.org/2020/zh)：JS 项目流行度统计
+  - [The State of JavaScript 2020](https://2020.stateofjs.com/zh-Hans/)：前端开发习惯调查
 
-### Front-end Developer Handbook
+### Front-end Developer Handbook (2019)
 
 > [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/)  
 > [前端开发者手册 2019](https://yylifen.github.io/front-end-handbook-2019/index.html)：汉化版
@@ -40,11 +38,11 @@
 
 ### WEB DEVELOPER ROADMAP
 
-> [在 2020 年成为一个 Web 开发者](https://github.com/seognil/developer-roadmap-chinese-simplified)：我翻译的简中汉化版  
-> [WEB DEVELOPER ROADMAP - 2020](https://github.com/kamranahmedse/developer-roadmap)：Web 开发者学习路线图  
-> [2019 年成為 Web 開發人員的路線圖](https://github.com/goodjack/developer-roadmap-chinese)：繁中汉化版
+- Web 开发者学习路线图 2021
+  - [原版](https://github.com/kamranahmedse/developer-roadmap)
+  - [简体中文汉化](https://github.com/kamranahmedse/developer-roadmap/tree/master/translations/chinese)
 
-![WEB DEVELOPER ROADMAP - 2020 Chinese](./img/frontend-map-fs8.png)
+![WEB DEVELOPER ROADMAP - 2021 Chinese](https://raw.githubusercontent.com/kamranahmedse/developer-roadmap/master/translations/chinese/img/frontend-map.png)
 
 ### Web Developer Learning Path
 
@@ -54,22 +52,19 @@
 
 ### Phodal
 
-<https://github.com/phodal>
-
-~~（大佬太猛了，看都来不及啊><）~~
-
-- [Phodal's Idea 实战指南](http://ideabook.phodal.com/)
-- [GitHub 漫游指南](http://github.phodal.com/)
-- [Growth - an app to help you Be Awesome Developer](http://growth.ren/)
-- [Growth: 全栈增长工程师指南](https://growth.phodal.com/)
-- [Growth: 全栈增长工程师实战](http://growth-in-action.phodal.com/)
-- [RePractise](http://repractise.phodal.com/)
-- [我的职业是前端工程师](https://ued.party/)
-- [Serverless 应用开发指南](http://serverless.ink/)
-- [写给软件工程师看的硬件编程指南](https://phodal.github.io/make/)
-- [Thinking in Microfrontend (微前端的那些事儿)](https://microfrontends.cn/)
-- [系统重构与迁移指南](https://migration.ink/)
-- [Developer 进阶书单](https://phodal.github.io/booktree/)
+- <https://github.com/phodal>
+  - [Phodal's Idea 实战指南](http://ideabook.phodal.com/)
+  - [GitHub 漫游指南](http://github.phodal.com/)
+  - [Growth - an app to help you Be Awesome Developer](http://growth.ren/)
+  - [Growth: 全栈增长工程师指南](https://growth.phodal.com/)
+  - [Growth: 全栈增长工程师实战](http://growth-in-action.phodal.com/)
+  - [RePractise](http://repractise.phodal.com/)
+  - [我的职业是前端工程师](https://ued.party/)
+  - [Serverless 应用开发指南](http://serverless.ink/)
+  - [写给软件工程师看的硬件编程指南](https://phodal.github.io/make/)
+  - [Thinking in Microfrontend (微前端的那些事儿)](https://microfrontends.cn/)
+  - [系统重构与迁移指南](https://migration.ink/)
+  - [Developer 进阶书单](https://phodal.github.io/booktree/)
 
 ## 前端开发路线图（我写的）
 
@@ -91,7 +86,7 @@
   - [关于 VS Code](./vscode.md)：装个代码编辑器和扩展
   - [用快捷键控制视频播放](./video-hotkey.md)：增强学习体验
 
-### 前端开发入门
+### 前端开发基本入门
 
 （学习前端开发除 JS 以外的部分，JS 单独成节，因为内容实在太多了…）
 
@@ -113,50 +108,59 @@
 - [JavaScript 语言（系列）](./js-foundation.md)：了解 JavaScript 语言特性
 - [Node.js 和 NPM（系列）](./node-basic.md)：了解 JavaScript 的一个 Runtime
 - [TypeScript 学习指南](./typescript.md)：JavaScript + 静态类型系统
-- **框架类库**
-  - Vue/React：国内主流的两大 UI 框架
+- **视图层框架**
+  - React/Vue：国内主流的两大 UI 框架
     - 组件渲染（[React Hooks 学习指南](./react-hooks.md)）
-    - 状态管理方案（[Redux 学习指南](./redux.md)）
+    - 其他状态管理方案
+      - [Redux 学习指南](./redux.md)
+      - Mobx
+      - Recoil
     - Router
     - （生态中的相关辅助工具或衍生框架）
-  - Svelte：新一代 UI 框架（编译器）
-  - GraphQL
-- **工程**
-  - 打包（[webpack-playground](https://github.com/seognil-study/webpack-playground)）
-  - npm 组件开发（[lib-starter](https://github.com/seognil-lab/lib-starter)）
-  - 静态检查/编码规范
+  - Preact：React 的 lite 版
+  - Svelte：（编译器框架）
+- **项目和工程**
+  - 打包工具
+    - Webpack：[webpack-playground](https://github.com/seognil-study/webpack-playground)
+    - [Vite](https://cn.vitejs.dev/)
+  - ESLint：代码质量检查
+  - Prettier：代码格式化
   - 自动化测试
     - 单元测试（[Jest 学习指南](./jest.md)）
     - UI 测试（[testing-library 学习指南](./testing-library.md)）
     - E2E 测试（[Cypress 学习指南](./cypress.md)）
-  - 持续集成
-  - （静态）部署
-  - 性能优化
+  - CI
+    - Github Actions
+  - 部署
+    - Vercel/Netlify/Cloudflare Pages
+  - 监控
+    - Sentry
+  - SourceMap
 - **套路**
   - 算法和数据结构
   - **编程范式**
-    - 面向对象编程
-    - [函数式编程 入门指南](./functional-programming.md)
-    - 响应式编程
-    - 流式编程（[RxJS 学习指南](./rxjs.md)）
-    - 面向切面编程
+    - OOP：面向对象编程，Object Oriented Programming
+    - FP：[函数式编程 入门指南](./functional-programming.md)
+    - RP：响应式编程，Reactive Programming
+      - 流式编程（[RxJS 学习指南](./rxjs.md)）
+    - AOP：面向切面编程，Aspect Oriented Programming
   - **程序设计**
-    - 设计原则
+    - SOLID 原则
     - 设计模式
       - GoF 设计模式
       - 函数式设计模式
       - （游戏设计模式）
-      - 依赖注入
+    - 依赖注入（DI）、控制反转（IoC）
+    - DDD：领域驱动设计，Domain Driven Design
     - 架构模式
       - MVC、MVP、MVVM
-  - 软件工程
-- **特化**
-  - BFF（Backends For Frontends）
-  - SSR（Server-Side Rendering）
-  - PWA（Progressive Web App）
-  - 微前端（Micro Frontend Architecture）
-  - WebGL
-  - WebAssembly
+- **其他**
+  - SSR：Server-Side Rendering
+  - SSG：Static Site Generation
+  - PWA：Progressive Web App
+  - BFF：Backends For Frontends
+  - 微前端，Micro Frontend Architecture
+  - WASM：WebAssembly
 
 * **框架技术**扩展阅读
   - [TodoMVC](http://todomvc.com/)
@@ -173,7 +177,7 @@
 以上这么多内容仅仅只涉及了前端开发的技术储备部分。
 
 对于实际的业务和代码产出，还有无数细节和额外的套路，  
-例如：兼容性、骨架屏、小程序、动画、表单、i18n、同构…
+例如：兼容性、骨架屏、小程序、动画、表单、i18n…
 
 不过当你的技能体系能覆盖以上至少一半内容时，  
 那么你已经是一个不错的工程师了 :)  
