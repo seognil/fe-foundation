@@ -98,7 +98,8 @@ n
 
 # * ---------------------------------------------------------------- 
 
-dist
+/dist
+/public
 draft/
 tempCodeRunnerFile.*
 TODO.*

@@ -1,3 +1,13 @@
+---
+title: 前端开发入门指南 （2019-2021）*
+date: 2019-11-10 20:55:24
+permalink: /note/frontend-development-cookbook.html
+categories:
+  - note
+tags:
+  -
+---
+
 # 前端开发入门指南 （2019-2021）\*
 
 \* 撰写中
