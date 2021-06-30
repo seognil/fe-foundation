@@ -1,3 +1,12 @@
+---
+title: 装了啥
+date: 2019-11-10 20:55:24
+permalink: /note/my-workstation.html
+categories:
+  - note
+tags:
+  - 
+---
 # 装了啥
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

@@ -1,3 +1,12 @@
+---
+title: 命令行 简介
+date: 2019-11-10 20:55:24
+permalink: /note/terminal-intro.html
+categories:
+  - note
+tags:
+  - 
+---
 # 命令行 简介
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

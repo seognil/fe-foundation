@@ -1,3 +1,12 @@
+---
+title: TypeScript 入门指南
+date: 2019-11-22 19:00:44
+permalink: /note/typescript.html
+categories:
+  - note
+tags:
+  - 
+---
 # TypeScript 入门指南
 
 ## TypeScript 简介

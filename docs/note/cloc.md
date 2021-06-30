@@ -1,3 +1,12 @@
+---
+title: 代码行数统计工具小测
+date: 2020-02-08 20:15:50
+permalink: /note/cloc.html
+categories:
+  - note
+tags:
+  - 
+---
 # 代码行数统计工具小测
 
 ## 背景

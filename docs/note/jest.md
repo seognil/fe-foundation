@@ -1,3 +1,12 @@
+---
+title: Jest 学习指南
+date: 2020-01-21 16:43:12
+permalink: /note/jest.html
+categories:
+  - note
+tags:
+  - 
+---
 # Jest 学习指南
 
 ## Jest 简介

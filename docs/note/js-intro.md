@@ -1,3 +1,12 @@
+---
+title: JavaScript 简介
+date: 2019-12-30 11:39:54
+permalink: /note/js-intro.html
+categories:
+  - note
+tags:
+  - 
+---
 # JavaScript 简介
 
 > 返回 [JavaScript 学习指南](./js-foundation.md) 系列

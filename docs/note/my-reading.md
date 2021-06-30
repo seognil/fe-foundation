@@ -1,3 +1,12 @@
+---
+title: 我都从哪学习
+date: 2019-12-31 20:05:21
+permalink: /note/my-reading.html
+categories:
+  - note
+tags:
+  - 
+---
 # 我都从哪学习
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

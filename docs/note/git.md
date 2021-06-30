@@ -1,3 +1,12 @@
+---
+title: Git 学习指南
+date: 2019-11-10 20:55:24
+permalink: /note/git.html
+categories:
+  - note
+tags:
+  - 
+---
 # Git 学习指南
 
 ## Git 简介

@@ -1,3 +1,12 @@
+---
+title: 关于我（2019）
+date: 2020-01-13 21:16:36
+permalink: /about/
+categories:
+  - about
+tags:
+  - 
+---
 # 关于我（2019）
 
 ## 我自己

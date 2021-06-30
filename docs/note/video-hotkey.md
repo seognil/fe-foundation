@@ -1,3 +1,12 @@
+---
+title: 用快捷键控制视频播放
+date: 2019-12-14 22:03:19
+permalink: /note/video-hotkey.html
+categories:
+  - note
+tags:
+  - 
+---
 # 用快捷键控制视频播放
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

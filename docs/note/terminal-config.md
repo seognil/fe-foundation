@@ -1,3 +1,12 @@
+---
+title: 打造趁手的终端
+date: 2019-11-10 20:55:24
+permalink: /note/terminal-config.html
+categories:
+  - note
+tags:
+  - 
+---
 # 打造趁手的终端
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

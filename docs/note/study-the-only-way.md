@@ -1,3 +1,12 @@
+---
+title: 为什么要学习
+date: 2019-12-28 23:49:05
+permalink: /note/study-the-only-way.html
+categories:
+  - note
+tags:
+  - 
+---
 # 为什么要学习
 
 ## 人类的局限性

@@ -1,3 +1,12 @@
+---
+title: 关于 VS Code
+date: 2019-12-14 22:03:19
+permalink: /note/vscode.html
+categories:
+  - note
+tags:
+  - 
+---
 # 关于 VS Code
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

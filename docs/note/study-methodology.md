@@ -1,3 +1,12 @@
+---
+title: 学习方法论
+date: 2019-11-23 23:38:58
+permalink: /note/study-methodology.html
+categories:
+  - note
+tags:
+  - 
+---
 # 学习方法论
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

@@ -1,3 +1,12 @@
+---
+title: Cypress 学习指南
+date: 2020-01-29 20:31:10
+permalink: /note/cypress.html
+categories:
+  - note
+tags:
+  - 
+---
 # Cypress 学习指南
 
 ## Cypress 简介

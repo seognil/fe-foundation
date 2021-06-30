@@ -1,3 +1,12 @@
+---
+title: 前端模块化
+date: 2019-11-10 18:35:00
+permalink: /note/js-modular.html
+categories:
+  - note
+tags:
+  - 
+---
 # 前端模块化
 
 > 返回 [JavaScript 学习指南](./js-foundation.md) 系列

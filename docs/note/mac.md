@@ -1,3 +1,12 @@
+---
+title: Mac、设置和软件
+date: 2019-12-15 12:53:59
+permalink: /note/mac.html
+categories:
+  - note
+tags:
+  - 
+---
 # Mac、设置和软件
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

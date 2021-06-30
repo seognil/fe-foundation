@@ -1,3 +1,12 @@
+---
+title: 计算机科学 入门指南
+date: 2019-12-02 16:41:01
+permalink: /note/computer-science.html
+categories:
+  - note
+tags:
+  - 
+---
 # 计算机科学 入门指南
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

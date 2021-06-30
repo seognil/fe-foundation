@@ -1,3 +1,12 @@
+---
+title: 运行 JavaScript 代码的十几种方式
+date: 2020-04-21 18:36:14
+permalink: /note/how-to-run-js.html
+categories:
+  - note
+tags:
+  - 
+---
 # 运行 JavaScript 代码的十几种方式
 
 有人可能会想：JS 就是 JS，在浏览器里用的，哪有什么这么多运行方式，你别来什么用 Chrome 打开、用 Firefox 打开，就算两种啊。

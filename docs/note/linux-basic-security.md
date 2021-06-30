@@ -1,3 +1,12 @@
+---
+title: Ubuntu 服务器基本防护
+date: 2019-11-10 21:57:03
+permalink: /note/linux-basic-security.html
+categories:
+  - note
+tags:
+  - 
+---
 # Ubuntu 服务器基本防护
 
 记录一下步骤

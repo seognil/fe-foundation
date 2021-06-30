@@ -1,3 +1,12 @@
+---
+title: JavaScript 学习指南 *
+date: 2019-11-10 20:55:24
+permalink: /note/js-foundation.html
+categories:
+  - note
+tags:
+  - 
+---
 # JavaScript 学习指南 \*
 
 \* 撰写中

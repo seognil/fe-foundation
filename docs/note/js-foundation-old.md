@@ -1,3 +1,12 @@
+---
+title: JS Foundation *
+date: 2019-12-30 15:41:29
+permalink: /note/js-foundation-old.html
+categories:
+  - note
+tags:
+  - 
+---
 # JS Foundation \*
 
 > 这里这是旧版，有待整理，查看新版 [JavaScript 学习指南](./js-foundation.md)

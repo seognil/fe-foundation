@@ -1,3 +1,12 @@
+---
+title: Redux 学习指南
+date: 2019-11-26 15:24:23
+permalink: /note/redux.html
+categories:
+  - note
+tags:
+  - 
+---
 # Redux 学习指南
 
 ## Redux 简介

@@ -1,3 +1,12 @@
+---
+title: JavaScript 入门指南
+date: 2019-12-29 21:01:07
+permalink: /note/js-basic.html
+categories:
+  - note
+tags:
+  - 
+---
 # JavaScript 入门指南
 
 > 返回 [JavaScript 学习指南](./js-foundation.md) 系列

@@ -1,3 +1,12 @@
+---
+title: 用 Proxy 进一步提高 npm 安装速度
+date: 2019-11-10 22:20:59
+permalink: /note/npm-speedup.html
+categories:
+  - note
+tags:
+  - 
+---
 # 用 Proxy 进一步提高 npm 安装速度
 
 ## 碰到的问题

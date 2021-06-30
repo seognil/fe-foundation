@@ -1,3 +1,12 @@
+---
+title: 函数式编程 入门指南
+date: 2020-01-31 23:00:54
+permalink: /note/functional-programming.html
+categories:
+  - note
+tags:
+  - 
+---
 # 函数式编程 入门指南 {#title}
 
 ## 函数式编程 简介 {#intro}

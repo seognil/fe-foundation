@@ -1,3 +1,12 @@
+---
+title: Node.js 入门指南
+date: 2020-05-26 15:43:00
+permalink: /note/node-basic.html
+categories:
+  - note
+tags:
+  - 
+---
 # Node.js 入门指南
 
 ## Node.js 简介

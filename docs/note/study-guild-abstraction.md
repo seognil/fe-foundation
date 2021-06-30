@@ -1,3 +1,12 @@
+---
+title: 学习指南模板
+date: 2019-11-23 23:38:58
+permalink: /note/study-guild-abstraction.html
+categories:
+  - note
+tags:
+  - 
+---
 # 学习指南模板
 
 ## 学习指南简介

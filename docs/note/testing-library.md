@@ -1,3 +1,12 @@
+---
+title: testing-library 学习指南
+date: 2020-01-26 20:55:42
+permalink: /note/testing-library.html
+categories:
+  - note
+tags:
+  - 
+---
 # testing-library 学习指南
 
 ## testing-library 简介

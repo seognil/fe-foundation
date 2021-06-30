@@ -1,3 +1,12 @@
+---
+title: 培训机构的局限性
+date: 2019-12-28 23:49:05
+permalink: /note/study-the-costly-way.html
+categories:
+  - note
+tags:
+  - 
+---
 # 培训机构的局限性
 
 我入行时没有读过前端的培训班，全都是自学的（当然少不了走弯路），  

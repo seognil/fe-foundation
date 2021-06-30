@@ -1,3 +1,12 @@
+---
+title: 正则表达式 学习指南
+date: 2019-12-26 18:39:31
+permalink: /note/regexp.html
+categories:
+  - note
+tags:
+  - 
+---
 # 正则表达式 学习指南
 
 > 返回 [JavaScript 学习指南](./js-foundation.md) 系列

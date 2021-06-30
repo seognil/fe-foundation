@@ -1,3 +1,12 @@
+---
+title: JavaScript 进阶指南 *
+date: 2019-12-30 11:39:54
+permalink: /note/js-advanced.html
+categories:
+  - note
+tags:
+  - 
+---
 # JavaScript 进阶指南 \*
 
 \* 撰写中

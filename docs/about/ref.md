@@ -1,3 +1,12 @@
+---
+title: Mantras
+date: 2019-11-10 20:55:24
+permalink: /about/ref.html
+categories:
+  - about
+tags:
+  - 
+---
 ## Mantras
 
 > Every Expert Was Once A Beginner.

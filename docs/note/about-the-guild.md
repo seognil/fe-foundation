@@ -1,3 +1,12 @@
+---
+title: 关于学习指南系列
+date: 2019-11-23 23:38:58
+permalink: /note/about-the-guild.html
+categories:
+  - note
+tags:
+  - 
+---
 # 关于学习指南系列
 
 ## TLDR

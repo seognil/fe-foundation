@@ -1,3 +1,12 @@
+---
+title: 硬核前端（劝退篇）
+date: 2019-12-14 22:03:19
+permalink: /note/fe-hardcore-overview.html
+categories:
+  - note
+tags:
+  - 
+---
 # 硬核前端（劝退篇）
 
 > 返回 [前端开发入门指南](./fe-development-cookbook.md) 系列

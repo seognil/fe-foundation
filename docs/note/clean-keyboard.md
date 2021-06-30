@@ -1,3 +1,12 @@
+---
+title: 如何清洁机械键盘
+date: 2019-11-10 20:55:24
+permalink: /note/clean-keyboard.html
+categories:
+  - note
+tags:
+  - 
+---
 # 如何清洁机械键盘
 
 ## 这都要写？

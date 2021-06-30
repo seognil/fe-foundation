@@ -1,3 +1,12 @@
+---
+title: 使用 verdaccio 搭建私有 npm 仓库
+date: 2019-11-10 22:20:59
+permalink: /note/npm-verdaccio.html
+categories:
+  - note
+tags:
+  - 
+---
 # 使用 verdaccio 搭建私有 npm 仓库
 
 私有仓库可用于包的开发和发布测试。  

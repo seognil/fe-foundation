@@ -1,3 +1,12 @@
+---
+title: 关于学习的鸡汤
+date: 2019-12-29 16:08:12
+permalink: /note/study-fortune.html
+categories:
+  - note
+tags:
+  - 
+---
 # 关于学习的鸡汤
 
 ## TLDR
