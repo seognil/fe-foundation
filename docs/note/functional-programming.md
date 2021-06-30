@@ -332,34 +332,48 @@ for (let i = 0; i < people.length; i++) {
   - [第四部分](https://github.com/xitu/gold-miner/blob/master/TODO/so-you-want-to-be-a-functional-programmer-part-4.md)
   - [第五部分](https://github.com/xitu/gold-miner/blob/master/TODO/so-you-want-to-be-a-functional-programmer-part-5.md)
   - [第六部分](https://github.com/xitu/gold-miner/blob/master/TODO/so-you-want-to-be-a-functional-programmer-part-6.md)
-- 组合软件
-  - 译文
-    - [0 - 简介](https://github.com/xitu/gold-miner/blob/master/TODO1/composing-software-an-introduction.md)
-    - [1 - 跌宕起伏的函数式编程](https://github.com/xitu/gold-miner/blob/master/TODO/the-rise-and-fall-and-rise-of-functional-programming-composable-software.md)
-    - [2 - 为什么用 JavaScript 学习函数式编程](https://github.com/xitu/gold-miner/blob/master/TODO/why-learn-functional-programming-in-javascript-composing-software.md)
-    - [3 - 函数式程序员的 JavaScript 简介](https://github.com/xitu/gold-miner/blob/master/TODO/a-functional-programmers-introduction-to-javascript-composing-software.md)
-    - [4 - 高阶函数](https://github.com/xitu/gold-miner/blob/master/TODO/higher-order-functions-composing-software.md)
-    - [5 - Reduce](https://github.com/xitu/gold-miner/blob/master/TODO/reduce-composing-software.md)
-    - [6 - Functor 与 Category](https://github.com/xitu/gold-miner/blob/master/TODO/functors-categories.md)
-    - [7 - 函数式 Mixin](https://github.com/xitu/gold-miner/blob/master/TODO/functional-mixins-composing-software.md)
-    - [8 - ES6+ 中的 JavaScript 工厂函数](https://github.com/xitu/gold-miner/blob/master/TODO/javascript-factory-functions-with-es6.md)
-    - [9 - 为什么在使用了类之后会使得组合变得愈发困难](https://github.com/xitu/gold-miner/blob/master/TODO/why-composition-is-harder-with-classes.md)
-    - [10 - 借助函数完成可组合的数据类型](https://github.com/xitu/gold-miner/blob/master/TODO/composable-datatypes-with-functions.md)
-    - [11 - JavaScript 让 Monad 更简单](https://github.com/xitu/gold-miner/blob/master/TODO/javascript-monads-made-simple.md)
-    - [12 - 模拟是一种代码异味](https://github.com/xitu/gold-miner/blob/master/TODO/mocking-is-a-code-smell.md)
-    - [13 - 对象组合中的宝藏](https://github.com/xitu/gold-miner/blob/master/TODO/the-hidden-treasures-of-object-composition.md)
-    - [14 - 优秀的嵌套三元表达式](https://github.com/xitu/gold-miner/blob/master/TODO/nested-ternaries-are-great.md)
-    - [15 - 抽象与组合](https://github.com/xitu/gold-miner/blob/master/TODO1/abstraction-composition.md)
-    - [16 - 被遗忘的面向对象编程史](https://github.com/xitu/gold-miner/blob/master/TODO1/the-forgotten-history-of-oop.md)
-    - [17 - 柯里化与函数组合](https://github.com/xitu/gold-miner/blob/master/TODO1/curry-and-function-composition.md)
-    - [18 - Transducers：JavaScript 中高效的数据处理 Pipeline](https://github.com/xitu/gold-miner/blob/master/TODO1/transducers-efficient-data-processing-pipelines-in-javascript.md)
-    - [19 - Lenses：可组合函数式编程的 Getter 和 Setter](https://github.com/xitu/gold-miner/blob/master/TODO1/lenses-composable-getters-and-setterssfor-functional-programming.md)
-  - [Composing Software: The Book](https://medium.com/javascript-scene/composing-software-the-book-f31c77fc3ddc)
-  - 出书重新排版后未翻译的章节
-    - [The Dao of Immutability](https://medium.com/javascript-scene/the-dao-of-immutability-9f91a70c88cd)
-    - [Master the JavaScript Interview: What is a Pure Function?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
-    - [Master the JavaScript Interview: What is Functional Programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
-    - [Elements of JavaScript Style](https://medium.com/javascript-scene/elements-of-javascript-style-caa8821cb99f)
+- Monads
+  - [Monads, part one](https://ericlippert.com/2013/02/21/monads-part-one/)
+  - [Monads, part two](https://ericlippert.com/2013/02/25/monads-part-two/)
+  - [Monads, part three](https://ericlippert.com/2013/02/28/monads-part-three/)
+  - [Monads, part four](https://ericlippert.com/2013/03/04/monads-part-four/)
+  - [Monads, part five](https://ericlippert.com/2013/03/07/monads-part-five/)
+- 组合软件（译文）
+  <!-- TODO -->
+  <!-- https://github.com/xitu/gold-miner/issues/7419 -->
+  <!-- https://github.com/xitu/gold-miner/issues/6805 -->
+  <!-- https://github.com/xitu/gold-miner/blob/master/TODO1/composing-software-the-book.md -->
+  <!-- https://juejin.im/post/6844904121179324429 -->
+  - [组合软件：书](https://github.com/xitu/gold-miner/blob/master/TODO1/composing-software-the-book.md)
+    - [组合软件：简介](https://github.com/xitu/gold-miner/blob/master/TODO1/composing-software-an-introduction.md)
+    - [不变性之道](https://github.com/xitu/gold-miner/blob/master/TODO1/the-dao-of-immutability.md)
+    - [函数式编程的兴衰](https://github.com/xitu/gold-miner/blob/master/TODO/the-rise-and-fall-and-rise-of-functional-programming-composable-software.md)
+    - [为什么用 JavaScript 学习函数式编程](https://github.com/xitu/gold-miner/blob/master/TODO/why-learn-functional-programming-in-javascript-composing-software.md)
+    - [掌握 JavaScript 面试：什么是纯函数？](https://github.com/xitu/gold-miner/blob/master/TODO1/master-the-javascript-interview-what-is-a-pure-function.md)
+    - [掌握 JavaScript 面试：什么是函数式编程](https://github.com/xitu/gold-miner/blob/master/TODO1/master-the-javascript-interview-what-is-functional-programming.md)
+    - [函数式程序员的 JavaScript 简介](https://github.com/xitu/gold-miner/blob/master/TODO/a-functional-programmers-introduction-to-javascript-composing-software.md)
+    - [高阶函数](https://github.com/xitu/gold-miner/blob/master/TODO/higher-order-functions-composing-software.md)
+    - [柯里化与函数组合](https://github.com/xitu/gold-miner/blob/master/TODO1/curry-and-function-composition.md)
+    - [抽象与组合](https://github.com/xitu/gold-miner/blob/master/TODO1/abstraction-composition.md)
+    - [抽象数据类型与软件危机](https://github.com/xitu/gold-miner/blob/ec8862f2993f7eea977af6929d0b0785a86fd4e3/article/2020/abstract-data-types-and-the-software-crisis.md)
+    - [Functor 与 Category](https://github.com/xitu/gold-miner/blob/master/TODO/functors-categories.md)
+    - [JavaScript 让 Monad 更简单](https://github.com/xitu/gold-miner/blob/master/TODO/javascript-monads-made-simple.md)
+    - [被遗忘的面向对象编程史](https://github.com/xitu/gold-miner/blob/master/TODO1/the-forgotten-history-of-oop.md)
+    - [对象组合中隐藏的宝藏](https://github.com/xitu/gold-miner/blob/master/TODO/the-hidden-treasures-of-object-composition.md)
+    - [用 ES6+ 写 JavaScript 工厂函数](https://github.com/xitu/gold-miner/blob/master/TODO/javascript-factory-functions-with-es6.md)
+    - [函数式 Mixin](https://github.com/xitu/gold-miner/blob/master/TODO/functional-mixins-composing-software.md)
+    - [为什么 class 更难以进行组合](https://github.com/xitu/gold-miner/blob/master/TODO/why-composition-is-harder-with-classes.md)
+      <!-- TODO -->
+    - [用函数进行数据类型的组合](https://github.com/xitu/gold-miner/blob/master/TODO/composable-datatypes-with-functions.md)
+      <!-- TODO -->
+    - [Lenses：可组合函数式编程的 Getter 和 Setter](https://github.com/xitu/gold-miner/blob/master/TODO1/lenses-composable-getters-and-setterssfor-functional-programming.md)
+      <!-- TODO -->
+    - [Transducers：JavaScript 中高效的数据处理 Pipeline](https://github.com/xitu/gold-miner/blob/master/TODO1/transducers-efficient-data-processing-pipelines-in-javascript.md)
+    - [JavaScript 编码风格的原则](https://github.com/xitu/gold-miner/blob/master/TODO1/elements-of-javascript-style.md)
+    - [模拟是一种代码异味](https://github.com/xitu/gold-miner/blob/master/TODO/mocking-is-a-code-smell.md)
+  - 成书后未收录的章节
+    - [Reduce](https://github.com/xitu/gold-miner/blob/master/TODO/reduce-composing-software.md)
+    - [优秀的嵌套三元表达式](https://github.com/xitu/gold-miner/blob/master/TODO/nested-ternaries-are-great.md)
 
 ## 函数式编程 知识体系 {#knowledge-map}
 

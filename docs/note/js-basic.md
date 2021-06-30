@@ -155,6 +155,7 @@
   - 属性、访问器（getter/setter）
   - `new`、`delete`
   - `toString`、`valueOf`
+  - `in`、`instanceof`
 
 * 运算符特性：
   - 结合律和优先级

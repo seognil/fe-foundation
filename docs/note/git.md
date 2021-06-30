@@ -229,7 +229,7 @@ oh-my-zsh 中的部分常用 alias 如下：
 ga='git add'
 gaa='git add --all'
 
-gstall='git stash --all'
+gsta -u='git stash -u'
 gstaa='git stash apply'
 
 gss='git status -s'
@@ -248,6 +248,7 @@ gl='git pull'
 gp='git push'
 gpf='git push --force-with-lease'
 gpsup='git push --set-upstream origin $(git_current_branch)'
+gpoat='git push origin --all && git push origin --tags'
 
 gco='git checkout'
 gcb='git checkout -b'
@@ -261,7 +262,8 @@ gp origin -d xxx
 # * ---------------- 合并和基变
 
 gm='git merge'
-gm --no-ff xxx
+gm --no-ff --no-edit xxx
+gm --squash xxx
 
 grb='git rebase'
 grbm='git rebase master'
