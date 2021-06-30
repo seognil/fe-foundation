@@ -25,6 +25,7 @@
     "transliteration": "^2.2.0",
     "vuepress": "^1.8.2",
     "vuepress-plugin-medium-zoom": "^1.1.9",
-    "vuepress-plugin-zooming": "^1.1.8"
+    "vuepress-plugin-zooming": "^1.1.8",
+    "vuepress-theme-vdoing": "^1.8.3"
   }
 }

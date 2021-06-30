@@ -43,7 +43,42 @@ const config = {
 
   dest: './public',
 
+  theme: 'vdoing',
+
   themeConfig: {
+    author: {
+      name: 'Seognil LC',
+      link: 'https://github.com/seognil',
+    },
+    blogger: {
+      avatar: 'https://avatars.githubusercontent.com/u/5526096?s=400',
+      name: 'Seognil LC',
+      slogan: '略懂点前端',
+    },
+    social: {
+      icons: [
+        {
+          iconClass: 'icon-github',
+          title: 'GitHub',
+          link: 'https://github.com/seognil',
+        },
+      ],
+    },
+    footer: {
+      createYear: 2019,
+      copyrightInfo:
+        'Seognil LC | <a href="https://github.com/seognil/fe-foundation/blob/master/LICENSE" target="_blank">MIT License</a>',
+    },
+
+    bodyBgImg: [
+      // 'https://images.unsplash.com/photo-1542416409-400da26855b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80',
+      // 'https://images.unsplash.com/photo-1561160767-6bbd75de51b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80',
+      'https://images.unsplash.com/photo-1483653085484-eb63c9f02547?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80',
+    ],
+    bodyBgImgOpacity: 0.1,
+
+    contentBgStyle: 6,
+
     lastUpdated: '上次更新',
     // editLinks: true,
 
@@ -54,6 +89,7 @@ const config = {
 
       { text: '算法', link: 'https://github.com/seognil-study/leetcode' },
       { text: '动手练', link: 'https://github.com/seognil-study/learn-by-doing' },
+      { text: '归档', link: '/archives/' },
     ],
     repo: 'seognil/fe-foundation',
 

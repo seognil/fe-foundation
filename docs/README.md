@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /geneva-switzerland.jpeg
-actionText: 开始浏览 →
+# heroImage: /geneva-switzerland.jpeg
+actionText: → 开始阅读 ←
 actionLink: /note/fe-development-cookbook.md
 features:
 
