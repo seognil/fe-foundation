@@ -1,6 +1,6 @@
 ---
 title: JavaScript 学习指南 *
-date: 2019-11-10 20:55:24
+date: 2019-08-08 18:36:05
 permalink: /note/js-foundation.html
 categories:
   - note

@@ -1,6 +1,6 @@
 ---
 title: 装了啥
-date: 2019-11-10 20:55:24
+date: 2019-08-08 18:36:05
 permalink: /note/my-workstation.html
 categories:
   - note

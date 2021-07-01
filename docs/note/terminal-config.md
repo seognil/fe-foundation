@@ -1,6 +1,6 @@
 ---
 title: 打造趁手的终端
-date: 2019-11-10 20:55:24
+date: 2019-11-09 18:25:16
 permalink: /note/terminal-config.html
 categories:
   - note

@@ -1,6 +1,6 @@
 ---
 title: 命令行 简介
-date: 2019-11-10 20:55:24
+date: 2019-11-09 18:25:16
 permalink: /note/terminal-intro.html
 categories:
   - note

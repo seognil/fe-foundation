@@ -1,6 +1,6 @@
 ---
 title: 如何清洁机械键盘
-date: 2019-11-10 20:55:24
+date: 2019-11-08 16:07:45
 permalink: /note/clean-keyboard.html
 categories:
   - note
