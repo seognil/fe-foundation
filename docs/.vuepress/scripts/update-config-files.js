@@ -14,6 +14,7 @@ writeFileSync(resolve(projRoot, './docs/.vuepress/public/_redirects'), _redirect
 // * ----------------
 
 const vercelJson = JSON.stringify({
+  github: { silent: true },
   redirects: flatList.map(([oldUrl, newUrl]) => ({
     source: oldUrl,
     destination: newUrl,

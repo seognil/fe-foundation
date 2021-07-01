@@ -16,7 +16,7 @@
     "dev": "vuepress dev ./docs",
     "start": "npm run dev",
     "preview": "npm run build && http-server -o -c-1 ./public",
-    "update301": "node docs/.vuepress/scripts/update-redirect-files.js"
+    "update-config-files": "node docs/.vuepress/scripts/update-config-files.js"
   },
   "devDependencies": {
     "@types/node": "^15.12.5",
