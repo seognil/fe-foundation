@@ -48,10 +48,14 @@
 
 - <https://fe.rualc.com/>
 
-备份源：
+镜像地址：
 
-- <https://vercel.rualc.com/>：Powered By [Vercel](https://vercel.com/seognil/fe-foundation)
-- <https://cloudflare.rualc.com/>：Powered By [Cloudflare Pages](https://dash.cloudflare.com/8144c624bc3fd1e60ba8932cdf4949e4/pages/view/fe-foundation)
+- <https://fe-foundation.pages.dev>：Powered By [Cloudflare Pages](https://dash.cloudflare.com/8144c624bc3fd1e60ba8932cdf4949e4/pages/view/rualc)
+- <https://rualc.vercel.app/>：Powered By [Vercel](https://vercel.com/seognil/rualc)
+- <https://rualc.netlify.app/>：Powered By [Netlify](https://app.netlify.com/sites/rualc/overview)
+- <https://cloudflare.rualc.com/>
+- <https://vercel.rualc.com/>
+- <https://netlify.rualc.com/>
 
 主要文章：
 
