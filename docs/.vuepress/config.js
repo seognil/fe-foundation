@@ -2,7 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const dayjs = require('dayjs');
 const localizedFormat = require('dayjs/plugin/localizedFormat');
+const utc = require('dayjs/plugin/utc');
 dayjs.extend(localizedFormat);
+dayjs.extend(utc);
 
 const markdownItAttrs = require('markdown-it-attrs');
 const { slugify } = require('transliteration');
@@ -105,8 +107,10 @@ const config = {
       '@vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
-          dayjs.locale(lang);
-          return dayjs(timestamp).format('lll');
+          return dayjs
+            .utc(timestamp)
+            .utcOffset(8)
+            .format('lll');
         },
       },
     ],
