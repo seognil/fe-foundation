@@ -91,7 +91,15 @@ const config = {
 
       { text: '算法', link: 'https://github.com/seognil-study/leetcode' },
       { text: '动手练', link: 'https://github.com/seognil-study/learn-by-doing' },
-      { text: '归档', link: '/archives/' },
+      {
+        text: '索引',
+        link: '/archives/',
+        items: [
+          { text: '分类', link: '/categories/' },
+          { text: '标签', link: '/tags/' },
+          { text: '归档', link: '/archives/' },
+        ],
+      },
     ],
     repo: 'seognil/fe-foundation',
 

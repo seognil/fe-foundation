@@ -59,6 +59,7 @@ const sidebarStructure = {
   '其他语言': [
     //
     './typescript.md',
+    './python-language-basic.md'
   ],
   '前端框架类库': [
     //
