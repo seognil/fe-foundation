@@ -60,9 +60,24 @@ const config = {
     social: {
       icons: [
         {
-          iconClass: 'icon-github',
+          iconClass: 'fab fa-github',
           title: 'GitHub',
           link: 'https://github.com/seognil',
+        },
+        {
+          iconClass: 'fab fa-steam',
+          title: 'Steam',
+          link: 'https://steamhunters.com/id/seognil/games?sort=completionstate',
+        },
+        {
+          iconClass: 'fab fa-playstation',
+          title: 'PSN',
+          link: 'https://psnprofiles.com/seognil?order=percent',
+        },
+        {
+          iconClass: 'fab fa-xbox',
+          title: 'Xbox',
+          link: 'https://www.trueachievements.com/gamer/seognil/games#',
         },
       ],
     },

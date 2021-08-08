@@ -66,3 +66,13 @@ main h2:nth-of-type(4n+3) {
 main h2:nth-of-type(4n+4) {
     border-bottom: 2px solid hsl(220, 50%, 70%);
 }
+
+// * ---------------- fontawesome import and patch
+
+@import url(https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/fontawesome.css);
+@import url(https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/brands.css);
+
+.fab.iconfont {
+    font-family: "Font Awesome 5 Brands" !important;
+    line-height: unset;
+}
