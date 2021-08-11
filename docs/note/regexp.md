@@ -66,7 +66,7 @@ toThousand(123456789); // => "123,456,789"
 ### 学习路线
 
 - 前置学习
-  - [JavaScript 入门指南](./js-basic.md)
+  - [JavaScript 语言基础（2021）](./javascript-language-basic.md)
 - 学习正则表达式
   - 使用 JS 练习所有正则规则
   - 了解：不同工具中的正则可能会有一些扩展规则

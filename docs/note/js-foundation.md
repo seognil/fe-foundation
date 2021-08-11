@@ -40,7 +40,7 @@ tags:
   - [JavaScript 简介](./js-intro.md)
   - [运行 JavaScript 代码的十几种方式](./how-to-run-js.md)
   - **JavaScript 语言核心**
-    - [JavaScript 入门指南](./js-basic.md)
+    - [JavaScript 语言基础（2021）](./javascript-language-basic.md)
     - [JavaScript 进阶指南](./js-advanced.md)
     - JavaScript 硬核指南（TODO）
   - [前端模块化](./js-modular.md)

@@ -40,7 +40,7 @@ const sidebarStructure = {
     './js-foundation.md',
     './js-intro.md',
     './how-to-run-js.md',
-    './js-basic.md',
+    './javascript-language-basic.md',
     './js-advanced.md',
     // './js-hardcore.md',
     './syntactic-sugar.md',

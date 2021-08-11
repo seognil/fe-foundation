@@ -25,7 +25,7 @@ tags:
 ### 学习路线
 
 - 前置学习
-  - [JavaScript 入门指南](./js-basic.md)
+  - [JavaScript 语言基础（2021）](./javascript-language-basic.md)
 - 学习 JavaScript 高级特性
   - 看书、看视频 ↓，掌握下文中的提到的 JS 进阶知识体系
 - 实战
