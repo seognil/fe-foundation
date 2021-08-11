@@ -3,7 +3,7 @@ const urlMapping = {
     '/note/fe-development-cookbook-old',
     '/note/fe-development-cookbook',
   ],
-  '/note/js-basic': ['/note/javascript-language-basic'],
+  '/note/javascript-language-basic': ['/note/js-basic'],
 };
 
 // * ================================================================================
