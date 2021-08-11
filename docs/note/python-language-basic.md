@@ -1,10 +1,11 @@
 ---
 title: Python 语言基础（3.9）
 date: 2021-08-01 20:54:56
-permalink: /note/python-language-basic/
+permalink: /note/python-language-basic
 categories:
-  - pl
+  - note
 tags:
+  - pl
   - python
   - basic
 ---
@@ -29,6 +30,7 @@ tags:
   - [Python Quizzes – Real Python](https://realpython.com/quizzes/)
   - [Learn Python in Y Minutes](https://learnxinyminutes.com/docs/zh-cn/python-cn/)
   - [Learn Python Programming](https://www.programiz.com/python-programming)
+  - [python3-in-one-pic](https://github.com/coodict/python3-in-one-pic)
 - 工具
   - [Python runtime visualize](http://www.pythontutor.com/)
 
@@ -57,6 +59,10 @@ Python 目前有两个主要版本 2.7, 3+，语法有所区别，[Python 2 在 
   - 测试
     - [pytest](https://pypi.org/project/pytest/)：测试
     - [coverage](https://pypi.org/project/coverage/)：代码覆盖率
+- PyPI 榜单
+  - [Python Wheels](https://pythonwheels.com/)
+  - [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/)
+  - [PyPI Stats](https://pypistats.org/top)
 - VS Code 插件
   - [Microsoft Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)：VS Code 的 Python 语言扩展
   - [Wolf](https://marketplace.visualstudio.com/items?itemName=traBpUkciP.wolf)：类似 [Quokka.js](https://quokkajs.com/) 的 runner
@@ -125,7 +131,8 @@ python script.py
   - 缩进
   - 注释 `#`, `"""Multi Line"""`
   - 变量声明
-    - [有效变量名](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#identifiers) `A-Z , a-z , 0-9 , _`
+    - [有效变量名](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#identifiers) 区分大小写 `A-Z , a-z , 0-9 , _`
+    - [保留字](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#keywords)
     - [序列解包](https://docs.python.org/zh-cn/3/tutorial/datastructures.html#tuples-and-sequences) `a, b, c = 1, 2, 3`, `a = b = c = 1`
   - [`_` 特殊标识符](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#reserved-classes-of-identifiers) 在 REPL 中获取最近一次的求值
   - [尾逗号](https://docs.python.org/zh-cn/3/faq/design.html?highlight=%E9%80%97%E5%8F%B7#why-does-python-allow-commas-at-the-end-of-lists-and-tuples)
@@ -133,7 +140,7 @@ python script.py
   - [三目运算符](https://docs.python.org/zh-cn/3/faq/programming.html#is-there-an-equivalent-of-c-s-ternary-operator) `small = x if x < y else y`
 - [表达式](https://docs.python.org/zh-cn/3/reference/expressions.html) （运算符/操作符）
   - [算数](https://docs.python.org/zh-cn/3/reference/expressions.html#the-power-operator) `+`, `-`, `*`, `/`, `%`, `//`, `**`
-  - [位运算](https://docs.python.org/zh-cn/3/reference/expressions.html#unary-arithmetic-and-bitwise-operations) `&`, `|`, `~`, `^`, `>>`, `<<`
+  - [位运算](https://docs.python.org/zh-cn/3/reference/expressions.html#unary-arithmetic-and-bitwise-operations) `&`, `|`, `^`, `~`, `>>`, `<<`
   - （逻辑判断）
     - [比较运算符](https://docs.python.org/zh-cn/3/reference/expressions.html#value-comparisons) `<`, `>`, `==`, `!=`, `>=`, `<=`
       - 可串联
@@ -151,7 +158,7 @@ python script.py
     - 负数索引
   - [序列的比较](https://docs.python.org/zh-cn/3/reference/expressions.html#value-comparisons)
 - [del](https://docs.python.org/zh-cn/3/tutorial/datastructures.html#the-del-statement)
-- [控制流](https://docs.python.org/zh-cn/3/tutorial/controlflow.html)
+- [控制流，循环](https://docs.python.org/zh-cn/3/tutorial/controlflow.html)
   - `if`, `elif`, `else`
   - `for in`, `while`, `else`
   - `break`, `continue`
@@ -161,8 +168,7 @@ python script.py
   - `try`, `except`, `else`, `finally`
   - `raise`, `Exception`
   - [`assert`](https://docs.python.org/zh-cn/3/reference/simple_stmts.html#the-assert-statement)
-
-* [列表、集合、字典推导式](https://docs.python.org/zh-cn/3/tutorial/datastructures.html#list-comprehensions)
+- [列表、集合、字典推导式](https://docs.python.org/zh-cn/3/tutorial/datastructures.html#list-comprehensions)
   - `[x for x in range(10)]`
   - `[x for x in range(10) if x % 2]`
   - `[[col + row * 3 for col in range(4)] for row in range(3)]`
@@ -182,11 +188,13 @@ python script.py
   - [**str**](https://docs.python.org/zh-cn/3/library/stdtypes.html#text-sequence-type-str)
     - `'Hello'`, `"Hello"`
     - `"""Multi Line"""`
+    - [转义字符](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#strings)
     - [字符串合并](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#string-literal-concatenation)
     - [f-字符串](https://docs.python.org/zh-cn/3/tutorial/inputoutput.html#formatted-string-literals) `f"x + y = {x + y}"`
       - [.format()](https://docs.python.org/zh-cn/3/tutorial/inputoutput.html#the-string-format-method) `"x + y = {}".format(1 + 2)`
     - [原始字符串](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#string-and-bytes-literals) `r"raw \n"`
     - [unicode 字面值](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#string-and-bytes-literals) `u"\u00dc \u00f6 \xf1"`
+  - [**bytes**](https://docs.python.org/zh-cn/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview) `b'hello'` `b'hello'[0] == 104`
   - [布尔和比较](https://docs.python.org/zh-cn/3/library/stdtypes.html#boolean-operations-and-or-not)
     - **bool**: `True`, `False`
     - [真值/假值](https://docs.python.org/zh-cn/3/library/stdtypes.html#truth-value-testing)
