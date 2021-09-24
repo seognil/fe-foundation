@@ -1,91 +1,84 @@
-const fs = require('fs');
-const path = require('path');
 const dayjs = require('dayjs');
 const localizedFormat = require('dayjs/plugin/localizedFormat');
 const utc = require('dayjs/plugin/utc');
 dayjs.extend(localizedFormat);
 dayjs.extend(utc);
 
+const sidebar = require('./sidebar');
+
 const markdownItAttrs = require('markdown-it-attrs');
 const { slugify } = require('transliteration');
 
-const { sidebarStructure } = require('../note/nav');
-// => { [groupName: string]: string[] }
+// * ----------------------------------------------------------------
 
-// * ---------------------------------------------------------------- sidebar
-
-const docFolder = path.resolve(process.cwd(), './docs');
-const noteFolder = path.resolve(docFolder, './note');
-const hasFile = (e) => fs.existsSync(path.resolve(noteFolder, e));
-const toNavUrl = (url) => path.resolve('/note', url);
-
-// * --------------------------------
-
-const urlFix = (e) => (e === '/note' ? '/note/' : e);
-
-const articleSidebar = Object.entries(sidebarStructure)
-  .map(([groupName, list]) => [groupName, list.filter(hasFile)])
-  .filter(([, list]) => list.length > 0)
-  .map(([g, list]) => [g, list.map(toNavUrl)])
-  .map(([title, children]) => [title, children.map(urlFix)])
-  .map(([title, children]) => ({ title, children, collapsable: false }));
-// => [{ title, children: string[], collapsable }]
-
-// * ----------------
-
-const navCateOfFirst = articleSidebar.map(({ title: text, children: [link] }) => ({ text, link }));
-// => [{ text, link }]
+const AboutMe = {
+  author: {
+    name: 'Seognil LC',
+    link: 'https://github.com/seognil',
+  },
+  blogger: {
+    avatar: 'https://avatars.githubusercontent.com/u/5526096?s=400',
+    name: 'Seognil LC',
+    slogan: '略懂点前端',
+  },
+  social: {
+    icons: [
+      {
+        iconClass: 'fab fa-github',
+        title: 'GitHub',
+        link: 'https://github.com/seognil',
+      },
+      {
+        iconClass: 'fab fa-steam',
+        title: 'Steam',
+        link: 'https://steamhunters.com/id/seognil/games?sort=completionstate',
+      },
+      {
+        iconClass: 'fab fa-playstation',
+        title: 'PSN',
+        link: 'https://psnprofiles.com/seognil?order=percent',
+      },
+      {
+        iconClass: 'fab fa-xbox',
+        title: 'Xbox',
+        link: 'https://www.trueachievements.com/gamer/seognil/games#',
+      },
+    ],
+  },
+  footer: {
+    createYear: 2019,
+    copyrightInfo:
+      'Seognil LC | <a href="https://github.com/seognil/fe-foundation/blob/master/LICENSE" target="_blank">MIT License</a>',
+  },
+};
 
 // * ---------------------------------------------------------------- config
 
 const config = {
   title: '前端指南',
   description: '前端技术学习指南',
-  head: [['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square-blue.png' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square-blue.png' }],
+    // ['meta', { name: 'keywords', content: 'vuepress,blog' }],
+  ],
 
   dest: './public',
 
   theme: 'vdoing',
 
+  // * ------------------------------------------------
+
   themeConfig: {
-    author: {
-      name: 'Seognil LC',
-      link: 'https://github.com/seognil',
-    },
-    blogger: {
-      avatar: 'https://avatars.githubusercontent.com/u/5526096?s=400',
-      name: 'Seognil LC',
-      slogan: '略懂点前端',
-    },
-    social: {
-      icons: [
-        {
-          iconClass: 'fab fa-github',
-          title: 'GitHub',
-          link: 'https://github.com/seognil',
-        },
-        {
-          iconClass: 'fab fa-steam',
-          title: 'Steam',
-          link: 'https://steamhunters.com/id/seognil/games?sort=completionstate',
-        },
-        {
-          iconClass: 'fab fa-playstation',
-          title: 'PSN',
-          link: 'https://psnprofiles.com/seognil?order=percent',
-        },
-        {
-          iconClass: 'fab fa-xbox',
-          title: 'Xbox',
-          link: 'https://www.trueachievements.com/gamer/seognil/games#',
-        },
-      ],
-    },
-    footer: {
-      createYear: 2019,
-      copyrightInfo:
-        'Seognil LC | <a href="https://github.com/seognil/fe-foundation/blob/master/LICENSE" target="_blank">MIT License</a>',
-    },
+    ...AboutMe,
+
+    // * ---------------- blog config
+
+    repo: 'seognil/fe-foundation',
+
+    lastUpdated: '上次更新',
+    // editLinks: true,
+
+    // * ---------------- theme config
 
     bodyBgImg: [
       // 'https://images.unsplash.com/photo-1542416409-400da26855b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80',
@@ -96,8 +89,7 @@ const config = {
 
     contentBgStyle: 6,
 
-    lastUpdated: '上次更新',
-    // editLinks: true,
+    // * ----------------
 
     nav: [
       { text: '指南', link: '/note/fe-development-cookbook' },
@@ -116,14 +108,16 @@ const config = {
         ],
       },
     ],
-    repo: 'seognil/fe-foundation',
 
     sidebarDepth: 3,
+
     sidebar: {
-      '/note': articleSidebar,
+      '/note': sidebar,
       '/about': false,
     },
   },
+
+  // * ------------------------------------------------
 
   plugins: [
     [
@@ -164,6 +158,8 @@ const config = {
   ],
   cache: false,
   markdown: {
+    lineNumbers: true,
+
     // https://v1.vuepress.vuejs.org/guide/markdown.html#advanced-configuration
     // options for markdown-it-anchor
     anchor: {
