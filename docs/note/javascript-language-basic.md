@@ -20,7 +20,7 @@ tags:
 
 - [空值合并](https://zh.javascript.info/nullish-coalescing-operator) `a ?? b`
 - [可选链](https://zh.javascript.info/optional-chaining) `a?.b`, `a?.[0]`, `fn?.(a, b)`
-- [扩展的赋值运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6) `a ||= b`, `a ??= b` ...
+- [新的赋值运算符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6) `a ||= b`, `a ??= b` ...
 - [BigInt](https://zh.javascript.info/bigint) `10n`, `BigInt(10)`, `BigInt("10")`
 - [Generator](https://zh.javascript.info/generators) `function* fn() { yield 1; }`
 - [class 私有属性](https://zh.javascript.info/private-protected-properties-methods#si-you-de-waterlimit) `class A { #val = 2; }`
@@ -110,7 +110,7 @@ tags:
     - [Web API](https://developer.mozilla.org/zh-CN/docs/Web/API)：只有浏览器有的操纵页面的 API
       - [DOM](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model)：Document Object Model，文档对象模型。Web API 中和 HTML 节点有关的部分
   - [JSON](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON)：JavaScript Object Notation，基于 JS 语法的数据格式
-  - 方言和扩展
+  - 方言
     - [TS](https://www.typescriptlang.org/)：TypeScript，带类型的 JavaScript
     - [JSX](https://zh-hans.reactjs.org/docs/introducing-jsx.html)：React 框架提供的 HTML 模板语法糖，在 JS 中写 HTML
     - [TSX](https://www.typescriptlang.org/docs/handbook/jsx.html)：TS + JSX
@@ -208,7 +208,7 @@ yarn remove lodash # 在项目中卸载一个包
     - [字面量](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Grammar_and_types#%E5%AD%97%E9%9D%A2%E9%87%8F_literals)
   - [严格模式](https://zh.javascript.info/strict-mode) `"use strict";`
   - [尾逗号](https://zh.javascript.info/array#sheng-ming) `[1, 2,]`, `{ a, b, }`
-  - [解构赋值](https://zh.javascript.info/destructuring-assignment) `[a = 1, b, ...rest] = arr`, `{a: val = 1, b, ...rest} = obj`
+  - [扩展、剩余、解构](https://zh.javascript.info/destructuring-assignment) `[a = 1, b, ...rest] = arr`, `{a: val = 1, b, ...rest} = obj`
   - [正则表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp) `/ab+c/i`
 - [表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators) 运算符/操作符
   - （数值计算）
@@ -250,7 +250,6 @@ yarn remove lodash # 在项目中卸载一个包
 - [变量提升](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/var#%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87)
 - [暂时性死区](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let#%E6%9A%82%E5%AD%98%E6%AD%BB%E5%8C%BA)
 - [短路求值](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#note_on_grouping_and_short-circuiting)
-- [尾调用优化](https://wangdoc.com/es6/function.html#%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96)
 - [垃圾回收](https://zh.javascript.info/garbage-collection)
 
 ### 原始数据类型
@@ -266,6 +265,7 @@ yarn remove lodash # 在项目中卸载一个包
     - [模板字符串](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Template_literals) `` `x + y = ${x + y}` ``
     - [标签模板](https://wangdoc.com/es6/string.html#%E6%A0%87%E7%AD%BE%E6%A8%A1%E6%9D%BF) `` alert`hello` ``
     - [转义字符](https://zh.javascript.info/string#te-shu-zi-fu) `\n`, `\\` `\u00A9`, `\u{1f60d}`
+    - [`String.raw()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/raw)
   - [boolean](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Grammar_and_Types#%E5%B8%83%E5%B0%94%E5%AD%97%E9%9D%A2%E9%87%8F_boolean_literals)
     - `true`, `false`
   - [symbol](https://zh.javascript.info/symbol)
@@ -327,7 +327,7 @@ yarn remove lodash # 在项目中卸载一个包
   - `.length`
   - [数组是基于对象的](https://zh.javascript.info/array#nei-bu)
   - [类数组](https://zh.javascript.info/iterable#array-like)
-  - [Iterable](https://zh.javascript.info/iterable) `Symbol.iterator`
+  - [Iterable](https://zh.javascript.info/iterable) `Symbol.iterator`, `for of`
 * [Array 常见 API](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array)
   - `Array.from()`, `Array.of()`, `Array.isArray()`, `.fill()`
   - `.sort()`, `.reverse()`, `.flat()`, `.flatMap()`
@@ -362,6 +362,7 @@ yarn remove lodash # 在项目中卸载一个包
     - [IIFE](https://zh.javascript.info/var#iife) “立即执行函数表达式” `(() => {})()`
     - [callback](https://zh.javascript.info/callbacks) “回调函数”
     - [`globalThis`](https://zh.javascript.info/global-object)
+    - [尾调用优化](https://wangdoc.com/es6/function.html#%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96)
   - 绑定
     - [`call/apply`](https://zh.javascript.info/call-apply-decorators)
     - [`bind`](https://zh.javascript.info/bind#jie-jue-fang-an-2-bind)
@@ -384,7 +385,7 @@ yarn remove lodash # 在项目中卸载一个包
     - [`extends`](https://zh.javascript.info/class-inheritance#extends-guan-jian-zi)
     - [`super`](https://zh.javascript.info/class-inheritance#zhong-xie-fang-fa)
   - [静态方法](https://zh.javascript.info/static-properties-methods) `static`
-- 旧的写法和底层原理
+- 底层
   - [prototype](https://zh.javascript.info/function-prototype)
   - [`new.target`](https://zh.javascript.info/constructor-new#gou-zao-qi-mo-shi-ce-shi-newtarget)
   - [原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)

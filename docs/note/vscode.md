@@ -40,11 +40,11 @@ VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）
   - [代码格式化](https://code.visualstudio.com/docs/editor/codebasics#_formatting)
 - 开发
   - [Debugger](https://code.visualstudio.com/Docs/editor/debugging)
-- [快捷键](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference)
-  - <kbd>cmd</kbd>+<kbd>p</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>p</kbd>
-  - <kbd>cmd</kbd>+<kbd>f</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>f</kbd>
-  - <kbd>cmd</kbd>+<kbd>d</kbd>、<kbd>cmd</kbd>+<kbd>shift</kbd>+<kbd>L</kbd>
-  - <kbd>opt</kbd>+<kbd>shift</kbd>+<kbd>o</kbd>：organize imports
+- [快捷键](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference)（Mac）
+  - <kbd>cmd + p</kbd>、<kbd>cmd + shift + p</kbd>
+  - <kbd>cmd + f</kbd>、<kbd>cmd + shift + f</kbd>
+  - <kbd>cmd + d</kbd>、<kbd>cmd + shift + L</kbd>
+  - <kbd>opt + shift + o</kbd>：organize imports
 
 ### VS Code 源码
 
@@ -62,6 +62,7 @@ VS Code 兼顾了轻便性和扩展性，是前端开发（甚至其他语言）
 - [Visual Studio Code Can Do That: Tips & Tricks : Build 2018](https://www.youtube.com/watch?v=OOG3xcUQY5k)  
   80 分钟：
   <!-- - [15 VS Code Extensions For Front-End Developers in 2019](https://www.youtube.com/watch?v=LdF2RcelRg0) -->
+- [25 VS Code Productivity Tips and Speed Hacks](https://www.youtube.com/watch?v=ifTF3ags0XI)
 
 ### 插件
 

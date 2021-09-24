@@ -181,6 +181,7 @@ Expressions and operators
 
 [你不知道的 js（上卷）](https://www.kancloud.cn/kancloud/you-dont-know-js-scope-closures/516610)  
 [EventLoop](https://stackblitz.com/edit/event-loop-2)
+[Jake Archibald: In The Loop - JSConf.Asia](https://www.youtube.com/watch?v=cCOL7MC4Pl0)
 
 - 运行环境
   - 浏览器（中的 JS 引擎：V8、SpiderMonkey 等）
