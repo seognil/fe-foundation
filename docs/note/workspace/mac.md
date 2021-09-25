@@ -68,12 +68,13 @@ Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，
 
   后续配置以 VS Code 为例：`"editor.fontFamily": "sarasa term sc"`
 
-- 系统设置，将光标移动速度调到极快  
+- 系统设置，将光标移动速度调到极快，开启连续输入  
   在命令行执行以下代码并重启
 
   ```bash
   defaults write -g InitialKeyRepeat -int 15
   defaults write -g KeyRepeat -int 1
+  defaults write -g ApplePressAndHoldEnabled -bool true
   ```
 
 - 允许运行任意来源的软件  
