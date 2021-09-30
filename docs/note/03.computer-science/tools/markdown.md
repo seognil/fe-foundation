@@ -162,15 +162,15 @@ Vuepress 使用的编译器则不行，必须加上空格
 ```markdown
 <!-- 链接（a 标签） -->
 
-[链接文字](https://fe.rualc.com/)
+[链接文字](https://rualc.com/)
 
 编译成：
-<a href="https://fe.rualc.com/">链接文字</a>
+<a href="https://rualc.com/">链接文字</a>
 
 同名链接的写法 ↓
-<https://fe.rualc.com/>
+<https://rualc.com/>
 等价于：
-[https://fe.rualc.com/](https://fe.rualc.com/)
+[https://rualc.com/](https://rualc.com/)
 
 VuePress 不支持裸链接直接编译，可以使用同名链接的写法
 GitHub 则是直接支持编译
@@ -179,14 +179,14 @@ GitHub 则是直接支持编译
 
 [链接也可以分开写][home]
 
-[home]: https://fe.rualc.com/ '这里可以写注释'
+[home]: https://rualc.com/ '这里可以写注释'
 
 <!-- 图片（img） -->
 
-![图片描述](https://fe.rualc.com/js-nation-square-blue.png)
+![图片描述](https://rualc.com/js-nation-square-blue.png)
 
 编译成：
-<img src="https://fe.rualc.com/js-nation-square-blue.png" alt="图片描述">
+<img src="https://rualc.com/js-nation-square-blue.png" alt="图片描述">
 ```
 
 ```markdown

@@ -7,7 +7,7 @@
 <h1 align="center">一个前端指南</h1>
 
 <h2  align="center">
-  <a href='https://fe.rualc.com/'>
+  <a href='https://rualc.com/'>
   <u>→ 在线阅读 ←</u>
   </a>
 </h2>
@@ -46,7 +46,7 @@
 
 线上地址：
 
-- <https://fe.rualc.com/>
+- <https://rualc.com/>
 
 镜像地址：
 
@@ -60,16 +60,16 @@
 主要文章：
 
 - 导览
-  - [前端开发入门指南](https://fe.rualc.com/note/frontend-development-cookbook)
+  - [前端开发入门指南](https://rualc.com/note/frontend-development-cookbook)
 - 系列文章
-  - [开发环境配置系列](https://fe.rualc.com/workspace/awesome-tools)
-  - [JavaScript 学习系列](https://fe.rualc.com/frontend/javascript-foundation)
-  - [Node 基础系列](https://fe.rualc.com/frontend/nodejs-basic)
-  - [其他学习指南系列](https://fe.rualc.com/study/crash-course-study-skills)
+  - [开发环境配置系列](https://rualc.com/workspace/awesome-tools)
+  - [JavaScript 学习系列](https://rualc.com/frontend/javascript-foundation)
+  - [Node 基础系列](https://rualc.com/frontend/nodejs-basic)
+  - [其他学习指南系列](https://rualc.com/study/crash-course-study-skills)
 
 以及，授人以鱼不如授人以渔：
 
-- [我都从哪学习](https://fe.rualc.com/about/where-do-i-learn-from)
+- [我都从哪学习](https://rualc.com/about/where-do-i-learn-from)
 
 ## WIP
 

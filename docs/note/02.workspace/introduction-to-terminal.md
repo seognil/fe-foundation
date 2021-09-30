@@ -140,8 +140,8 @@ where bash | xargs ls -la
   （rc 可解释为 runcom、run commands、runtime configuration 等）  
   如：`.bashrc、.zshrc、.npmrc`
 
-- **ping**：命令行中检查地址可访问性的工具，例如 `ping fe.rualc.com`
-- **curl**：是 Client URL 的缩写，命令行中的地址访问工具，例如 `curl -L fe.rualc.com`
+- **ping**：命令行中检查地址可访问性的工具，例如 `ping rualc.com`
+- **curl**：是 Client URL 的缩写，命令行中的地址访问工具，例如 `curl -L rualc.com`
 
 ### 不同的 shell
 
