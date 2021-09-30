@@ -16,10 +16,10 @@
     "dev": "vuepress dev ./docs",
     "start": "npm run dev",
     "preview": "npm run build && http-server -o -c-1 ./public",
-    "301": "node docs/.vuepress/scripts/update-config-files.js"
+    "check-md": "esbuild scripts/check-broken-links.ts --platform=node --bundle --outfile=tempCodeRunnerFile.js && node tempCodeRunnerFile.js",
+    "redirect": "esbuild scripts/update-config-files.ts --platform=node --bundle --outfile=tempCodeRunnerFile.js && node tempCodeRunnerFile.js"
   },
-  "devDependencies": {
-    "@types/node": "^15.12.5",
+  "dependencies": {
     "dayjs": "^1.10.5",
     "markdown-it-attrs": "^4.0.0",
     "transliteration": "^2.2.0",
@@ -27,5 +27,18 @@
     "vuepress-plugin-medium-zoom": "^1.1.9",
     "vuepress-plugin-zooming": "^1.1.8",
     "vuepress-theme-vdoing": "^1.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.5",
+    "chalk": "^4.1.2",
+    "esbuild": "^0.13.3",
+    "globby": "^12.0.2",
+    "https-proxy-agent": "^5.0.0",
+    "node-fetch": "^3.0.0",
+    "ora": "^6.0.1",
+    "p-limit": "^4.0.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-organize-imports": "^2.3.4",
+    "typescript": "^4.4.3"
   }
 }

@@ -60,16 +60,16 @@
 主要文章：
 
 - 导览
-  - [前端开发入门指南](https://fe.rualc.com/note/fe-development-cookbook.html)
+  - [前端开发入门指南](https://fe.rualc.com/note/frontend-development-cookbook)
 - 系列文章
-  - [开发环境配置系列](https://fe.rualc.com/note/my-workstation.html)
-  - [JavaScript 学习系列](https://fe.rualc.com/note/js-foundation.html)
-  - [Node 基础系列](https://fe.rualc.com/note/node-basic.html)
-  - [其他学习指南系列](https://fe.rualc.com/note/study-methodology.html)
+  - [开发环境配置系列](https://fe.rualc.com/workspace/awesome-tools)
+  - [JavaScript 学习系列](https://fe.rualc.com/frontend/javascript-foundation)
+  - [Node 基础系列](https://fe.rualc.com/frontend/nodejs-basic)
+  - [其他学习指南系列](https://fe.rualc.com/study/crash-course-study-skills)
 
 以及，授人以鱼不如授人以渔：
 
-- [我都从哪学习](https://fe.rualc.com/note/my-reading.html)
+- [我都从哪学习](https://fe.rualc.com/about/where-do-i-learn-from)
 
 ## WIP
 

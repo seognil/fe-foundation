@@ -2,7 +2,7 @@
 home: true
 # heroImage: /geneva-switzerland.jpeg
 actionText: → 开始阅读 ←
-actionLink: /note/fe-development-cookbook.md
+actionLink: /note/frontend-development-cookbook
 features:
 
   - title: Ecosystem
