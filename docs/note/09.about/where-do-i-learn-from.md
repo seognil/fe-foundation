@@ -3,12 +3,13 @@ title: 我都从哪学习
 date: 2019-12-31 20:05:21
 permalink: /about/where-do-i-learn-from
 categories:
-  - note
+  - 关于
 tags:
-  - 
+  - 关于我
+  - awesome
 ---
-# 我都从哪学习
 
+# 我都从哪学习
 
 ---
 

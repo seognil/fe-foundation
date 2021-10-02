@@ -3,12 +3,12 @@ title: 学习方法论
 date: 2019-11-23 23:38:58
 permalink: /study/crash-course-study-skills
 categories:
-  - note
+  - 学习技巧
 tags:
-  - 
+  - crash course
 ---
-# 学习方法论
 
+# 学习方法论
 
 ## 简介
 
@@ -82,7 +82,7 @@ tags:
   - [路径依赖](https://wiki.mbalib.com/wiki/%E8%B7%AF%E5%BE%84%E4%BE%9D%E8%B5%96)
   - [多看效应](https://wiki.mbalib.com/wiki/%E5%A4%9A%E7%9C%8B%E6%95%88%E5%BA%94)
   - [游戏化](https://zhuanlan.zhihu.com/p/45980716)
-  - [心流](https://en.wikipedia.org/wiki/Flow_(psychology))
+  - [心流](<https://en.wikipedia.org/wiki/Flow_(psychology)>)
   - [斯金纳箱](https://www.gcores.com/radios/97874)
 - 负面
   - [达克效应](https://zh.wikipedia.org/wiki/%E8%BE%BE%E5%85%8B%E6%95%88%E5%BA%94)

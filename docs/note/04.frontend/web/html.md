@@ -3,10 +3,12 @@ title: HTML 学习指南
 date: 2020-06-02 15:42:08
 permalink: /frontend/html
 categories:
-  - note
+  - 前端开发
+  - Web
 tags:
-  - 
+  - html
 ---
+
 # HTML 学习指南
 
 ## HTML 简介

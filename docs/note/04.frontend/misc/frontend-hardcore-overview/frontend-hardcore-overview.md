@@ -3,12 +3,12 @@ title: 硬核前端（劝退篇）
 date: 2019-12-14 22:03:19
 permalink: /frontend/frontend-hardcore-overview
 categories:
-  - note
+  - 前端开发
 tags:
-  - 
+  - 杂谈
 ---
-# 硬核前端（劝退篇）
 
+# 硬核前端（劝退篇）
 
 ## 当个前端工程师
 

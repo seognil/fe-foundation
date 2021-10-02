@@ -3,10 +3,13 @@ title: 用 Proxy 进一步提高 npm 安装速度
 date: 2019-11-10 22:20:59
 permalink: /frontend/speeding-up-npm-install
 categories:
-  - note
+  - 前端开发
+  - Node.js
 tags:
-  - 
+  - npm
+  - 命令行
 ---
+
 # 用 Proxy 进一步提高 npm 安装速度
 
 ## 碰到的问题

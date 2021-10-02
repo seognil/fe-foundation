@@ -3,10 +3,12 @@ title: 运行 JavaScript 代码的十几种方式
 date: 2020-04-21 18:36:14
 permalink: /frontend/how-to-run-javascript-code
 categories:
-  - note
+  - 前端开发
+  - JavaScript
 tags:
-  - 
+  - JavaScript
 ---
+
 # 运行 JavaScript 代码的十几种方式
 
 有人可能会想：JS 就是 JS，在浏览器里用的，哪有什么这么多运行方式，你别来什么用 Chrome 打开、用 Firefox 打开，就算两种啊。
@@ -428,7 +430,7 @@ enum DIR {
 
 var DIR;
 
-(function(DIR) {
+(function (DIR) {
   DIR[(DIR['Up'] = 1)] = 'Up';
   DIR[(DIR['Down'] = 2)] = 'Down';
   DIR[(DIR['Left'] = 3)] = 'Left';

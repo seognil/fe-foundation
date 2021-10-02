@@ -3,12 +3,12 @@ title: 英语 训练指南 编程篇
 date: 2019-12-14 22:03:19
 permalink: /study/using-english
 categories:
-  - note
+  - 学习技巧
 tags:
-  - 
+  - 英语
 ---
-# 英语 训练指南 编程篇
 
+# 英语 训练指南 编程篇
 
 ## 英语 简介
 

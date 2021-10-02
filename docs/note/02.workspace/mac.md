@@ -3,12 +3,13 @@ title: Mac、设置和软件
 date: 2019-12-15 12:53:59
 permalink: /workspace/mac
 categories:
-  - note
+  - 开发环境
 tags:
-  - 
+  - mac
+  - 工具
 ---
-# Mac、设置和软件
 
+# Mac、设置和软件
 
 <!-- ## Mac 配置教程
 

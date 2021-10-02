@@ -3,10 +3,12 @@ title: Jest 学习指南
 date: 2020-01-21 16:43:12
 permalink: /frontend/jest
 categories:
-  - note
+  - 前端开发
+  - 前端工具
 tags:
-  - 
+  - jest
 ---
+
 # Jest 学习指南
 
 ## Jest 简介
@@ -254,8 +256,13 @@ describe('基本类型简单测试', () => {
     expect(['Hello', 'world']).toContain('Hello');
 
     expect([{ id: 1 }, { id: 2 }]).not.toContain({ id: 1 });
-    expect([{ id: 1 }, { id: 2 }]).toContainEqual({ id: 1 });
-    expect([{ id: 1 }, { id: 2 }]).not.toContainEqual({ id: 1, name: 'John' });
+    expect([{ id: 1 }, { id: 2 }]).toContainEqual({
+      id: 1,
+    });
+    expect([{ id: 1 }, { id: 2 }]).not.toContainEqual({
+      id: 1,
+      name: 'John',
+    });
 
     expect('Quick').toHaveLength(5);
     expect(['Hello', 'world']).toHaveLength(2);
@@ -304,12 +311,20 @@ describe('容易混淆的相等性 API，对象', () => {
 
   test('toEqual', () => {
     expect({ hello: 'world' }).toEqual({ hello: 'world' });
-    expect({ hello: 'world' }).toEqual({ hello: 'world', un: undefined });
+    expect({ hello: 'world' }).toEqual({
+      hello: 'world',
+      un: undefined,
+    });
   });
 
   test('toStrictEqual', () => {
-    expect({ hello: 'world' }).toStrictEqual({ hello: 'world' });
-    expect({ hello: 'world' }).not.toStrictEqual({ hello: 'world', un: undefined });
+    expect({ hello: 'world' }).toStrictEqual({
+      hello: 'world',
+    });
+    expect({ hello: 'world' }).not.toStrictEqual({
+      hello: 'world',
+      un: undefined,
+    });
   });
 
   test('toMatchObject', () => {
@@ -351,7 +366,9 @@ describe('Mock 系列', () => {
   });
 
   test('jest.spyOn', () => {
-    const obj = { hello: (name = 'John') => `Hello ${name}` };
+    const obj = {
+      hello: (name = 'John') => `Hello ${name}`,
+    };
 
     const spyFn = jest.spyOn(obj, 'hello');
 
@@ -396,7 +413,10 @@ describe('Mock 系列', () => {
         .mockImplementationOnce((cb) => cb(null, true))
         .mockImplementationOnce((cb) => cb(null, false));
 
-      const result = [myMockFn((err, val) => val), myMockFn((err, val) => val)];
+      const result = [
+        myMockFn((err, val) => val),
+        myMockFn((err, val) => val),
+      ];
       expect(result).toEqual([true, false]);
     }
 
@@ -408,7 +428,12 @@ describe('Mock 系列', () => {
         .mockReturnValueOnce('first call')
         .mockReturnValueOnce('second call');
 
-      expect([myMockFn(), myMockFn(), myMockFn(), myMockFn()]).toEqual([
+      expect([
+        myMockFn(),
+        myMockFn(),
+        myMockFn(),
+        myMockFn(),
+      ]).toEqual([
         'first call',
         'second call',
         'default',

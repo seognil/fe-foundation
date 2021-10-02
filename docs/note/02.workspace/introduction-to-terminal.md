@@ -3,12 +3,13 @@ title: 命令行 简介
 date: 2019-11-09 18:25:16
 permalink: /workspace/introduction-to-terminal
 categories:
-  - note
+  - 开发环境
 tags:
-  - 
+  - 命令行
+  - mac
 ---
-# 命令行 简介
 
+# 命令行 简介
 
 ## 什么是 命令行
 
@@ -90,7 +91,7 @@ Unix 中有管道的概念，用于拼接不同命令，
 
 命令的拼接有两种主要方式：
 
-[管道 (Unix)](https://zh.wikipedia.org/wiki/%E7%AE%A1%E9%81%93_(Unix))  
+[管道 (Unix)](<https://zh.wikipedia.org/wiki/%E7%AE%A1%E9%81%93_(Unix)>)  
 下面 `ls` 和 `tail` 是两个独立的命令，`|` 是管道
 
 ```bash

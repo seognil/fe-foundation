@@ -3,13 +3,14 @@ title: 正则表达式 学习指南
 date: 2019-12-26 18:39:31
 permalink: /frontend/javascript-regular-expression
 categories:
-  - note
+  - 前端开发
+  - JavaScript
 tags:
-  - 
+  - JavaScript
+  - 正则表达式
 ---
+
 # 正则表达式 学习指南
-
-
 
 ## 正则表达式 简介
 

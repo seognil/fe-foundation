@@ -3,7 +3,7 @@ const sidebar = {
     '/note/frontend-development-cookbook/frontend-development-cookbook',
 
     {
-      title: '学习',
+      title: '学习技巧',
       collapsable: false,
       children: [
         '/note/01.study/crash-course-study-skills.md',

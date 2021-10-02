@@ -3,10 +3,14 @@ title: TypeScript 入门指南
 date: 2019-11-22 19:00:44
 permalink: /cs/typescript-language-basic
 categories:
-  - note
+  - 计算机科学
+  - 编程语言
 tags:
-  - 
+  - 编程语言
+  - TypeScript
+  - 基础
 ---
+
 # TypeScript 入门指南
 
 ## TypeScript 简介
@@ -327,9 +331,9 @@ const nestArr: NumVal = [1, 2, 3, [1, 2, [3]]];
 #### 联合转交集
 
 ```ts
-type UnionToIntersection<U> = (U extends any
-? (k: U) => void
-: never) extends (k: infer I) => void
+type UnionToIntersection<U> = (
+  U extends any ? (k: U) => void : never
+) extends (k: infer I) => void
   ? I
   : never;
 ```
@@ -352,11 +356,12 @@ const dataPool = {
   // ...
 };
 
-const advanceDataPool: MapEveryToPromise<typeof dataPool> = {
-  key1: Promise.resolve(1),
-  key2: Promise.resolve('hello'),
-  // ...
-};
+const advanceDataPool: MapEveryToPromise<typeof dataPool> =
+  {
+    key1: Promise.resolve(1),
+    key2: Promise.resolve('hello'),
+    // ...
+  };
 ```
 
 ## TypeScript 相关

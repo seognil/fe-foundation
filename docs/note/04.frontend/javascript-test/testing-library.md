@@ -3,10 +3,12 @@ title: testing-library 学习指南
 date: 2020-01-26 20:55:42
 permalink: /frontend/testing-library
 categories:
-  - note
+  - 前端开发
+  - 前端工具
 tags:
-  - 
+  - testing-library
 ---
+
 # testing-library 学习指南
 
 ## testing-library 简介
@@ -222,7 +224,7 @@ UI 测试工具还有 Airbnb 的 [enzyme](https://airbnb.io/enzyme/)，侧重有
 ```typescript
 // * ------------------------------------------------ Query Basic
 
-test("Query Basic", () => {
+test('Query Basic', () => {
   const container = createHTML(
     `<span> Hello World! </span>`,
   );
@@ -230,22 +232,22 @@ test("Query Basic", () => {
   // * ---------------- getBy
 
   // getByText(dom, 'Hello'); // ❌ => Error, unable to find
-  getByText(container, "Hello World!"); // ✅ => HTMLSpanElement {}
+  getByText(container, 'Hello World!'); // ✅ => HTMLSpanElement {}
   getByText(container, /hello/i); // ✅
-  getByText(container, "Hello", { exact: false }); // ✅
+  getByText(container, 'Hello', { exact: false }); // ✅
 
   // * MatcherFunction
   getByText(container, (content, element) => {
     return (
-      content.startsWith("Hello") &&
-      element.tagName.toLowerCase() === "span"
+      content.startsWith('Hello') &&
+      element.tagName.toLowerCase() === 'span'
     );
   }); // ✅
 
   // * ---------------- queryBy
 
-  queryByText(container, "Hello"); // ⭕ => null
-  queryByText(container, "Hello World!"); // ✅
+  queryByText(container, 'Hello'); // ⭕ => null
+  queryByText(container, 'Hello World!'); // ✅
 
   // * ---------------- findBy (Promise)
 
@@ -263,21 +265,21 @@ test("Query Basic", () => {
 ```typescript
 // * ------------------------------------------------ Query API
 
-test("By***", () => {
+test('By***', () => {
   const container = createHTML(`
     <form>
       <label for="username-input">Username</label>
       <input id="username-input" />
     </form>
     `);
-  getByText(container, "Username"); // ✅ => HTMLLabelElement
-  getByLabelText(container, "Username"); // ✅ => HTMLInputElement
+  getByText(container, 'Username'); // ✅ => HTMLLabelElement
+  getByLabelText(container, 'Username'); // ✅ => HTMLInputElement
 
-  container.querySelector("input").value = "Learn Test";
-  getByDisplayValue(container, "Learn Test"); // ✅
+  container.querySelector('input').value = 'Learn Test';
+  getByDisplayValue(container, 'Learn Test'); // ✅
 });
 
-test("ByTestId", () => {
+test('ByTestId', () => {
   const container = createHTML(`
     <div>
       <span data-testid='notThis'> Hello World! </span>
@@ -285,12 +287,12 @@ test("ByTestId", () => {
     </div>
   `);
 
-  getByTestId(container, "target"); // ✅
+  getByTestId(container, 'target'); // ✅
 });
 
 // * ------------------------------------------------ within
 
-test("within", () => {
+test('within', () => {
   const container = createHTML(
     `<span> Hello World! </span>`,
   );
@@ -300,12 +302,12 @@ test("within", () => {
 
 // * ------------------------------------------------ event
 
-test("fireEvent", () => {
+test('fireEvent', () => {
   const container = createHTML(
     `<button onClick="console.log('fire')"></button>`,
   );
 
-  fireEvent(container, new MouseEvent("click"));
+  fireEvent(container, new MouseEvent('click'));
   fireEvent.click(container);
 });
 ```
@@ -315,19 +317,19 @@ test("fireEvent", () => {
 ```typescript
 // * ------------------------------------------------ wait
 
-test("wait", async () => {
+test('wait', async () => {
   const container = createHTML(
     `<span> Hello World! </span>`,
   );
 
   const asyncRender = (fn) => setTimeout(fn, 0);
-  asyncRender(() => (container.textContent = "Learn Test"));
+  asyncRender(() => (container.textContent = 'Learn Test'));
 
-  await wait(() => getByText(container, "Learn Test"));
-  getByText(container, "Learn Test"); // ✅ => HTMLSpanElement
+  await wait(() => getByText(container, 'Learn Test'));
+  getByText(container, 'Learn Test'); // ✅ => HTMLSpanElement
 });
 
-test("waitForElement", async () => {
+test('waitForElement', async () => {
   const container = createHTML(`<div></div>`);
 
   const asyncRender = (fn) => setTimeout(fn, 0);
@@ -336,12 +338,12 @@ test("waitForElement", async () => {
   );
 
   const dom = await waitForElement(
-    () => getByText(container, "Hello"),
+    () => getByText(container, 'Hello'),
     { container },
   ); // ✅ => HTMLSpanElement
 });
 
-test("waitForDomChange", async () => {
+test('waitForDomChange', async () => {
   const container = createHTML(`<div></div>`);
 
   const asyncRender = (fn) => setTimeout(fn, 0);
@@ -350,7 +352,7 @@ test("waitForDomChange", async () => {
   );
 
   await waitForDomChange({ container });
-  getByText(container, "Hello"); // ✅ => HTMLSpanElement
+  getByText(container, 'Hello'); // ✅ => HTMLSpanElement
 });
 ```
 

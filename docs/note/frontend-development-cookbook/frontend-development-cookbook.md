@@ -3,9 +3,9 @@ title: 前端开发入门指南 （2019-2021）*
 date: 2019-08-17 22:44:33
 permalink: /note/frontend-development-cookbook
 categories:
-  - note
+  - 草稿
 tags:
-  -
+  - awesome
 ---
 
 # 前端开发入门指南 （2019-2021）\*

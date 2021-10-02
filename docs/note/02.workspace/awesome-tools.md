@@ -3,12 +3,13 @@ title: 装了啥
 date: 2019-08-08 18:36:05
 permalink: /workspace/awesome-tools
 categories:
-  - note
+  - 开发环境
 tags:
-  - 
+  - 工具
+  - awesome
 ---
-# 装了啥
 
+# 装了啥
 
 ---
 

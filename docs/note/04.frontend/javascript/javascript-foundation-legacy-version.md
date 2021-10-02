@@ -3,10 +3,13 @@ title: JS Foundation *
 date: 2019-12-30 15:41:29
 permalink: /frontend/javascript-foundation-legacy-version
 categories:
-  - note
+  - 前端开发
+  - JavaScript
+  - 草稿
 tags:
-  - 
+  - JavaScript
 ---
+
 # JS Foundation \*
 
 > 这里这是旧版，有待整理，查看新版 [JavaScript 学习指南](/frontend/javascript-foundation)
@@ -261,7 +264,7 @@ Expressions and operators
 
 [The Ultimate Guide to Execution Contexts, Hoisting, Scopes, and Closures in JavaScript](https://www.youtube.com/watch?v=Nt-qa_LlUH0)  
 [JavaScript Visualizer](https://javascriptvisualizer.com/)  
-[使用断点暂停代码](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints?hl=zh-cn)  
+[使用断点暂停代码](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints?hl=zh-cn)
 
 [JavaScript. The Core.](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/#variable-object)  
 [从 JavaScript 作用域说开去](https://halfrost.com/javascript_scope/)  
@@ -529,7 +532,7 @@ JS 并不支持动态作用域
 ```javascript
 var AA = ((a1) => {
   var a2 = 2;
-  return function(a4) {
+  return function (a4) {
     var a3 = 3;
     console.warn([a1, a2, a3, a4]);
     // console.warn([b1, b2]); // * nest scope search test

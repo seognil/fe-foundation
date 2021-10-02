@@ -3,10 +3,11 @@ title: 如何清洁机械键盘
 date: 2019-11-08 16:07:45
 permalink: /misc/clean-a-keyboard
 categories:
-  - note
+  - 杂项
 tags:
-  - 
+  - 杂谈
 ---
+
 # 如何清洁机械键盘
 
 ## 这都要写？

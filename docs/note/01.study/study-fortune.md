@@ -3,10 +3,11 @@ title: 关于学习的鸡汤
 date: 2019-12-29 16:08:12
 permalink: /study/study-fortune
 categories:
-  - note
+  - 学习技巧
 tags:
-  - 
+  - 杂谈
 ---
+
 # 关于学习的鸡汤
 
 ## TLDR

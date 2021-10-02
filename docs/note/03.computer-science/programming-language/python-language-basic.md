@@ -3,11 +3,12 @@ title: Python 语言基础（3.9）
 date: 2021-08-01 20:54:56
 permalink: /cs/python-language-basic
 categories:
-  - note
+  - 计算机科学
+  - 编程语言
 tags:
-  - pl
-  - python
-  - basic
+  - 编程语言
+  - Python
+  - 基础
 ---
 
 # Python 语言基础（3.9）

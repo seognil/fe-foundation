@@ -3,10 +3,13 @@ title: npm 基本概念和使用
 date: 2019-11-10 22:20:59
 permalink: /frontend/introduction-to-npm
 categories:
-  - note
+  - 前端开发
+  - Node.js
 tags:
-  - 
+  - Node.js
+  - npm
 ---
+
 # npm 基本概念和使用
 
 ## 概览

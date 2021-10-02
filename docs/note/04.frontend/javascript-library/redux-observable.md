@@ -3,10 +3,14 @@ title: redux-observable 学习指南
 date: 2019-11-27 18:16:27
 permalink: /frontend/redux-observable
 categories:
-  - note
+  - 前端开发
+  - 前端工具
 tags:
-  - 
+  - react
+  - redux
+  - rxjs
 ---
+
 # redux-observable 学习指南
 
 ## redux-observable 简介
@@ -86,7 +90,10 @@ Epic 是 `redux-observable` 的核心概念，用于把 `dispatch(action)` 映�
 
 ```javascript
 const epicMiddleware = createEpicMiddleware();
-const store = createStore(myReducer, applyMiddleware(epicMiddleware));
+const store = createStore(
+  myReducer,
+  applyMiddleware(epicMiddleware),
+);
 epicMiddleware.run(pingEpic);
 ```
 
@@ -97,8 +104,17 @@ epicMiddleware.run(pingEpic);
 ```typescript
 // ts-node
 
-import { AnyAction, applyMiddleware, createStore } from 'redux';
-import { createEpicMiddleware, EpicMiddleware, Epic, ofType } from 'redux-observable';
+import {
+  AnyAction,
+  applyMiddleware,
+  createStore,
+} from 'redux';
+import {
+  createEpicMiddleware,
+  EpicMiddleware,
+  Epic,
+  ofType,
+} from 'redux-observable';
 import { delay, filter, mapTo } from 'rxjs/operators';
 
 const PING = 'PING';
@@ -120,13 +136,22 @@ const pingEpic: Epic = (action$) =>
 const pingReducer = (state = PING, { type }) =>
   type === PING ? PING : type === PONG ? PONG : state;
 
-const epicMiddleware: EpicMiddleware<AnyAction> = createEpicMiddleware();
-const store = createStore(pingReducer, applyMiddleware(epicMiddleware));
+const epicMiddleware: EpicMiddleware<AnyAction> =
+  createEpicMiddleware();
+const store = createStore(
+  pingReducer,
+  applyMiddleware(epicMiddleware),
+);
 epicMiddleware.run(pingEpic);
 
 // * ----------------
 
-const render = () => console.log('render', `${Date.now()}`.slice(-5), store.getState());
+const render = () =>
+  console.log(
+    'render',
+    `${Date.now()}`.slice(-5),
+    store.getState(),
+  );
 
 store.subscribe(render);
 
@@ -158,5 +183,6 @@ const rootEpic = combineEpics(aEpic, bEpic);
 
 ```javascript
 import { merge } from 'rxjs';
-const rootEpic = (action$, state$) => merge(aEpic(action$, state$), bEpic(action$, state$));
+const rootEpic = (action$, state$) =>
+  merge(aEpic(action$, state$), bEpic(action$, state$));
 ```

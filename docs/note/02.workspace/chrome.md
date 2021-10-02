@@ -3,12 +3,13 @@ title: 关于 Chrome
 date: 2019-12-14 22:03:19
 permalink: /workspace/chrome
 categories:
-  - note
+  - 开发环境
 tags:
-  - 
+  - 浏览器
+  - chrome
 ---
-# 关于 Chrome
 
+# 关于 Chrome
 
 ## Chrome 简介
 

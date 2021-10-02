@@ -3,10 +3,13 @@ title: Node.js 入门指南
 date: 2020-05-26 15:43:00
 permalink: /frontend/nodejs-basic
 categories:
-  - note
+  - 前端开发
+  - Node.js
 tags:
-  - 
+  - Node.js
+  - npm
 ---
+
 # Node.js 入门指南
 
 ## Node.js 简介

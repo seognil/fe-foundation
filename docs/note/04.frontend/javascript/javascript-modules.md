@@ -3,13 +3,14 @@ title: 前端模块化
 date: 2019-11-10 18:35:00
 permalink: /frontend/javascript-modules
 categories:
-  - note
+  - 前端开发
+  - JavaScript
 tags:
-  - 
+  - 编程语言
+  - 模块化
 ---
+
 # 前端模块化
-
-
 
 ## 关于模块化设计
 
@@ -237,7 +238,7 @@ Node.js 文档：
 输出：
 
 ```javascript
-var result = (function(lodash) {
+var result = (function (lodash) {
   'use strict';
 
   const result = lodash.every(
@@ -276,7 +277,7 @@ const result = (
 输出：
 
 ```javascript
-(function(global, factory) {
+(function (global, factory) {
   typeof exports === 'object' &&
   typeof module !== 'undefined'
     ? (module.exports = factory(require('lodash')))
@@ -284,7 +285,7 @@ const result = (
     ? define(['lodash'], factory)
     : ((global = global || self),
       (global.result = factory(global.lodash)));
-})(this, function(lodash) {
+})(this, function (lodash) {
   'use strict';
 
   const result = lodash.every(
@@ -327,7 +328,7 @@ UMD 支持 IIFE，所以也需要指定输出名。
 输出：
 
 ```javascript
-define(['lodash'], function(lodash) {
+define(['lodash'], function (lodash) {
   'use strict';
 
   const result = lodash.every(
@@ -362,14 +363,14 @@ AMD 的典型实现是 RequireJS
 
 ```javascript
 // * -------- case 1
-define(['./a', './b'], function(exportOfA, exportOfB) {
+define(['./a', './b'], function (exportOfA, exportOfB) {
   // ...
 
   return c;
 });
 
 // * -------- case 2
-define(function(require) {
+define(function (require) {
   const exportOfA = require('./a');
   const exportOfB = require('./b');
 
@@ -386,16 +387,16 @@ define(function(require) {
 输出：
 
 ```javascript
-System.register(['lodash'], function(exports) {
+System.register(['lodash'], function (exports) {
   'use strict';
   var every;
   return {
     setters: [
-      function(module) {
+      function (module) {
         every = module.every;
       },
     ],
-    execute: function() {
+    execute: function () {
       const result = every([true, 1, null, 'yes'], Boolean);
       exports('default', result);
     },

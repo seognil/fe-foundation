@@ -3,10 +3,13 @@ title: 语法糖、操作符、关键字、特性
 date: 2020-02-11 22:58:58
 permalink: /frontend/syntactic-sugar-in-javascript
 categories:
-  - note
+  - 前端开发
+  - JavaScript
 tags:
-  - 
+  - JavaScript
+  - 编程语言
 ---
+
 # 语法糖、操作符、关键字、特性
 
 > 语法糖（Syntactic sugar）是由英国计算机科学家彼得·兰丁发明的一个术语，指计算机语言中添加的某种语法，这种语法对语言的功能没有影响，但是更方便程序员使用。语法糖让程序更加简洁，有更高的可读性。  

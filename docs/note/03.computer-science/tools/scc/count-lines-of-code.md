@@ -3,10 +3,11 @@ title: 代码行数统计工具小测
 date: 2020-02-08 20:15:50
 permalink: /cs/count-lines-of-code
 categories:
-  - note
+  - 计算机科学
 tags:
-  - 
+  - 工具
 ---
+
 # 代码行数统计工具小测
 
 ## 背景

@@ -3,9 +3,9 @@ title: 计算机科学 入门指南
 date: 2019-12-02 16:41:01
 permalink: /cs/crash-course-computer-science
 categories:
-  - note
+  - 计算机科学
 tags:
-  -
+  - crash cource
 ---
 
 # 计算机科学 入门指南

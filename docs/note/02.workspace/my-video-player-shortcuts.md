@@ -3,12 +3,12 @@ title: 用快捷键控制视频播放
 date: 2019-12-14 22:03:19
 permalink: /workspace/my-video-player-shortcuts
 categories:
-  - note
+  - 开发环境
 tags:
-  - 
+  - 脚本
 ---
-# 用快捷键控制视频播放
 
+# 用快捷键控制视频播放
 
 如果你有通过视频学习的经历，  
 你应该知道快进快退暂停调速等视频控制功能有多重要。
@@ -59,8 +59,14 @@ Chrome 插件：[User JavaScript and CSS](https://chrome.google.com/webstore/det
     if (e.key === 'c') {
       // * use opacity but not disable the feature
       maskShown = !maskShown;
-      $('.bilibili-player-video-danmaku').css('opacity', maskShown ? 1 : 0);
-      $('.bilibili-player-video-danmaku-switch').css('opacity', maskShown ? 1 : 0.1);
+      $('.bilibili-player-video-danmaku').css(
+        'opacity',
+        maskShown ? 1 : 0,
+      );
+      $('.bilibili-player-video-danmaku-switch').css(
+        'opacity',
+        maskShown ? 1 : 0.1,
+      );
     }
   });
 }

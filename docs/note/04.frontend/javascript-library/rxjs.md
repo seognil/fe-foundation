@@ -3,10 +3,12 @@ title: RxJS 学习指南
 date: 2019-11-07 21:10:43
 permalink: /frontend/rxjs
 categories:
-  - note
+  - 前端开发
+  - 前端工具
 tags:
-  - 
+  - rxjs
 ---
+
 # RxJS 学习指南
 
 ## RxJS 简介

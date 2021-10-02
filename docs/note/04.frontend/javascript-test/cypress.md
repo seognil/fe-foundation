@@ -3,10 +3,12 @@ title: Cypress 学习指南
 date: 2020-01-29 20:31:10
 permalink: /frontend/cypress
 categories:
-  - note
+  - 前端开发
+  - 前端工具
 tags:
-  - 
+  - cypress
 ---
+
 # Cypress 学习指南
 
 ## Cypress 简介
@@ -117,9 +119,7 @@ describe('描述', () => {
   afterEach(() => cy.clearCookies());
 
   it('测试用户交互', () => {
-    cy.get('#app')
-      .children('.intro')
-      .click();
+    cy.get('#app').children('.intro').click();
     cy.contains('Welcome').should('be.exist');
   });
 

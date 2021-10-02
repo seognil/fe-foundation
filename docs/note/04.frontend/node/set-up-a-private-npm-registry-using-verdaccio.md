@@ -3,10 +3,15 @@ title: 使用 verdaccio 搭建私有 npm 仓库
 date: 2019-11-10 22:20:59
 permalink: /frontend/set-up-a-private-npm-registry-using-verdaccio
 categories:
-  - note
+  - 前端开发
+  - Node.js
+  - 前端工具
 tags:
-  - 
+  - Node.js
+  - npm
+  - verdaccio
 ---
+
 # 使用 verdaccio 搭建私有 npm 仓库
 
 私有仓库可用于包的开发和发布测试。  

@@ -3,10 +3,12 @@ title: Git 学习指南
 date: 2019-11-08 21:18:31
 permalink: /cs/git
 categories:
-  - note
+  - 计算机科学
 tags:
-  - 
+  - 工具
+  - git
 ---
+
 # Git 学习指南
 
 ## Git 简介

@@ -3,10 +3,11 @@ title: 关于本站
 date: 2019-12-30 13:52:12
 permalink: /about/the-site
 categories:
-  - note
+  - 关于
 tags:
-  - 
+  -
 ---
+
 # 关于本站
 
 ## 系列文章

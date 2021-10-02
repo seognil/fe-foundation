@@ -3,10 +3,11 @@ title: 为什么要学习
 date: 2019-12-28 23:49:05
 permalink: /study/study-the-only-way
 categories:
-  - note
+  - 学习技巧
 tags:
-  - 
+  - 杂谈
 ---
+
 # 为什么要学习
 
 ## 人类的局限性

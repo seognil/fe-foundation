@@ -3,11 +3,12 @@ title: JavaScript 语言基础 （2021）
 date: 2021-08-11 20:33:38
 permalink: /cs/javascript-language-basic
 categories:
-  - note
+  - 计算机科学
+  - 编程语言
 tags:
-  - pl
-  - javascript
-  - basic
+  - 编程语言
+  - JavaScript
+  - 基础
 ---
 
 # JavaScript 语言基础 （2021）
@@ -489,7 +490,7 @@ var falsy = [0, [], '', false, null, undefined];
 var obj = {
   num: 1024,
   str: 'emmm',
-  f: function(a, b) {
+  f: function (a, b) {
     console.log(a, b);
   },
   mix: { key: 'value', arr: [1, { k: 'v' }] },
@@ -554,7 +555,7 @@ function Legacy(arg) {
   this.value = arg;
 }
 Legacy.prototype = {
-  log: function() {
+  log: function () {
     console.log('value is:', this.value);
   },
 };
@@ -605,7 +606,7 @@ typeof [1, 2]; // => 'object'
     k: 1,
     num, // => 2 （对象属性简写，将自动使用上下文中的同名变量）
 
-    fn1: function() {},
+    fn1: function () {},
     fn2: () => {},
     fn3() {},
   };

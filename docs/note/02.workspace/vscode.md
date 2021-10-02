@@ -3,12 +3,13 @@ title: 关于 VS Code
 date: 2019-12-14 22:03:19
 permalink: /workspace/vscode
 categories:
-  - note
+  - 开发环境
 tags:
-  - 
+  - vscode
+  - 工具
 ---
-# 关于 VS Code
 
+# 关于 VS Code
 
 ## VS Code 简介
 

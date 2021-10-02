@@ -3,13 +3,15 @@ title: 打造趁手的终端
 date: 2019-11-09 18:25:16
 permalink: /workspace/terminal-settings
 categories:
-  - note
+  - 开发环境
 tags:
-  -
+  - 命令行
+  - mac
+  - zsh
+  - brew
 ---
 
 # 打造趁手的终端
-
 
 ## 代理（proxy）
 

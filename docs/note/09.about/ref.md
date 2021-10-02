@@ -3,10 +3,11 @@ title: Mantras
 date: 2019-08-08 18:36:05
 permalink: /about/ref.html
 categories:
-  - about
+  - 草稿
 tags:
   - 
 ---
+
 ## Mantras
 
 > Every Expert Was Once A Beginner.

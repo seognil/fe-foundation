@@ -3,10 +3,12 @@ title: React Hooks 学习指南
 date: 2019-11-17 13:17:17
 permalink: /frontend/react-hooks
 categories:
-  - note
+  - 前端开发
+  - 前端工具
 tags:
-  - 
+  - react
 ---
+
 # React Hooks 学习指南
 
 ## Hooks 简介
@@ -130,8 +132,15 @@ Hooks 主要是 `useXXX` 系列 API，
 - useReducer
   ```javascript
   const Comp = () => {
-    const [state, dispatch] = useReducer(reducer, initialState);
-    return <div onClick={() => dispatch(action)}>{state.myKey}</div>;
+    const [state, dispatch] = useReducer(
+      reducer,
+      initialState,
+    );
+    return (
+      <div onClick={() => dispatch(action)}>
+        {state.myKey}
+      </div>
+    );
   };
   ```
 - useCallback
@@ -165,7 +174,12 @@ Hooks 主要是 `useXXX` 系列 API，
   ```javascript
   const Comp = () => {
     const refer = useRef(null);
-    return <div ref={refer} onClick={() => refer.current.innerHTML}></div>;
+    return (
+      <div
+        ref={refer}
+        onClick={() => refer.current.innerHTML}
+      ></div>
+    );
   };
   ```
 - useEffect
@@ -195,7 +209,9 @@ Hooks 主要是 `useXXX` 系列 API，
   const ChildInput = forwardRef((props, parentRef) => {
     const realRef = useRef(null);
     useImperativeHandle(parentRef, () => realRef.current);
-    return <input type="text" name="child input" ref={realRef} />;
+    return (
+      <input type="text" name="child input" ref={realRef} />
+    );
   });
   ```
 
@@ -225,12 +241,12 @@ function resolveDispatcher() {
 
 // in 'react-dom'
 HooksDispatcherOnMount = {
-  useState: function(initialState) {
+  useState: function (initialState) {
     return mountState(initialState);
   },
 };
 HooksDispatcherOnUpdate = {
-  useState: function(initialState) {
+  useState: function (initialState) {
     return updateState(initialState);
   },
 };

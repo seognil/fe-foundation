@@ -3,14 +3,15 @@ title: JavaScript 学习指南 *
 date: 2019-08-08 18:36:05
 permalink: /frontend/javascript-foundation
 categories:
-  - note
+  - 前端开发
+  - JavaScript
 tags:
-  - 
+  - JavaScript
 ---
+
 # JavaScript 学习指南 \*
 
 \* 撰写中
-
 
 ---
 

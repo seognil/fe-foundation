@@ -3,10 +3,12 @@ title: Redux 学习指南
 date: 2019-11-26 15:24:23
 permalink: /frontend/redux
 categories:
-  - note
+  - 前端开发
+  - 前端工具
 tags:
-  - 
+  - redux
 ---
+
 # Redux 学习指南
 
 ## Redux 简介
@@ -319,11 +321,8 @@ ReactDOM.render(
 ```tsx
 import { create } from 'redux-react-hook';
 
-const {
-  useDispatch,
-  useMappedState,
-  StoreContext,
-} = create<TState, TAction, TStore>();
+const { useDispatch, useMappedState, StoreContext } =
+  create<TState, TAction, TStore>();
 ```
 
 ### redux-thunk & redux-logger

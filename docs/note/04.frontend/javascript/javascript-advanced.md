@@ -3,15 +3,15 @@ title: JavaScript 进阶指南 *
 date: 2019-12-30 11:39:54
 permalink: /frontend/javascript-advanced
 categories:
-  - note
+  - 前端开发
+  - JavaScript
 tags:
-  - 
+  - JavaScript
 ---
+
 # JavaScript 进阶指南 \*
 
 \* 撰写中
-
-
 
 ## 学习 JavaScript 进阶知识
 

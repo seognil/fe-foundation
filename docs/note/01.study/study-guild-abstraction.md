@@ -3,10 +3,11 @@ title: 学习指南模板
 date: 2019-11-23 23:38:58
 permalink: /study/study-guild-abstraction
 categories:
-  - note
+  - 草稿
 tags:
-  - 
+  -
 ---
+
 # 学习指南模板
 
 ## 学习指南简介

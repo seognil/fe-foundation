@@ -3,13 +3,13 @@ title: JavaScript 简介
 date: 2019-12-30 11:39:54
 permalink: /frontend/introduction-to-javascript
 categories:
-  - note
+  - 前端开发
+  - JavaScript
 tags:
-  - 
+  - JavaScript
 ---
+
 # JavaScript 简介
-
-
 
 ## 什么是 JavaScript
 

@@ -3,9 +3,10 @@ title: 函数式编程 入门指南
 date: 2020-01-31 23:00:54
 permalink: /cs/introduction-to-functional-programming
 categories:
-  - note
+  - 计算机科学
 tags:
-  -
+  - 编程范式
+  - 函数式编程
 ---
 
 # 函数式编程 入门指南 {#title}

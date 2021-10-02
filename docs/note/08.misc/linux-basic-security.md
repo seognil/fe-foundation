@@ -3,10 +3,11 @@ title: Ubuntu 服务器基本防护
 date: 2019-11-10 21:57:03
 permalink: /misc/linux-basic-security
 categories:
-  - note
+  - 杂项
 tags:
-  - 
+  - 杂谈
 ---
+
 # Ubuntu 服务器基本防护
 
 记录一下步骤
