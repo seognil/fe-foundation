@@ -1,10 +1,11 @@
 ---
 home: true
-# heroImage: /geneva-switzerland.jpeg
+heroImage: /js-nation-square-blue.png
+heroText: 前端指南
+tagline: 一个前端工程师的自我修养
 actionText: → 开始阅读 ←
 actionLink: /note/frontend-development-cookbook
 features:
-
   - title: Ecosystem
     details: 精通 VS Code、NodeJS、Webpack、Docker 等软件的安装与卸载，配套设施也是必不可少的。
   - title: JavaScript

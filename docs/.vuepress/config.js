@@ -56,10 +56,27 @@ const AboutMe = {
 
 const config = {
   title: '前端指南',
-  description: '前端技术学习指南',
+  description: '一个前端工程师的自我修养',
   head: [
     ['link', { rel: 'icon', type: 'image/jpg', href: '/js-nation-square-blue.png' }],
-    // ['meta', { name: 'keywords', content: 'vuepress,blog' }],
+    [
+      'meta',
+      {
+        name: 'keywords',
+        content: [
+          'computer-science',
+          'checklist',
+          'roadmap',
+          'study',
+          'frontend',
+          'notes',
+          'guide',
+          'developer',
+          'awesome-list',
+          'engineer',
+        ].join(','),
+      },
+    ],
   ],
 
   dest: './public',
@@ -79,6 +96,8 @@ const config = {
     // editLinks: true,
 
     // * ---------------- theme config
+
+    logo: '/js-nation-square-blue.png',
 
     bodyBgImg: [
       // 'https://images.unsplash.com/photo-1542416409-400da26855b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80',
@@ -139,17 +158,17 @@ const config = {
     //     },
     //   },
     // ],
-    [
-      'vuepress-plugin-zooming',
-      {
-        selector: 'img',
-        delay: 1000,
-        options: {
-          bgColor: 'hsla(0, 0%, 0%, 0.1)',
-          // zIndex: 10000,
-        },
-      },
-    ],
+    // [
+    //   'vuepress-plugin-zooming',
+    //   {
+    //     selector: 'img',
+    //     delay: 1000,
+    //     options: {
+    //       bgColor: 'hsla(0, 0%, 0%, 0.1)',
+    //       // zIndex: 10000,
+    //     },
+    //   },
+    // ],
   ],
   cache: false,
   markdown: {

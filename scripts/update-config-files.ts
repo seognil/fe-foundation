@@ -38,7 +38,7 @@ const vueRedirectList: VuepressRedirect[] = flattenList.map(({ to, from }) => ({
 
 writeFileSync(
   resolve(projRoot, './docs/.vuepress/vue-redirect.js'),
-  `module.exports = ${JSON.stringify(vueRedirectList)}`,
+  `module.exports = ${JSON.stringify(vueRedirectList, null, 2)}`,
 );
 
 // * ---------------------------------------------------------------- public
@@ -48,12 +48,16 @@ writeFileSync(resolve(projRoot, './docs/.vuepress/public/_redirects'), _redirect
 
 // * ---------------------------------------------------------------- vercel
 
-const vercelJson = JSON.stringify({
-  github: { silent: true },
-  redirects: flattenList.map(({ from, to }) => ({
-    source: from,
-    destination: to,
-    statusCode: 301,
-  })),
-});
+const vercelJson = JSON.stringify(
+  {
+    github: { silent: true },
+    redirects: flattenList.map(({ from, to }) => ({
+      source: from,
+      destination: to,
+      statusCode: 301,
+    })),
+  },
+  null,
+  2,
+);
 writeFileSync(resolve(projRoot, './vercel.json'), vercelJson);

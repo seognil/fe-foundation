@@ -1,1 +1,312 @@
-{"github":{"silent":true},"redirects":[{"source":"/note/fe-development-cookbook-old.html","destination":"/note/frontend-development-cookbook","statusCode":301},{"source":"/note/fe-development-cookbook-old","destination":"/note/frontend-development-cookbook","statusCode":301},{"source":"/note/fe-development-cookbook.html","destination":"/note/frontend-development-cookbook","statusCode":301},{"source":"/note/fe-development-cookbook","destination":"/note/frontend-development-cookbook","statusCode":301},{"source":"/note/frontend-development-cookbook.html","destination":"/note/frontend-development-cookbook","statusCode":301},{"source":"/note/study-methodology.html","destination":"/study/crash-course-study-skills","statusCode":301},{"source":"/note/english-using.html","destination":"/study/using-english","statusCode":301},{"source":"/note/study-fortune.html","destination":"/study/study-fortune","statusCode":301},{"source":"/note/study-guild-abstraction.html","destination":"/study/study-guild-abstraction","statusCode":301},{"source":"/note/study-the-only-way.html","destination":"/study/why-we-need-to-study","statusCode":301},{"source":"/note/study-the-only-way","destination":"/study/why-we-need-to-study","statusCode":301},{"source":"/note/study-the-only-way.html","destination":"/study/why-we-need-to-study","statusCode":301},{"source":"/note/study-the-costly-way.html","destination":"/study/dont-waste-your-time-and-money","statusCode":301},{"source":"/note/study-the-costly-way","destination":"/study/dont-waste-your-time-and-money","statusCode":301},{"source":"/note/study-the-costly-way.html","destination":"/study/dont-waste-your-time-and-money","statusCode":301},{"source":"/note/my-workstation.html","destination":"/workspace/awesome-tools","statusCode":301},{"source":"/note/mac.html","destination":"/workspace/mac","statusCode":301},{"source":"/note/chrome.html","destination":"/workspace/chrome","statusCode":301},{"source":"/note/vscode.html","destination":"/workspace/vscode","statusCode":301},{"source":"/note/terminal-intro.html","destination":"/workspace/introduction-to-terminal","statusCode":301},{"source":"/note/terminal-config.html","destination":"/workspace/terminal-settings","statusCode":301},{"source":"/note/video-hotkey.html","destination":"/workspace/my-video-player-shortcuts","statusCode":301},{"source":"/note/computer-science.html","destination":"/cs/crash-course-computer-science","statusCode":301},{"source":"/note/functional-programming.html","destination":"/cs/introduction-to-functional-programming","statusCode":301},{"source":"/note/git.html","destination":"/cs/git","statusCode":301},{"source":"/note/markdown.html","destination":"/cs/markdown","statusCode":301},{"source":"/note/cloc.html","destination":"/cs/count-lines-of-code","statusCode":301},{"source":"/note/js-basic.html","destination":"/cs/javascript-language-basic","statusCode":301},{"source":"/note/js-basic","destination":"/cs/javascript-language-basic","statusCode":301},{"source":"/note/typescript.html","destination":"/cs/typescript-language-basic","statusCode":301},{"source":"/note/python-language-basic.html","destination":"/cs/python-language-basic","statusCode":301},{"source":"/note/python-language-basic","destination":"/cs/python-language-basic","statusCode":301},{"source":"/note/fe-hardcore-overview.html","destination":"/frontend/frontend-hardcore-overview","statusCode":301},{"source":"/note/html.html","destination":"/frontend/html","statusCode":301},{"source":"/note/css.html","destination":"/frontend/css","statusCode":301},{"source":"/note/js-foundation.html","destination":"/frontend/javascript-foundation","statusCode":301},{"source":"/note/js-intro.html","destination":"/frontend/introduction-to-javascript","statusCode":301},{"source":"/note/how-to-run-js.html","destination":"/frontend/how-to-run-javascript-code","statusCode":301},{"source":"/note/js-advanced.html","destination":"/frontend/javascript-advanced","statusCode":301},{"source":"/note/syntactic-sugar.html","destination":"/frontend/syntactic-sugar-in-javascript","statusCode":301},{"source":"/note/js-modular.html","destination":"/frontend/javascript-modules","statusCode":301},{"source":"/note/regexp.html","destination":"/frontend/javascript-regular-expression","statusCode":301},{"source":"/note/js-foundation-old.html","destination":"/frontend/javascript-foundation-legacy-version","statusCode":301},{"source":"/note/node-basic.html","destination":"/frontend/nodejs-basic","statusCode":301},{"source":"/note/npm-overview.html","destination":"/frontend/introduction-to-npm","statusCode":301},{"source":"/note/npm-speedup.html","destination":"/frontend/speeding-up-npm-install","statusCode":301},{"source":"/note/npm-verdaccio.html","destination":"/frontend/set-up-a-private-npm-registry-using-verdaccio","statusCode":301},{"source":"/note/rxjs.html","destination":"/frontend/rxjs","statusCode":301},{"source":"/note/redux.html","destination":"/frontend/redux","statusCode":301},{"source":"/note/react-hooks.html","destination":"/frontend/react-hooks","statusCode":301},{"source":"/note/redux-observable.html","destination":"/frontend/redux-observable","statusCode":301},{"source":"/note/jest.html","destination":"/frontend/jest","statusCode":301},{"source":"/note/testing-library.html","destination":"/frontend/testing-library","statusCode":301},{"source":"/note/cypress.html","destination":"/frontend/cypress","statusCode":301},{"source":"/note/linux-basic-security.html","destination":"/misc/linux-basic-security","statusCode":301},{"source":"/note/clean-keyboard.html","destination":"/misc/clean-a-keyboard","statusCode":301},{"source":"/note/readme.html","destination":"/about/the-site","statusCode":301},{"source":"/note/my-reading.html","destination":"/about/where-do-i-learn-from","statusCode":301},{"source":"/about/.html","destination":"/about/me","statusCode":301},{"source":"/about/","destination":"/about/me","statusCode":301},{"source":"/note/about-the-guild.html","destination":"/about/the-guild","statusCode":301}]}
+{
+  "github": {
+    "silent": true
+  },
+  "redirects": [
+    {
+      "source": "/note/fe-development-cookbook-old.html",
+      "destination": "/note/frontend-development-cookbook",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/fe-development-cookbook-old",
+      "destination": "/note/frontend-development-cookbook",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/fe-development-cookbook.html",
+      "destination": "/note/frontend-development-cookbook",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/fe-development-cookbook",
+      "destination": "/note/frontend-development-cookbook",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/frontend-development-cookbook.html",
+      "destination": "/note/frontend-development-cookbook",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/study-methodology.html",
+      "destination": "/study/crash-course-study-skills",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/english-using.html",
+      "destination": "/study/using-english",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/study-fortune.html",
+      "destination": "/study/study-fortune",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/study-guild-abstraction.html",
+      "destination": "/study/study-guild-abstraction",
+      "statusCode": 301
+    },
+    {
+      "source": "/study/study-the-only-way.html",
+      "destination": "/study/why-we-need-to-study",
+      "statusCode": 301
+    },
+    {
+      "source": "/study/study-the-only-way",
+      "destination": "/study/why-we-need-to-study",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/study-the-only-way.html",
+      "destination": "/study/why-we-need-to-study",
+      "statusCode": 301
+    },
+    {
+      "source": "/study/study-the-costly-way.html",
+      "destination": "/study/dont-waste-your-time-and-money",
+      "statusCode": 301
+    },
+    {
+      "source": "/study/study-the-costly-way",
+      "destination": "/study/dont-waste-your-time-and-money",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/study-the-costly-way.html",
+      "destination": "/study/dont-waste-your-time-and-money",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/my-workstation.html",
+      "destination": "/workspace/awesome-tools",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/mac.html",
+      "destination": "/workspace/mac",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/chrome.html",
+      "destination": "/workspace/chrome",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/vscode.html",
+      "destination": "/workspace/vscode",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/terminal-intro.html",
+      "destination": "/workspace/introduction-to-terminal",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/terminal-config.html",
+      "destination": "/workspace/terminal-settings",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/video-hotkey.html",
+      "destination": "/workspace/my-video-player-shortcuts",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/computer-science.html",
+      "destination": "/cs/crash-course-computer-science",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/functional-programming.html",
+      "destination": "/cs/introduction-to-functional-programming",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/git.html",
+      "destination": "/cs/git",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/markdown.html",
+      "destination": "/cs/markdown",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/cloc.html",
+      "destination": "/cs/count-lines-of-code",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/js-basic.html",
+      "destination": "/cs/javascript-language-basic",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/js-basic",
+      "destination": "/cs/javascript-language-basic",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/typescript.html",
+      "destination": "/cs/typescript-language-basic",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/python-language-basic.html",
+      "destination": "/cs/python-language-basic",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/python-language-basic",
+      "destination": "/cs/python-language-basic",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/fe-hardcore-overview.html",
+      "destination": "/frontend/frontend-hardcore-overview",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/html.html",
+      "destination": "/frontend/html",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/css.html",
+      "destination": "/frontend/css",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/js-foundation.html",
+      "destination": "/frontend/javascript-foundation",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/js-intro.html",
+      "destination": "/frontend/introduction-to-javascript",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/how-to-run-js.html",
+      "destination": "/frontend/how-to-run-javascript-code",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/js-advanced.html",
+      "destination": "/frontend/javascript-advanced",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/syntactic-sugar.html",
+      "destination": "/frontend/syntactic-sugar-in-javascript",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/js-modular.html",
+      "destination": "/frontend/javascript-modules",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/regexp.html",
+      "destination": "/frontend/javascript-regular-expression",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/js-foundation-old.html",
+      "destination": "/frontend/javascript-foundation-legacy-version",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/node-basic.html",
+      "destination": "/frontend/nodejs-basic",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/npm-overview.html",
+      "destination": "/frontend/introduction-to-npm",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/npm-speedup.html",
+      "destination": "/frontend/speeding-up-npm-install",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/npm-verdaccio.html",
+      "destination": "/frontend/set-up-a-private-npm-registry-using-verdaccio",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/rxjs.html",
+      "destination": "/frontend/rxjs",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/redux.html",
+      "destination": "/frontend/redux",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/react-hooks.html",
+      "destination": "/frontend/react-hooks",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/redux-observable.html",
+      "destination": "/frontend/redux-observable",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/jest.html",
+      "destination": "/frontend/jest",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/testing-library.html",
+      "destination": "/frontend/testing-library",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/cypress.html",
+      "destination": "/frontend/cypress",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/linux-basic-security.html",
+      "destination": "/misc/linux-basic-security",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/clean-keyboard.html",
+      "destination": "/misc/clean-a-keyboard",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/readme.html",
+      "destination": "/about/the-site",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/my-reading.html",
+      "destination": "/about/where-do-i-learn-from",
+      "statusCode": 301
+    },
+    {
+      "source": "/about/.html",
+      "destination": "/about/me",
+      "statusCode": 301
+    },
+    {
+      "source": "/about/",
+      "destination": "/about/me",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/about-the-guild.html",
+      "destination": "/about/the-guild",
+      "statusCode": 301
+    }
+  ]
+}
