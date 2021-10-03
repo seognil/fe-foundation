@@ -84,7 +84,7 @@ const config = {
       // 'https://images.unsplash.com/photo-1542416409-400da26855b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80',
       // 'https://images.unsplash.com/photo-1561160767-6bbd75de51b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80',
       // 'https://images.unsplash.com/photo-1483653085484-eb63c9f02547?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80',
-      'photo-1483653085484-eb63c9f02547.jpeg',
+      '/photo-1483653085484-eb63c9f02547.jpeg',
     ],
     bodyBgImgOpacity: 0.1,
 
