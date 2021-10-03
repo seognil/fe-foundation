@@ -1,92 +1,130 @@
-.home .hero img {
-    width: 600px;
-    object-fit: cover;
+body {
+  font-family: 'Segoe UI', 'SegoeUI', 'Microsoft YaHei', '微软雅黑', 'SF Pro SC', 'HanHei SC',
+    'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'Apple Legacy Chevron', 'PingFang SC',
+    'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+  /** https://www.apple.com.cn/ */
+  /* font-family: 'SF Pro SC', 'HanHei SC', 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons',
+    'Apple Legacy Chevron', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; */
+
+  /* * https://www.microsoft.com/zh-cn/ */
+  /* font-family: 'Segoe UI', SegoeUI, 'Microsoft YaHei', 微软雅黑, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif; */
+
+  /** vuepress original */
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 
-blockquote {
-    color: hsl(0, 0%, 30%);
+/* * ------------------------------------------------ ui */
+
+/** hide link right-side icon */
+a .icon.outbound {
+  display: none;
 }
 
-main.page {
-    word-break: break-all;
-}
+/* * ---------------- sidebar */
 
+/** sidebar nav toc */
 li.sidebar-sub-header a {
-    color: hsl(0, 0%, 40%);
+  color: hsl(0, 0%, 50%);
 }
 
-kbd {
-    background-color: #eee;
-    border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-    color: #333;
-    display: inline-block;
-    font-size: .85em;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap;
+/** side list item overflow */
+/* .right-menu-item a, */
+.sidebar-links li a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.timeline-note + ul a + ul,
-.timeline-note + ul a + ul ul {
-    line-height: 1.3;
-    font-size: 14px;
-    color: grey;
-}
+/* * ----------------  */
 
-.timeline-note + ul code {
-    padding: 0.05rem 0.4rem;
-}
-
-main.page {
-    word-break: break-word;
-}
-
+/** site inner link */
 main a[href^='/'],
 main a[href^='#'] {
-    text-decoration: underline dotted hsla(220, 80%, 60%, 0.5);
-    color: $accentColor
+  text-decoration: underline dotted hsla(220, 80%, 60%, 0.5);
+  color: $accentColor;
 }
 
-a .icon.outbound {
-    display: none;
+/** kbd */
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
 }
 
-main h2:nth-of-type(4n+1) {
-    border-bottom: 2px solid hsl(0, 50%, 70%);
-}
-main h2:nth-of-type(4n+2) {
-    border-bottom: 2px solid hsl(50, 50%, 70%);
-}
-main h2:nth-of-type(4n+3) {
-    border-bottom: 2px solid hsl(100, 50%, 70%);
-}
-main h2:nth-of-type(4n+4) {
-    border-bottom: 2px solid hsl(220, 50%, 70%);
+/** article blockquote */
+blockquote {
+  color: hsl(0, 0%, 50%);
 }
 
-// * ---------------- fontawesome import and patch
+/* * ---------------- theme override */
+
+body .theme-vdoing-content a code {
+  color: unset;
+}
+
+.theme-mode-light .theme-vdoing-content code {
+  color: hsl(200, 100%, 20%);
+}
+
+/** bold link hack */
+body .theme-vdoing-content a strong {
+  color: hsl(220, 80%, 55%);
+  font-weight: 700;
+}
+
+/* * ---------------- h2 spliter */
+
+main h2:nth-of-type(4n + 1) {
+  border-bottom: 2px solid hsl(0, 50%, 70%);
+}
+main h2:nth-of-type(4n + 2) {
+  border-bottom: 2px solid hsl(50, 50%, 70%);
+}
+main h2:nth-of-type(4n + 3) {
+  border-bottom: 2px solid hsl(100, 50%, 70%);
+}
+main h2:nth-of-type(4n + 4) {
+  border-bottom: 2px solid hsl(220, 50%, 70%);
+}
+
+/* * ---------------- article custom video timeline */
+
+main .timeline-note + ul a + ul,
+main .timeline-note + ul a + ul ul {
+  line-height: 1.3;
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+}
+main .timeline-note + ul code {
+  padding: 0.05rem 0.4rem;
+}
+
+/* * ---------------- article */
+
+main.page {
+  word-break: break-word;
+}
+
+/* * ------------------------------------------------ util */
+
+/* * ---------------- fontawesome import and patch */
 
 @import url(https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/fontawesome.css);
 @import url(https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/brands.css);
 
 .fab.iconfont {
-    font-family: "Font Awesome 5 Brands" !important;
-    line-height: unset;
-}
-
-
-body .theme-vdoing-content code {
-    color: hsl(200, 100%, 20%);
-}
-
-body .theme-vdoing-content a code {
-    color: unset;
-}
-
-body .theme-vdoing-content a strong {
-    color: hsl(220, 80%, 55%);
-    font-weight: 700;
+  font-family: 'Font Awesome 5 Brands' !important;
+  line-height: unset;
 }
