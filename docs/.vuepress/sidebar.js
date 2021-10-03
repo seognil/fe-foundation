@@ -10,8 +10,8 @@ const sidebar = {
         '/note/01.study/using-english.md',
         '/note/01.study/study-fortune.md',
         '/note/01.study/study-guild-abstraction.md',
-        '/note/01.study/study-the-costly-way.md',
-        '/note/01.study/study-the-only-way.md',
+        '/note/01.study/why-we-need-to-study.md',
+        '/note/01.study/dont-waste-your-time-and-money.md',
       ],
     },
 

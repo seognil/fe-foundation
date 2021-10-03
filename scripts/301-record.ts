@@ -23,8 +23,14 @@ export const redirectRecords: Redirect[] = [
   { to: '/study/study-fortune', from: ['/note/study-fortune.html'] },
 
   { to: '/study/study-guild-abstraction', from: ['/note/study-guild-abstraction.html'] },
-  { to: '/study/study-the-costly-way', from: ['/note/study-the-costly-way.html'] },
-  { to: '/study/study-the-only-way', from: ['/note/study-the-only-way.html'] },
+  {
+    to: '/study/why-we-need-to-study',
+    from: ['/note/study-the-only-way', '/note/study-the-only-way.html'],
+  },
+  {
+    to: '/study/dont-waste-your-time-and-money',
+    from: ['/note/study-the-costly-way', '/note/study-the-costly-way.html'],
+  },
 
   // * ---------------- workspace
 
