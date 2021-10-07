@@ -79,6 +79,21 @@
       "statusCode": 301
     },
     {
+      "source": "/about/where-do-i-learn-from.html",
+      "destination": "/study/where-do-i-learn-from",
+      "statusCode": 301
+    },
+    {
+      "source": "/about/where-do-i-learn-from",
+      "destination": "/study/where-do-i-learn-from",
+      "statusCode": 301
+    },
+    {
+      "source": "/note/my-reading.html",
+      "destination": "/study/where-do-i-learn-from",
+      "statusCode": 301
+    },
+    {
       "source": "/note/my-workstation.html",
       "destination": "/workspace/awesome-tools",
       "statusCode": 301
@@ -286,11 +301,6 @@
     {
       "source": "/note/readme.html",
       "destination": "/about/the-site",
-      "statusCode": 301
-    },
-    {
-      "source": "/note/my-reading.html",
-      "destination": "/about/where-do-i-learn-from",
       "statusCode": 301
     },
     {

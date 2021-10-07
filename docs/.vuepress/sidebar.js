@@ -3,6 +3,15 @@ const sidebar = {
     '/note/frontend-development-cookbook/frontend-development-cookbook',
 
     {
+      title: '学习资源',
+      collapsable: false,
+      children: [
+        //
+        '/note/00.resources/where-do-i-learn-from.md',
+      ],
+    },
+
+    {
       title: '学习技巧',
       collapsable: false,
       children: [
@@ -155,7 +164,6 @@ const sidebar = {
       title: 'About',
       collapsable: false,
       children: [
-        '/note/09.about/where-do-i-learn-from.md',
         '/note/09.about/about-me.md',
         '/note/09.about/about-the-site.md',
         '/note/09.about/about-the-guild.md',

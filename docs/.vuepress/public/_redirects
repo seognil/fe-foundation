@@ -13,6 +13,9 @@
 /study/study-the-costly-way.html /study/dont-waste-your-time-and-money 301
 /study/study-the-costly-way /study/dont-waste-your-time-and-money 301
 /note/study-the-costly-way.html /study/dont-waste-your-time-and-money 301
+/about/where-do-i-learn-from.html /study/where-do-i-learn-from 301
+/about/where-do-i-learn-from /study/where-do-i-learn-from 301
+/note/my-reading.html /study/where-do-i-learn-from 301
 /note/my-workstation.html /workspace/awesome-tools 301
 /note/mac.html /workspace/mac 301
 /note/chrome.html /workspace/chrome 301
@@ -55,7 +58,6 @@
 /note/linux-basic-security.html /misc/linux-basic-security 301
 /note/clean-keyboard.html /misc/clean-a-keyboard 301
 /note/readme.html /about/the-site 301
-/note/my-reading.html /about/where-do-i-learn-from 301
 /about/.html /about/me 301
 /about/ /about/me 301
 /note/about-the-guild.html /about/the-guild 301

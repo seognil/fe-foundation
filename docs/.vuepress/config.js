@@ -112,7 +112,7 @@ const config = {
     // * ----------------
 
     nav: [
-      { text: '资料', link: '/about/where-do-i-learn-from/' },
+      { text: '资料', link: '/study/where-do-i-learn-from/' },
       { text: '关于我', link: '/about/me/' },
 
       { text: '算法', link: 'https://github.com/seognil-study/leetcode' },

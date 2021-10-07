@@ -69,7 +69,7 @@
 
 以及，授人以鱼不如授人以渔：
 
-- [我都从哪学习](https://rualc.com/about/where-do-i-learn-from)
+- [我都从哪学习](https://rualc.com/study/where-do-i-learn-from)
 
 ## WIP
 

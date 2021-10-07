@@ -32,6 +32,8 @@ export const redirectRecords: Redirect[] = [
     from: ['/study/study-the-costly-way', '/note/study-the-costly-way.html'],
   },
 
+  { to: '/study/where-do-i-learn-from', from: ['/about/where-do-i-learn-from', '/note/my-reading.html'] },
+
   // * ---------------- workspace
 
   { to: '/workspace/awesome-tools', from: ['/note/my-workstation.html'] },
@@ -101,7 +103,6 @@ export const redirectRecords: Redirect[] = [
   // * ---------------- about
 
   { to: '/about/the-site', from: ['/note/readme.html'] },
-  { to: '/about/where-do-i-learn-from', from: ['/note/my-reading.html'] },
   { to: '/about/me', from: ['/about/'] },
   { to: '/about/the-guild', from: ['/note/about-the-guild.html'] },
 ];

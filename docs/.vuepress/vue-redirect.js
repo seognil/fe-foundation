@@ -60,6 +60,18 @@ module.exports = [
     "redirect": "/study/dont-waste-your-time-and-money"
   },
   {
+    "path": "/about/where-do-i-learn-from.html",
+    "redirect": "/study/where-do-i-learn-from"
+  },
+  {
+    "path": "/about/where-do-i-learn-from",
+    "redirect": "/study/where-do-i-learn-from"
+  },
+  {
+    "path": "/note/my-reading.html",
+    "redirect": "/study/where-do-i-learn-from"
+  },
+  {
     "path": "/note/my-workstation.html",
     "redirect": "/workspace/awesome-tools"
   },
@@ -226,10 +238,6 @@ module.exports = [
   {
     "path": "/note/readme.html",
     "redirect": "/about/the-site"
-  },
-  {
-    "path": "/note/my-reading.html",
-    "redirect": "/about/where-do-i-learn-from"
   },
   {
     "path": "/about/.html",
