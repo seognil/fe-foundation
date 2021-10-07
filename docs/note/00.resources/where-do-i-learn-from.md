@@ -138,7 +138,7 @@ tags:
   - Jack Investment
     - [[YouTube] Jack Investment](https://www.youtube.com/channel/UCOum1-GORDrznRI9wOHZlng/)
 
-##[哔哩哔哩] 时政
+## 时政
 
 - 观察者网
   - [[YouTube] GuanchaNews 观察者网](https://www.youtube.com/channel/UCJncdiH3BQUBgCroBmhsUhQ/)
