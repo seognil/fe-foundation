@@ -2,10 +2,9 @@
 title: 我都从哪学习（2021）
 date: 2021-10-04 15:36:39
 permalink: /study/where-do-i-learn-from
-categories: 
-  - 学习技巧
+categories:
   - 学习渠道
-tags: 
+tags:
   - awesome
 ---
 

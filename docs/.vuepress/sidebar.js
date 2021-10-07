@@ -7,6 +7,7 @@ const sidebar = {
       collapsable: false,
       children: [
         //
+        '/note/00.resources/my-reading-list.md',
         '/note/00.resources/where-do-i-learn-from.md',
       ],
     },
