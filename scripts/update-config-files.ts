@@ -14,13 +14,18 @@ interface FlattenRedirect {
 }
 
 const flattenList: FlattenRedirect[] = redirectRecords
-  .map(({ to, from }) =>
-    from.map((oldUrl) => [
-      { to, from: oldUrl + '.html' },
-      { to, from: oldUrl },
-    ]),
-  )
+  .sort((a, b) => (a[0] < b[0] ? -1 : 1))
+  .map((routes) => {
+    const [to, ...from] = routes;
+    return from
+      .sort((a, b) => (a < b ? -1 : 1))
+      .map((oldUrl) => [
+        { to, from: oldUrl + '.html' },
+        { to, from: oldUrl },
+      ]);
+  })
   .flat(2)
+  .map(({ to, from }) => ({ to, from: from.replace('/.html', '/index.html') }))
   .filter((e) => !e.from.includes('.html.html'))
   .filter((e) => e.to !== e.from);
 
