@@ -16,6 +16,8 @@ tags:
 
 ## 书
 
+- 技术
+  - [游戏设计艺术（第 2 版）](https://book.douban.com/subject/26791007/)：CMU 教材，已经出新版了，买新版吧
 - 心理
   - [《非暴力沟通》 - 马歇尔·卢森堡](https://book.douban.com/subject/3533221/)
   - [《被讨厌的勇气》 - 岸见一郎/古贺史健](https://book.douban.com/subject/26369699/)：“自我启发之父”阿德勒的哲学课
