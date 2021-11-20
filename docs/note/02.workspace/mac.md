@@ -1,6 +1,6 @@
 ---
-title: Mac、设置和软件
-date: 2019-12-15 12:53:59
+title: Mac 环境（M1 + Monterey）
+date: 2021-11-15 15:43:26
 permalink: /workspace/mac
 categories:
   - 开发环境
@@ -9,200 +9,234 @@ tags:
   - 工具
 ---
 
-# Mac、设置和软件
+# Mac 环境（M1 + Monterey）
 
-<!-- ## Mac 配置教程
+## Mac 简介
 
-- [How to Set Up Your Mac for Maximum Productivity](https://www.youtube.com/watch?v=XBi3OB23Utk)
-- [2: Maximising your Mac Productivity: Alfred 🎩️](https://www.youtube.com/watch?v=GWRddk0Ybnc) -->
-
-## Mac 的键盘
-
-| 符号 |  名称   | 缩写 |
-| :--: | :-----: | :--: |
-|  ⌘   | Command | Cmd  |
-|  ⌥   | Option  | Alt  |
-|  ⌃   | Control | Ctrl |
-|  ⇧   |  Shift  |      |
-|  ⇥   |   Tab   |      |
-
-[Mac 键盘快捷键](https://support.apple.com/zh-cn/HT201236)
-
-Mac 和 Windows 的按键布局差异（空格左侧）：
-
-- Mac：<kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Cmd</kbd>
-- Win：<kbd>Ctrl</kbd> <kbd>Win</kbd> <kbd>Alt</kbd>
-
-值得注意的是：
-
-Mac 中的快捷键，主要使用 <kbd>Cmd</kbd> 键，  
-作用**相当于** Windows 中 <kbd>Ctrl</kbd> 键。
-
-然而 Mac 上的 [Meta 键](https://developer.mozilla.org/zh-CN/docs/Web/API/KeyboardEvent/metaKey)是 <kbd>Cmd</kbd> 键，  
-而 Windows 上的是 Meta 键却是 <kbd>Win</kbd> 键。
-
-## 环境配置脚本
-
-[我的环境自动配置脚本（未完成）](https://github.com/seognil/dotfiles)
+- 视频
+  - [学生党 M1 Mac 入门指北](https://www.bilibili.com/video/BV1sD4y1X7MQ)
+  - [Mac Tutorial for Beginners - Switching from Windows to macOS](https://www.youtube.com/watch?v=67keaaWOKzE)
+  - [How to Set Up Your Mac for Maximum Productivity](https://www.youtube.com/watch?v=XBi3OB23Utk)
+- 官方文档
+  - [macOS 使用手册](https://support.apple.com/zh-cn/guide/mac-help/welcome/mac)
+  - [Mac 键盘快捷键](https://support.apple.com/zh-cn/HT201236)
+- M1 兼容性相关
+  - [Is Apple Silicon ready?](https://isapplesiliconready.com/)
+  - [Does It ARM?](https://doesitarm.com/)
 
 ## 配置
 
-### 基本设置
+（如果有其他 Mac 的话用 Time Machine 直接迁移就好）
 
-- 优先 [打造趁手的终端](/workspace/terminal-settings)
+配一个新电脑？
 
-  - [Homebrew](https://brew.sh/)
-  - [iTerm2](https://iterm2.com/)
-  - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)
+### System Preferences
 
-  然后就可以在命令行中使用 `brew`、`brew cask`、`mas`等命令安装其他工具，  
-  省去频繁打开网页点击下载和下一步的繁琐过程。
+- Language & Region：英语、简体中文
+- Sharing：改电脑名字
+- Software Update
+- Keyboard：先把 Key Repeat 和 Delay 调到最快
 
-- [更纱黑体](https://github.com/be5invis/Sarasa-Gothic) ：等宽的中英文编程字体  
-  基于 Iosevka 和 Source Han Sans
+安装 [Additional Tools for Xcode](https://developer.apple.com/download/more/?=additional%20tools) 里的 [Network Link Conditioner](https://nshipster.com/network-link-conditioner/)（给电脑限速用的）
 
-  ```bash
-  brew tap homebrew/cask-fonts
-  brew cask install font-sarasa-gothic
-  ```
+安装 [Paragon NTFS for Mac](https://www.seagate.com/cn/zh/support/software/paragon/) （希捷永久授权）（之后 [Reduced Security](https://support.apple.com/en-gb/guide/mac-help/mchl768f7291/mac) 要一直开着）
 
-  后续配置以 VS Code 为例：`"editor.fontFamily": "sarasa term sc"`
+（其他配置略）
 
-- 系统设置，将光标移动速度调到极快，开启连续输入  
-  在命令行执行以下代码并重启
+### dotfiles
 
-  ```bash
-  defaults write -g InitialKeyRepeat -int 15
-  defaults write -g KeyRepeat -int 1
-  defaults write -g ApplePressAndHoldEnabled -bool true
-  ```
+```sh
+.zprofile
+.zshrc
+.zsh_history
+.nrmrc
+```
 
-- 允许运行任意来源的软件  
-  本来在之前版本系统中，可以在控制面板里直接打钩，后来隐藏起来了  
-  敲这个命令效果等价
+### 终端配置
 
-  ```bash
-  sudo spctl --master-enable
-  ```
+sudo 无需密码：
 
-- 提高 timemachine 的速度
-  ```
-  sudo sysctl debug.lowpri_throttle_enabled=0
-  ```
-  （系统重启后会失效，需要再次设置）
+```sh
+echo -e "\n$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers
+```
 
-### 软件/工具
+允许安装运行任意软件：
 
-我用的一些重要工具：
+```sh
+sudo spctl --global-disable
+sudo spctl --status
+```
 
-- 手动安装
-  - [Additional Tools for Xcode](https://developer.apple.com/download/more/?=additional%20tools)（官网下载地址），可以查看 [Network Link Conditioner](https://nshipster.com/network-link-conditioner/) 这篇文章了解其中的网络环境模拟工具（给电脑限速的）
-  - [DriveDx](https://binaryfruit.com/drivedx)：磁盘健康信息
-- `brew install`
-  - 开发
-    - [git](/cs/git)：版本管理工具（参考 [Git 学习指南](/cs/git)）
-    - [nginx](https://www.nginx.com/)
-    - [node](/frontend/nodejs-basic)（参考 [Node.js/npm 概览](/frontend/introduction-to-npm)）
-    - [nvm](https://github.com/nvm-sh/nvm)：Node 版本管理器
-  - 工具
-    - [mas](https://github.com/mas-cli/mas)：从命令行安装 AppStore 应用的工具
-    - [tldr](https://github.com/tldr-pages/tldr)：命令文档查询工具
-    - [screenfetch](https://github.com/KittyKatt/screenFetch)：显示当前系统信息
-  - 增强
-    - [tig](https://github.com/jonas/tig)：更好的 git history
-    - [trash](https://github.com/sindresorhus/trash)：扔到垃圾桶（代替 `rm -rf`）
-    - [tree](https://sourabhbajaj.com/mac-setup/iTerm/tree.html)：文件夹树型显示
-    - [htop](https://hisham.hm/htop/)：命令行系统监控
-- `brew cask install`
-  - 开发
-    - [google-chrome](https://www.google.com/chrome/)：浏览器（参考 [关于 Chrome](/workspace/chrome)）
-    - [firefox](https://www.mozilla.org/en-US/firefox/)：浏览器
-    - [visual-studio-code](https://code.visualstudio.com/)：轻量级代码编辑器（参考 [关于 VS Code](/workspace/vscode)）
-    - [sourcetree](https://www.sourcetreeapp.com/)：图形界面 Git 管理器
-    - [docker](https://www.docker.com/)：轻量级虚拟化技术
-    - [parallels](https://www.parallels.com/products/desktop/)：虚拟机客户端
-    - [switchhosts](https://github.com/oldj/SwitchHosts)：Host 编辑器
-    - [postman](https://www.getpostman.com/)：网络请求监听
-    - [rocket-chat](https://rocket.chat/)：开发聊天、Bot
-    - [keycastr](https://github.com/keycastr/keycastr)：显示按键（录屏时用）
-  - 杂项
-    - 增强
-      - [alfred](https://www.alfredapp.com/)：增强版 spotlight
-      - [font-sarasa-gothic](https://github.com/be5invis/Sarasa-Gothic)：更纱黑体
-      - [openinterminal](https://github.com/Ji4n1ng/OpenInTerminal)：Finder 打开到终端
-        <!-- - [go2shell](https://zipzapmac.com/Go2Shell)：Finder 打开到终端 -->
-      - [tuxera-ntfs](https://www.tuxera.com/products/tuxera-ntfs-for-mac/)：NTFS 读写支持
-    - 监控
-      - [daisydisk](https://daisydiskapp.com/)：磁盘空间分析
-      - [intel-power-gadget](https://software.intel.com/en-us/articles/intel-power-gadget)：功耗占用监控
-      - [istat-menus](https://bjango.com/mac/istatmenus/)：功耗占用监控
-    - 硬件
-      - [coconutbattery]：电池性能检查
-      - [cinebench](https://www.maxon.net/en/products/cinebench-r20-overview/)：CPU/GPU 测评
-      - [geekbench](https://www.geekbench.com/)：CPU/GPU 测评
-  - 日常
-    - 其他
-      - [fliqlo](https://fliqlo.com/)：超大时钟屏保
-      - [bettertouchtool](https://folivora.ai/)：快捷键改键软件
-      - [unshaky](https://github.com/aahung/Unshaky)：防止 Mac 键盘问题（屏蔽触发过快）
-      - [keka]：压缩软件
-      - [iina](https://iina.io/)：视频播放器
-      - [itsycal](https://www.mowglii.com/itsycal/)：日历
-      - [imazing](https://imazing.com/)：iPhone 备份
-      - [aliwangwang](https://wangwang.taobao.com/)：阿里旺旺客户端
-      - [android-file-transfer](https://www.android.com/filetransfer/)：Android 文件传输
-    - 网盘/下载
-      - [dropbox](https://www.dropbox.com/)：网盘
-      - [megasync](https://mega.nz/sync)：网盘
-      - [google-backup-and-sync](https://www.google.com/drive/download/backup-and-sync/)：网盘
-      - [baidunetdisk](https://pan.baidu.com/)：网盘
-      - [resilio-sync](https://www.resilio.com/individuals/)：网盘
-      - [motrix](https://motrix.app/)：下载
-      - [thunder](https://mac.xunlei.com/)：下载
-- `mas install`
-  - 开发
-    - [Xcode](https://developer.apple.com/xcode/)：Mac 开发基本套件
-  - 硬件
-    - [Blackmagic Disk Speed Test](https://apps.apple.com/us/app/blackmagic-disk-speed-test/id425264550?mt=12)：磁盘测速
-  - 日常
-    - [QQ](https://im.qq.com/)：QQ
-    - [WeChat](https://mac.weixin.qq.com/)：微信
-    - [Xnip](https://xnipapp.com/)：截图
-    - [GIPHY CAPTURE](https://giphy.com/apps/giphycapture)：截动图/视频
-    - [Unsplash Wallpapers](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847?mt=12)：壁纸
-    - [Desktop Clock](https://apps.apple.com/us/app/desktop-clock-live/id894760156?mt=12)：桌面时钟
+bin 目录权限（解决 npm global install 问题）：
 
-## 关于 Mac
+```sh
+sudo chown -R $USER /usr/local/bin
+```
 
-我认为和 Windows 最大的区别在于：  
-有一个 Unix-like 命令行，比较适合目前的前端开发。
+复制来的 ssh 私钥要调成只读：
 
-当然，Windows 上的 [Termianl](https://github.com/microsoft/terminal)、WSL 也在逐步发展，  
-但目前还比较折腾、不够成熟。  
-（[Windows Subsystem For Linux Performance At The End Of 2019](https://www.phoronix.com/scan.php?page=article&item=wsl-windows-eo2019&num=2)）
+```sh
+sudo chmod 600 <ssh-file-path>
+```
 
-同时对比于 Linux，Mac 不那么硬核，软件和社区生态对新手较为友好。  
-在 Mac 上装虚拟机或 Docker 也可以方便地拥有 Linux 环境，反之则麻烦很多。
+禁止 PressAndHold（需重启）（解决 [这个 VS Code 问题](https://github.com/microsoft/vscode/issues/31919)）：
 
-所以综合地来考虑，我目前选择 Mac 作为我的前端开发主力系统。
+```sh
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
 
-Mac 在软硬件上有一些的**特色**和**差异**，诸如：
+更快的按键重复（控制面板的 KeyRepeat 最快才到 2）（需重启）：
 
-- 触控板
-  - 成熟的多点触控和手势
-- 鼠标
-  - 四向滚轮、滚动不分段（其实表面就是个触摸板）
-  - 没有侧键
-  - 无法关闭加速度
-- 触控板
-  - 四向滚动
-  - 三指左右滑动切换多桌面
-  - 二指左右滑动可以在浏览器中跳转历史
-- 快捷键和操作逻辑
-  - 很多软件的一部分快捷键具有通用的规则
-    - <kbd>Cmd</kbd>+<kbd>,</kbd> 打开软件设置
-    - <kbd>Cmd</kbd>+<kbd>s</kbd> 保存
-    - <kbd>Cmd</kbd>+<kbd>t</kbd> 打开新标签页
-  - 切换窗口的逻辑（区别于 Windows）
-    - <kbd>Cmd</kbd>+<kbd>Tab</kbd> 切换不同程序（前置该软件的所有窗口）
-    - <kbd>Cmd</kbd>+<kbd>`</kbd> 切换相同程序的不同窗口
+```sh
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 1
+```
+
+提高 Time Machine 的速度（重启后失效，可以做一个 function）：
+
+```
+sudo sysctl debug.lowpri_throttle_enabled=0
+```
+
+### 安装基本工具
+
+魔法丝袜之影（略）
+
+```sh
+export ALL_PROXY='http://127.0.0.1:1080'
+```
+
+安装 Xcode Command Line Tools：
+
+```sh
+xcode-select --install
+```
+
+安装 [Brew](https://brew.sh/)：
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+（按照提示）激活 `brew` 命令：
+
+```sh
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+安装一些基本工具（虽然系统自带一些，但是用 brew 来做后续更新）：
+
+```sh
+brew install --formula bat git n scc tig trash tree zsh
+brew install --cask google-chrome visual-studio-code iterm2
+```
+
+安装 [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)：
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+安装 [更纱黑体](https://github.com/be5invis/Sarasa-Gothic)（`"sarasa term sc"`）：
+
+```sh
+brew tap homebrew/cask-fonts
+brew install font-sarasa-gothic
+```
+
+安装 Node.js（我用 n 来管理）：
+
+```sh
+sudo n 16
+```
+
+### Finder
+
+- 显示隐藏文件：`cmd + shift + .`
+- 显示扩展名：`cmd + ,` > Advanced
+- （剪切功能的快捷键：`cmd + option + v`）
+
+标题显示完整路径：
+
+```sh
+defaults write com.apple.finder \_FXShowPosixPathInTitle -bool true; killall Finder
+```
+
+Open In Terminal，（装好到 System Preferences > Extensions 开启）：
+
+```sh
+brew install openinterminal
+```
+
+（其他配置略）
+
+## 其他安装的工具
+
+### npm global
+
+`npm -g i`
+
+- [serve](https://github.com/vercel/serve)：读本地文件夹起一个 server（类似 http-server）
+- [tldr](https://github.com/tldr-pages/tldr)：简化的 help 工具（类似 man 或 --help）
+- [vercel](https://github.com/vercel/vercel)：部署本地 app dist 到 vercel
+
+### brew
+
+`brew install`
+
+- [bat](https://github.com/sharkdp/bat)：显示文件内容（类似 cat）
+- [n](https://github.com/tj/n)：Node 版本管理器
+- [neofetch](https://github.com/dylanaraps/neofetch)：显示当前环境信息（类似 screenfetch）
+- [pngquant](https://pngquant.org/)：png 图片压缩
+- [scc](https://github.com/boyter/scc)：统计代码行数（类似 cloc）
+- [smartmontools](https://apple.stackexchange.com/questions/135565/how-do-i-get-detailed-smart-disk-information-on-os-x-mavericks-or-later)：磁盘健康度
+- [tig](https://jonas.github.io/tig/doc/manual.html)：更方便的 git history
+- [trash](https://hasseg.org/trash/)：扔到垃圾桶（用来代替 `rm -rf`）
+- [tree](https://sourabhbajaj.com/mac-setup/iTerm/tree.html)：显示文件夹树状结构
+- [you-get](https://github.com/soimort/you-get)：视频下载器
+
+### brew cask
+
+`brew install --cask`
+
+- 开发相关
+  - [docker](https://www.docker.com/)：轻量级虚拟化技术
+  - [switchhosts](https://github.com/oldj/SwitchHosts)：Host 编辑器
+  - [postman](https://www.getpostman.com/)：网络请求监听
+- 系统增强
+  - [alfred](https://www.alfredapp.com/)：增强版 spotlight
+  - [bettertouchtool](https://folivora.ai/)：快捷键绑定
+  - [hiddenbar](https://github.com/dwarvesf/hidden)：菜单栏图标折叠
+  - [karabiner-elements](https://karabiner-elements.pqrs.org/)：键位映射
+  - [openinterminal](https://github.com/Ji4n1ng/OpenInTerminal)：Finder 打开到终端
+  - [unshaky](https://github.com/aahung/Unshaky)：防止按键误触发的工具（解决蝴蝶键盘问题）
+- 性能和监控
+  - [cinebench](https://www.maxon.net/en/products/cinebench-r20-overview/)：CPU/GPU 性能测试
+  - [coconutbattery](https://coconut-flavour.com/coconutbattery/)：电池健康度检查
+  - [daisydisk](https://daisydiskapp.com/)：磁盘空间分析
+  - [istat-menus](https://bjango.com/mac/istatmenus/)：任务栏硬件监控
+- 其他日用
+  - [fliqlo](https://fliqlo.com/)：一个翻页时钟屏保
+  - [keka]：压缩软件
+  - [keycastr](https://github.com/keycastr/keycastr)：显示按键（录屏时用）
+  - [iina](https://iina.io/)：视频播放器
+  - [itsycal](https://www.mowglii.com/itsycal/)：菜单栏日历
+  - [imazing](https://imazing.com/)：备份 iPhone 的软件
+  - [telegram-desktop](https://desktop.telegram.org/)：Telegram 桌面客户端
+- 网盘/下载
+  - [onedrive](https://onedrive.live.com/)：One Drive
+  - [megasync](https://mega.nz/sync)：Mega Sync，可以排除 node_modules，放一些临时项目用
+  - [thunder](https://mac.xunlei.com/)：迅雷
+
+### App store
+
+- [Blackmagic Disk Speed Test](https://apps.apple.com/us/app/blackmagic-disk-speed-test/id425264550)：磁盘速度测试
+- [Desktop Clock](https://apps.apple.com/us/app/desktop-clock-live/id894760156?mt=12)：桌面时钟
+- [GIPHY CAPTURE](https://giphy.com/apps/giphycapture)：截动图/视频工具
+- [OneNote](https://www.onenote.com/)：微软的跨平台笔记
+- [QQ](https://im.qq.com/)：QQ
+- [Unsplash Wallpapers](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847?mt=12)：Unsplash 随机壁纸
+- [WeChat](https://mac.weixin.qq.com/)：微信
+- [Xcode](https://developer.apple.com/xcode/)：苹果自家的 IDE
+- [Xnip](https://xnipapp.com/)：截图工具
