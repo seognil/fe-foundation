@@ -94,7 +94,7 @@ defaults write -g KeyRepeat -int 1
 
 提高 Time Machine 的速度（重启后失效，可以做一个 function）：
 
-```
+```sh
 sudo sysctl debug.lowpri_throttle_enabled=0
 ```
 
@@ -153,9 +153,14 @@ sudo n 16
 
 ### Finder
 
-- 显示隐藏文件：`cmd + shift + .`
 - 显示扩展名：`cmd + ,` > Advanced
 - （剪切功能的快捷键：`cmd + option + v`）
+
+总是显示隐藏文件：
+
+```sh
+defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder
+```
 
 标题显示完整路径：
 
@@ -169,7 +174,7 @@ Open In Terminal，（装好到 System Preferences > Extensions 开启）：
 brew install openinterminal
 ```
 
-（其他配置略）
+（其他配置略，`cmd + ,`、`cmd + j`）
 
 ## 其他安装的工具
 
