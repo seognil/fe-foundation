@@ -158,6 +158,7 @@ const sidebar = {
         //
         '/note/08.misc/linux-basic-security.md',
         '/note/08.misc/clean-a-keyboard.md',
+        '/note/08.misc/gaming-set.md',
       ],
     },
 
