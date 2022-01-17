@@ -17,10 +17,10 @@ tags:
 [关于本站](/about/the-site)
 
 - **杂谈**：我的关于学习的一些粗浅理解（鸡汤）
-  - [我都从哪学习](/about/where-do-i-learn-from)
-  - [为什么要学习](/study/study-the-only-way)
+  - [我都从哪学习（2021）](/study/where-do-i-learn-from)
+  - [杂谈：我们为什么需要读书学习](/study/why-we-need-to-study)
+  - [杂谈：你可学点好吧](/study/dont-waste-your-time-and-money)
   - [关于学习的鸡汤](/study/study-fortune)
-  - [培训机构的局限性](/study/study-the-costly-way)
   - [关于学习指南系列](/about/the-guild)
   - [学习指南模板](/study/study-guild-abstraction)
 

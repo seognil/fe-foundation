@@ -1,4 +1,4 @@
-import { blue, red, yellow } from 'chalk';
+import chalk from 'chalk';
 import { readFile } from 'fs/promises';
 import { globbySync } from 'globby';
 import HttpsProxyAgent from 'https-proxy-agent';
@@ -6,6 +6,8 @@ import fetch from 'node-fetch';
 import ora from 'ora';
 import pLimit from 'p-limit';
 import { resolve } from 'path';
+
+const { blue, red, yellow } = chalk;
 
 const projRoot = resolve(process.cwd());
 
