@@ -87,6 +87,15 @@ tags:
 - 森纳映画
   - [[YouTube] 森纳映画](https://www.youtube.com/channel/UCDNeEBgigHHGtJJOpHSnadA/)
   - [[哔哩哔哩] 森纳映画](https://space.bilibili.com/1724598/)
+- 切里
+  - [[YouTube] 大狸子切切裡 Cherry OFFICIAL CHANNEL](https://www.youtube.com/channel/UCAcum7VtjCjEUpWyt6tms0Q)
+  - [[哔哩哔哩] 大狸子切切里](https://space.bilibili.com/471303350/)
+- Leya 蕾雅
+  - [[YouTube] Leya 蕾雅](https://www.youtube.com/channel/UCiXJjvsRQEyT06x3YUwueVw)
+  - [[哔哩哔哩] Leya 蕾雅](https://space.bilibili.com/389245745/)
+- 大闲者
+  - [[YouTube] 大閒者](https://www.youtube.com/channel/UCU6nhA37pbvzw-JXhAB87Mg)
+  - [[哔哩哔哩] 大闲者频道](https://space.bilibili.com/515359918/)
 - 疯猫 MadcatClan
   - [[YouTube] MadcatClan](https://www.youtube.com/channel/UC4P8jsqloj9e6eYCLz0yr7Q/)
   - [[哔哩哔哩] 疯猫 MadcatClan](https://space.bilibili.com/2294811/)
