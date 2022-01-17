@@ -28,20 +28,41 @@ tags:
 
 （如果有其他 Mac 的话用 Time Machine 直接迁移就好）
 
-配一个新电脑？
+### Time Machine 恢复后的问题
+
+#### 如果网络不正常
+
+- 刚配好丝丝要重启
+- 到这里看看删掉与 network 相关的文件，重启：
+
+```sh
+open /Library/Preferences/SystemConfiguration
+```
+
+```sh
+# 找到这些文件
+com.apple.airport.preferences.plist
+com.apple.network.eapolclient.configuration.plist
+com.apple.wifi.message-tracer.plist
+NetworkInterfaces.plist
+preferences.plist
+```
+
+#### 如果是恢复到另一台设备
+
+- 到 Sharing 改电脑名字，重启
+- Chrome 用一个新账户重新同步（不然似乎历史记录会识别为同一台设备）
 
 ### System Preferences
 
 - Language & Region：英语、简体中文
-- Sharing：改电脑名字
+- Sharing：改电脑名字，重启
 - Software Update
 - Keyboard：先把 Key Repeat 和 Delay 调到最快
 
 安装 [Additional Tools for Xcode](https://developer.apple.com/download/more/?=additional%20tools) 里的 [Network Link Conditioner](https://nshipster.com/network-link-conditioner/)（给电脑限速用的）
 
-安装 [Paragon NTFS for Mac](https://www.seagate.com/cn/zh/support/software/paragon/) （希捷永久授权）（之后 [Reduced Security](https://support.apple.com/en-gb/guide/mac-help/mchl768f7291/mac) 要一直开着）
-
-（其他配置略）
+（如果装 NTFS 工具等需要 [Reduced Security](https://support.apple.com/en-gb/guide/mac-help/mchl768f7291/mac)）
 
 ### dotfiles
 
@@ -98,6 +119,12 @@ defaults write -g KeyRepeat -int 1
 sudo sysctl debug.lowpri_throttle_enabled=0
 ```
 
+启用 `locate` 命令并建立索引：
+
+```sh
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+```
+
 ### 安装基本工具
 
 魔法丝袜之影（略）
@@ -138,7 +165,7 @@ brew install --cask google-chrome visual-studio-code iterm2
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-安装 [更纱黑体](https://github.com/be5invis/Sarasa-Gothic)（`"sarasa term sc"`）：
+安装 [更纱黑体](https://github.com/be5invis/Sarasa-Gothic)（`"Sarasa Mono SC"`, "Sarasa Term SC"）：
 
 ```sh
 brew tap homebrew/cask-fonts
@@ -214,6 +241,7 @@ brew install openinterminal
   - [bettertouchtool](https://folivora.ai/)：快捷键绑定
   - [hiddenbar](https://github.com/dwarvesf/hidden)：菜单栏图标折叠
   - [karabiner-elements](https://karabiner-elements.pqrs.org/)：键位映射
+  - [monitorcontrol](https://github.com/MonitorControl/MonitorControl)：通过软件直接控制外接显示器硬件亮度
   - [openinterminal](https://github.com/Ji4n1ng/OpenInTerminal)：Finder 打开到终端
   - [unshaky](https://github.com/aahung/Unshaky)：防止按键误触发的工具（解决蝴蝶键盘问题）
 - 性能和监控
@@ -223,7 +251,7 @@ brew install openinterminal
   - [istat-menus](https://bjango.com/mac/istatmenus/)：任务栏硬件监控
 - 其他日用
   - [fliqlo](https://fliqlo.com/)：一个翻页时钟屏保
-  - [keka]：压缩软件
+  - [keka](https://www.keka.io/)：压缩软件
   - [keycastr](https://github.com/keycastr/keycastr)：显示按键（录屏时用）
   - [iina](https://iina.io/)：视频播放器
   - [itsycal](https://www.mowglii.com/itsycal/)：菜单栏日历
