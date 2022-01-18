@@ -15,6 +15,14 @@ tags:
 
 （资料整理，仅供参考）
 
+## 支付（以备不时之需）
+
+- 外币信用卡
+- PayPal <https://www.paypal.com/>
+- 美国免税州地址和邮编
+- Google Voice
+  - [Keep Google Voice Active](https://ifttt.com/applets/wtSmReHc-keep-google-voice-active)
+
 ## 平台
 
 ### PC 硬件
@@ -30,6 +38,16 @@ tags:
   - N 卡光追 + DLSS 游戏覆盖率比 A 家要好一些
 - 内存
   - [不是贵的才是对的 DDR5 VS DDR4 内存超频游戏测试 20 款游戏 3 种分辨率告诉你搭配 12 代酷睿内存超频能为游戏带来多少提升？](https://www.bilibili.com/video/BV1Gr4y1i7vN) 省流：现在 DDR5 没卵用，中高频 DDR4 凑合用用得了
+
+### Nintendo Switch
+
+- [Switch 选购终极指北 2021 新春版(新入坑必看指南)](https://post.smzdm.com/p/a07lnm99/)
+
+省流：
+
+- 别买国行
+- lite 版机器不能插底座接电视
+- 单个账号可以到 [Nintendo Account](https://accounts.nintendo.com/) 直接换地区，下次打开 eshop 直接换区，游戏和账号绑定不和区域绑定
 
 ### PS5
 
