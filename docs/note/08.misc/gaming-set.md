@@ -80,10 +80,10 @@ PC 上用 [Xbox App](https://www.microsoft.com/zh-cn/p/xbox/9mv0b5hzvk9z) 也能
 
 ### 关于 SSD
 
-产品宣传页上不会告诉你的事情：
-
-- 持续和满盘后写入都会掉速，就看掉到多少了（有些垃圾盘掉速后性能还不如 U 盘）
-- 发热（一般越快越热，压个散热片就好了）
+- 产品宣传页上不会告诉你的事情：
+  - 持续和满盘后写入都会掉速，就看掉到多少了（有些垃圾盘掉速后性能还不如 U 盘）
+  - 发热（一般越快越热，压个散热片就好了）
+- 国产颗粒站起来了（指长江存储 Xtracking）
 
 ### PS5 （PCI-E 4.0 SSD）
 
@@ -103,6 +103,10 @@ PC 上用 [Xbox App](https://www.microsoft.com/zh-cn/p/xbox/9mv0b5hzvk9z) 也能
 
 一些满足需求的 4.0 固态，以 1TB 为例：
 
+- 长江存储
+  - 致钛 Ti Pro 7000
+    - [京东自营](https://item.jd.com/100017474683.html)、[Benchmark](https://www.expreview.com/81587.html)
+    - 读写 7400/5400 MBps；全盘写入最低 835 MBps
 - 西数
   - SN750 SE
     - [京东自营](https://item.jd.com/100025295846.html)
@@ -125,10 +129,6 @@ PC 上用 [Xbox App](https://www.microsoft.com/zh-cn/p/xbox/9mv0b5hzvk9z) 也能
   - P5 Plus
     - [京东自营](https://item.jd.com/100024883350.html)、[Benchmark](https://www.tomshardware.com/reviews/crucial-p5-plus-m2-nvme-ssd-review/3)
     - 读写 6600/5000 MBps；全盘写入最低 1300 MBps
-- 致钛
-  - Ti Pro 7000
-    - [京东自营](https://item.jd.com/100017474683.html)、[Benchmark](https://www.expreview.com/81587.html)
-    - 读写 7400/5400 MBps；全盘写入最低 835 MBps
 - 三星
   - 980 Pro
     - [京东自营](https://item.jd.com/100008757393.html)、[Benchmark](https://www.tomshardware.com/reviews/samsung-980-pro-m-2-nvme-ssd-review/3)
@@ -202,8 +202,8 @@ SATA 现在比较成熟了，正经盘基本不会有太多掉速。
 
 一些多快好省的 1TB SATA SSD：
 
-- 致钛
-  - SC001
+- 长江存储
+  - 致钛 SC001
     - [京东自营](https://item.jd.com/100008587483.html)、[Benchmark](https://www.expreview.com/76016.html)
     - 读写 520/510 MBps；全盘写入最低 470 MBps
 - 铠侠
@@ -223,8 +223,8 @@ SATA 现在比较成熟了，正经盘基本不会有太多掉速。
 
 一些多快好省的 1TB PCI-E 3.0 SSD：
 
-- 致钛
-  - PC005
+- 长江存储
+  - 致钛 PC005
     - [京东自营](https://item.jd.com/100008608665.html)、[Benchmark](https://www.expreview.com/76002.html)
     - 读写 3500/2900 MBps；全盘写入最低 575 MBps
 - 铠侠
@@ -290,6 +290,10 @@ TF 卡受限于体积，读写性能很有限，高速卡公示的速度只是�
 
 以 128G 为例：
 
+- 长江存储
+  - 朗科 P500
+    - [京东自营](https://item.jd.com/100020584656.html)
+    - 读写 100/-- MBps；U3、V30
 - 三星
   - Evo（黄卡）
     - [京东自营](https://item.jd.com/100013314296.html)、[官网产品页](https://www.samsung.com/us/computing/memory-storage/memory-cards/evo-microsdxc-memory-card-128gb-mb-mp128ha-am/)
