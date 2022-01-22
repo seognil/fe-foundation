@@ -130,7 +130,7 @@ tags:
 [p4_ti700pro_jd]: https://item.jd.com/100017474683.html
 [p4_ti700pro_bch]: https://www.expreview.com/81587.html
 [p4_sn750se_jd]: https://item.jd.com/100025295846.html
-[p4_sn750se_bch]: :
+[p4_sn750se_bch]: https://PLACE.HOLDER
 [p4_sn850_jd]: https://item.jd.com/100009210507.html
 [p4_sn850_bch]: https://www.tomshardware.com/reviews/wd-black-sn850-m-2-nvme-ssd-review/3
 [p4_fc520_jd]: https://item.jd.com/100010087346.html
@@ -138,7 +138,7 @@ tags:
 [p4_fc530_jd]: https://item.jd.com/100024621732.html
 [p4_fc530_bch]: https://www.tomshardware.com/reviews/seagate-firecuda-530-m2-nvme-ssd-review/3
 [p4_se10_jd]: https://item.jd.com/100015438959.html
-[p4_se10_bch]: :
+[p4_se10_bch]: https://PLACE.HOLDER
 [p4_p5_jd]: https://item.jd.com/100024883350.html
 [p4_p5_bch]: https://www.tomshardware.com/reviews/crucial-p5-plus-m2-nvme-ssd-review/3
 [p4_980pro_jd]: https://item.jd.com/100008757393.html
@@ -177,7 +177,7 @@ tags:
 
 [ps_e30_jd]: https://item.jd.com/100009615099.html
 [ps_e30_site]: https://www.westerndigital.com/zh-cn/products/portable-drives/sandisk-usb-3-2-ssd#SDSSDE30-1T00-Z25
-[ps_e30_bch]: :
+[ps_e30_bch]: https://PLACE.HOLDER
 [ps_e60_jd]: https://item.jd.com/6510874.html
 [ps_e60_site]: https://www.westerndigital.com/zh-cn/products/portable-drives/sandisk-extreme-usb-3-1-ssd#SDSSDE60-1T00-Z25
 [ps_e60_bch]: https://www.tomshardware.com/reviews/sandisk-extreme-v2-portable-ssd-review/2
@@ -189,13 +189,13 @@ tags:
 [ps_e81_bch]: https://www.tomshardware.com/reviews/sandisk-extreme-pro-v2-portable-ssd-review/2
 [ps_elese_jd]: https://item.jd.com/100027431448.html
 [ps_elese_site]: https://www.westerndigital.com/zh-cn/products/portable-drives/wd-elements-se-usb-3-0-ssd#WDBAYN0010BBK-CESN
-[ps_elese_bch]: :
+[ps_elese_bch]: https://PLACE.HOLDER
 [ps_mypass_jd]: https://item.jd.com/100014561102.html
 [ps_mypass_site]: https://www.westerndigital.com/zh-cn/products/portable-drives/wd-my-passport-usb-3-2-ssd#WDBAGF0010BBL-CESN
 [ps_mypass_bch]: https://www.tomshardware.com/reviews/wd-my-passport-ssd-review/2
 [ps_d30_jd]: https://item.jd.com/100021803210.html
 [ps_d30_site]: https://www.westerndigital.com/products/external-drives/wd-black-d30-game-drive-usb-3-2-ssd#WDBATL0010BBK-WESN
-[ps_d30_bch]: :
+[ps_d30_bch]: https://PLACE.HOLDER
 [ps_p50_jd]: https://item.jd.com/100010567290.html
 [ps_p50_site]: https://www.westerndigital.com/zh-cn/products/portable-drives/wd-black-p50-game-drive-usb-3-2-ssd#WDBA3S0010BBK-CESN
 [ps_p50_bch]: https://www.tomshardware.com/reviews/wd-black-p50-game-drive-ssd-review/2
@@ -259,7 +259,7 @@ SATA SSD 现在比较成熟了，正经盘基本不会有太多掉速。
 [p3_rc10_jd]: https://item.jd.com/100012956294.html
 [p3_rc10_bch]: https://www.techpowerup.com/review/kioxia-exceria-1-tb/6.html
 [p3_rc20_jd]: https://item.jd.com/100015242141.html
-[p3_rc20_bch]: :
+[p3_rc20_bch]: https://PLACE.HOLDER
 [p3_rd20_jd]: https://item.jd.com/100017367170.html
 [p3_rd20_bch]: https://www.techpowerup.com/review/kioxia-exceria-plus-g2-2-tb/6.html
 [p3_p2_jd]: https://item.jd.com/100016795946.html
@@ -271,7 +271,7 @@ SATA SSD 现在比较成熟了，正经盘基本不会有太多掉速。
 [p3_sn750_jd]: https://item.jd.com/100002206075.html
 [p3_sn750_bch]: https://www.tomshardware.com/reviews/wd-black-sn750-ssd,5957-3.html
 [p3_ultra_jd]: https://item.jd.com/100011213836.html
-[p3_ultra_bch]: :
+[p3_ultra_bch]: https://PLACE.HOLDER
 [p3_extpro_jd]: https://item.jd.com/7652347.html
 [p3_extpro_bch]: https://www.tomshardware.com/reviews/sandisk-extreme-pro-m.2-nvme-3d-ssd,5538-2.html
 [p3_970evop_jd]: https://item.jd.com/100002183461.html
@@ -322,7 +322,7 @@ TF 卡受限于体积，读写性能很有限，高速卡公示的速度只是�
 | 雷克沙 Play                | [京东自营][tf_play_jd] 80                | 150/--          | [官网][tf_play_site]；U1、V10、A1     |
 
 [tf_p500_jd]: https://item.jd.com/100020584656.html
-[tf_p500_site]: :
+[tf_p500_site]: https://PLACE.HOLDER
 [tf_evo_jd]: https://item.jd.com/100013314296.html
 [tf_evo_site]: https://www.samsung.com/us/computing/memory-storage/memory-cards/evo-microsdxc-memory-card-128gb-mb-mp128ha-am/
 [tf_evop_jd]: https://item.jd.com/100013308318.html
