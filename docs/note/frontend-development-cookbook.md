@@ -25,17 +25,17 @@ tags:
 
 ### 我的索引
 
-- [装了啥（2021）](/workspace/awesome-tools)
-- [我都从哪学习（2021）](/study/where-do-i-learn-from)
-- [看了啥（2021）](/study/my-reading-list/)
-- [学习方法论](/study/crash-course-study-skills)
-- [英语 训练指南 编程篇](/study/using-english)
+- [装了啥](/workspace/awesome-tools)
+- [我都从哪学习](/study/where-do-i-learn-from)
+- [看了啥](/study/my-reading-list/)
+- [学习技巧](/study/crash-course-study-skills)
+- [英语](/study/using-english)
 
 ### 基本开发环境
 
-- [Mac 环境（M1 + Monterey）](/workspace/mac)
-- [关于 Chrome](/workspace/chrome)
-- [关于 VS Code](/workspace/vscode)
+- [Mac](/workspace/mac)
+- [Chrome](/workspace/chrome)
+- [VS Code](/workspace/vscode)
 
 ## Web 前端
 
@@ -43,11 +43,11 @@ tags:
 
 ### 前端技术基础
 
-- [HTML 学习指南](/frontend/html)
-- [CSS 学习指南](/frontend/css)
-- [JavaScript 语言基础 （2021）](/cs/javascript-language-basic)
-- [TypeScript 入门指南](/cs/typescript-language-basic)
-- [Node.js 入门指南](/frontend/nodejs-basic)
+- [HTML](/frontend/html)
+- [CSS](/frontend/css)
+- [JavaScript](/cs/javascript-language-basic)
+- [TypeScript](/cs/typescript-language-basic)
+- [Node.js](/frontend/nodejs-basic)
 
 ### JavaScript
 
@@ -62,18 +62,13 @@ tags:
 
 ### npm 和工具
 
-- [npm 基本概念和使用](/frontend/introduction-to-npm)
+- [npm](/frontend/introduction-to-npm)
 - [用 Proxy 进一步提高 npm 安装速度](/frontend/speeding-up-npm-install)
 - [使用 verdaccio 搭建私有 npm 仓库](/frontend/set-up-a-private-npm-registry-using-verdaccio)
 
-<!-- - nrm
-- pnpm
-- tsno
-- nr -->
-
 ### React/脚手架
 
-- [React Hooks 学习指南](/frontend/react-hooks)
+- [React](/frontend/react-hooks)
 - Vite
 - Next.js
 
@@ -88,8 +83,8 @@ tags:
 
 - Recoil.js
 - Mobx
-- [RxJS 学习指南](/frontend/rxjs)
-- [Redux 学习指南](/frontend/redux)
+- [RxJS](/frontend/rxjs)
+- [Redux](/frontend/redux)
 
 ### CSS 工具
 
@@ -99,9 +94,9 @@ tags:
 ### 测试
 
 - Playwright
-- [Jest 学习指南](/frontend/jest)
-- [testing-library 学习指南](/frontend/testing-library)
-- [Cypress 学习指南](/frontend/cypress)
+- [Jest](/frontend/jest)
+- [testing-library](/frontend/testing-library)
+- [Cypress](/frontend/cypress)
 
 ### 部署
 
@@ -112,18 +107,18 @@ tags:
 
 ### 计算机科学
 
-- [计算机科学 入门指南](/cs/crash-course-computer-science)
-- [函数式编程 入门指南](/cs/introduction-to-functional-programming)
+- [计算机科学](/cs/crash-course-computer-science)
+- [函数式编程](/cs/introduction-to-functional-programming)
 - 数据结构/算法
 - 设计模式
 
 ### 实用工具
 
-- [Git 学习指南](/cs/git)
-- [Markdown 学习指南](/cs/markdown)
-- [命令行 简介](/workspace/introduction-to-terminal)
+- [Git](/cs/git)
+- [Markdown](/cs/markdown)
+- [终端](/workspace/introduction-to-terminal)
 - [打造趁手的终端](/workspace/terminal-settings)
-- [Python 语言基础（3.9）](/cs/python-language-basic)
+- [Python](/cs/python-language-basic)
 
 ### 杂谈
 
@@ -143,9 +138,9 @@ tags:
 - [EGOIST](https://github.com/egoist)
 - [Sindre Sorhus](https://github.com/sindresorhus)
 
-### Phodal
+### （Phodal 写的系列文章）
 
-- [黄峰达（Phodal Huang）](https://www.phodal.com/about/)
+- [黄峰达（Phodal Huang） 是谁](https://www.phodal.com/about/)
 
 * [Phodal's Idea 实战指南](http://ideabook.phodal.com/)
 * [GitHub 漫游指南](http://github.phodal.com/)
