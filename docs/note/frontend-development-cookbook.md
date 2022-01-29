@@ -1,6 +1,6 @@
 ---
 title: 我的 Web 前端开发知识体系 （2022）
-date: 2019-08-17 22:44:33
+date: 2022-01-29 17:46:00
 permalink: /note/frontend-development-cookbook
 categories:
   - 草稿
@@ -14,14 +14,6 @@ tags:
 
 ## 写在前面
 
-### 索引
-
-- [装了啥（2021）](/workspace/awesome-tools)
-- [我都从哪学习（2021）](/study/where-do-i-learn-from)
-- [看了啥（2021）](/study/my-reading-list/)
-- [学习方法论](/study/crash-course-study-skills)
-- [英语 训练指南 编程篇](/study/using-english)
-
 ### Roadmap 资源和技术趋势
 
 - [JavaScript Rising Stars](https://risingstars.js.org/)
@@ -30,6 +22,14 @@ tags:
 - [State Of CSS](https://stateofcss.com/)
 - [Web Development In 2022 - A Practical Guide](https://www.youtube.com/watch?v=EqzUcMzfV1w)
 - [Programming & Web Development Crash Courses - Traversy Media](https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8)
+
+### 我的索引
+
+- [装了啥（2021）](/workspace/awesome-tools)
+- [我都从哪学习（2021）](/study/where-do-i-learn-from)
+- [看了啥（2021）](/study/my-reading-list/)
+- [学习方法论](/study/crash-course-study-skills)
+- [英语 训练指南 编程篇](/study/using-english)
 
 ### 基本开发环境
 
@@ -79,21 +79,21 @@ tags:
 
 ### 规范化
 
-- ESlint
+- ES Lint
 - Prettier
-- tsconfig
+- tsconfig.json
 - Husky
 
 ### 状态管理工具
 
-- Recoil
+- Recoil.js
 - Mobx
 - [RxJS 学习指南](/frontend/rxjs)
 - [Redux 学习指南](/frontend/redux)
 
 ### CSS 工具
 
-- Tailwind/Twind
+- Tailwind / Twind
 - @emotion/css
 
 ### 测试
@@ -117,13 +117,13 @@ tags:
 - 数据结构/算法
 - 设计模式
 
-## 配套技能
+### 实用工具
 
 - [Git 学习指南](/cs/git)
 - [Markdown 学习指南](/cs/markdown)
-- [Python 语言基础（3.9）](/cs/python-language-basic)
 - [命令行 简介](/workspace/introduction-to-terminal)
 - [打造趁手的终端](/workspace/terminal-settings)
+- [Python 语言基础（3.9）](/cs/python-language-basic)
 
 ### 杂谈
 
