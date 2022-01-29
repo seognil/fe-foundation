@@ -4,7 +4,7 @@ const utc = require('dayjs/plugin/utc');
 dayjs.extend(localizedFormat);
 dayjs.extend(utc);
 
-const sidebar = require('./sidebar');
+// const sidebar = require('./sidebar');
 
 const markdownItAttrs = require('markdown-it-attrs');
 const { slugify } = require('transliteration');
@@ -112,26 +112,36 @@ const config = {
     // * ----------------
 
     nav: [
-      { text: '资料', link: '/study/where-do-i-learn-from/' },
-      { text: '关于我', link: '/about/me/' },
-
-      { text: '算法', link: 'https://github.com/seognil-study/leetcode' },
-      { text: '动手练', link: 'https://github.com/seognil-study/learn-by-doing' },
-
+      { text: '指南', link: '/note/frontend-development-cookbook' },
+      { text: '资源', link: '/study/where-do-i-learn-from/' },
       {
-        text: '索引',
+        text: '代码训练',
+        items: [
+          { text: '刷力扣', link: 'https://github.com/seognil-study/leetcode' },
+          { text: '手写题', link: 'https://github.com/seognil-study/learn-by-doing' },
+        ],
+      },
+      {
+        text: '归档',
         link: '/archives/',
         items: [
+          { text: '归档', link: '/archives/' },
           { text: '分类', link: '/categories/' },
           { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
+        ],
+      },
+      {
+        text: '关于',
+        link: '/about/me',
+        items: [
+          { text: '关于我', link: '/about/me/' },
+          { text: '关于本站', link: '/about/the-site/' },
         ],
       },
     ],
 
-    sidebarDepth: 3,
-
-    sidebar,
+    // sidebarDepth: 3,
+    sidebar: 'auto',
   },
 
   // * ------------------------------------------------
