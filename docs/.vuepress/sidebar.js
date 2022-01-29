@@ -1,6 +1,6 @@
 const sidebar = {
   '/': [
-    '/note/frontend-development-cookbook/frontend-development-cookbook',
+    '/note/frontend-development-cookbook',
 
     {
       title: '学习资源',

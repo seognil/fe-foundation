@@ -101,7 +101,8 @@ main h2:nth-of-type(4n + 4) {
 
 /* * ---------------- article table */
 
-main th, main td {
+main th,
+main td {
   padding: 0.3em 0.5em;
 }
 
@@ -121,6 +122,19 @@ main .timeline-note + ul code {
 
 main.page {
   word-break: break-word;
+}
+
+/* * ---------------- cookbook */
+
+main .cookbook-page ~ ul {
+  column-count: 3;
+
+  @media (max-width: 1280px) {
+    column-count: 2;
+  }
+  @media (max-width: 720px) {
+    column-count: 1;
+  }
 }
 
 /* * ------------------------------------------------ util */
