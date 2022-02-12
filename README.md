@@ -7,7 +7,7 @@
 <h1 align="center">一个前端指南</h1>
 
 <h2  align="center">
-  <a href='https://rualc.com/'>
+  <a href='https://rualc.me/'>
   <u>→ 在线阅读 ←</u>
   </a>
 </h2>
@@ -46,30 +46,26 @@
 
 线上地址：
 
-- <https://rualc.com/>
+- <https://rualc.me/>
 
 镜像地址：
 
 - <https://fe-foundation.pages.dev>：Powered By [Cloudflare Pages](https://dash.cloudflare.com/8144c624bc3fd1e60ba8932cdf4949e4/pages/view/rualc)
 - <https://rualc.vercel.app/>：Powered By [Vercel](https://vercel.com/seognil/rualc)
-- <https://rualc.netlify.app/>：Powered By [Netlify](https://app.netlify.com/sites/rualc/overview)
-- <https://cloudflare.rualc.com/>
-- <https://vercel.rualc.com/>
-- <https://netlify.rualc.com/>
 
 主要文章：
 
 - 导览
-  - [前端开发入门指南](https://rualc.com/note/frontend-development-cookbook)
+  - [前端开发入门指南](https://rualc.me/note/frontend-development-cookbook)
 - 系列文章
-  - [开发环境配置系列](https://rualc.com/workspace/awesome-tools)
-  - [JavaScript 学习系列](https://rualc.com/frontend/javascript-foundation)
-  - [Node 基础系列](https://rualc.com/frontend/nodejs-basic)
-  - [其他学习指南系列](https://rualc.com/study/crash-course-study-skills)
+  - [开发环境配置系列](https://rualc.me/workspace/awesome-tools)
+  - [JavaScript 学习系列](https://rualc.me/frontend/javascript-foundation)
+  - [Node 基础系列](https://rualc.me/frontend/nodejs-basic)
+  - [其他学习指南系列](https://rualc.me/study/crash-course-study-skills)
 
 以及，授人以鱼不如授人以渔：
 
-- [我都从哪学习](https://rualc.com/study/where-do-i-learn-from)
+- [我都从哪学习](https://rualc.me/study/where-do-i-learn-from)
 
 ## WIP
 
