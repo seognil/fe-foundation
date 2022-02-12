@@ -352,17 +352,43 @@ TF 卡受限于体积，读写性能很有限，高速卡公示的速度只是�
 [tf_play_jd]: https://item.jd.com/100018187482.html
 [tf_play_site]: https://www.lexar.com/en/product/lexar-play-microsdxc-uhs-i-card/
 
+## 显示器需求
+
+### 关于 120 帧
+
+[PS5 and Xbox Series X games with 120fps support](https://www.techradar.com/news/ps5-and-xbox-series-x-games-with-120fps-support)
+
+**省流**：主机上不是所有游戏都同时支持 4K + 120（主要是算力跟不上），不用过度追求
+
+- PS5
+  - [如何在 PlayStation®5 主机上启动和调节 4K 分辨率 - PlayStation](https://www.playstation.com/zh-hans-cn/support/hardware/ps5-4k-resolution-guide/)
+- Xbox
+  - [配置 Xbox Series X|S 以支持 FPS 增强和自动 HDR - Microsoft](https://support.xbox.com/zh-CN/help/hardware-network/display-sound/fps-boost-and-auto-hdr)
+  - [在 Xbox Series X 上设置 120 Hz 的 4K 游戏 - Microsoft](https://support.xbox.com/zh-CN/help/hardware-network/display-sound/4k-gaming-at-120hz)
+
+### 关于 HDMI 2.1
+
+主机的话直接用原装线就好。
+
+更大的带宽大意味着有条件高分高刷，但需要两个端口和线材都符合标准。
+
+VRR：Variable refresh rate，可变刷新率
+
+### 关于 HDR
+
+HDR10、HDR400、HDR600、HDR1000 主要区别在峰值亮度
+
 ## 显示设备
 
 ### 显示器
 
-显示器相比电视价格区间更大，一般一千多的基本款已经挺不错的了，按功能各取所需就好。
+显示器相比电视价格区间更大，简单使用的话一千多的型号已经挺不错的了，按功能各取所需就好。
 
 2K/4K/带鱼 + IPS + 60/75/120Hz + (HDR)
 
 ### 便携屏
 
-（小众需求，没有什么量产水桶型号，没什么研究）
+- [cforce 旗舰店](https://cforce.tmall.com/search.htm?search=y&orderType=price_desc&tsearch=y)
 
 ### 电视
 
@@ -384,30 +410,6 @@ TF 卡受限于体积，读写性能很有限，高速卡公示的速度只是�
 - 55 表示尺寸
 - X90 表示产品定位（X90 -> X95 -> Z9，越高端堆更多特性）
 - J 表示代际（ H -> J -> K ）
-
-#### 关于 120 帧
-
-[PS5 and Xbox Series X games with 120fps support](https://www.techradar.com/news/ps5-and-xbox-series-x-games-with-120fps-support)
-
-**省流**：主机上不是所有游戏都同时支持 4K + 120（主要是算力跟不上），不用过度追求
-
-- PS5
-  - [如何在 PlayStation®5 主机上启动和调节 4K 分辨率 - PlayStation](https://www.playstation.com/zh-hans-cn/support/hardware/ps5-4k-resolution-guide/)
-- Xbox
-  - [配置 Xbox Series X|S 以支持 FPS 增强和自动 HDR - Microsoft](https://support.xbox.com/zh-CN/help/hardware-network/display-sound/fps-boost-and-auto-hdr)
-  - [在 Xbox Series X 上设置 120 Hz 的 4K 游戏 - Microsoft](https://support.xbox.com/zh-CN/help/hardware-network/display-sound/4k-gaming-at-120hz)
-
-#### 关于 HDMI 2.1
-
-直接用原装线就好。
-
-更大的带宽大意味着有条件高分高刷，但需要两个端口和线材都符合标准。
-
-VRR：Variable refresh rate，可变刷新率
-
-#### 关于 HDR
-
-HDR10、HDR400、HDR600、HDR1000 主要区别在峰值亮度
 
 ### 投影仪
 
