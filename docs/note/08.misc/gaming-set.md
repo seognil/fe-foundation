@@ -20,6 +20,27 @@ tags:
 - 木桶效应：系统的整体体验取决于最短的一块板。
 - 所以没必要追求一步到位，但可以考虑一定程度内的超前配置。
 
+## 买游戏、打游戏
+
+- [metacritic 游戏评分](https://www.metacritic.com/)
+
+### 折扣
+
+- [Steam DB](https://steamdb.info/)
+- [PS Prices](https://psdeals.net/hk-store/all-games?platforms=ps5&sort=discount-desc)
+- [PS Deals](https://psdeals.net/hk-store/all-games?platforms=ps5&sort=discount-desc)
+- [Xbox Now](https://www.xbox-now.com/zh/game-comparison)
+- [XB Deals](https://xbdeals.net/hk-store/discounts?platforms=xboxseriesxs&sort=discount-desc)
+- [NS eshop prices](https://eshop-prices.com/games/popular?currency=CNY)
+
+### 刷成就/奖杯
+
+- PS
+  - [PowerPyx Guides](https://www.powerpyx.com/guide/)
+  - [PSN Profiles Guides](https://psnprofiles.com/guides)
+- Xbox
+  - [TrueAchievements Guides](https://www.trueachievements.com/games.aspx)
+
 ## 支付相关（以备不时之需）
 
 - 外币信用卡
@@ -93,6 +114,8 @@ tags:
 - 小心清零矿盘！（所以我一般只用京东自营）
 - SSD 性价比估计在 2026 年左右追平 HDD：[SSDs will crush hard drives in the enterprise, bearing down the full weight of Wright’s Law](https://blocksandfiles.com/2021/01/25/wikibon-ssds-vs-hard-drives-wrights-law/)
 
+<img src="https://blocksandfiles.com/wp-content/uploads/2021/01/Wikibon-SSD-less-than-HDD-in-2026.jpg" height="400" />
+
 ### PS5 （PCIe 4.0 SSD）
 
 - [如何将 M.2 SSD 添加到 PS5 主机 - PlayStation](https://www.playstation.com/zh-hans-hk/support/hardware/ps5-install-m2-ssd/)
@@ -110,7 +133,7 @@ tags:
   - （USB 外接硬盘的方案可以参考下一节 Xbox 的）
 - M.2 槽有空间限制，SSD 散热太大的话装不下。（多快好省 → [佳翼（JEYI）NVME 散热片 M.2 散热器 PS5 游戏机硬盘散热 NGFF 散热器｜ 酷冷纯黑（WarShip）](https://item.jd.com/100006345258.html)）
 
-![Dimensional Specification M.2 SSD Drives for PS5 - PlayStation](https://gmedia.playstation.com/is/image/SIEPDC/m2-heatsink-double-sided$en?$1600px$)
+<img src="https://gmedia.playstation.com/is/image/SIEPDC/m2-heatsink-double-sided$en?$1600px$" height="300" />
 
 一些满足需求的 4.0 固态，以 1TB 为例：
 
@@ -153,6 +176,8 @@ tags:
 - [Xbox Series X: What's The Best SSD Option For Back Compat Xbox Games? - YouTube](https://www.youtube.com/watch?v=7y-Fy1Q2O2k)
 
 **省流**：
+
+<img src="https://www.seagate.com/www-content/products/gaming-drive/xbox-gaming/storage-expansion-for-xbox-series-x/_shared/images/expansion-card-for-xbox-no-cap-1000x1000.png" height="200" />
 
 - 专用的扩展棒（希捷，可以无脑买，可以视为内置存储，但是非常贵） [京东自营](https://item.jd.com/100009909841.html)、[官网产品页](https://www.seagate.com/cn/zh/products/gaming-drives/xbox-gaming/storage-expansion-for-xbox-series-x/)
 - USB 外接硬盘只能跑老游戏或做备份，针对 Series S/X 优化的游戏只能移到主机中运行（和 PS5 类似）
